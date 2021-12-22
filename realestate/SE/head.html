@@ -1,0 +1,110 @@
+<div id="topheader">
+<nav class="navbar navbar-default navbar-fixed-top">
+          <h1 id="logo"><strong><a class="navbar-brand" href="Browse.html">MyGoSE</a></strong></h1>
+          <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <i class="fa fa-navicon"></i>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                  <li class="goldenPadding"><a href="Browse.html"  onclick="goto()"><span>Browse</span></a></li>
+                  <li class="goldenPadding"><a href="Analysis.html" onclick="goto()"><span>Analysis</span></a></li>
+                <li class="goldenPadding"><a href="Portfolio.html" onclick="goto()"><span>Portfolio</span></a></li>
+                <li class="goldenPadding"><a  href="https://www.mygose.com/" target="_blank" onclick="goto()"><span>Trade</span></a></li>
+                  <li class="goldenPadding"><a href="bdAdmin.html" target="_blank">Helpdesk</a></li>
+                  <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img2.jpg" alt="">Stephen Lewiston
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="Dashboard.html">Dashboard</a></li>
+                    <li><a href="myInvestments.html">MY Investments</a></li>
+                    <li><a href="myTransacions.html">MY Transacions</a></li>
+                    <li><a href="myFollowingOfferings.html">MY Following Offerings</a></li>
+                    <li><a href="fundAccounts.html">Fund Accounts</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="Messages.html">Messages</a></li>
+                    <li><a href="Activities.html">Activities</a></li>
+                    <li><a href="browse.html"><i class="fa fa-power-off pull-right"></i> Sign Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            </div>
+          </div>
+        </nav>
+</div>
+<script>
+     $( '#topheader .navbar-nav a' ).on( 'click', function () {
+        $( '#topheader .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+        $( this ).parent( 'li' ).addClass( 'active' );
+    });
+
+</script>

@@ -1,0 +1,2462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="" />
+    <meta name="KeyWords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link href="favicon.ico" rel="Shortcut Icon" type="image/x-icon" />
+    <title>MyGoSE</title>
+    <!-- Bootstrap -->
+    <link href="scss/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="scss/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- NProgress -->
+    <link href="scss/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="scss/bootstrap-progressbar-3.3.4.min.css"> 
+    <!-- iCheck -->
+    <link href="scss/green.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="scss/jquery.fancybox-buttons.css">
+    <link rel="stylesheet" href="scss/jquery.fancybox-thumbs.css">
+    <link rel="stylesheet" href="scss/jquery.fancybox.css">
+    <!-- Custom Theme Style -->
+    <link href="build/custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/flexslider.css" type="text/css"/>
+    <link href="css/style_add.css" rel="stylesheet">
+    <style>
+        .banner{background-size:auto 100%;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  </head>
+  <body class="xHidden nav-md"><a id="mainTop"></a>
+        <!-- Navigation bar 表頭 -->
+            <!-- partial:layout/_header.html -->
+            <div id="topheader">
+<nav class="navbar navbar-default navbar-fixed-top">
+          <h1 id="logo"><strong><a class="navbar-brand" href="Browse.html">MyGoSE</a></strong></h1>
+          <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <i class="fa fa-navicon"></i>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                  <li class="goldenPadding"><a href="Browse.html">Browse</a></li>
+                  <li class="goldenPadding"><a href="Analysis.html">Analysis</a></li>
+                <li class="goldenPadding"><a href="Portfolio.html">Portfolio</a></li>
+                <li class="goldenPadding"><a href="https://www.mygose.com/" target="_blank">Trade</a></li>
+                  <li class="goldenPadding"><a href="bdAdmin.html" target="_blank">Helpdesk</a></li>
+                  <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img2.jpg" alt="">Stephen Lewiston
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="Dashboard.html">Dashboard</a></li>
+                    <li><a href="myInvestments.html">MY Investments</a></li>
+                    <li><a href="myTransacions.html">MY Transacions</a></li>
+                    <li><a href="myFollowingOfferings.html">MY Following Offerings</a></li>
+                    <li><a href="fundAccounts.html">Fund Accounts</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="Messages.html">Messages</a></li>
+                    <li><a href="Activities.html">Activities</a></li>
+                    <li><a href="browse.html"><i class="fa fa-power-off pull-right"></i> Sign Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image"></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+            </div>
+          </div>
+        </nav>
+</div>
+<script>
+    /** add active class and stay opened when selected */
+        var url = window.location;
+
+        // for sidebar menu entirely but not cover treeview
+        $('#topheader .nav a').filter(function() {
+             return this.href == url;
+        }).parent().addClass('active');
+
+        // for treeview
+        $('#topheader .nav a').filter(function() {
+             return this.href == url;
+        }).parentsUntil("#topheader .nav li").addClass('active');
+
+</script>
+
+            <!-- partial -->
+        <!-- / Navigation bar 表頭 -->
+        <!--Banner-->
+      <div class="mvBanner"><div class="floatButtonOver"></div><video class="abc" autoplay="autoplay" loop="true" style="width:100%;background-image:url(>)" muted=”true” preload=”auto><source src="images/cic_mv.mp4" type="video/mp4"></video><div class="floatButton text-center"><h2 class="objectName text-center">Concord International Centre
+<small class="text-center">Chongqing, China</small><div class="smallButton"><button class="btn btn-primary" type="button">Follow</button><button class="btn btn-primary" type="button">Invest Now</button></div><div class="mvCover"></div></h2></div></div>
+        <!-- <div class="banners">
+                <div class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li class="banner"><a href=""><img src="images/banner_01.jpg"/></a></li>
+                            <li class="banner"><a href=""><img src="images/banner_02.jpg"/></a></li>
+                            <li class="banner"><a href=""><img src="images/banner_03.jpg"/></a></li>
+                        </ul>
+                    </div>
+                <!-- FlexSlider -->
+                <!-- <script defer src="../vendors/flexslider/js/jquery.flexslider.js"></script>
+                <script type="text/javascript">
+                    $(window).load(function(){
+                      $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function(slider){
+                          $('body').removeClass('loading');
+                        }
+                      });
+                    });
+                </script>
+            </div>
+        </div>
+       -->
+        <!--/ Banner-->
+      <div class="container container_1366 body">
+      <div class="main_container">
+        
+
+        <!-- top navigation -->
+        
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div role="main">
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_content">
+                    <!-- Intro -->
+                    <div class="row section_20_40">
+                      <!-- <h5>Acquisition and upgrade of a currently income-generating multifamily asset comprising 168 units in 36 Discovery St, Irvin, with intent to resell within 50 months.</h5> -->
+                      <div class="col-xs-12 col-md-4">
+                        <h5 class="sevenView"><small>Project Name</small><span>Concord International Centre</span></h5>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <h5 class="sevenView"><small>Country</small><span>China</span></h5>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <h5 class="sevenView"><small>City</small><span>Chongqing</span></h5>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <h5 class="sevenView"><small>Investment Sector</small><span>Equity</span></h5>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <h5 class="sevenView"><small>Industry Sector</small><span>Complex</span></h5>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <h5 class="sevenView"><small>Min. Investment</small><span>$25,000</span></h5>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <h5 class="sevenView"><small>Investment Period</small><span>3 Years</span></h5>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <h5 class="sevenView"><small>Lock-up Period</small><span>6 Months</span></h5>
+                      </div>
+                        <div class="col-xs-6 col-md-4">
+                        <h5 class="sevenView"><small>Target Annualized Return (IRR)</small><span>9.78%</span></h5>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <h5 class="sevenView"><small>Target Average Annual Cash Yield</small><span>9.6%</span></h5>
+                      </div>
+                      <div class="col-xs-6 col-md-4">
+                        <h5 class="sevenView"><small>Target Total Return</small><span>96%</span></h5>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="bunderdetail">
+                        <div class="item"><label>Currency&nbsp;&nbsp;</label><span>USD</span></div>
+                        <div class="item"><label>Issue Size&nbsp;&nbsp;</label><span>US$ 20,000,000</span></div>
+                        <div class="item"><label>Issue Price&nbsp;&nbsp;</label><span>100% of Par</span></div>
+                        <div class="item"><label>Business Day&nbsp;&nbsp;</label><span>Time Zone - Hong Kong (GMT + 8:00)</span></div>
+                        <div class="item"><label>Additional Subscription&nbsp;&nbsp;</label><span>US$ 50,000</span></div>
+                        <div class="item"><label>Subscription Period&nbsp;&nbsp;</label><span>1 July, 2020 – 20 July, 2020</span></div>
+                        <div class="item"><label>Early Redemption&nbsp;&nbsp;</label><span>Yes/No</span></div>
+                        <div class="item"><label>Management Fee&nbsp;&nbsp;</label><span>2%</span></div>
+                        <div class="item"><label>Performance Fee&nbsp;&nbsp;</label><span>15%</span></div>
+                        <div class="item"><label>Hurdle Rate&nbsp;&nbsp;</label><span>10.0%</span></div>
+                        <div class="item"><label>Subscription Fee&nbsp;&nbsp;</label><span>Up to 5%</span></div>
+                        <div class="item"><label>Valuation Day&nbsp;&nbsp;</label><span>27 July, 2020</span></div>
+                        <div class="item"><label>Settlement&nbsp;&nbsp;</label><span>T+7</span></div>
+                        <div class="item"><label>Investment Manager&nbsp;&nbsp;</label><span>Company Name</span></div>
+                        <div class="item"><label>Calculation Agent&nbsp;&nbsp;</label><span>Company</span></div>
+                    </div>
+                    <hr style="margin:0;">
+                    <!-- Intro End -->
+                    <!-- Property Summary -->
+                    <section class="row section_0_20">
+                        <div class="col-xs-12"><h4>Property Summary</h4></div>
+                            <div class="col-xs-12 col-md-6">
+                                <p class="heading"><strong>General</strong></p>
+                                <p class="">Clinton Hill is a class A multifamily asset that was built in 2006. It comprises 168 three-story residential units, spread across 10 buildings. Every unit has an garage with door openers, offering residents a sense of homeownership.<br>The asset spans 4.25 acres, with 84,310 square feet of rentable residential space, and the remainder of the space is designated for public areas and community amenities.</p><div class="clearfix"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6 text-center">
+
+                                <iframe style="width:100%;height:auto;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.tw/maps?f=q&amp;hl=en-us&amp;geocode=&amp;q=Concord International Centre, Jiangbei District, Chongqing, China&amp;z=16&amp;output=embed&amp;t=" class="map"></iframe>
+
+                            </div>
+                            <div class="clearfix"></div>
+                            <!-- building photo -->
+                            <div class="marginTop20">
+                               <div class="col-xs-12"><p class="heading"><strong>Photos</strong></p></div>
+                               <div class="clearfix height10"></div>
+                               <div class="col-xs-6 col-md-3">
+                                <div class="">
+                                  <div class="image view view-first">
+                                    <a href="#"><img style="width: 100%; display: block;" src="images/cic_01.jpg" alt="image"></a>
+                                  </div>
+                                </div>
+                              </div> 
+                                <div class="col-xs-6 col-md-3">
+                                <div class="">
+                                  <div class="image view view-first">
+                                    <a href="#"><img style="width: 100%; display: block;" src="images/cic_02.jpg" alt="image"></a>
+                                  </div>
+                                </div>
+                              </div> 
+                                <div class="col-xs-6 col-md-3">
+                                <div class="">
+                                  <div class="image view view-first">
+                                    <a href="#"><img style="width: 100%; display: block;" src="images/cic_03.jpg" alt="image"></a>
+                                  </div>
+                                </div>
+                              </div>
+                                <div class="col-xs-6 col-md-3">
+                                <div class="">
+                                  <div class="image view view-first">
+                                    <a href="#"><img style="width: 100%; display: block;" src="images/cic_04.jpg" alt="image"></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- building photo End -->
+                    </section>
+                    <!-- Property Summary End -->
+                    <!-- Map -->
+                    <section class="col-xs-12 locationAlign" >
+                        <div class="x_panel tile location">
+                            <a class="collapse-link x_title">
+                                <h2 class="">Location</h2>
+                            </a>
+                            <ul class="nav navbar-right panel_toolbox">
+                                    <li>
+                                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                                    </li>
+                                </ul>
+                            <div class="x_content ac disNone" style="display: block;">
+                                <div class="panel-body cta-2-txt text-left">
+                                    <p class="">Irvine borders Tustin to the north, Santa Ana to the northwest, Lake Forest to the east, Laguna Hills and Laguna Woods to the southeast, Costa Mesa to the west, and Newport Beach to the southwest. Irvine also shares a small border with Orange to the north on open lands by the SR 261.</p>
+                                    <p class="">San Diego Creek, which flows northwest into Upper Newport Bay, is the primary watercourse draining the city. Its largest tributary is Peters Canyon Wash. Most of Irvine is in a broad, flat valley between Loma Ridge in the north and San Joaquin Hills in the south. In the extreme northern and southern areas, however, are several hills, plateaus and canyons.</p>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="x_panel tile location">
+                            <a class="collapse-link x_title">
+                                <h2 class="">Nearby Transportation</h2>
+                            </a>
+                            <ul class="nav navbar-right panel_toolbox">
+                                    <li>
+                                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                                    </li>
+                                </ul>
+                            <div class="x_content ac disNone" style="display: none;">
+                                <div class="panel-body cta-2-txt text-left">
+                                    <p class="">Several major highways pass through Irvine, including Interstate 5, and Interstate 405, California State Route 73, California State Route 133, California State Route 241, and California State Route 261. </p>
+                                    <p class="">The city of Irvine has operated its own mass-transit bus service called the iShuttle since 2008. Four weekday commuter shuttles serve major employers, residential areas, shopping centers, and transportation facilities. Two lines, Route A and Route B, connect the Tustin Metrolink Station to the Irvine Business Complex area. Route A provides service between the Tustin Metrolink Station and John Wayne Airport with stops along Von Karman Avenue. Route B heads along Jamboree Road before continuing through Main Street and Michelson Drive. The remaining two lines, Route C and Route D, offer connections between the Irvine Station and the Irvine Spectrum Area.</p>
+                                    <p class="">Source: Wikipedia</p>
+                                </div>
+                            </div>
+                        </div>  
+                            
+                        <div class="x_panel tile location">
+                            <a class="collapse-link x_title">
+                                <h2 class="">Specifications</h2>
+                            </a>
+                            <ul class="nav navbar-right panel_toolbox">
+                                    <li>
+                                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                                    </li>
+                                </ul>
+                            <div class="x_content ac disNone" style="display: none;">
+                                <div class="panel-body cta-2-txt text-left">
+                                    <table class="table StackTable function_01 beforeHalf specifications">
+                                        <tbody><tr>
+                                            <th style="width:50%">Official Name</th>
+                                            <td style="width:50%" data-title="Official Name">Concord International Centre</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Other Names</th>
+                                            <td data-title="Other Names">Sun Valley Tianhe Tower</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Structure Type</th>
+                                            <td data-title="Structure Type">Building</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Status</th>
+                                            <td data-title="Status">Completed</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Country</th>
+                                            <td data-title="Country">China</td>
+                                        </tr>
+                                        <tr>
+                                            <th>City</th>
+                                            <td data-title="City">Chongqing</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Street Address &amp; Map</th>
+                                            <td data-title="Street Address &amp; Map">Guanyinqiao, Jiangbei District</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Building Function</th>
+                                            <td data-title="Building Function">hotel / office / retail</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Structural Material</th>
+                                            <td data-title="Structural Material">composite
+                                                <ol class="xDisc">
+                                                    <li>Core: Reinforced Concrete</li>
+                                                    <li>Columns: Concrete Encased Steel</li>
+                                                    <li>Floor Spanning: Steel</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Energy Label</th>
+                                            <td data-title="Energy Label">LEED Gold BD+C: Core and Shell</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Proposed</th>
+                                            <td data-title="Proposed">2008</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Construction Start</th>
+                                            <td data-title="Construction Start">2012</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Completion</th>
+                                            <td data-title="Completion">2017</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Official Website</th>
+                                            <td data-title="Official Website"><a href="http://www.cqcic.com.cn/" target="_blank">http://www.cqcic.com.cn/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Owner/Developer</th>
+                                            <td data-title="Owner/Developer">Success Financial Group</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Architect Design</th>
+                                            <td data-title="Architect Design">Gensler; Chongqing Architecture and Design Institute</td>
+                                        </tr>
+                                </tbody></table>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="x_panel tile location">
+                            <a class="collapse-link x_title">
+                                <h2 class="">Businesses</h2>
+                            </a>
+                            <ul class="nav navbar-right panel_toolbox">
+                                    <li>
+                                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                                    </li>
+                                </ul>
+                            <div class="x_content ac disNone" style="display: none;">
+                                <div class="panel-body cta-2-txt text-left">
+                                    <p class=""><strong>International Top Fashion Boutique Shopping Centre (B3-5F)</strong></p>
+                                    <p class="">Uniform investment and management by a team with international resources, with the purpose of "Dreams Come True", to create the <p class="">first gathering place dedicated to creating food, shopping, play, art, and lifestyle appreciation for mid-to-high-end women. It’s committed to becoming the first shopping mall brand with consumers. Joined 17 exclusive brands to enter Chongqing for the first time, carry forward and create an international city interactive experience, and become a gathering place and exchange center for global fashion arts.</p>
+                                    <div class="clearfix"></div>
+                                    <p class=""><strong>International Office Area and Administrative Zone (6F-46F)</strong></p>
+                                    <p class="">It is divided into three areas of low, medium and high, especially equipped with dedicated independent office lobby on the UG and 32 floors. CIC adopts VAV variable air volume / frequency conversion air-conditioning system and four-control central air conditioner, which can provide sufficient fresh air volume of 30 cubic meters per person per hour, making indoor air fresher. The entire project is also equipped with up to 71 Swiss Schindler elevators with a maximum speed of 6 meters per second. It is also one of the first office projects in Chongqing to adopt the "Elevator Dispatch System". The average waiting time is controlled within 30 seconds. It can save more valuable time and improve the convenience of movement for resident companies.</p>
+                                    <p class="">CIC not only provides international office space for business elites with the standard of 5A Grade-A office buildings, but also takes the innovative office concept and the innovation of Chongqing business office ecology as its mission to create an Intelligent business platform and startup incubation platform for stylish cultural and creative design base, aviation industry, and financial industry. </p>
+                                    <div class="clearfix"></div>
+                                    <p class=""><strong>Intercontinental INDIGO Hotel (48F-58F)</strong></p>
+                                    <p class="">Irvine’s strength is its people. The City is the success it is today because of the more than 249,595 hard-working and community minded citizens who have chosen Irvine as their home. Irvine’s population has grown significantly over the past 40 years, with population increases averaging 20 percent per year between 1970 and 1980. Between 1980 and 1990, the average increase dropped to 8 percent per year; and since 1990, the annual increase has averaged 4 percent per year. Because Irvine is a relatively new City and started with a young population base, only 12.7 percent of Irvine’s population was in the over-55 category in 1990. By the year 2020, however, 28 percent of the City’s population is expected to be over 55.</p>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <!-- Map End -->
+                    <!-- Property Management -->
+                    <section class="row">
+                        <div class="col-xs-12"><h4>Property Management</h4></div>
+                        <div class="col-xs-12">
+                                <div class="pull-left w100">
+                                    <img src="https://www.savills.com/_images/savills-square.svg" class="w100">
+                                </div>
+                                <div class="pull-right minus120">
+                                    <p>Since entering China in the 1980s, Savills has established its unshakable market leader position, providing clients with innovative real estate solutions to meet their needs. It provides comprehensive real estate services to clients through 15 branches throughout China, including office buildings, shops, residences, serviced apartments, valuation, property management, asset management, investment, market research and development consultants, and market communication services. With the support of more than 6,000 employees in China, Savills has become an unquestionable leader in the real estate industry with its extensive international experience and keen market insight.</p>
+                                </div>
+                        </div>
+                    </section>
+                    <!-- Property Management End -->
+                    <!-- Legal Counsel -->
+                    <section class="row">
+                        <div class="col-xs-12"><h4>Legal Counsel</h4></div>
+                        <div class="col-xs-12">
+                                <div class="pull-left w100">
+                                    <img src="https://www.squirepattonboggs.com/Content/public/images/SqPBLogo.svg" class="w100">
+                                </div>
+                                <div class="pull-right minus120">
+                                    <p>Squire Patton Boggs is a full-service global law firm. It provides insight at the point where law, business and government meet, giving clients a voice, supporting clients’ ambitions and achieving successful outcomes. Squire Patton Boggs encompasses virtually every matter, jurisdiction and market. The multidisciplinary team of over 1,500 lawyers in 44 offices across 19 countries provides unrivaled access to expertise and invaluable connections on the ground. It is a seamless service that operates on any scale, locally or globally.</p>
+                                </div>
+                        </div>
+                    </section>
+                    <!-- Legal Counsel End -->
+                    
+                      
+                    
+                    <!-- Intender
+                    <section class="row">
+                        
+                      <div class="col-xs-12">
+                        <h4>Preferred Returns</h4>
+                          <p>The investors may be eligible for a preferred projected return targeted at 8.5% per annum on their investment. Please see Private Placement Memorandum for further details.</p>
+                      </div>
+                    </section>
+                    <!-- Intender End -->
+                      
+                      <!-- Intender2
+                    <section class="row">
+                      <div class="col-xs-12">
+                        <h4>Profit Distribution</h4>
+                        <p>The initial division of all anticipated profits from the project will be 70 | 30 to the equity holders. Thus, the investors will be eligible for 56% of the potential profits from the project, in accordance with their relative share of the equity, which amounts to 80%.</p>
+                      </div>
+                    </section>
+                    <!-- Intender2 End -->
+                      
+                    <!-- table -->
+                    <section class="row">
+                      <div class="col-xs-12">
+                        <h4>Project Overview</h4>
+                      </div>
+                      <div class="col-xs-12">
+                          <center>
+                          <table class="table StackTable function_01 beforeHalf">
+                            <tbody>
+                                <tr class="borderNone">
+                                    <td colspan="6" class="borderNone"><p class="heading"><strong>Construction Scale</strong></p></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>Indicator</th>
+                                    <th>Unit</th>
+                                    <th>Amount</th>
+                                    <th>Percentage</th>
+                                    <th>Comments</th>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1</div></td>
+                                    <td data-title="Indicator">Building Footprint</td>
+                                    <td data-title="Unit">m<sup>2</sup></td>
+                                    <td data-title="Amount">10222.00</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2</div></td>
+                                    <td data-title="Indicator">Gross Floors&nbsp;Area</td>
+                                    <td data-title="Unit">m<sup>2</sup></td>
+                                    <td data-title="Amount">166548.35</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.1</div></td>
+                                    <td data-title="Indicator">Business</td>
+                                    <td data-title="Unit">m<sup>2</sup></td>
+                                    <td data-title="Amount">35913.85</td>
+                                    <td data-title="Percentage">21.56%</td>
+                                    <td data-title="Comments">For Sales</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.2</div></td>
+                                    <td data-title="Indicator">Hotel</td>
+                                    <td data-title="Unit">m<sup>2</sup></td>
+                                    <td data-title="Amount">19691.65</td>
+                                    <td data-title="Percentage">11.82%</td>
+                                    <td data-title="Comments">For Sales</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.3</div></td>
+                                    <td data-title="Indicator">Office</td>
+                                    <td data-title="Unit">m<sup>2</sup></td>
+                                    <td data-title="Amount">72209.46</td>
+                                    <td data-title="Percentage">43.36%</td>
+                                    <td data-title="Comments">For Sales</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.4</div></td>
+                                    <td data-title="Indicator">Car Park</td>
+                                    <td data-title="Unit">m<sup>2</sup></td>
+                                    <td data-title="Amount">36519.41</td>
+                                    <td data-title="Percentage">21.93%</td>
+                                    <td data-title="Comments">For Sales</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">3</div></td>
+                                    <td data-title="Indicator">Floor Area Ratio (FAR)</td>
+                                    <td data-title="Unit">&nbsp;</td>
+                                    <td data-title="Amount">11.41</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="borderNone" style="height: 60px;"></td>
+                                </tr>
+                                <tr class="borderNone">
+                                    <td colspan="6" class="borderNone"><p class="heading"><strong>Economic Data</strong></p></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>Indicator</th>
+                                    <th>Unit</th>
+                                    <th>Amount</th>
+                                    <th>Percentage</th>
+                                    <th>Comments</th>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1</div></td>
+                                    <td data-title="Indicator">Total Investment</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">330788</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2</div></td>
+                                    <td data-title="Indicator">Financing</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">330788</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.1</div></td>
+                                    <td data-title="Indicator">Equity Fund</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">100000</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.2</div></td>
+                                    <td data-title="Indicator">Bank Loans</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">180000</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.3</div></td>
+                                    <td data-title="Indicator">Presales</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">50788</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.4</div></td>
+                                    <td data-title="Indicator">Others (Shareholder Loan)</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">0</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">3</div></td>
+                                    <td data-title="Indicator">Operating Revenue</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">477572</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">Accounting Period</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">4</div></td>
+                                    <td data-title="Indicator">Business Taxes and Surcharges</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">26744</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">Accounting Period</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">5</div></td>
+                                    <td data-title="Indicator">Total Profit</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">109823</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">Accounting Period</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">6</div></td>
+                                    <td data-title="Indicator">Income Tax</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">16473</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">Accounting Period</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">7</div></td>
+                                    <td data-title="Indicator">Profit After Tax</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">93349</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">Accounting Period</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">8</div></td>
+                                    <td data-title="Indicator">Land Value Increment Tax</td>
+                                    <td data-title="Unit">CNY (10K)</td>
+                                    <td data-title="Amount">23271</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">Accounting Period</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="borderNone" style="height: 60px;"></td>
+                                </tr>
+                                <tr class="borderNone">
+                                    <td colspan="6" class="borderNone"><p class="heading"><strong>Financial Performance Indicators</strong></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>Indicator</th>
+                                    <th>Unit</th>
+                                    <th>Amount</th>
+                                    <th>Percentage</th>
+                                    <th>Comments</th>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1</div></td>
+                                    <td data-title="Indicator">ROI of Commercial Housing</td>
+                                    <td data-title="Unit">%</td>
+                                    <td data-title="Amount">33.49%</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2</div></td>
+                                    <td data-title="Indicator">Net Profit Margin of Capital</td>
+                                    <td data-title="Unit">%</td>
+                                    <td data-title="Amount">&nbsp;</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">3</div></td>
+                                    <td data-title="Indicator">FIRR (Financial Internal Rate of Return) of Investment</td>
+                                    <td data-title="Unit">%</td>
+                                    <td data-title="Amount">18.58%</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">Before Tax</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">4</div></td>
+                                    <td data-title="Indicator">Payback Period</td>
+                                    <td data-title="Unit">%</td>
+                                    <td data-title="Amount">8.16</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">Before Tax</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">5</div></td>
+                                    <td data-title="Indicator">FIRR (Financial Internal Rate of Return) of Investment</td>
+                                    <td data-title="Unit">%</td>
+                                    <td data-title="Amount">16.89%</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">After Tax</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">6</div></td>
+                                    <td data-title="Indicator">Payback Period</td>
+                                    <td data-title="Unit">%</td>
+                                    <td data-title="Amount">8.2</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">After Tax</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">7</div></td>
+                                    <td data-title="Indicator">FIRR (Financial Internal Rate of Return) of Capital</td>
+                                    <td data-title="Unit">%</td>
+                                    <td data-title="Amount">&nbsp;</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">8</div></td>
+                                    <td data-title="Indicator">DCR (Debt Coverage Ratio)</td>
+                                    <td data-title="Unit">%</td>
+                                    <td data-title="Amount">1.26</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">9</div></td>
+                                    <td data-title="Indicator">Debt Repayment Period</td>
+                                    <td data-title="Unit">Year(s)</td>
+                                    <td data-title="Amount">3</td>
+                                    <td data-title="Percentage">&nbsp;</td>
+                                    <td data-title="Comments">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </center>
+                      </div>
+                    </section>
+                    <!-- table End -->
+                      
+                    <!-- table3 -->
+                    <section class="row">
+                      <div class="col-xs-12">
+                        <h4>Financial Performance Statement</h4>
+                      </div>
+                      <div class="col-xs-12">
+                          <center>
+                          <table class="table StackTable function_01 beforeHalf">
+                            <tbody>
+                                <tr class="borderNone">
+                                    <td colspan="7" class="borderNone"><p class="heading"><strong>Income Statement</strong></p></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2"></th>
+                                    <th rowspan="2">Item</th>
+                                    <th colspan="5" class="text-center">Year</th>
+                                </tr>
+                                <tr>
+                                    <th>2015</th>
+                                    <th>2016</th>
+                                    <th>2017</th>
+                                    <th>2018</th>
+                                    <th>2019</th>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1</div></td>
+                                    <td data-title="Item">Operating Revenue</td>
+                                    <td data-title="Year2015">768</td>
+                                    <td data-title="Year2016">74659</td>
+                                    <td data-title="Year2017">96199</td>
+                                    <td data-title="Year2018">102281</td>
+                                    <td data-title="Year2019">131280</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.1</div></td>
+                                    <td data-title="Item">Commercial Housing Sales</td>
+                                    <td data-title="Year2015">768</td>
+                                    <td data-title="Year2016">74659</td>
+                                    <td data-title="Year2017">92733</td>
+                                    <td data-title="Year2018">96133</td>
+                                    <td data-title="Year2019">123549</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.2</div></td>
+                                    <td data-title="Item">Rental</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.3</div></td>
+                                    <td data-title="Item">Self-Employment Income</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">3466</td>
+                                    <td data-title="Year2018">6148</td>
+                                    <td data-title="Year2019">7731</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2</div></td>
+                                    <td data-title="Item">Operating Costs</td>
+                                    <td data-title="Year2015">487</td>
+                                    <td data-title="Year2016">45009</td>
+                                    <td data-title="Year2017">60982</td>
+                                    <td data-title="Year2018">64227</td>
+                                    <td data-title="Year2019">86124</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.1</div></td>
+                                    <td data-title="Item">Commercial Housing Operation</td>
+                                    <td data-title="Year2015">487</td>
+                                    <td data-title="Year2016">45009</td>
+                                    <td data-title="Year2017">60982</td>
+                                    <td data-title="Year2018">64227</td>
+                                    <td data-title="Year2019">86124</td>
+                                </tr>
+                                <tr i>
+                                    <td data-title="No."><div class="disNone">2.2</div></td>
+                                    <td data-title="Item">Rental Housing Operation</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.3</div></td>
+                                    <td data-title="Item">Rental Housing Resale</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">3</div></td>
+                                    <td data-title="Item">Rental Housing Operating Expenses</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">4</div></td>
+                                    <td data-title="Item">Self-Employment Operating Expenses</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">1213</td>
+                                    <td data-title="Year2018">2152</td>
+                                    <td data-title="Year2019">2706</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">5</div></td>
+                                    <td data-title="Item">Self-Employment Depreciation/Amortization</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">2770</td>
+                                    <td data-title="Year2018">2770</td>
+                                    <td data-title="Year2019">2770</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">6</div></td>
+                                    <td data-title="Item">Self-Employment Financial Expenses</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">180</td>
+                                    <td data-title="Year2018">180</td>
+                                    <td data-title="Year2019">180</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">7</div></td>
+                                    <td data-title="Item">Business Taxes and Surcharges</td>
+                                    <td data-title="Year2015">43</td>
+                                    <td data-title="Year2016">4180</td>
+                                    <td data-title="Year2017">5387</td>
+                                    <td data-title="Year2018">5728</td>
+                                    <td data-title="Year2019">7353</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">8</div></td>
+                                    <td data-title="Item">Land Value Increment Tax</td>
+                                    <td data-title="Year2015">46</td>
+                                    <td data-title="Year2016">4480</td>
+                                    <td data-title="Year2017">5565</td>
+                                    <td data-title="Year2018">5768</td>
+                                    <td data-title="Year2019">7412</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">6</div></td>
+                                    <td data-title="Item">Income Before Tax/Total Profit</td>
+                                    <td data-title="Year2015">192</td>
+                                    <td data-title="Year2016">20990</td>
+                                    <td data-title="Year2017">20101</td>
+                                    <td data-title="Year2018">21456</td>
+                                    <td data-title="Year2019">24735</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">7</div></td>
+                                    <td data-title="Item">Adjustment: Prior Year Deficiency</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">8</div></td>
+                                    <td data-title="Item">Taxable Income</td>
+                                    <td data-title="Year2015">192</td>
+                                    <td data-title="Year2016">20990</td>
+                                    <td data-title="Year2017">20101</td>
+                                    <td data-title="Year2018">21456</td>
+                                    <td data-title="Year2019">24735</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">9</div></td>
+                                    <td data-title="Item">Income Tax</td>
+                                    <td data-title="Year2015">29</td>
+                                    <td data-title="Year2016">3148</td>
+                                    <td data-title="Year2017">3015</td>
+                                    <td data-title="Year2018">3218</td>
+                                    <td data-title="Year2019">3710</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">10</div></td>
+                                    <td data-title="Item">Net Profit</td>
+                                    <td data-title="Year2015">163</td>
+                                    <td data-title="Year2016">17841</td>
+                                    <td data-title="Year2017">17086</td>
+                                    <td data-title="Year2018">18238</td>
+                                    <td data-title="Year2019">21025</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" class="borderNone" style="height: 60px;"></td>
+                                </tr>
+                                <tr class="borderNone">
+                                    <td colspan="7" class="borderNone"><p class="heading"><strong>Cash Flow Statement</strong></p></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2"></th>
+                                    <th rowspan="2">Item</th>
+                                    <th colspan="5" class="text-center">Year</th>
+                                </tr>
+                                <tr>
+                                    <th>2015</th>
+                                    <th>2016</th>
+                                    <th>2017</th>
+                                    <th>2018</th>
+                                    <th>2019</th>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1</div></td>
+                                    <td data-title="Item">Cash Inflows</td>
+                                    <td data-title="Year2015">202172</td>
+                                    <td data-title="Year2016">280159</td>
+                                    <td data-title="Year2017">100595</td>
+                                    <td data-title="Year2018">102281</td>
+                                    <td data-title="Year2019">131280</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.1</div></td>
+                                    <td data-title="Item">Commercial Housing Sales</td>
+                                    <td data-title="Year2015">768</td>
+                                    <td data-title="Year2016">74659</td>
+                                    <td data-title="Year2017">92733</td>
+                                    <td data-title="Year2018">96133</td>
+                                    <td data-title="Year2019">123549</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.2</div></td>
+                                    <td data-title="Item">Rental</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.3</div></td>
+                                    <td data-title="Item">Self-Employment Income</td>
+                                    <td data-title="Year2015">0</td>
+                                    <td data-title="Year2016">0</td>
+                                    <td data-title="Year2017">3466</td>
+                                    <td data-title="Year2018">6148</td>
+                                    <td data-title="Year2019">7731</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.4</div></td>
+                                    <td data-title="Item">Long-term Loans for Proprietary Assets</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.5</div></td>
+                                    <td data-title="Item">Working Capital Loans for Proprietary Assets</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">1500</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr i>
+                                    <td data-title="No."><div class="disNone">1.6</div></td>
+                                    <td data-title="Item">Real Estate Investment Loans</td>
+                                    <td data-title="Year2015">109800</td>
+                                    <td data-title="Year2016">200000</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.7</div></td>
+                                    <td data-title="Item">Short-term Loans</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.8</div></td>
+                                    <td data-title="Item">Capital Funds</td>
+                                    <td data-title="Year2015">91604</td>
+                                    <td data-title="Year2016">4000</td>
+                                    <td data-title="Year2017">4396</td>
+                                    <td data-title="Year2018">0</td>
+                                    <td data-title="Year2019">0</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.9</div></td>
+                                    <td data-title="Item">Others</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">0</td>
+                                    <td data-title="Year2017">0</td>
+                                    <td data-title="Year2018">0</td>
+                                    <td data-title="Year2019">0</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.10</div></td>
+                                    <td data-title="Item">Recovery of Salvage Value of Fixed Assets</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.11</div></td>
+                                    <td data-title="Item">Recovery of Working Capital</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.12</div></td>
+                                    <td data-title="Item">Net Resale Income</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2</div></td>
+                                    <td data-title="Item">Cash Outflows</td>
+                                    <td data-title="Year2015">201522</td>
+                                    <td data-title="Year2016">232877</td>
+                                    <td data-title="Year2017">79075</td>
+                                    <td data-title="Year2018">110246</td>
+                                    <td data-title="Year2019">85561</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.1</div></td>
+                                    <td data-title="Item">Investment in Fixed Assets of Proprietary Assets</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.2</div></td>
+                                    <td data-title="Item">Interest during Construction for Fixed Assets of Proprietary Assets</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.3</div></td>
+                                    <td data-title="Item">Real Estate Investment (Including Interest Rate)</td>
+                                    <td data-title="Year2015">201404</td>
+                                    <td data-title="Year2016">89769</td>
+                                    <td data-title="Year2017">23715</td>
+                                    <td data-title="Year2018">13200</td>
+                                    <td data-title="Year2019">2700</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.4</div></td>
+                                    <td data-title="Item">Working Capital</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">1500</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.5</div></td>
+                                    <td data-title="Item">Self-Employment Operating Expenses</td>
+                                    <td data-title="Year2015">0</td>
+                                    <td data-title="Year2016">0</td>
+                                    <td data-title="Year2017">1213</td>
+                                    <td data-title="Year2018">2152</td>
+                                    <td data-title="Year2019">2706</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.6</div></td>
+                                    <td data-title="Item">Self-Employment Financial Expenses</td>
+                                    <td data-title="Year2015">0</td>
+                                    <td data-title="Year2016">0</td>
+                                    <td data-title="Year2017">180</td>
+                                    <td data-title="Year2018">180</td>
+                                    <td data-title="Year2019">180</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.7</div></td>
+                                    <td data-title="Item">Rental Housing Operating Expenses</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.8</div></td>
+                                    <td data-title="Item">Business Taxes and Surcharges</td>
+                                    <td data-title="Year2015">43</td>
+                                    <td data-title="Year2016">4180</td>
+                                    <td data-title="Year2017">5387</td>
+                                    <td data-title="Year2018">5728</td>
+                                    <td data-title="Year2019">7353</td>
+                                </tr>
+                                <tr   i>
+                                    <td data-title="No."><div class="disNone">2.9</div></td>
+                                    <td data-title="Item">Land Value Increment Tax</td>
+                                    <td data-title="Year2015">46</td>
+                                    <td data-title="Year2016">4480</td>
+                                    <td data-title="Year2017">5565</td>
+                                    <td data-title="Year2018">5768</td>
+                                    <td data-title="Year2019">7412</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.10</div></td>
+                                    <td data-title="Item">Income Tax</td>
+                                    <td data-title="Year2015">29</td>
+                                    <td data-title="Year2016">3148</td>
+                                    <td data-title="Year2017">3015</td>
+                                    <td data-title="Year2018">3218</td>
+                                    <td data-title="Year2019">3710</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.11</div></td>
+                                    <td data-title="Item">Profit Payable</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.12</div></td>
+                                    <td data-title="Item">Principal Repayments of Long-term Loans for Proprietary Assets</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.13</div></td>
+                                    <td data-title="Item">Principal Repayments of Working Capital Loans for Proprietary Assets</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">1500</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">1.14</div></td>
+                                    <td data-title="Item">Principal Repayments of Long-term Loans for Real Estate</td>
+                                    <td data-title="Year2015">0</td>
+                                    <td data-title="Year2016">129800</td>
+                                    <td data-title="Year2017">40000</td>
+                                    <td data-title="Year2018">80000</td>
+                                    <td data-title="Year2019">60000</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.15</div></td>
+                                    <td data-title="Item">Repayment of Other Payables (Shareholder Loans)</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">2.16</div></td>
+                                    <td data-title="Item">Principal Repayments of Short-term Loans</td>
+                                    <td data-title="Year2015">&nbsp;</td>
+                                    <td data-title="Year2016">&nbsp;</td>
+                                    <td data-title="Year2017">&nbsp;</td>
+                                    <td data-title="Year2018">&nbsp;</td>
+                                    <td data-title="Year2019">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">3</div></td>
+                                    <td data-title="Item">Surplus funds</td>
+                                    <td data-title="Year2015">650</td>
+                                    <td data-title="Year2016">47282</td>
+                                    <td data-title="Year2017">21519</td>
+                                    <td data-title="Year2018">-7965</td>
+                                    <td data-title="Year2019">45719</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="No."><div class="disNone">4</div></td>
+                                    <td data-title="Item">Accumulated Surplus Funds</td>
+                                    <td data-title="Year2015">650</td>
+                                    <td data-title="Year2016">47932</td>
+                                    <td data-title="Year2017">69451</td>
+                                    <td data-title="Year2018">61486</td>
+                                    <td data-title="Year2019">107205</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                      </div>
+                    </section>
+                    <!-- table3 End -->
+                    
+                    <!-- table4 -->
+                    <div class="pad8"><p class="heading"><strong>Shopping Mall - Econimic Value</strong></p></div>
+                    <table class="table StackTable function_01 beforeHalf">
+                        <tbody>
+                            <tr class="borderNone">
+                                <th style="width:2%;"></th>
+                                <th>Item</th>
+                                <th>2019</th>
+                                <th></th>
+                            </tr>
+                            <tr class="borderNone">
+                                <th></th>
+                                <th></th>
+                                <th>Amount</th>
+                                <th>Percent</th>
+                            </tr>
+                            <tr class="borderNone">
+                                <td class="paddingNone"></td>
+                                <td data-title="Item">Operating Area &amp; Percentage</td>
+                                <td data-title="Amount">17,600</td>
+                                <td data-title="Percent">90%</td>
+                            </tr>
+                            <tr>
+                                <td data-title="No."><div class="disNone">1</div></td>
+                                <td data-title="Item">Operating Revenue</td>
+                                <td data-title="Amount">59,062,649</td>
+                                <td data-title="Percent">100.00%</td>
+                            </tr>
+                            <tr>
+                                <td data-title="No."><div class="disNone">1.1</div></td>
+                                <td data-title="Item">Base Rent</td>
+                                <td data-title="Amount">31,757,101</td>
+                                <td data-title="Percent">53.77%</td>
+                            </tr>
+                            <tr>
+                                <td data-title="No."><div class="disNone">1.2</div></td>
+                                <td data-title="Item">Additional&nbsp;Rent</td>
+                                <td data-title="Amount">387,600</td>
+                                <td data-title="Percent">0.66%</td>
+                            </tr>
+                            <tr>
+                                <td data-title="No."><div class="disNone">1.3</div></td>
+                                <td data-title="Item">Syndicate Operating Revenue</td>
+                                <td data-title="Amount">8,600,000</td>
+                                <td data-title="Percent">14.56%</td>
+                            </tr>
+                            <tr>
+                                <td data-title="No."><div class="disNone">1.4</div></td>
+                                <td data-title="Item">Service Fee Revenue</td>
+                                <td data-title="Amount">9,549,835</td>
+                                <td data-title="Percent">16.17%</td>
+                            </tr>
+                            <tr>
+                                <td data-title="No."><div class="disNone">1.5</div></td>
+                                <td data-title="Item">Marketing Fee Revenue</td>
+                                <td data-title="Amount">1,630,813</td>
+                                <td data-title="Percent">2.76%</td>
+                            </tr>
+                            <tr>
+                                <td data-title="No."><div class="disNone">1.6</div></td>
+                                <td data-title="Item">POS Leasing Revenue</td>
+                                <td data-title="Amount">160,200</td>
+                                <td data-title="Percent">0.27%</td>
+                            </tr>
+                            <tr>
+                                <td data-title="No."><div class="disNone">1.7</div></td>
+                                <td data-title="Item">Warehouse&nbsp;Leasing Revenue</td>
+                                <td data-title="Amount">1,200,000</td>
+                                <td data-title="Percent">2.03%</td>
+                            </tr>
+                            <tr>
+                                <td data-title="No."><div class="disNone">1.8</div></td>
+                                <td data-title="Item">Advertisement Revenue</td>
+                                <td data-title="Amount">4,577,100</td>
+                                <td data-title="Percent">7.75%</td>
+                            </tr>
+                            <tr>
+                                <td data-title="No."><div class="disNone">1.9</div></td>
+                                <td data-title="Item">Others</td>
+                                <td data-title="Amount">1,200,000</td>
+                                <td data-title="Percent">2.03%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- table4 End -->
+                    <!-- Market Opportunities -->
+                    <section class="row">
+                      <div class="col-xs-12">
+                        <h4>Market Opportunities</h4>
+                                    <p class="heading"><strong>Property Transactions of Foreign Institutions</strong></p>
+                                    <p class="">In addition to Blackstone Group, these institutions include real estate investment funds, such as Capitaland, Link Real Estate Investment Trust, and GAW Capital Partners.</p>
+                                    <table class="table StackTable function_01 beforeHalf">
+                                        <tbody>
+                                            <tr class="borderNone">
+                                                <th></th>
+                                                <th>Company</th>
+                                                <th>Time</th>
+                                                <th>City</th>
+                                                <th>Price</th>
+                                                <th>Type</th>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">1</div>
+                                                </td>
+                                                <td data-title="Company">
+                                                    Blackstone
+                                                </td>
+                                                <td data-title="Time">
+                                                    2019
+                                                </td>
+                                                <td data-title="City">
+                                                    Shanghai
+                                                </td>
+                                                <td data-title="Price">
+                                                    1.50B (USD)
+                                                </td>
+                                                <td data-title="Type">
+                                                    Mall
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">2</div>
+                                                </td>
+                                                <td data-title="Company">
+                                                    Blackstone
+                                                </td>
+                                                <td data-title="Time">
+                                                    2019
+                                                </td>
+                                                <td data-title="City">
+                                                    Xi'an/Zhengzhou
+                                                </td>
+                                                <td data-title="Price">
+                                                    0.48B (USD)
+                                                </td>
+                                                <td data-title="Type">
+                                                    Mall
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">3</div>
+                                                </td>
+                                                <td data-title="Time">
+                                                    Blackstone
+                                                </td>
+                                                <td data-title="City">
+                                                    2018
+                                                </td>
+                                                <td data-title="">
+                                                    Shanghai
+                                                </td>
+                                                <td data-title="">
+                                                    1.25B (USD)
+                                                </td>
+                                                <td data-title="">
+                                                    Complex
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">4</div>
+                                                </td>
+                                                <td data-title="City">
+                                                    Capitaland
+                                                </td>
+                                                <td data-title="">
+                                                    2019
+                                                </td>
+                                                <td data-title="">
+                                                    Shanghai
+                                                </td>
+                                                <td data-title="">
+                                                    2.75B (CNY)
+                                                </td>
+                                                <td data-title="">
+                                                    Office
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">5</div>
+                                                </td>
+                                                <td data-title="Company">
+                                                    Capitaland
+                                                </td>
+                                                <td data-title="Time">
+                                                    2018
+                                                </td>
+                                                <td data-title="City">
+                                                    Shanghai
+                                                </td>
+                                                <td data-title="Price">
+                                                    12.79B (CNY)
+                                                </td>
+                                                <td data-title="Type">
+                                                    Complex
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">6</div>
+                                                </td>
+                                                <td data-title="Company">
+                                                    Capitaland
+                                                </td>
+                                                <td data-title="Time">
+                                                    2018
+                                                </td>
+                                                <td data-title="City">
+                                                    Chongqing
+                                                </td>
+                                                <td data-title="Price">
+                                                    5.70B (CNY)
+                                                </td>
+                                                <td data-title="">
+                                                    Complex
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">7</div>
+                                                </td>
+                                                <td data-title="Company">
+                                                    Link Real Estate Investment Trust
+                                                </td>
+                                                <td data-title="Time">
+                                                    2019
+                                                </td>
+                                                <td data-title="City">
+                                                    Shenzhen
+                                                </td>
+                                                <td data-title="Price">
+                                                    5.11B (CNY)
+                                                </td>
+                                                <td data-title="Type">
+                                                    Mall
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">8</div>
+                                                </td>
+                                                <td data-title="Company">
+                                                    Link Real Estate Investment Trust
+                                                </td>
+                                                <td data-title="Time">
+                                                    2019
+                                                </td>
+                                                <td data-title="City">
+                                                    Beijing
+                                                </td>
+                                                <td data-title="Price">
+                                                    2.56B (CNY)
+                                                </td>
+                                                <td data-title="">
+                                                    Mall
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">9</div>
+                                                </td>
+                                                <td data-title="Company">
+                                                    GAW Capital Partners
+                                                </td>
+                                                <td data-title="Time">
+                                                    2019
+                                                </td>
+                                                <td data-title="City">
+                                                    Shanghai
+                                                </td>
+                                                <td data-title="Price">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Type">
+                                                    Office
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">10</div>
+                                                </td>
+                                                <td data-title="Time">
+                                                    GAW Capital Partners
+                                                </td>
+                                                <td data-title="City">
+                                                    2018
+                                                </td>
+                                                <td data-title="City">
+                                                    Shanghai
+                                                </td>
+                                                <td data-title="Price">
+                                                    N/A
+                                                </td>
+                                                <td data-title="">
+                                                    Office
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="No.">
+                                                    <div class="disNone">11</div>
+                                                </td>
+                                                <td data-title="Company">
+                                                    GAW Capital Partners
+                                                </td>
+                                                <td data-title="Time">
+                                                    2018
+                                                </td>
+                                                <td data-title="City">
+                                                    Shanghai
+                                                </td>
+                                                <td data-title="Price">
+                                                    4.94B (CNY)
+                                                </td>
+                                                <td data-title="Type">
+                                                    Office
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="clearfix" style="height:60px;"></div>
+                                    <p class="heading"><strong>ROI – Acquisition is a Good Business</strong></p>
+                                    <p class="">In terms of ROI, according to Blackstone's latest report, BREP Asia I funds have a gross internal rate of return (GIRR) of 22% and a net internal rate of return (NIRR) of 15%.</p>
+                                    <table class="table StackTable function_01 beforeHalf">
+                                        <tbody>
+                                            <tr class="borderNone">
+                                                <th colspan="7">
+                                                    Year Ended December 31,
+                                                </th>
+                                                <th colspan="4" class="text-center">
+                                                    December 31, 2018
+                                                    <br> Inception to Date
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <th colspan="2" class="text-center" style="width: 12%;">
+                                                    2018
+                                                </th>
+                                                <th colspan="2" class="text-center" style="width: 12%;">
+                                                    2017
+                                                </th>
+                                                <th colspan="2" class="text-center" style="width: 12%;">
+                                                    2016
+                                                </th>
+                                                <th colspan="2" class="text-center" style="width: 12%;">
+                                                    Realized
+                                                </th>
+                                                <th colspan="2" class="text-center" style="width: 12%;">
+                                                    Total
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Fund
+                                                </th>
+                                                <th>
+                                                    Gross
+                                                </th>
+                                                <th>
+                                                    Net
+                                                </th>
+                                                <th>
+                                                    Gross
+                                                </th>
+                                                <th>
+                                                    Net
+                                                </th>
+                                                <th>
+                                                    Gross
+                                                </th>
+                                                <th>
+                                                    Net
+                                                </th>
+                                                <th>
+                                                    Gross
+                                                </th>
+                                                <th>
+                                                    Net
+                                                </th>
+                                                <th>
+                                                    Gross
+                                                </th>
+                                                <th>
+                                                    Net
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP IV
+                                                </td>
+                                                <td data-title="Year2018 Gross" class="red">
+                                                    -14%
+                                                </td>
+                                                <td data-title="Year2018 Net" class="red">
+                                                    -12%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    3%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    3%
+                                                </td>
+                                                <td data-title="Year2016 Gross" class="red">
+                                                    -12%
+                                                </td>
+                                                <td data-title="Year2016 Net" class="red">
+                                                    -10%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    56%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    33%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    22%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    12%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP V
+                                                </td>
+                                                <td data-title="Year2018 Gross" class="red">
+                                                    -6%
+                                                </td>
+                                                <td data-title="Year2018 Net" class="red">
+                                                    -5%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    11%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    10%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    7%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    7%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    15%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    12%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    14%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    11%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP VI
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    7%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    5%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    28%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    23%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    21%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    17%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    18%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    14%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    17%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    13%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP VII
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    3%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    2%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    22%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    17%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    7%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    4%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    37%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    27%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    23%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    16%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP VIII
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    20%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    14%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    24%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    16%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    29%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    19%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    39%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    27%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    25%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    16%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP International II
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    34%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    29%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    23%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    21%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    23%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    23%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    10%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    8%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    9%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    8%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP Europe III
+                                                </td>
+                                                <td data-title="Year2018 Gross" class="red">
+                                                    -18%
+                                                </td>
+                                                <td data-title="Year2018 Net" class="red">
+                                                    -15%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    25%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    20%
+                                                </td>
+                                                <td data-title="Year2016 Gross" class="red">
+                                                    -4%
+                                                </td>
+                                                <td data-title="Year2016 Net" class="red">
+                                                    -4%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    30%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    21%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    23%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    15%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP Europe IV
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    20%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    14%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    33%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    26%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    14%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    10%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    34%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    25%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    24%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    17%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP Europe V
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    25%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    17%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    29%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    18%
+                                                </td>
+                                            </tr>
+                                            <tr class="spViewBG">
+                                                <td data-title="Fund">
+                                                    BREP Asia I
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    10%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    7%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    27%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    19%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    30%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    21%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    30%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    21%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    22%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    15%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP Asia II
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    N/M
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREP Co-Investment
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    -1%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    -----
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    24%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    20%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    16%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    14%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    18%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    16%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    17%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    15%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BPP
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    11%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    10%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    13%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    10%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    11%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    10%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    N/M
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    13%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    11%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREDS Drawdown
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    8%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    5%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    15%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    11%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    14%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    10%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    15%
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                     11%
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    15%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    10%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREDS Liquid
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    6%
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                   4% 
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    11%
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    8%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    2%
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    -----
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    11%
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    8%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BXMT
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    7%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    16%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    23%
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    12%
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="Fund">
+                                                    BREIT
+                                                </td>
+                                                <td data-title="Year2018 Gross">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Year2018 Net">
+                                                    8%
+                                                </td>
+                                                <td data-title="Year2017 Gross">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Year2017 Net">
+                                                    10%
+                                                </td>
+                                                <td data-title="Year2016 Gross">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Year2016 Net">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Realized Gross, Inception to 2018" class="textLess">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Realized NET, Inception to 2018" class="textLess">
+                                                    N/A
+                                                </td>
+                                                <td data-title="Total Gross, Inception to 2018" class="textLess">
+                                                    N/A 
+                                                </td>
+                                                <td data-title="Total Net, Inception to 2018" class="textLess">
+                                                    9%
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                      </div>
+                      <div class="col-xs-12">
+                          <center>
+                          
+                        </center>
+                      </div>
+                    </section>
+                    <!-- Market Opportunities End -->
+                      <!-- Documents -->
+                            <section class="row">
+
+                              <div class="col-xs-12">
+                                <h4>Documents</h4>
+                              </div>
+                                <div class="clearfix height10"></div>
+                              <div class="col-xs-12">
+                                  <p class="heading"><strong><i class="fa fa-file-text-o"></i> PPM Documents</strong></p>
+                                  <table class="table StackTable function_01 beforeHalf">
+                                    <tbody>
+                                        <tr class="borderNone">
+                                            <td class="text-left">MyGo CIC Private Placement Memorandum.pdf</td>
+                                            <td class="text-center w60"><button class="btn btn-default btnDownload" type="button"><i class="fa fa-download"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">US SEC Form D – Notice of Exempt Offering of Securities.pdf</td>
+                                            <td class="text-center w60"><button class="btn btn-default btnDownload" type="button"><i class="fa fa-download"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="clearfix height60"></div>
+                              </div>
+                              <div class="col-xs-12">
+                                  <p class="heading"><strong><i class="fa fa-file-text-o"></i> Investor Documents</strong></p>
+                                  <table class="table StackTable function_01 beforeHalf">
+                                    <tbody>
+                                        <tr class="borderNone">
+                                            <td class="text-left">Investment Memorandum.pdf</td>
+                                            <td class="text-center w60"><button class="btn btn-default btnDownload" type="button"><i class="fa fa-download"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">Financial Analysis from 2018 to 2019.pdf</td>
+                                            <td class="text-center w60"><button class="btn btn-default btnDownload" type="button"><i class="fa fa-download"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">Auditor’s Report 2019.pdf</td>
+                                            <td class="text-center w60"><button class="btn btn-default btnDownload" type="button"><i class="fa fa-download"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="clearfix height60"></div>
+                              </div>
+                                <div class="col-xs-12">
+                                  <p class="heading"><strong><i class="fa fa-file-text-o"></i> Legal Documents</strong></p>
+                                  <table class="table StackTable function_01 beforeHalf">
+                                    <tbody>
+                                        <tr class="borderNone">
+                                            <td class="text-left">Subscription Agreement.pdf</td>
+                                            <td class="text-center w60"><button class="btn btn-default btnDownload" type="button"><i class="fa fa-download"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">Fund Management Agreement.pdf</td>
+                                            <td class="text-center w60"><button class="btn btn-default btnDownload" type="button"><i class="fa fa-download"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">Property Management Agreement.pdf</td>
+                                            <td class="text-center w60"><button class="btn btn-default btnDownload" type="button"><i class="fa fa-download"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-left">Hotel Management Agreement.pdf</td>
+                                            <td class="text-center w60"><button class="btn btn-default btnDownload" type="button"><i class="fa fa-download"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="clearfix"></div>
+                              </div>
+                            </section>
+                    <!-- Documents End -->
+                    
+                      
+                      
+                      <!-- Fund Manager -->
+                      <section class="row section_0_40">
+                        <div class="col-xs-12"><h4>Fund Manager</h4></div>
+                        <div class="clearfix height10"></div>
+							<div class="col-xs-12 col-sm-2">
+								<div class="text-center"> 
+									<a href="#"><img src="images/t2.jpg" alt="img" style="width:100%"></a>
+								</div>
+								<h3 class="borderNone" style="margin-top: 15px;">John Smith</h3>
+								<p>Cheif Executive Officer<a href="#" target="_blank" class="viewProfile">View Profile</a></p>
+                                <div class="clearfix"></div>
+							</div>
+                            <div class="col-xs-12 col-sm-2">
+								<div class="text-center"> 
+									<a href="#"><img src="images/t1.jpg" alt="img" style="width:100%"></a>
+								</div>
+								<h3 class="borderNone" style="margin-top: 15px;">Stephen Lewiston</h3>
+                                <p>Cheif Financial Officer<a href="#" target="_blank" class="viewProfile">View Profile</a></p>
+                                <div class="clearfix"></div>
+							</div>
+							</section>	
+                            <!-- Fund Manager End -->
+						</div>
+                      
+                      </div>
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        <div class="row aboutMyGoSE">
+            <div class="col-xs-12">
+                <h4>About MyGoSE</h4>
+                <p>The above may contain forward-looking statements. Actual results and trends in the future may differ materially from those suggested or implied by any forward-looking statements in the above depending on a variety of factors. All written and oral forward-looking statements attributable to us or persons acting on our behalf are expressly qualified in their entirety by the previous statements. Except for any obligations to disclose information as required by applicable laws, we undertake no obligation to update any information contained above or to publicly release the results of any revisions to any statements that may be made to reflect events or circumstances that occur, or that we become aware of, after the date of the publishing of the above.</p>
+                <p>Private placements of securities accessible through the MyGoSE™ social network real-estate investment platform (the “Platform”) are intended for accredited investors. Such private placements of securities have not been registered under applicable securities laws, are restricted and not publicly traded, may be subject to holding period requirements, and are intended for investors who do not need a liquid investment. These investments are not bank deposits (and thus are not insured by the FDIC or by any other federal governmental agency), are not guaranteed by and IX Investment Group Ltd. (“IX”) or any third party working on our behalf, and may lose value. Neither the Securities and Exchange Commission nor any federal or state securities commission or regulatory authority has recommended or approved any investment or the accuracy or completeness of any of the information or materials provided by or through the Platform. Investors may lose their entire investment.</p>
+                <p>Equity securities are offered through BD firm. ("BD"), a registered broker-dealer and member of FINRA (www.finra.org), member of SIPC (www.sipc.org). Any real estate investment accessible though the Platform involves substantial risks. Any financial projections or projected returns are projections only, and IX makes no representations or warranties as to the accuracy of such information and accepts no liability therefor whatsoever.</p>
+                <p>Investors should always conduct their own due diligence, not rely on the financial assumptions or estimates displayed herein, and should always consult with a reputable financial advisor, attorney, accountant, and any other professional that can help them to understand and assess the risks associated with any investment opportunity. Any investment involves substantial risks. Major risks, including related to the Equity Protection and/or the potential loss of some or all principal, are disclosed in the private placement memorandum for each applicable investment.</p>
+                <p>Neither IX nor its affiliates nor BD makes investment recommendations nor do they provide investment advisory services, and no communication, including herein or through the Platform or in any other medium should be construed as such. BD, its employees and affiliates are not insurers or insurance brokers, and do not offer insurance services, advice or information to new or existing investors.</p>
+            </div>
+        </div>
+        </div>
+        <!-- /page content -->
+      </div>
+
+      <!--Footer-->
+    <!-- partial:layout/_footer.html -->
+    <footer id="footer" class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-xs-12">&copy; 2020 All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <!-- partial -->
+
+<!--/ Footer-->
+    
+
+<!--/ Footer-->
+<!-- partial:layout/_vendorsJsCommon.html -->
+<!-- jQuery
+<script src="../vendors/jquery.easing/js/jquery.easing.min.js"></script>
+<!-- Bootstrap 
+<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick
+<script src="../vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress
+<script src="../vendors/nprogress/nprogress.js"></script>
+<!-- jQuery Sparklines
+<script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- easy-pie-chart
+<script src="../vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+<!-- bootstrap-progressbar
+<script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<!-- FancyBox
+<script src="../vendors/fancybox/js/fancybox/jquery.fancybox.js"></script>
+<script src="../vendors/fancybox/js/fancybox/jquery.fancybox-buttons.js"></script>
+<script src="../vendors/fancybox/js/fancybox/jquery.fancybox-thumbs.js"></script>
+<script src="../vendors/fancybox/js/fancybox/jquery.easing-1.3.pack.js"></script>
+<script src="../vendors/fancybox/js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- iCheck
+<script src="../vendors/iCheck/icheck.min.js"></script>
+<script src="../vendors/backtotop/js/back-to-top.js"></script>
+ -->
+
+<script src="js/vendorsA.js"></script>
+<!-- partial -->
+<script type="text/javascript">
+	$(document).ready(function() {
+	$(".fancybox").fancybox();
+	});
+</script>
+<!-- Custom Theme Scripts -->
+<script src="build/custom.min.js"></script>
+    
+
+</body>
+</html>
