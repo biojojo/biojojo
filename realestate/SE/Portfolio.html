@@ -431,10 +431,20 @@
 	$(document).ready(function() {
 	$(".fancybox").fancybox();
 	});
+    $(function(){
+        $("#fsButton").click(function(e){
+            $("#tile_count").fullScreen();
+            e.preventDefault();
+        });
+        $("#fsButton2").click(function(e){
+            $("#historicalTotalReturn").fullScreen();
+            e.preventDefault();
+        });
+    });
 </script>
 <!-- Custom Theme Scripts -->
 <script src="build/custom.min.js"></script>
-
+<script src="js/jquery.fullscreen/jquery.fullscreen.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
