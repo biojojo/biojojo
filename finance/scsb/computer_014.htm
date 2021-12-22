@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+<title>上海商業儲蓄銀行-財富管理</title>
+<link type="image/x-icon" rel="icon" href="favicon.ico">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/fancyfields.css" rel="stylesheet">
+<link href="css/colorbox.css" rel="stylesheet">
+<link href="css/web.css" rel="stylesheet">
+<link href="css/fund_add.css" rel="stylesheet">
+<link href="css/nav-h.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="w882">
+<div class="news_pop_subtitle news_pop_subtitle_terms"><span>房貸-本金平均攤還</span></div>
+<div class="bdBk bdBk_terms">
+        <div class="fmTb">
+            <div class="toolBx">
+                <dl class="toolFm">
+                <dt>房貸金額</dt>
+                <dd>
+                  <input name="ctl00$ContentPlaceHolder1$ctl00$txt01" type="text" id="ctl00_ContentPlaceHolder1_ctl00_txt01" class="texts" />
+                  元</dd>
+                <dt>房貸年限</dt>
+                <dd>
+                  <input name="ctl00$ContentPlaceHolder1$ctl00$txt02" type="text" id="ctl00_ContentPlaceHolder1_ctl00_txt02" class="texts" />
+                  年</dd>
+                <dt>貸款年利率</dt>
+                <dd>
+                  <input name="ctl00$ContentPlaceHolder1$ctl00$txt03" type="text" id="ctl00_ContentPlaceHolder1_ctl00_txt03" class="texts" />
+                  %</dd>
+              </dl>
+                <div class="blank_10"></div>
+                <div class="submit cr">
+                    <input name="Submit" id="Button1" type="button" value="立即試算" class="butn" onclick="CalculateBC();">
+                    <input id="Button3" type="button" value="清除重填" class="butn" onclick="initValues();">
+                </div>
+                <!-- submit:end -->
+                 <div class="blank_10"></div>
+                <div class="results">
+                    <h3 class="title">結果：</h3>
+                    <dl class="toolFm">
+                    <dt>每月償還本金</dt>
+                    <dd>
+                        <input name="ctl00$ContentPlaceHolder1$ctl00$txt04" type="text" id="ctl00_ContentPlaceHolder1_ctl00_txt04" class="texts" />
+                        元</dd>
+                    <dt>總共利息費用</dt>
+                    <dd>
+                        <input name="ctl00$ContentPlaceHolder1$ctl00$txt05" type="text" id="ctl00_ContentPlaceHolder1_ctl00_txt05" class="texts" />
+                        元</dd>
+                    </dl>
+                </div>
+                <!-- results:end -->
+                <div class="table table_c">
+                  <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <thead>
+                      <tr class="table_title">
+                        <th> 期數(月) </th>
+                        <th> 貸款餘額 </th>
+                        <th> 償還本金 </th>
+                        <th> 償還利息 </th>
+                        <th> 每月繳款金額 </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="cr">0</td>
+                        <td class="rt">101,111.00</td>
+                        <td class="rt">0.00</td>
+                        <td class="rt">0.00</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">1</td>
+                        <td class="rt">97,096.42</td>
+                        <td class="rt">4,014.58</td>
+                        <td class="rt">421.30</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">2</td>
+                        <td class="rt">93,065.10</td>
+                        <td class="rt">4,031.31</td>
+                        <td class="rt">404.57</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">3</td>
+                        <td class="rt">89,017.00</td>
+                        <td class="rt">4,048.11</td>
+                        <td class="rt">387.77</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">4</td>
+                        <td class="rt">84,952.02</td>
+                        <td class="rt">4,064.98</td>
+                        <td class="rt">370.90</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">5</td>
+                        <td class="rt">80,870.11</td>
+                        <td class="rt">4,081.91</td>
+                        <td class="rt">353.97</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">6</td>
+                        <td class="rt">76,771.18</td>
+                        <td class="rt">4,098.92</td>
+                        <td class="rt">336.96</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">7</td>
+                        <td class="rt">72,655.18</td>
+                        <td class="rt">4,116.00</td>
+                        <td class="rt">319.88</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">8</td>
+                        <td class="rt">68,522.03</td>
+                        <td class="rt">4,133.15</td>
+                        <td class="rt">302.73</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">9</td>
+                        <td class="rt">64,371.66</td>
+                        <td class="rt">4,150.37</td>
+                        <td class="rt">285.51</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">10</td>
+                        <td class="rt">60,204.00</td>
+                        <td class="rt">4,167.66</td>
+                        <td class="rt">268.22</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">11</td>
+                        <td class="rt">56,018.97</td>
+                        <td class="rt">4,185.03</td>
+                        <td class="rt">250.85</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">12</td>
+                        <td class="rt">51,816.50</td>
+                        <td class="rt">4,202.47</td>
+                        <td class="rt">233.41</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">13</td>
+                        <td class="rt">47,596.52</td>
+                        <td class="rt">4,219.98</td>
+                        <td class="rt">215.90</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">14</td>
+                        <td class="rt">43,358.96</td>
+                        <td class="rt">4,237.56</td>
+                        <td class="rt">198.32</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">15</td>
+                        <td class="rt">39,103.74</td>
+                        <td class="rt">4,255.22</td>
+                        <td class="rt">180.66</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">16</td>
+                        <td class="rt">34,830.80</td>
+                        <td class="rt">4,272.95</td>
+                        <td class="rt">162.93</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">17</td>
+                        <td class="rt">30,540.04</td>
+                        <td class="rt">4,290.75</td>
+                        <td class="rt">145.13</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">18</td>
+                        <td class="rt">26,231.41</td>
+                        <td class="rt">4,308.63</td>
+                        <td class="rt">127.25</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">19</td>
+                        <td class="rt">21,904.83</td>
+                        <td class="rt">4,326.58</td>
+                        <td class="rt">109.30</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">20</td>
+                        <td class="rt">17,560.22</td>
+                        <td class="rt">4,344.61</td>
+                        <td class="rt">91.27</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">21</td>
+                        <td class="rt">13,197.51</td>
+                        <td class="rt">4,362.71</td>
+                        <td class="rt">73.17</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">22</td>
+                        <td class="rt">8,816.62</td>
+                        <td class="rt">4,380.89</td>
+                        <td class="rt">54.99</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">23</td>
+                        <td class="rt">4,417.47</td>
+                        <td class="rt">4,399.14</td>
+                        <td class="rt">36.74</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr>
+                        <td class="cr">24</td>
+                        <td class="rt">0.00</td>
+                        <td class="rt">4,417.47</td>
+                        <td class="rt">18.41</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                      <tr class="trBom">
+                        <td class="cr">合計</td>
+                        <td class="rt">0.00</td>
+                        <td class="rt">101,111.00</td>
+                        <td class="rt">5,350.12</td>
+                        <td class="rt">4,435.88</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+            <!-- toolBx:end -->
+            
+            <!-- caption:end -->
+        </div>
+        
+        <!-- fmTb:end -->
+    </div>
+    <div class="caption">
+        <cite>說明：</cite>
+        <ol>
+            <li>此區計算數值僅供理財參考，並未加計任何可能產生的手續費用和稅金。</li>
+            <li>計算出的金額並未考量物價膨脹率及風險係數，也無保證和實際投資狀況相符。</li>
+        </ol>
+    </div>
+</body>
+</html>

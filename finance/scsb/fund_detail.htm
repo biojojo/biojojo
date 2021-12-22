@@ -1,0 +1,8323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+<title>上海商業儲蓄銀行-財富管理</title>
+<link type="image/x-icon" rel="icon" href="favicon.ico">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/fancyfields.css" rel="stylesheet">
+<link href="css/colorbox.css" rel="stylesheet">
+<link href="css/web.css" rel="stylesheet">
+<link href="css/fund_add.css" rel="stylesheet">
+<link href="css/nav-h.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swap.js"></script>
+<script src="js/fancyfields-1.2.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script src="js/login.js"></script>
+<script type="text/javascript" src="js/back-to-top.js"></script>
+<script src="js/products_dropdown.js"></script>
+<script src="js/overlib.js" type="text/jscript"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+	function getApplet(sName){
+		if(document.getElementById){
+			return document.getElementById(sName);
+		} else {
+			return document.applets[sName];
+		}
+	}
+	
+	//待applet run 完 , 才允許focus
+	function focusApplet(xName)
+	{
+		var oApplet = getApplet(xName);
+		var loadStatus=oApplet.getLoadFinish();
+		if(loadStatus=='s')
+		{
+
+		}
+	}
+	
+	//Hide script from old browsers
+	function init()   
+	{   
+		// Microsoft Internet Explorer   
+		if (document.all)   
+		{   
+			document.all.loading.style.visibility="hidden";   
+			document.all.myapplet.style.visibility="visible";  
+			document.all.loading2.style.visibility="hidden";   
+			document.all.myapplet2.style.visibility="visible";			
+			document.applets[0].repaint();   
+			document.applets[1].repaint();
+		}   
+		// Netscape Navigator   
+		else   
+		{   
+			document.loading.visibility="hide";   
+			document.myapplet.visibility="visible";
+			document.loading2.visibility="hide";   
+			document.myapplet2.visibility="visible";			
+		}   
+	}   
+
+$(function(){
+	//該單元選單
+	$("#menu_search").addClass("menu_choosen");
+})
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/btn_logino.gif')">
+
+
+<div id="header">
+	<div id="header_content"><!-- 頁首內容 -->
+    
+		<div id="logo"><a href="index.htm" target="_self"><img src="images/logo.gif"/></a></div>
+    	<div id="menu"><!-- 主選單 -->
+    		<div id="menu_products_overview" class="menu_item"><a href="fund_value.htm" target="_self">最新報價</a></div>
+    		<div id="menu_news" class="menu_item"><a href="news.htm" target="_self">即時新聞</a></div>
+    		<div id="menu_search" class="menu_item"><a href="search.htm" target="_self">基金搜尋</a></div>
+    		<div id="menu_finance" class="menu_item"><a href="finance.htm" target="_self">金融行情</a></div>
+    		<div id="menu_event" class="menu_item"><a href="account.htm" target="_self">理財試算</a></div>
+    		<div id="menu_back" class="menu_item menu_item_last"><a href="index.htm" target="_self">回到首頁</a></div>
+    	</div>
+    </div><!-- 頁首內容end -->
+</div>
+<div id="container">
+	<div id="container_content" class="fund_value"><!-- 主要內容，class並設定本頁特化內容 -->
+    	
+
+<SCRIPT>
+<!--
+function FundCheck(){
+
+  if (document.FundDetail.fund_code.value=="") {
+     alert("此欄位不得空白");
+	   document.FundDetail.fund_code.focus();
+  }
+  else {
+     var ncm=document.FundDetail.fund_code.value.length;
+     if(ncm=='4')
+     {
+        document.FundDetail.submit();
+     }
+     else
+     {
+        alert("請輸入四位數基金代碼");
+        document.FundDetail.fund_code.focus();
+     }
+
+  }
+}
+//-->
+</SCRIPT>
+<SCRIPT>
+<!--
+function FundCheck(){
+
+  if (document.FundDetail.fund_code.value=="") {
+     alert("此欄位不得空白");
+	   document.FundDetail.fund_code.focus();
+  }
+  else {
+     var ncm=document.FundDetail.fund_code.value.length;
+     if(ncm=='4')
+     {
+        document.FundDetail.submit();
+     }
+     else
+     {
+        alert("請輸入四位數基金代碼");
+        document.FundDetail.fund_code.focus();
+     }
+
+  }
+}
+//-->
+</SCRIPT>
+<SCRIPT language="JavaScript" type="text/JavaScript">
+<!--
+$(function(){
+	$('#option_product1').fancyfields({
+    	onSelectChange: function (input,text,val){
+			relMgn(val);
+    	}
+	});
+	$('#option_product2').fancyfields({
+    	onSelectChange: function (input,text,val){
+		    if(val!='請選擇查詢標的'){
+			   window.location = val;
+			}
+    	}
+	});
+	$('#option_product3').fancyfields({
+    	onSelectChange: function (input,text,val){
+			window.location = val;
+    	}
+	});
+})
+
+function relMgn(mgn)
+{
+ 	var ms='<option value="" >請選擇查詢標的</option>';
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3702" >3702 安本環球-亞太股票基金(美元) </option>';
+	}
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3704" >3704 安本環球-日本股票基金(日圓) </option>';
+	}
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3705" >3705 安本環球-英國股票基金(英鎊) </option>';
+	}
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3709" >3709 安本環球-新興市場小型公司(美元) </option>';
+	}
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3710" >3710 安本環球-亞洲小型公司基金(美元) </option>';
+	}
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3711" >3711 安本環球-中國股票基金(美元) </option>';
+	}
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3712" >3712 安本環球-新興市場股票基金(美元) </option>';
+	}
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3713" >3713 安本環球-拉丁美洲股票基金(美元) </option>';
+	}
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3714" >3714 安本環球-新興市場債券基金-不配息(美元) </option>';
+	}
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3781" >3781 安本環球-新興市場債券基金-月配現(美元) </option>';
+	}
+	
+
+	if('001'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3782" >3782 安本環球-歐元高收益債券基金A1-月配現(歐元) </option>';
+	}
+	
+
+	if('002'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3401" >3401 柏瑞環球債券基金A(美元) </option>';
+	}
+	
+
+	if('002'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3402" >3402 柏瑞歐洲小型公司股票基金A1(歐元) </option>';
+	}
+	
+
+	if('002'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3405" >3405 柏瑞歐洲股票基金A(美元) </option>';
+	}
+	
+
+	if('002'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3406" >3406 柏瑞日本新遠景股票基金A(美元) </option>';
+	}
+	
+
+	if('002'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3407" >3407 柏瑞日本新遠景股票基金A3(日圓) </option>';
+	}
+	
+
+	if('002'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3408" >3408 柏瑞拉丁美洲股票基金A(美元) </option>';
+	}
+	
+
+	if('002'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3409" >3409 柏瑞印度股票基金A(美元) </option>';
+	}
+	
+
+	if('002'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3410" >3410 柏瑞拉丁美洲中小型公司股票基金A(美元)**僅接受小額申購** </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1701" >1701 聯博國際科技A股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1702" >1702 聯博美國成長A股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1703" >1703 聯博新興市場成長A股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1704" >1704 聯博印度成長AX股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1705" >1705 聯博美國收益A2股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1706" >1706 聯博國際醫療A股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1708" >1708 聯博全球成長趨勢A股(美元) </option>';
+	}
+	
+
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1710" >1710 聯博房貸收益A2股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1711" >1711 聯博美國收益AT股-月配息(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1712" >1712 聯博全球高收益債券AT股-月配息(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1713" >1713 聯博全球高收益債券A2股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1715" >1715 聯博歐洲收益AT股-月配息(歐元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1716" >1716 聯博歐洲收益A2股(歐元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1717" >1717 聯博歐洲價值型A股(歐元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1718" >1718 聯博全球價值型A股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1727" >1727 聯博全球債券AT股-月配息(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1728" >1728 聯博全球債券A2股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1729" >1729 聯博印度成長A股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1730" >1730 聯博新興市場債券A2股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1731" >1731 聯博新興市場債券AT股-月配息(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1732" >1732 聯博全球高收益債券AT股歐元避險-月配息(歐元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1733" >1733 聯博全球高收益債券A2股歐元避險(歐元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1735" >1735 聯博新興市場債券AT股澳幣避險-月配息(澳幣) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1736" >1736 聯博美國收益AT股澳幣避險-月配息(澳幣) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1737" >1737 聯博全球前瞻主題基金A股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1738" >1738 聯博全球高收益債券AT股-月配息(澳幣避險) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1739" >1739 聯博亞洲股票基金A股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1740" >1740 聯博亞洲股票基金AD股-月配息(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1741" >1741 聯博亞洲股票基金A股(澳幣避險) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1742" >1742 聯博亞洲股票基金AD股-月配息(澳幣避險) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1743" >1743 聯博美國收益基金A2股(歐元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1744" >1744 聯博美國收益基金AT股-月配現(歐元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1745" >1745 聯博美國收益基金AT股-月配現(歐元避險) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1746" >1746 聯博全球不動產證券基金A股(美元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1747" >1747 聯博全球不動產證券基金A股(歐元) </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1748" >1748 聯博全球高收益債券基金AA美元-穩定月配現 </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1749" >1749 聯博全球高收益債券基金AA南非幣避險-穩定月配現 </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1753" >1753 聯博新興市場債券基金AA美元-穩定月配現 </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1754" >1754 聯博新興市場債券基金AA澳幣避險-穩定月配現 </option>';
+	}
+	
+
+	if('003'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1755" >1755 聯博新興市場債券基金AA南非幣避險-穩定月配現 </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0708" >0708 霸菱亞洲增長(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0709" >0709 霸菱國際債券-半年配權(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0710" >0710 霸菱香港中國(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0712" >0712 霸菱歐寶(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0713" >0713 霸菱大東協(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0714" >0714 霸菱澳洲(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0715" >0715 霸菱全球新興市場(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0716" >0716 霸菱拉丁美洲(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0717" >0717 霸菱韓國(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0718" >0718 霸菱全球資源(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0721" >0721 霸菱高收益債券-季配權(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0723" >0723 霸菱東歐(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0726" >0726 霸菱高收益債券-月配息(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0727" >0727 霸菱高收益債券-歐元避險-年配權(歐元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0728" >0728 霸菱東歐(歐元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0729" >0729 霸菱高收益債券基金-月配現(加幣避險) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0730" >0730 霸菱高收益債券基金-月配現(澳幣避險) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0731" >0731 霸菱高收益債券基金-月配現(紐幣避險) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F301" >F301 霸菱歐洲精選信託基金-半年配(歐元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F302" >F302 霸菱全球農業基金A-累積(美元) </option>';
+	}
+	
+
+	if('005'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F303" >F303 霸菱全球農業基金-A類歐元 </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0401" >0401 德盛小龍(美元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0402" >0402 德盛老虎(美元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0404" >0404 德盛印尼(美元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0406" >0406 德盛泰國(美元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0412" >0412 德盛香港(美元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0414" >0414 德盛日本(美元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0416" >0416 德盛新興亞洲(美元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0419" >0419 德盛韓國(美元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0427" >0427 德盛全球高成長科技(美元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0430" >0430 德盛東方入息-A配息類股(美元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1501" >1501 德盛德利全球資源產業(歐元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1502" >1502 德盛德利全球高科技(歐元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1503" >1503 德盛德利全球股票(歐元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1504" >1504 德盛德利歐洲(歐元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1505" >1505 德盛德利全球生物科技(歐元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1506" >1506 德盛德利全球多媒體(歐元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1507" >1507 德盛德利德國(歐元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1512" >1512 德盛德利歐洲債券(歐元) </option>';
+	}
+	
+
+	if('007'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1514" >1514 德盛德利國際債券(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0201" >0201 富達日本基金(日圓) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0202" >0202 富達東南亞基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0203" >0203 富達歐洲基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0204" >0204 富達美國基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0205" >0205 富達德國基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0206" >0206 富達東協基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0207" >0207 富達馬來西亞基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0208" >0208 富達法國基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0209" >0209 富達南歐基金(歐元)(103/1/20起全行每日限額300萬歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0210" >0210 富達義大利基金(歐元)(103/1/20起全行每日限額300萬歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0211" >0211 富達北歐基金(瑞幣) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0212" >0212 富達新加坡基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0213" >0213 富達大中華基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0214" >0214 富達歐元債券基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0215" >0215 富達英國基金(英鎊) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0216" >0216 富達澳洲基金(澳幣) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0217" >0217 富達日本小型企業基金(日圓) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0218" >0218 富達美元貨幣基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0221" >0221 富達泰國基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0222" >0222 富達澳元貨幣基金(澳幣) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0223" >0223 富達國際債券基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0224" >0224 富達新興市場基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0225" >0225 富達拉丁美洲基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0226" >0226 富達太平洋基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0229" >0229 富達印尼基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0230" >0230 富達韓國基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0231" >0231 富達國際基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0232" >0232 富達歐洲小型企業基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0234" >0234 富達美國成長基金(美元) </option>';
+	}
+	
+
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0235" >0235 富達瑞士基金(瑞郎) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0237" >0237 富達歐洲進取基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0238" >0238 富達歐洲平衡基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0239" >0239 富達歐元貨幣基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0240" >0240 富達英鎊貨幣基金(英鎊) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0241" >0241 富達歐元現金基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0242" >0242 富達美元現金基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0243" >0243 富達世界基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0244" >0244 富達美元債券基金-半年配權(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0245" >0245 富達歐洲高收益基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0246" >0246 富達歐洲高收益基金-月配息(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0247" >0247 富達歐元債券基金-月配息(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0248" >0248 富達美元債券基金-月配息(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0249" >0249 富達歐洲動能基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0250" >0250 富達美元高收益基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0251" >0251 富達美元高收益基金-月配息(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0252" >0252 富達英鎊債券基金-季配權(英鎊) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0255" >0255 富達全球金融服務基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0256" >0256 富達全球工業基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0257" >0257 富達全球電訊基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0258" >0258 富達歐洲大型企業基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0259" >0259 富達印度聚焦基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0260" >0260 富達亞洲高收益基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0261" >0261 富達亞洲高收益基金-月配息(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0262" >0262 富達新興市場債券基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0263" >0263 富達新興市場債券基金-月配息(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0265" >0265 富達亞洲高收益基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0266" >0266 富達東南亞基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0268" >0268 富達美元高收益基金(收益型) -月配息(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0269" >0269 富達中國聚焦基金(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0270" >0270 富達中國聚焦基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0271" >0271 富達中國內需消費基金-累積(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0272" >0272 富達中國內需消費基金-累積(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0273" >0273 富達美元高收益基金-累積(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0274" >0274 富達美元高收益基金基金-累積(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0275" >0275 富達新興市場債券基金-累積(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0276" >0276 富達新興市場債券基金(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0277" >0277 富達美元債券基金-累積(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0278" >0278 富達亞太入息基金-半年配權(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0279" >0279 富達亞太入息基金A-F1穩定月配現(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0280" >0280 富達全球健康護理基金A-歐元 </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0281" >0281 富達全球健康護理基金A-美元累積 </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0282" >0282 富達美元高收益基金F1-穩定月配現-美元 </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0283" >0283 富達亞洲高收益基金F1-穩定月配現(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0284" >0284 富達新興市場債券F1-穩定月配現(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0285" >0285 富達歐洲高收益基金F1-穩定月配現(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0286" >0286 富達歐洲高收益基金A-歐元累積(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0287" >0287 歐洲高收益基金-美元避險月配現(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0288" >0288 富達歐洲高收益基金A-美元避險累積(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0289" >0289 富達全球入息基金A-累積(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0290" >0290 富達全球入息基金A-歐元避險累積(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0291" >0291 富達全球入息基金A-美元F1穩定月配現(美元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0292" >0292 富達全球入息基金A-歐元F1穩定月配現(歐元) </option>';
+	}
+	
+
+	if('008'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0293" >0293 富達全球入息基金A股H澳幣避險月配現(澳幣) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0801" >0801 富蘭克林黃金(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0802" >0802 富蘭克林成長(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0803" >0803 富蘭克林公用事業-季配權(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0804" >0804 富蘭克林高科技(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0806" >0806 富蘭克林潛力組合(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0809" >0809 富蘭克林高成長(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0821" >0821 富蘭克林坦伯頓成長-美國註冊(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0822" >0822 富蘭克林坦伯頓世界(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0823" >0823 富蘭克林坦伯頓全球-美國註冊(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0824" >0824 富蘭克林坦伯頓外國(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0825" >0825 富蘭克林坦伯頓開發中國家(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0826" >0826 富蘭克林坦伯頓中小型公司成長(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0828" >0828 富蘭克林坦伯頓法人機構專用(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1401" >1401 富蘭克林坦伯頓美國政府-月配權 (美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1402" >1402 富蘭克林坦伯頓公司債基金-月配權 (美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1404" >1404 富蘭克林坦伯頓全球-盧森堡註冊(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1405" >1405 富蘭克林坦伯頓中小型企業(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1406" >1406 富蘭克林坦伯頓新興國家(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1407" >1407 富蘭克林坦伯頓美元短期票券-月配權(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1408" >1408 富蘭克林坦伯頓新興國家固定收益-季配權(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1410" >1410 富蘭克林坦伯頓歐元全球(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1412" >1412 富蘭克林坦伯頓亞洲成長(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1413" >1413 富蘭克林坦伯頓歐洲(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1414" >1414 富蘭克林坦伯頓拉丁美洲(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1415" >1415 富蘭克林坦伯頓美國政府-月配息(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1416" >1416 富蘭克林坦伯頓公司債-月配息(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1417" >1417 富蘭克林坦伯頓新興國家固定收益-季配息(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1419" >1419 富蘭克林坦伯頓歐元短期票券(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1421" >1421 富蘭克林坦伯頓歐洲(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1423" >1423 富蘭克林坦伯頓全球債券-月配權(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1425" >1425 富蘭克林坦伯頓全球債券-月配息(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1427" >1427 富蘭克林坦伯頓全球平衡-季配權(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1428" >1428 富蘭克林坦伯頓東歐(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1429" >1429 富蘭克林坦伯頓泰國(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1430" >1430 富蘭克林坦伯頓潛力歐洲(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1432" >1432 富蘭克林坦伯頓成長-盧森堡註冊(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fun</option433" >1433 富蘭克林坦伯頓高價差(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1434" >1434 富蘭克林坦伯頓互利歐洲(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1435" >1435 富蘭克林坦伯頓互利歐洲(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1436" >1436 富蘭克林坦伯頓全球股票收益-季配權(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1437" >1437 富蘭克林坦伯頓韓國(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1438" >1438 富蘭克林坦伯頓印度(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1439" >1439 富蘭克林坦伯頓亞洲債券-月配權(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1440" >1440 富蘭克林坦伯頓歐洲高收益-月配息(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1441" >1441 富蘭克林坦伯頓科技(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1442" >1442 富蘭克林坦伯頓日本(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1444" >1444 富蘭克林坦伯頓金磚四國(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1445" >1445 富蘭克林坦伯頓新興國家固定收益-月配息(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1446" >1446 富蘭克林坦伯頓東歐(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1447" >1447 富蘭克林坦伯頓天然資源(美元) </option>';
+	}
+	
+
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1448" >1448 富蘭克林坦伯頓大中華基金(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1449" >1449 富蘭克林坦伯頓全球投資系列亞洲債券基金美元A股-月配現 </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1450" >1450 富蘭克林坦伯頓全球投資系列新興國家基金(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1451" >1451 富蘭克林坦伯頓全球投資系列全球平衡基金(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1452" >1452 富蘭克林坦伯頓全球投資系列全球基金(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1453" >1453 富蘭克林坦伯頓全球投資系列亞洲成長基金(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1454" >1454 富蘭克林坦伯頓全球投資系列拉丁美洲基金(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1455" >1455 富蘭克林坦伯頓生技領航基金(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1456" >1456 富蘭克林坦伯頓穩定月收益基金-月配現(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1457" >1457 富蘭克林坦伯頓穩定月收益基金-月配權(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1458" >1458 富蘭克林坦伯頓亞洲小型企業基金(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1459" >1459 富蘭克林坦伯頓全球債券總報酬基金-A-累積(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1460" >1460 富蘭克林坦伯頓全球債券總報酬基金-A-月配現( 美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1461" >1461 富蘭克林坦伯頓全球債券總報酬基金-A-月配現( 歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1462" >1462 富蘭克林坦伯頓全球債券總報酬基金-A-月配現( 澳幣避險) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1463" >1463 富蘭克林坦伯頓公司債(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1464" >1464 富蘭克林坦柏頓歐洲高收益基金-年配現(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1465" >1465 富蘭克林坦伯頓歐洲高收益基金-累積(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1466" >1466 富蘭克林坦伯頓歐洲高收益基金-月配現(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1467" >1467 富蘭克林坦伯頓新興國家小型企業基金(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1468" >1468 富蘭克林坦伯頓新興國家小型企業基金(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2801" >2801 富蘭克林坦伯頓公司債-B股-月配息(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2802" >2802 富蘭克林坦伯頓公司債-B股-月配權(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2803" >2803 富蘭克林坦伯頓美國政府-B股-月配息(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2805" >2805 富蘭克林坦伯頓全球債券-B股-月配息(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2806" >2806 富蘭克林坦伯頓全球債券-B股-月配權(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2808" >2808 富蘭克林坦伯頓新興國家-B股(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2809" >2809 富蘭克林坦伯頓全球平衡-B股(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2810" >2810 富蘭克林坦伯頓全球-盧森堡註冊-B股(美元) </option>';
+	}
+
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2811" >2811 富蘭克林坦伯頓新興國家固定收益-B股-季配息(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2812" >2812 富蘭克林坦伯頓亞洲債券-B股(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2813" >2813 富蘭克林坦伯頓全球股票收益-B股(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2814" >2814 富蘭克林坦伯頓美元短期票券-B股(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2815" >2815 富蘭克林坦伯頓亞洲成長-B股(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2816" >2816 富蘭克林坦伯頓拉丁美洲-B股(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2817" >2817 富蘭克林坦伯頓亞洲小型企業基金-B股(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2818" >2818 富蘭克林坦伯頓穩定月收益基金-B股(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2819" >2819 富蘭克林坦伯頓生技領航基金-B股(美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2820" >2820 富蘭克林坦伯頓全球債券總報酬基金-B-月配現( 美元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2821" >2821 富蘭克林坦伯頓歐洲高收益基金B股-月配現(歐元) </option>';
+	}
+	
+
+	if('009'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2822" >2822 富蘭克林坦伯頓歐洲高收益基金B股-月配現(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0309" >0309 景順美元儲備基金A股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0313" >0313 景順泛歐洲基金A股(歐元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0317" >0317 景順日本小型企業基金A股(日圓) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0319" >0319 景順消閒基金A股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0320" >0320 景順全歐洲企業基金A股(歐元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0325" >0325 景順能源基金A股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0326" >0326 景順歐元儲備基金A股(歐元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0327" >0327 景順新興市場債券基金A-固定月配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0328" >0328 景順歐元通脹掛鉤債券基金A股(歐元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0329" >0329 景順歐洲動力基金A-年配權股(歐元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0332" >0332 景順天下地產證券基金A-年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0334" >0334 景順歐洲指標增值基金A股(歐元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0336" >0336 景順大中華基金A股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0337" >0337 景順亞洲平衡基金A-季配現股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0338" >0338 景順亞洲富強基金A股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0339" >0339 景順日本股票優勢基金A股(日圓) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0340" >0340 景順日本小型企業基金A-年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1601" >1601 景順東協基金A-年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1604" >1604 景順韓國基金A-年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1607" >1607 景順開發中市場基金A-年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1608" >1608 景順健康護理A-年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1609" >1609 景順科技基金A-年配權股 (美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1611" >1611 景順債券基金A-半年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1612" >1612 景順策略債券基金A股-半年配權(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1613" >1613 景順日本基金A-年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1614" >1614 景順歐洲大陸企業基金A-年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1618" >1618 景順債券基金A-月配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1619" >1619 景順策略債券基金A-固定月配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1620" >1620 景順中國基金A-年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1621" >1621 景順中國基金A(歐元對沖)股(歐元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1622" >1622 景順環球企業基金A-年配權股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1623" >1623 景順新興貨幣債券基金A(歐元對沖)股 (歐元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2901" >2901 景順策略債券基金A-固定月配現股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2902" >2902 景順新興市場債券基金A-固定月配現股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2903" >2903 景順債券基金A-月配現股(美元) </option>';
+	}
+	
+
+	if('010'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2904" >2904 景順新興貨幣債券基金A-固定月配現股(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0101" >0101 摩根日本(日圓)基金 </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0102" >0102 摩根日本科技基金(日圓) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0103" >0103 摩根亞太入息基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0104" >0104 摩根太平洋證券(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0105" >0105 摩根東協基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0106" >0106 摩根泰國基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0107" >0107 摩根美國增長(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0108" >0108 摩根馬來西亞基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0111" >0111 摩根貨幣美元基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0118" >0118 摩根貨幣基金-港元(港幣) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0122" >0122 摩根日本小型企業(日圓)基金 </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0123" >0123 摩根澳洲基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0132" >0132 摩根國際債券及貨幣-半年配權(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0133" >0133 摩根東方基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0134" >0134 摩根東方小型企業基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0136" >0136 摩根歐洲(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0137" >0137 摩根南韓基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0139" >0139 摩根歐元區股票(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0140" >0140 摩根菲律賓基金(美元) </option>';
+
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0141" >0141 摩根日本店頭市場基金(日圓) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0145" >0145 摩根東歐基金(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0147" >0147 摩根太平洋科技(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0149" >0149 摩根環球靈活策略股票(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0151" >0151 摩根印度基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0152" >0152 摩根歐洲小型企業(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0153" >0153 摩根美國科技(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0154" >0154 摩根歐洲科技(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0155" >0155 摩根美國小型企業(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0157" >0157 摩根拉丁美洲(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0158" >0158 摩根歐洲動力(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0160" >0160 摩根歐元基金(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0162" >0162 摩根歐洲動力巨型企業(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0164" >0164 摩根新興中東(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0165" >0165 摩根富林明環球天然資源(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0166" >0166 摩根環球地產入息-季配權(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0167" >0167 摩根富林明歐洲策略成長(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0168" >0168 摩根新興歐洲、中東及非洲(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0169" >0169 摩根新興市場債券(歐元對沖)-年配息 </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0170" >0170 摩根富林明環球均衡(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0171" >0171 摩根環球可換股證券(歐元對沖)A股(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0172" >0172 摩根環球可換股證券(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0173" >0173 摩根美國複合收益(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0174" >0174 摩根中國(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0175" >0175 摩根大中華(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0176" >0176 摩根全方位新興市場(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0178" >0178 摩根環球天然資源(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0179" >0179 摩根巴西(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0180" >0180 摩根新興市場債券-(歐元對沖)月配息 </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0181" >0181 摩根新興市場本地貨幣債券(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0182" >0182 摩根新興市場本地貨幣債券-月配息(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0183" >0183 摩根新興市場債券(美元)-月配息 </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0184" >0184 摩根環球高收益債券基金(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0185" >0185 摩根環球高收益債券基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0186" >0186 摩根環球高收益債券基金-月配現(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0187" >0187 摩根東歐基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0188" >0188 摩根美國複合收益-月配息(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0189" >0189 摩根多重收益基金-季配息(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0190" >0190 摩根多重收益基金-季配息(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0191" >0191 摩根多重收益基金-月配現(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0192" >0192 摩根亞太入息基金-月配現(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0193" >0193 摩根環球高收益債券基金-月配現(澳幣對沖)(利率入息) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0194" >0194 摩根多重收益基金-月配現(澳幣對沖)(利率入息) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0196" >0196 摩根歐洲小型企業基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0197" >0197 摩根歐洲動力基金(美元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0198" >0198 摩根歐元貨幣基金(歐元) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=0199" >0199 摩根日本(日圓) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=01A1" >01A1 摩根日本(美元對沖)-A股(累計) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=01A2" >01A2 摩根美國增長(澳幣)-A股(累計) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=01A3" >01A3 摩根歐洲動力(澳幣對沖)-A股(累計) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=01A4" >01A4 摩根美元貨幣基金(美元)-A股(累計) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=01A5" >01A5 摩根多重收益基金-A股累計(美元對沖) </option>';
+	}
+	
+
+	if('011'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=01A6" >01A6 摩根環球醫療科技基金-A股累計(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4101" >4101 貝萊德亞洲老虎債券A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4104" >4104 貝萊德歐元優質債券A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4105" >4105 貝萊德環球高收益債券A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4106" >4106 貝萊德美元高收益債券A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4107" >4107 貝萊德美國政府房貸債券A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4108" >4108 貝萊德環球政府債券A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4109" >4109 貝萊德美元優質債券A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4112" >4112 貝萊德世界健康科學A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4113" >4113 貝萊德世界黃金A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4114" >4114 貝萊德世界礦業A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4115" >4115 貝萊德新能源A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4116" >4116 貝萊德世界能源A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4117" >4117 貝萊德拉丁美洲A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4118" >4118 貝萊德新興歐洲A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4119" >4119 貝萊德新興市場A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4120" >4120 貝萊德歐元市場A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4121" >4121 貝萊德歐洲A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4123" >4123 貝萊德歐洲特別時機A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4124" >4124 貝萊德歐洲靈活股票A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4125" >4125 貝萊德世界金融A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4131" >4131 貝萊德美國價值型A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4135" >4135 貝萊德英國A2股(英鎊) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4136" >4136 貝萊德印度A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4137" >4137 貝萊德環球小型企業A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4140" >4140 貝萊德環球特別時機A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4141" >4141 貝萊德日本特別時機A2股(日圓) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4142" >4142 貝萊德美國特別時機A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4144" >4144 貝萊德環球資產配置A2(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4147" >4147 貝萊德美元儲備A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4148" >4148 貝萊德美林世界礦業A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4149" >4149 貝萊德拉丁美洲A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4150" >4150 貝萊德環球資產配置A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4151" >4151 貝萊德新能源A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4152" >4152 貝萊德世界黃金A2股(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4155" >4155 貝萊德新興歐洲A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4156" >4156 貝萊德多元資產Hedged A2股(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4157" >4157 貝萊德美元高收益債券基金Hedged A2(澳幣) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4158" >4158 貝萊德中國基金(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4159" >4159 貝萊德世界農業基金A2(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4160" >4160 貝萊德世界農業基金Hedged A2(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4161" >4161 貝萊德亞洲巨龍基金A2(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4162" >4162 貝萊德亞洲巨龍基金A2(歐元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4180" >4180 貝萊德亞洲老虎債券A3股-月配息(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4181" >4181 貝萊德歐元優質債券A3股-月配息(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4182" >4182 貝萊德環球高收益債券A3股-月配息(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4183" >4183 貝萊德美元高收益債券A3股-月配息(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4184" >4184 貝萊德美國政府房貸債券A3股-月配息(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4185" >4185 貝萊德美元優質債券A3股-月配息(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4186" >4186 貝萊德美元高收益債券基金Hedged A3-月配息(澳幣) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4187" >4187 貝萊德美元高收益債券基金A6-穩定月配息(美元) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4188" >4188 貝萊德美元高收益債券基金A8多幣別穩定月配-澳幣避險(澳幣) </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4189" >4189 貝萊德環球高收益債券基金A6美元-穩定月配現 </option>';
+	}
+	
+
+	if('012'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4190" >4190 貝萊德環球高收益債券基金A8澳幣-穩定月配現 </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1902" >1902 施羅德(環)美國大型股A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1903" >1903 施羅德(環)美國小型公司A1(美元)**暫停接受單筆申購及轉入** </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1904" >1904 施羅德(環)歐元股票A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1905" >1905 施羅德(環)歐洲收益股票A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1906" >1906 施羅德(環)歐洲大型股A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1907" >1907 施羅德(環)歐洲小型公司A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1908" >1908 施羅德(環)英國股票A1(英鎊) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1909" >1909 施羅德(環)義大利股票A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1912" >1912 施羅德(環)日本小型公司A1(日圓) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1913" >1913 施羅德(環)新興市場A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1914" >1914 施羅德(環)美元債券A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1917" >1917 施羅德(環)亞洲債券A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1918" >1918 施羅德(環)新興市場債券A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1919" >1919 施羅德(環)環球債券A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1920" >1920 施羅德(環)日本股票A1(日圓) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1921" >1921 施羅德(環)香港股票A1(港幣) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1923" >1923 施羅德(環)歐元債券A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1924" >1924 施羅德(環)亞洲債券A1-月配息(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1925" >1925 施羅德(環)新興市場債券A1-月配息 (美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1929" >1929 施羅德(環)新興亞洲A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1931" >1931 施羅德(環)新興歐洲A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1932" >1932 施羅德(環)歐元財富A1 (歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1933" >1933 施羅德(環)歐元企業債券A1 (歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1934" >1934 施羅德(環)新興市場債券(歐元對沖)A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1935" >1935 施羅德(環)新興市場債券(歐元對沖)A1-月配息(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1936" >1936 施羅德(環)歐元流動A(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1937" >1937 施羅德(環)美元流動A(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1938" >1938 施羅德(環)韓國股票A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1939" >1939 施羅德(環)歐元財富A1-年配息(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1940" >1940 施羅德(環)拉丁美洲A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1942" >1942 施羅德(環)歐洲進取股票A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1943" >1943 施羅德(環)瑞士股票A1(瑞郎) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1944" >1944 施羅德(環)瑞士中小型股票A1(瑞郎) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1946" >1946 施羅德(環)歐元政府債券A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1947" >1947 施羅德(環)歐元短期債券A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1949" >1949 施羅德(環)歐洲小型公司A1 (美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1950" >1950 施羅德(環</option1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1951" >1951 施羅德(環)新興歐洲A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1952" >1952 施羅德(環)亞洲債券A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1953" >1953 施羅德(環)亞洲債券A1-月配息(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1954" >1954 施羅德(環)歐元財富A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1955" >1955 施羅德(環)歐元財富A1-年配息(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1957" >1957 施羅德(環)環球計量精選價值A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1958" >1958 施羅德(環)美國中小型股票A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1959" >1959 施羅德(環)新興市場A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1960" >1960 施羅德(環)新興亞洲A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1961" >1961 施羅德(環)拉丁美洲A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1962" >1962 施羅德(環)環球計量精選價值A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1963" >1963 施羅德(環)環球能源 A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1966" >1966 施羅德(環)環球企業債券A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1967" >1967 施羅德(環)環球企業債券A1-月配息(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1968" >1968 施羅德(環)新興市場股債優勢A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1969" >1969 施羅德(環)環球氣候變化策略A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1970" >1970 施羅德(環)金磚四國A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1971" >1971 施羅德(環)新興市場債券(澳幣對沖) A1-月配息(澳幣) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1972" >1972 施羅德(環)環球高收益A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1973" >1973 施羅德(環)環球高收益A1-月配息(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1974" >1974 施羅德(環)環球高收益(歐元對沖)A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1975" >1975 施羅德(環)環球高收益(澳幣對沖)A1-月配息(澳幣) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1976" >1976 施羅德(環)香港股票A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1977" >1977 施羅德(環)亞洲收益股票基金A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1978" >1978 施羅德(環)亞洲收益股票基金A1-月配息(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1979" >1979 施羅德(環)環球企業債券基金(澳幣對沖)A1-月配現(澳幣) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1980" >1980 施羅德(環)環球收益股票A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1981" >1981 施羅德(環)環球收益股票基金A1-月配現(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1982" >1982 施羅德(環)環球收益股票A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1983" >1983 施羅德(環)中國優勢A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1984" >1984 施羅德(環)亞洲小型公司A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1985" >1985 施羅德(環)亞太地產股票A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1986" >1986 施羅德(環)日本股票(歐元對沖)A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1987" >1987 施羅德(環)日本股票(美元對沖)A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1988" >1988 施羅德(環)中東海灣 A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1989" >1989 施羅德(環)中東海灣(歐元) A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1990" >1990 施羅德(環)環球可轉換債券A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1991" >1991 施羅德(環)環球可轉換債券(歐元對沖)A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1992" >1992 施羅德(環)亞洲可轉換債券A1(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1993" >1993 施羅德(環)亞洲可轉換債券(歐元對沖)A1(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1997" >1997 施羅德(環)環球股債收息A(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1998" >1998 施羅德(環)環球股債收息A-月配現(美元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1999" >1999 施羅德(環)環球股債收息(歐元對沖)A(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=19A1" >19A1 施羅德(環)環球股債收息(歐元對沖)A-季配現(歐元) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=19A2" >19A2 施羅德(環)環球股債收息(澳幣對沖)A-月配現(澳幣) </option>';
+	}
+	
+
+	if('013'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=19A3" >19A3 施羅德(環)亞洲優勢A(美元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4603" >4603 瀚亞投資-M&G泛歐基金(歐元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4604" >4604 瀚亞投資-M&G全球民生基礎基金(歐元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4608" >4608 瀚亞投資-M&G美國基金(歐元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4609" >4609 瀚亞投資-M&G歐洲小型股基金(歐元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4651" >4651 瀚亞投資-亞洲債券基金(美元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4652" >4652 瀚亞投資-美國優質債券基金(美元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4653" >4653 瀚亞投資-中國股票基金(美元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4654" >4654 瀚亞投資- 優質公司債基金(美元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4655" >4655 瀚亞投資- 美國高收益債券基金(美元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4681" >4681 瀚亞投資-亞洲債券基金Adm-月配現(美元) </option>';
+	}
+
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4682" >4682 瀚亞投資-美國優質債券基金-月配現(美元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4683" >4683 瀚亞投資- 亞洲債券-澳幣避險月配(澳幣) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4684" >4684 瀚亞投資- 優質公司債基金-月配現(美元) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4685" >4685 瀚亞投資- 優質公司債-澳幣避險月現(澳幣) </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4686" >4686 瀚亞投資- 美國高收益債券-月配現 </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4687" >4687 瀚亞投資- 美國高收益債券 -澳幣避險月現 </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4688" >4688 瀚亞投資-美國高收益債券基金Azdmcl-南非幣穩定月配現 </option>';
+	}
+	
+
+	if('014'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4689" >4689 瀚亞投資- 美國高收益債券基金 Andmc1-紐幣避險穩定月配現 </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1205" >1205 法巴百利達拉丁美洲股票基金-C股(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1206" >1206 法巴百利達澳洲股票基金-C股(澳幣) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1207" >1207 法巴百利達巴西股票基金-C股(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1208" >1208 法巴百利達金磚四國股票基金-C股(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1209" >1209 法巴百利達亞洲可換股債券基金-C股(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1210" >1210 法巴百利達美元政府債券基金-C股(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1211" >1211 法巴百利達美國高收益債券基金-C股(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1212" >1212 法巴百利達亞洲(日本除外)債券基金-C股 (美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1213" >1213 法巴百利達全球高收益債券-H股(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1214" >1214 法巴百利達全球高收益債券基金-C股 (歐元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1215" >1215 法巴百利達全球新興市場精選債券基金-C股(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1216" >1216 法巴百利達全球新興市場精選債券基金-H股(歐元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1217" >1217 法巴百利達全球能源股票基金-C股(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1218" >1218 法巴百利達全球公用事業基金-C股(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1220" >1220 法巴百利達全球原物料股票基金- C股 (美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1221" >1221 法巴百利達俄羅斯股票基金-C股 (美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1222" >1222 法巴百利達新興市場當地貨幣債券基金-C股 (美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1280" >1280 法巴百利達亞洲可換股債券基金-MD股-月配現(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1281" >1281 法巴百利達美元政府債券基金-D股-月配現(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1282" >1282 法巴百利達美國高收益債券基金-MD股-月配現(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1284" >1284 法巴百利達全球高收益債券基金-H股-年配現(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1285" >1285 法巴百利達全球高收益債券基金-MD股-月配現(美元) </option>';
+	}
+	
+
+	if('017'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1286" >1286 法巴百利達全球新興市場精選債券基金-MD股-月配現(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3201" >3201 瑞銀(盧森堡)生化股票(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3202" >3202 瑞銀(盧森堡)保健股票(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3206" >3206 瑞銀(盧森堡)歐洲中型股票(歐元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3207" >3207 瑞銀(盧森堡)中歐股票(歐元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3208" >3208 瑞銀(盧森堡)中國精選股票(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3209" >3209 瑞銀(盧森堡)新加坡股票(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3211" >3211 瑞銀(盧森堡)日本中小型股票(日圓) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3213" >3213 瑞銀(盧森堡)美國小型股票(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3214" >3214 瑞銀(盧森堡)美元債券(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3216" >3216 瑞銀(盧森堡)歐元高收益債券(歐元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3217" >3217 瑞銀(盧森堡)澳幣基金(澳幣) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3218" >3218 瑞銀(盧森堡)歐元基金(歐元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3219" >3219 瑞銀(盧森堡)英鎊基金(英鎊) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3220" >3220 瑞銀(盧森堡)美元基金(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3224" >3224 瑞銀(盧森堡)策略基金－固定收益型(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3226" >3226 瑞銀(盧森堡)策略基金－收益型(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3229" >3229 瑞銀(盧森堡)策略基金－增長型(歐元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3230" >3230 瑞銀(盧森堡)策略基金－增長型(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3232" >3232 瑞銀(盧森堡)策略基金－股票型(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3233" >3233 瑞銀(盧森堡)新興市場債券(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3234" >3234 瑞銀(盧森堡)加拿大股票(加幣) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3235" >3235 瑞銀(盧森堡)全球戰略配置(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3236" >3236 瑞銀(盧森堡)全球戰略配置(歐元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3237" >3237 瑞銀(盧森堡)美國增長股票(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3238" >3238 瑞銀(盧森堡)美國精選股票(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3239" >3239 瑞銀(盧森堡)美元高收益債券(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3240" >3240 瑞銀(盧森堡)新興市場債券-月配現(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3241" >3241 瑞銀(盧森堡)加幣基金(加幣) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3242" >3242 瑞銀(盧森堡)全球可轉換債券(歐元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3243" >3243 瑞銀(盧森堡)歐元高收益債券-月配現(歐元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3244" >3244 瑞銀(盧森堡)俄羅斯股票(美元) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3245" >3245 瑞銀(盧森堡)歐元高收益債券基金-月配現(美元避險) </option>';
+	}
+	
+
+	if('019'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3246" >3246 瑞銀(盧森堡)歐元高收益債券基金-月配現(澳幣避險) </option>';
+	}
+	
+
+	if('021'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=1287" >1287 法巴百利達新興市場當地貨幣債券基金-MD股-月配現 (美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2101" >2101 新加坡大華東協(星幣) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2102" >2102 新加坡大華亞洲基金(星幣) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2104" >2104 新加坡大華新加坡增長(星幣) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2105" >2105 新加坡大華亞太增長(星幣) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2106" >2106 新加坡大華國際成長(星幣) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2107" >2107 新加坡大華全球金融(星幣) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2108" >2108 新加坡大華全球科技(星幣) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2111" >2111 新加坡大華新加坡增長(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2112" >2112 新加坡大華亞太增長(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2113" >2113 新加坡大華國際成長(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2114" >2114 新加坡大華全球金融(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2115" >2115 新加坡大華東協(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2116" >2116 新加坡大華黃金及綜合(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2117" >2117 新加坡大華全球保健(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2118" >2118 新加坡大華全球房地產證券(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2119" >2119 新加坡大華全球保健(星幣) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2120" >2120 新加坡大華全球房地產證券(星幣) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2121" >2121 新加坡大華泛華(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2122" >2122 新加坡大華國際債券(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2123" >2123 新加坡大華全球資源(美元) </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2124" >2124 新加坡大華亞洲成長良機基金（星幣） </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2125" >2125 新加坡大華亞洲成長良機基金（美元） </option>';
+	}
+	
+
+	if('022'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2180" >2180 新加坡大華新興市場債券基金-月配息(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2001" >2001 駿利美國各型股增長A股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2002" >2002 駿利美國20A股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2003" >2003 駿利美國創業A股美元 </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2005" >2005 駿利靈活入息A1股-月配息(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2006" >2006 駿利高收益A1股-月配息(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2007" >2007 駿利美國短期債券A1股-月配息(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2009" >2009 駿利環球生命科技A股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2010" >2010 駿利靈活入息A2股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2011" >2011 駿利靈活入息A2股(歐元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2012" >2012 駿利高收益A2股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2016" >2016 駿利美國20-B股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2018" >2018 駿利美國創業B股美元 </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2020" >2020 駿利美國平衡-B股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2022" >2022 駿利靈活入息-B1股-月配息(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2023" >2023 駿利靈活入息-B2股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2025" >2025 駿利高收益-B1股-月配息 (美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2027" >2027 駿利高收益-B2股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2029" >2029 駿利美國短期債券-B1股-月配息(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2030" >2030 駿利美國短期債券-B2股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2035" >2035 駿利環球生命科技-B股(美元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2039" >2039 駿利環球生命科技A股(歐元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2041" >2041 駿利高收益-B1股-月配息(歐元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2042" >2042 駿利美國靈活入息-B1-月配息(歐元) </option>';
+	}
+	
+
+	if('025'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2047" >2047 英達美國重點A股(美元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2408" >2408 天利(盧森堡)全球焦點(美元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2416" >2416 天利(盧森堡)-新興市場債券(美元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2420" >2420 天利(盧森堡)-環球資產配置-月配息(美元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2421" >2421 天利(盧森堡)-全球新興市場短期債券-月配息(美元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2424" >2424 天利(盧森堡)-全球焦點(歐元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2425" >2425 天利(盧森堡)-全球能源股票(美元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2426" >2426 天利(盧森堡)-全球能源股票(歐元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2429" >2429 天利(盧森堡)-泛歐洲股票(美元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2430" >2430 天利(盧森堡)-環球資產配置(歐元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2432" >2432 天利(盧森堡)-新興市場公司債券基金(歐元避險) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2433" >2433 天利(盧森堡)-新興市場公司債券基金(美元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=2434" >2434 天利(盧森堡)-新興市場公司債券基金(歐元避險配息) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3516" >3516 天利(盧森堡)-新興市場債券(上銀金鑽)(美元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3517" >3517 天利(盧森堡)-新興市場債券-月配息(美元) </option>';
+	}
+	
+
+	if('026'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3616" >3616 天利(盧森堡)-新興市場債券(上銀金鑽)(歐元) </option>';
+	}
+	
+
+	if('027'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3004" >3004 匯豐歐洲股票基金(歐元) </option>';
+	}
+	
+
+	if('027'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3006" >3006 匯豐印度股票基金(美元) </option>';
+	}
+	
+
+	if('027'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3007" >3007 匯豐美國股票基金(美元) </option>';
+	}
+	
+
+	if('027'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3012" >3012 匯豐泰國股票基金(美元) </option>';
+	}
+	
+
+	if('027'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3017" >3017 匯豐環球新興市場債券基金-PD類股(美元) </option>';
+	}
+	
+
+	if('027'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3018" >3018 匯豐巴西股票基金(美元) </option>';
+	}
+	
+
+	if('027'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3019" >3019 匯豐環球新興市場債券基金(美元) </option>';
+	}
+	
+
+	if('027'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3080" >3080 匯豐環球新興市場債券基金-月配現(美元) </option>';
+	}
+	
+
+	if('028'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4701" >4701 先機環球債券基金A類累積(美元) </option>';
+	}
+	
+
+	if('028'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4702" >4702 先機完全回報美元債券基金A類累積(美元) </option>';
+	}
+	
+
+	if('028'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4703" >4703 先機亞太股票基金A類累積(美元) </option>';
+	}
+	
+
+	if('028'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4704" >4704 先機歐洲股票基金A類累積(歐元) </option>';
+	}
+	
+
+	if('028'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4706" >4706 先機北美股票基金A類累積(美元) </option>';
+	}
+	
+
+	if('028'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4707" >4707 先機美國入息基金A類累積(美元) </option>';
+	}
+	
+
+	if('028'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4708" >4708 先機大中華股票基金A類累積(美元) </option>';
+	}
+	
+
+	if('028'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4781" >4781 先機完全回報美元債券基金A類收益股-月配現(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3105" >3105 天達美國股票基金Ｃ收益股份(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3106" >3106 天達歐洲股票基金Ｃ收益股份(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3107" >3107 天達環球能源基金Ｃ收益股份(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3108" >3108 天達環球策略股票基金Ｃ收益股份(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3111" >3111 天達環球債券基金Ｃ收益股份－月配權(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3112" >3112 天達環球策略收益基金Ｃ收益２－月配權(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3114" >3114 天達投資評級公司債券基金Ｃ收益２－月配權(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3117" >3117 天達環球黃金基金Ｃ收益股份(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3118" >3118 天達環球策略管理基金Ｃ收益股份(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3119" >3119 天達環球動力基金Ｃ收益股份(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3120" >3120 天達歐元貨幣(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3121" >3121 天達美元貨幣(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3122" >3122 天達環球天然資源基金Ｃ收益股份(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3123" >3123 天達亞洲股票基金Ｃ收益股份(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3124" >3124 天達新興市場當地貨幣債券Ｃ收益２－月配權(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4901" >4901 天達環球債券基金Ｃ收益股份－月配現(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4902" >4902 天達環球策略收益基金Ｃ收益２－月配現(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4904" >4904 天達投資評級公司債券基金Ｃ收益２－月配現(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4906" >4906 天達高收入債券基金Ｃ收益２－月配現(歐元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4907" >4907 天達新興市場當地貨幣債券Ｃ收益２－月配現(美元) </option>';
+	}
+	
+
+	if('030'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4911" >4911 天達新興市場公司債券基金C收益2-月配現(南非幣避險) </option>';
+	}
+	
+
+	if('032'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4001" >4001 亨德森遠見泛歐地產股票基金(歐元) </option>';
+	}
+	
+
+	if('032'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4002" >4002 亨德森遠見泛歐股票基金(歐元) </option>';
+	}
+	
+
+	if('032'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4003" >4003 亨德森遠見日本股票基金(美元) </option>';
+	}
+	
+
+	if('032'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4004" >4004 亨德森遠見泛歐小型公司基金(歐元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4801" >4801 鋒裕策略收益基金A2股(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4802" >4802 鋒裕環球高收益基金A2股(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4803" >4803 鋒裕美國高息基金A2股(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4804" >4804 鋒裕新興歐洲及地中海股票基金A2股(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4809" >4809 鋒裕日本股票基金A2股(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4810" >4810 鋒裕歐洲潛力A2 </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4811" >4811 鋒裕環球生態基金A2(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4812" >4812 鋒裕美元綜合債券基金A2股(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4813" >4813 鋒裕美國中型資本價值基金A2(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4814" >4814 鋒裕美國中型資本價值基金A2(歐元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4815" >4815 鋒裕新興市場債券基金A2(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4816" >4816 鋒裕新興市場債券基金A2(歐元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4817" >4817 鋒裕歐洲研究基金A2(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4818" >4818 鋒裕歐洲研究基金A2(歐元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4821" >4821 鋒裕領先歐洲企業基金A2(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4822" >4822 鋒裕領先歐洲企業A2(歐元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4824" >4824 鋒裕環球生態基金A2(歐元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4881" >4881 鋒裕策略收益基金AXD-月配息(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4882" >4882 鋒裕環球高收益基金AXD-月配息(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4883" >4883 鋒裕美國高息基金AXD-月配息(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4884" >4884 鋒裕策略收益(歐元對沖AXD)-月配息(歐元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4885" >4885 鋒裕美元綜合債券基金AXD-月配息(美元) </option>';
+	}
+	
+
+	if('035'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4886" >4886 鋒裕新興市場債券基金AXD-月配現(美元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4501" >4501 英傑華</option歐元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4502" >4502 英傑華環球可轉債基金(美元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4503" >4503 英傑華歐洲不動產證券基金(歐元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4504" >4504 英傑華全球不動產證券基金(歐元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4505" >4505 英傑華新興市場債券基金(美元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4506" >4506 英傑華新興市場當地貨幣債券基金(歐元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4507" >4507 英傑華新興市場小型股票型基金(美元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4508" >4508 英傑華亞洲股票收益基金(美元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4509" >4509 英傑華全球高收益債券基金(美元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4581" >4581 英傑華新興市場債券基金-月配息(美元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4582" >4582 英傑華新興市場當地貨幣債券基金-月配息(美元) </option>';
+	}
+	
+
+	if('036'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4583" >4583 英傑華全球高收益債券基金-月配息( 美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3901" >3901 ING(L)Renta投資級公司債基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3902" >3902 ING(L)Renta亞洲債券基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3903" >3903 ING(L)美國高股息投資基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3904" >3904 ING(L)環球高股息投資基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3905" >3905 ING(L)食品飲料投資基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3906" >3906 ING(L)歐洲新興市場投資基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3907" >3907 ING(L)歐洲新興市場投資基金(歐元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3908" >3908 ING(L)大中華投資基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3909" >3909 ING(L)Renta環球高收益基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3910" >3910 ING(L)原物料投資基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3911" >3911 ING(L)拉丁美洲投資基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3912" >3912 ING(L)Renta新興市場債券基金(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3913" >3913 ING(L)Renta新興市場債券基金(歐元對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3914" >3914 ING(L)Renta環球高收益基金(歐元對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3915" >3915 ING(L)美國高股息投資基金(歐元對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3916" >3916 ING(L)環球高股息投資基金(歐元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3981" >3981 ING(L)Renta投資級公司債基金-月配息(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3982" >3982 ING(L)Renta亞洲債券基金-月配息(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3983" >3983 ING(L)Renta環球高收益基金-月配息(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3984" >3984 ING(L)Renta新興市場債券基金-月配現(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3985" >3985 ING(L)Renta新興市場債券基金-月配現(澳幣對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3986" >3986 ING(L)Renta投資級公司債基金-月配現(澳幣對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3987" >3987 ING(L)Renta亞洲債券基金-月配現(澳幣對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3988" >3988 ING(L)Renta環球高收益基金-月配現(歐元對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3989" >3989 ING(L)Renta環球高收益基金-月配現(澳幣對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3990" >3990 ING(L)美國高股息投資基金-月配現(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3991" >3991 ING(L)美國高股息投資基金-月配現(澳幣對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3992" >3992 ING(L)美國高股息投資基金-月配現(南非幣對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3993" >3993 ING(L)環球高股息投資基金-月配現(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3994" >3994 ING(L)環球高股息投資基金-月配現(澳幣對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F101" >F101 ING（L）Renta投資級公司債基金Y（美元） </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F102" >F102 ING(L)Renta亞洲債券基金Y(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F108" >F108 ING(L)大中華投資基金Y(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F109" >F109 ING(L)Renta環球高收益基金Y(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F110" >F110 ING(L)原物料投資基金Y(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F111" >F111 ING(L)拉丁美洲投資基金Y(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F112" >F112 ING(L)Renta新興市場債券基金Y(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F113" >F113 ING(L)Renta新興市場債券基金Y(歐元對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F114" >F114 ING(L)Renta環球高收益基金Y(歐元對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F115" >F115 ING(L)美國高股息投資基金Y(美元） </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F116" >F116 ING(L)食品飲料投資基金Y(美元） </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F181" >F181 ING(L)Renta投資級公司債基金Y -月配現(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F182" >F182 ING(L)Renta亞洲債券基金Y-月配現(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F183" >F183 ING(L)Renta環球高收益基金Y-月配現(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F184" >F184 ING(L)Renta新興市場債券基金Y-月配現(美元) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F185" >F185 ING(L)Renta新興市場債券基金Y-月配現(澳幣對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F188" >F188 ING(L)Renta環球高收益基金Y-月配(歐元對沖) </option>';
+	}
+	
+
+	if('039'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F189" >F189 ING(L)Renta環球高收益基金Y-月配現(澳幣對沖) </option>';
+	}
+	
+
+	if('041'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5001" >5001 瑞萬通博新興市場股票基金(美元) </option>';
+	}
+	
+
+	if('041'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5002" >5002 瑞萬通博遠東股票基金(美元) </option>';
+	}
+	
+
+	if('041'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5003" >5003 瑞萬通博美國價值股票基金(美元) </option>';
+	}
+	
+
+	if('041'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5004" >5004 瑞萬通博新興市場債券基金(美元) </option>';
+	}
+	
+
+	if('041'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5081" >5081 瑞萬通博新興市場債券基金-月配現(美元) </option>';
+	}
+	
+
+	if('043'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4201" >4201 首域世界領先基金-第一類股(原名稱為首域全球機會基金) </option>';
+	}
+	
+
+	if('043'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4202" >4202 首域環球傘型基金-首域印度次大陸基金-第一類股 </option>';
+	}
+	
+
+	if('043'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4203" >4203 首域環球傘型基金-首域星馬增長基金-第一類股 </option>';
+	}
+	
+
+	if('043'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4204" >4204 首域環球傘型基金-首域全球新興市場領先基金-第四類股 </option>';
+	}
+	
+
+	if('043'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4205" >4205 首域環球傘型基金-首域亞洲增長基金-第四類股 </option>';
+	}
+	
+
+	if('043'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4206" >4206 首域環球傘型基金-首域大中華增長基金-第四類股 </option>';
+	}
+	
+
+	if('043'==mgn)
+	{
+
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4207" >4207 首域中國核心基金-第四類股 </option>';
+	}
+	
+
+	if('043'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4208" >4208 首域環球傘型基金-首域全球資源基金-第四類股 </option>';
+	}
+	
+
+	if('043'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=4209" >4209 首域環球傘型基金-首域優質債券基金-第一類股 </option>';
+	}
+	
+
+	if('045'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3353" >3353 南方富時中國A50指數股票型基金 </option>';
+	}
+	
+
+	if('046'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3355" >3355 華夏滬深300指數股票型基金 </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F001" >F001 CI資本國際全球高益機會基金T(美元) </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F002" >F002 CI資本國際全球高益機會基金T(歐元) </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F003" >F003 CI資本國際新興市場債券基金T(美元) </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F004" >F004 CI資本國際新興市場債券基金T(歐元) </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F005" >F005 CI資本國際新興市場完全機會基金T(美元） </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F006" >F006 CI資本國際新興市場完全機會基金T(歐元） </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F007" >F007 CI資本國際全球股票基金T(美元） </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F008" >F008 CI資本國際全球股票基金T(歐元） </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F009" >F009 CI資本國際美國成長及收益基金T(美元） </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F010" >F010 CI資本國際美國成長及收益基金T(歐元） </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F011" >F011 CI資本國際歐洲股票基金T(美元） </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F012" >F012 CI資本國際歐洲股票基金T(歐元） </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F013" >F013 CI資本國際新興市場股票基金T(美元） </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F081" >F081 CI資本國際全球高益機會基金Tfd-月配現(美元) </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F082" >F082 CI資本國際全球高益機會基金Tfd-月配現(歐元) </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F083" >F083 CI資本國際新興市場債券基金Tfd-月配現(美元) </option>';
+	}
+	
+
+	if('047'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F084" >F084 CI資本國際新興市場債券基金Tfd-月配現(歐元) </option>';
+	}
+	
+
+	if('048'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F201" >F201 安盛羅森堡美國大型企業Alpha基金B </option>';
+	}
+	
+
+	if('048'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F202" >F202 安盛羅森堡環球大型企業Alpha基金B </option>';
+	}
+	
+
+	if('048'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F203" >F203 安盛羅森堡環球小型企業Alpha基金B </option>';
+	}
+	
+
+	if('048'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F204" >F204 安盛羅森堡亞太(日本除外)大型企業Alpha基金 B </option>';
+	}
+	
+
+	if('048'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F205" >F205 安盛羅森堡亞太(日本除外)小型企業Alpha基金 B </option>';
+	}
+	
+
+	if('048'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F206" >F206 安盛羅森堡泛歐大型企業Alpha基金 B </option>';
+	}
+	
+
+	if('048'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F207" >F207 安盛羅森堡泛歐小型企業Alpha基金 B </option>';
+	}
+	
+
+	if('048'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F208" >F208 安盛羅森堡日本大型企業Alpha基金 B </option>';
+	}
+	
+
+	if('048'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=F209" >F209 安盛羅森堡日本小型企業Alpha基金 B </option>';
+	}
+	
+
+	if('331'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3301" >3301 QQQ-那斯達克100指數股票型基金 </option>';
+	}
+	
+
+	if('331'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3327" >3327 潔淨能源指數股票型基金 </option>';
+	}
+	
+
+	if('332'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3303" >3303 SPY-史坦普500指數股票型基金 </option>';
+	}
+	
+
+	if('332'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3323" >3323 道富SPDR金屬&採礦指數基金 </option>';
+	}
+	
+
+	if('332'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3351" >3351 道富SPDR公用事業指數股票型基金 </option>';
+	}
+	
+
+	if('332'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3359" >3359 道富金融類股指數股票型基金 </option>';
+	}
+	
+
+	if('332'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3361" >3361 道富標普零售業指數股票型基金 </option>';
+	}
+	
+
+	if('333'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3315" >3315 IBB - 那斯達克生化指數股票型基金 </option>';
+	}
+	
+
+	if('333'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3325" >3325 埃雪道瓊美國原油設備&服務指數基金 </option>';
+	}
+	
+
+	if('334'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3339" >3339 道富黃金指數基金(專業投資人適用) </option>';
+	}
+	
+
+	if('335'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3341" >3341 一倍放空史坦普500指數基金(專業投資人適用) </option>';
+	}
+	
+
+	if('335'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3345" >3345 放空型MSCI新興市場指數基金(專業投資人適用) </option>';
+	}
+	
+
+	if('335'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3357" >3357 放空20年期美國公債指數股票型基金(專業投資人適用) </option>';
+	}
+	
+
+	if('336'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3343" >3343 美國石油指數股票型基金(專業投資人適用) </option>';
+	}
+	
+
+	if('33B'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3347" >3347 埃雪巴克萊20年公債指數股票型基金 </option>';
+	}
+	
+
+	if('33B'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3349" >3349 埃雪標普全球必需性消費類股指數股票型基金 </option>';
+	}
+	
+
+	if('33C'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3337" >3337 恆生H股指數股票型基金 </option>';
+	}
+	
+
+	if('33D'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3329" >3329 Market Vectors農金產業指數股票型基金 </option>';
+	}
+	
+
+	if('33D'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3331" >3331 Market Vectors越南指數股票型基金 </option>';
+	}
+	
+
+	if('33D'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3333" >3333 放空道瓊30指數股票型基金(專業投資人適用) </option>';
+	}
+	
+
+	if('33E'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=3335" >3335 埃雪富時A50中國指數股票型基金 </option>';
+	}
+	
+
+	if('888'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9996" >9996 上海銀行全球ETF組合集合帳戶 </option>';
+	}
+	
+
+	if('888'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9997" >9997 上海銀行全球債券型基金組合集合帳戶 </option>';
+	}
+	
+
+	if('888'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9998" >9998 上海銀行全球潛力組合基金集合帳戶 </option>';
+	}
+	
+
+	if('888'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9999" >9999 上海銀行全球精選基金集合帳戶 </option>';
+	}
+	
+
+	if('T01'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7201" >7201 台灣工銀大眾 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8401" >8401 永豐永豐 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8402" >8402 永豐高科技 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8403" >8403 永豐中小 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8404" >8404 永豐趨勢 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8405" >8405 永豐中概平衡 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8406" >8406 永豐全球債券組合基金 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8407" >8407 永豐主流品牌 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8409" >8409 永豐環球趨勢資源 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8410" >8410 永豐全球平衡組合 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8411" >8411 永豐亞洲民生消費 </option>';
+	}
+	
+
+	if('T02'==mgn)
+
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8413" >8413 永豐全球新興向榮基金 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8414" >8414 永豐全球投資等級債券基金 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8415" >8415 永豐新興高收雙債組合基金-累積型 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8416" >8416 永豐新興高收雙債組合基金-月配息 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8418" >8418 永豐中國高收益債券基金 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8419" >8419 永豐貨幣市場基金 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8420" >8420 永豐新興市場企業債券基金-累積型 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8421" >8421 永豐新興市場企業債券基金-月配現型 </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8D01" >8D01 永豐中國高收益債券基金-累積型(人民幣) </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8D02" >8D02 永豐中國高收益債券基金-月配現 (人民幣) </option>';
+	}
+	
+
+	if('T02'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8L01" >8L01 永豐南非幣2021保本基金 </option>';
+	}
+	
+
+	if('T04'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8001" >8001 景順全球康健 </option>';
+	}
+	
+
+	if('T04'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8002" >8002 景順台灣精選成長 </option>';
+	}
+	
+
+	if('T04'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8004" >8004 景順潛力基金 </option>';
+	}
+	
+
+	if('T04'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8005" >8005 景順人民幣新興亞太入息基金-累積型(台幣) </option>';
+	}
+	
+
+	if('T04'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8006" >8006 景順人民幣新興亞太入息基金-月配現(台幣) </option>';
+	}
+	
+
+	if('T04'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8Y01" >8Y01 景順人民幣新興亞太入息基金-累積型(美元) </option>';
+	}
+	
+
+	if('T04'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8Y02" >8Y02 景順人民幣新興亞太入息基金-月配現(美元) </option>';
+	}
+	
+
+	if('T04'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8Z01" >8Z01 景順人民幣新興亞太入息基金-累積型(人民幣) </option>';
+	}
+	
+
+	if('T04'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8Z02" >8Z02 景順人民幣新興亞太入息基金-月配現(人民幣) </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7002" >7002 匯豐安富 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7003" >7003 匯豐中小 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7004" >7004 匯豐龍騰電子 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7005" >7005 匯豐台灣精典 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7007" >7007 匯豐太平洋精典 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7009" >7009 匯豐金磚動力 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7011" >7011 匯豐新鑽動力基金 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7013" >7013 匯豐全球趨勢組合基金 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7015" >7015 匯豐全球關鍵資源基金 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7016" >7016 匯豐五福全球債券組合 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7017" >7017 匯豐全球新富基金 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7018" >7018 匯豐中國動力基金 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7019" >7019 匯豐黃金及礦業股票型基金 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7020" >7020 匯豐資源豐富國家債券基金-B月配現 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7021" >7021 匯豐資源豐富國家債券基金-A不配息 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7022" >7022 匯豐成功基金 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7023" >7023 匯豐亞洲高收益債券基金-B-月配現 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7024" >7024 匯豐亞洲高收益債券基金-A-不配息 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7025" >7025 匯豐中國A股匯聚基金 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7026" >7026 匯豐中國點心高收益債券基金-台幣不配息 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7J01" >7J01 匯豐中國點心高收益債券基金-人民幣不配息 </option>';
+	}
+	
+
+	if('T05'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7J02" >7J02 匯豐中國點心高收益債券基金-人民幣月配現 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5301" >5301 保德信科技島 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5302" >5302 保德信店頭市場 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5303" >5303 保德信高成長 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5304" >5304 保德信金滿意 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5305" >5305 保德信台商全方位 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5306" >5306 保德信全球醫療生化 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5309" >5309 保德信全球中小 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5310" >5310 保德信日本基金 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5311" >5311 保德信大中華基金 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5312" >5312 保德信新興趨勢組合基金 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5313" >5313 保德信歐洲組合基金 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5314" >5314 保德信金平衡 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5315" >5315 保德信全球資源基金 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5316" >5316 保德信全球基礎建設基金 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5317" >5317 保德信全球消費商機 </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5318" >5318 保德信亞洲新興市場債券基金-A(不配息) </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5319" >5319 保德信亞洲新興市場債券-B(月配現)(單筆最低申購金額30萬元) </option>';
+	}
+	
+
+	if('T07'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5320" >5320 保德信亞太基金 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8801" >8801 柏瑞拉丁美洲基金 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8802" >8802 柏瑞美國雙核心收益基金-A不配息 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8804" >8804 柏瑞亞太高股息基金-A </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8806" >8806 柏瑞全球策略高收益債券Ａ不配息 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8807" >8807 柏瑞全球策略高收益債券Ｂ月配息 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8808" >8808 柏瑞巨人 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8809" >8809 柏瑞新興市場高收益債券-A不配息 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8810" >8810 柏瑞新興市場高收益債券-B月配現 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8811" >8811 柏瑞五國金勢力建設基金 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8812" >8812 柏瑞中印雙霸基金 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8813" >8813 柏瑞新興市場企業策略債券基金-A不配息 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8814" >8814 柏瑞新興市場企業策略債券基金-B月配現 </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8H01" >8H01 柏瑞全球策略高收益債券基金-B月配現(澳幣) </option>';
+	}
+	
+
+	if('T08'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8K01" >8K01 柏瑞全球策略高收益債券基金-B月配現(南非幣) </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7401" >7401 日盛上選 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7402" >7402 日盛小而美 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7403" >7403 日盛精選五虎 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7404" >7404 日盛高科技 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7407" >7407 日盛新台商 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7410" >7410 日盛大中華基金 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7411" >7411 日盛首選基金 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7412" >7412 日盛全球抗暖化基金 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7413" >7413 日盛亞洲星鑽基金 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7414" >7414 日盛中國內需動力基金 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7415" >7415 日盛亞洲高收益債券基金A-不配息 </option>';
+	}
+	
+
+	if('T09'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7416" >7416 日盛亞洲高收益債券基金B-月配現 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7501" >7501 新光國家建設 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7502" >7502 新光創新科技 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7503" >7503 新光店頭 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7505" >7505 新光台灣富貴 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7507" >7507 新光冠軍組合 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7509" >7509 新光大三通 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7511" >7511 新光亞洲精選 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7512" >7512 新光兩岸優勢基金 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7513" >7513 新光福運平衡基金 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7514" >7514 新光多元複合收益組合基金 </option>';
+	}
+	
+
+	if('T11'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7E01" >7E01 新光澳幣保本基金 </option>';
+	}
+	
+
+	if('T12'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6803" >6803 華南永昌龍盈平衡 </option>';
+	}
+	
+
+	if('T12'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6804" >6804 華南永昌愛台灣基金 </option>';
+	}
+	
+
+	if('T12'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6805" >6805 華南永昌全球神農水資源基金 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8703" >8703 瀚亞歐洲 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8705" >8705 瀚亞投資-印度股票基金 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8707" >8707 瀚亞中小型股 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8708" >8708 瀚亞理財通基金 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8710" >8710 瀚亞高科技基金 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8711" >8711 瀚亞亞太高股息基金 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8712" >8712 瀚亞精選傘型基金之趨勢精選組合基金 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8713" >8713 瀚亞亞太不動產證券化-B-季配現 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8714" >8714 瀚亞亞太基礎建設 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8715" >8715 瀚亞全球綠色金脈 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8716" >8716 瀚亞威寶貨幣市場基金 </option>';
+	}
+	
+
+	if('T13'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8717" >8717 瀚亞非洲 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5101" >5101 摩根台灣增長 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5102" >5102 摩根龍揚 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5103" >5103 摩根東方科技 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5104" >5104 摩根大歐洲 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5105" >5105 摩根中小 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5106" >5106 摩根價值成長 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5107" >5107 摩根新興科技 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5108" >5108 摩根全球通網 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visi</optionnd_code=5109" >5109 摩根平衡 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5110" >5110 摩根亞洲 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5111" >5111 摩根安家理財 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5112" >5112 摩根全球平衡 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5113" >5113 摩根新興日本 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5114" >5114 摩根絕對日本基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5115" >5115 摩根全球發現基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5116" >5116 摩根縱橫台商基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5117" >5117 摩根新絲路基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5118" >5118 摩根東方內需機會 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5119" >5119 摩根金龍收成基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5120" >5120 摩根神龍平衡基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5121" >5121 摩根中美G2新勢力基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5122" >5122 摩根中國亮點 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5123" >5123 摩根台灣金磚 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5124" >5124 摩根新金磚五國基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5125" >5125 摩根資源活力股票基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5126" >5126 摩根新興活利債券基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5127" >5127 摩根新興活利債券-月配現型 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5128" >5128 摩根亞洲總合高收益債券基金-累積型 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5129" >5129 摩根亞洲總合高收益債券基金-月配現型 </option>';
+
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5130" >5130 摩根新興龍虎企業債券基金-累積型 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5131" >5131 摩根新興龍虎企業債券基金-月配息型 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5132" >5132 摩根中國A股基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5133" >5133 摩根全球α基金 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5134" >5134 摩根泛亞太股票入息基金-累積型 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5135" >5135 摩根泛亞太股票入息基金--月配現 </option>';
+	}
+	
+
+	if('T14'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5A01" >5A01 摩根泛亞太股票入息基金-月配息型(美元) </option>';
+	}
+	
+
+	if('T17'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5401" >5401 聯博大利 </option>';
+	}
+	
+
+	if('T17'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5408" >5408 聯博亞太地產基金-季配現 </option>';
+	}
+	
+
+	if('T17'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5410" >5410 聯博新興市場企業債券基金-A2-累積 </option>';
+	}
+	
+
+	if('T17'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5411" >5411 聯博新興市場企業債券基金-AT-月配現 </option>';
+	}
+	
+
+	if('T18'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8305" >8305 未來資產阿波羅基金 </option>';
+	}
+	
+
+	if('T18'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8309" >8309 未來資產所羅門貨幣市場基金 </option>';
+	}
+	
+
+	if('T18'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8310" >8310 未來資產全球大消費基金 </option>';
+	}
+	
+
+	if('T18'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8311" >8311 未來資產亞洲高收益債券基金A_不配息 </option>';
+	}
+	
+
+	if('T18'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8312" >8312 未來資產亞洲高收益債券基金B_月配現 </option>';
+	}
+	
+
+	if('T19'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6001" >6001 第一金店頭市場 </option>';
+	}
+	
+
+	if('T19'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6002" >6002 第一金小型精選基金 </option>';
+	}
+	
+
+	if('T19'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6003" >6003 第一金電子 </option>';
+	}
+	
+
+	if('T19'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6005" >6005 第一金亞洲科技 </option>';
+	}
+	
+
+	if('T19'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6007" >6007 第一金大中華 </option>';
+	}
+	
+
+	if('T19'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6013" >6013 第一金亞洲新興市場基金 </option>';
+	}
+	
+
+	if('T19'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6014" >6014 第一金全球高收益債券基金A(不配息) </option>';
+	}
+	
+
+	if('T19'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6015" >6015 第一金全球高收益債券基金A(月配現) </option>';
+	}
+	
+
+	if('T19'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6016" >6016 第一金創新趨勢基金 </option>';
+	}
+	
+
+	if('T20'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5502" >5502 貝萊德寶利 </option>';
+	}
+	
+
+	if('T20'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5509" >5509 貝萊德亞美利加收益基金-月配現 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6301" >6301 國泰國泰 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6302" >6302 國泰中小成長 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6303" >6303 國泰平衡 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6305" >6305 國泰小龍基金 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6306" >6306 國泰全球基礎建設基金 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6307" >6307 國泰台灣貨幣市場基金 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6309" >6309 國泰Man AHL組合期貨 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6310" >6310 國泰新興高收益債券基金-A不配息 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6311" >6311 國泰新興高收益債券基金-B月配現 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6312" >6312 國泰中國內需增長基金 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6313" >6313 國泰中國新興戰略基金 </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6315" >6315 國泰全球多重收益平衡基金-A累積(台幣) </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6316" >6316 國泰全球多重收益平衡基金-B月配現(台幣) </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6A01" >6A01 國泰全球多重收益平衡基金-A累積(美元) </option>';
+	}
+	
+
+	if('T21'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6A02" >6A02 國泰全球多重收益平衡基金-B月配現(美元) </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7705" >7705 兆豐國際生命科學 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7706" >7706 兆豐國際精選二十 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7707" >7707 兆豐國際中小 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7708" >7708 兆豐國際電子 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7710" >7710 兆豐國際第一 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7713" >7713 兆豐國際萬全基金 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7715" >7715 兆豐國際全球 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7716" >7716 兆豐國際寶鑽貨幣市場基金 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7718" >7718 兆豐國際豐台灣 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7720" >7720 兆豐國際綠鑽 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7722" >7722 兆豐國際全球高股息基金 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7723" >7723 兆豐國際民生動力基金 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7724" >7724 兆豐國際全球債券組合基金-配息 </option>';
+	}
+	
+
+	if('T22'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7725" >7725 兆豐國際全球債券組合基金A-累積型 </option>';
+	}
+	
+
+	if('T24'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5201" >5201 統一奔騰 </option>';
+	}
+	
+
+	if('T24'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5202" >5202 統一經建基金 </option>';
+	}
+	
+
+	if('T24'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5203" >5203 統一統信基金 </option>';
+	}
+	
+
+	if('T24'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5205" >5205 統一大滿貫基金 </option>';
+	}
+	
+
+	if('T26'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6702" >6702 富邦高成長 </option>';
+	}
+	
+
+	if('T26'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6703" >6703 富邦價值 </option>';
+	}
+	
+
+	if('T26'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6706" >6706 富邦台灣心 </option>';
+	}
+	
+
+	if('T26'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6707" >6707 富邦大中華成長 </option>';
+	}
+	
+
+	if('T26'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6708" >6708 富邦科技基金 </option>';
+	}
+	
+
+	if('T26'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6709" >6709 富邦基金 </option>';
+	}
+	
+
+	if('T27'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6402" >6402 富達台灣成長 </option>';
+	}
+	
+
+	if('T28'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6501" >6501 中國信託半導體科技 </option>';
+	}
+	
+
+	if('T28'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6503" >6503 中國信託精穩 </option>';
+	}
+	
+
+	if('T28'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6506" >6506 中國信託台灣優勢 </option>';
+
+	}
+	
+
+	if('T28'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6507" >6507 中國信託東方精選基金 </option>';
+	}
+	
+
+	if('T28'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6508" >6508 中國信託台灣活力 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7301" >7301 復華復華 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7302" >7302 復華高成長 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7303" >7303 復華傳家 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7304" >7304 復華數位經濟 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7305" >7305 復華傳家二號 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7306" >7306 復華中小精選 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7308" >7308 復華奧林匹克全球組合 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7309" >7309 復華全方位基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7310" >7310 復華亞太平衡基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7311" >7311 復華亞太成長 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7312" >7312 復華全球資產證券化-A-不配息 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7313" >7313 復華全球資產證券化-B-季配息 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7314" >7314 復華奧林匹克全球優勢組合 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7315" >7315 復華全球大趨勢基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7316" >7316 復華神盾基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7317" >7317 復華貨幣市場 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7318" >7318 復華華人世紀 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7319" >7319 復華全球短期收益基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7320" >7320 復華高益策略組合基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7321" >7321 復華全球原物料基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7322" >7322 復華新興債股動力組合基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7324" >7324 復華大中華中小策略基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7325" >7325 復華新興市場短期收益基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7326" >7326 復華新興市場高收益債券基金-A-不配息 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7327" >7327 復華新興市場高收益債券基金-B-月配息 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7328" >7328 復華東協世紀基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7329" >7329 復華全球消費基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7330" >7330 復華美國新星基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7331" >7331 復華新興人民幣短期收益基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7332" >7332 復華全球平衡基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7333" >7333 復華全球戰略配置強基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7A01" >7A01 復華新興人民幣債券基金-A-不配息 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7A02" >7A02 復華新興人民幣債券基金-B-月配現 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7A03" >7A03 復華人民幣貨幣市場基金 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7C01" >7C01 復華南非幣短期收益基金-A-不配息 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7C02" >7C02 復華南非幣短期收益基金-B-月配現 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7C03" >7C03 復華南非幣長期收益基金-A-不配息 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7C04" >7C04 復華南非幣長期收益基金-B-月配現 </option>';
+	}
+	
+
+	if('T29'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7C05" >7C05 復華南非幣2017保本基金 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5701" >5701 群益馬拉松 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5702" >5702 群益長安 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5703" >5703 群益創新科技 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5704" >5704 群益店頭市場 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5705" >5705 群益真善美 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5707" >5707 群益平衡王 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5708" >5708 群益中小型股 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5710" >5710 群益葛萊美基金 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5711" >5711 群益新興金鑽基金 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5712" >5712 群益全球不動產平衡Ａ-不配 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5713" >5713 群益亞太新趨勢平衡 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5714" >5714 群益印巴雙星基金 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5715" >5715 群益東協成長基金 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5716" >5716 群益全球新興收益債券基金A-累積型 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5717" >5717 群益全球新興收益債券基金B-月配型 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5718" >5718 群益華夏盛世基金 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5719" >5719 群益全球關鍵生技基金 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5720" >5720 群益美國新創亮點基金 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5721" >5721 群益中國新機會基金-台幣 </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5G01" >5G01 群益全球關鍵生技基金(美元) </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5G02" >5G02 群益美國新創亮點基金(美元) </option>';
+	}
+	
+
+	if('T31'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5G03" >5G03 群益中國新機會基金-美元 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7101" >7101 安泰ING高科技 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7801" >7801 安泰ING優質精選 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7802" >7802 安泰ING成長精選 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7803" >7803 安泰ING平衡精選 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7804" >7804 安泰INGｅ科技精選 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7805" >7805 安泰ING中小 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7806" >7806 安泰ING全球高股息 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7807" >7807 安泰ING全球品牌 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7808" >7808 安泰ING鑫全球債券組合基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7809" >7809 安泰ING鑫平衡組合 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7811" >7811 安泰ING歐洲高股息 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7812" >7812 安泰ＩＮＧ全球不動產證券化基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7815" >7815 安泰ING亞太高股息基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7816" >7816 安泰ＩＮＧ全球生技醫療 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7817" >7817 安泰ING新馬基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7818" >7818 安泰ING泰國基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7819" >7819 安泰ING台灣運籌基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7820" >7820 安泰ＩＮＧ台灣高股息 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7822" >7822 安泰ING全球氣候變遷基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7823" >7823 安泰ＩＮＧ中東非洲 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7824" >7824 安泰ＩＮＧ大俄羅斯 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7825" >7825 安泰ING鴻揚貨幣市場基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7826" >7826 安泰ING中國機會基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7827" >7827 安泰ING全球美元投資級公司債基金(累積型) </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7828" >7828 安泰ING巴西基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7829" >7829 安泰ING新興高收益債 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7830" >7830 安泰ING印度潛力基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7831" >7831 安泰ING印尼潛力基金 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7832" >7832 安泰ING亞太複合高收益債基金-累積型 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7833" >7833 安泰ING亞太複合高收益債-月配現 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7834" >7834 安泰ING金磚七國 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7835" >7835 安泰ING全球美元投資級公司債-月配現 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7836" >7836 安泰ING環球高收益債基金-累積型 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7837" >7837 安泰ING環球高收益債基金-月配現 </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7H01" >7H01 安泰ING環球高收益債基金-累積型(美元) </option>';
+	}
+	
+
+	if('T32'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7H02" >7H02 安泰ING環球高收益債基金-月配現(美元) </option>';
+	}
+	
+
+	if('T33'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6601" >6601 德信數位時代 </option>';
+	}
+	
+
+	if('T33'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6608" >6608 德信萬保貨幣市場基金 </option>';
+	}
+	
+
+	if('T33'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6609" >6609 德信大發 </option>';
+	}
+	
+
+	if('T33'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6610" >6610 德信中國精選成長基金 </option>';
+	}
+	
+
+	if('T33'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6611" >6611 德信台灣主流中小基金 </option>';
+	}
+	
+
+	if('T33'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6613" >6613 德信萬瑞基金 </option>';
+	}
+	
+
+	if('T33'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6614" >6614 德信新興股票組合基金 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5901" >5901 德盛台灣大壩 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5903" >5903 德盛科技大壩 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5904" >5904 德盛全球生技大壩 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5905" >5905 德盛安聯全球債券-A累積 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5906" >5906 德盛安聯亞洲動態策略 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5908" >5908 德盛全球新興市場 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5910" >5910 德盛安聯目標2020基金 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5911" >5911 德盛安聯目標2030基金 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5912" >5912 德盛安聯全球計量平衡 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5913" >5913 德盛安聯全球綠能趨勢基金 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5914" >5914 德盛安聯多元計量平衡基金 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5915" >5915 德盛安聯全球人口趨勢基金 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5916" >5916 德盛安聯全球農金趨勢基金 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5917" >5917 德盛油礦金趨勢 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5918" >5918 德盛安聯台灣好息富基金 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5919" >5919 德盛安聯四季回報債券組合基金 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5920" >5920 德盛安聯四季豐收債券組合基金-A類型-累積 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5921" >5921 德盛安聯四季豐收債券組合基金-B類型-月配現 </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5922" >5922 德盛安聯四季雙收入息組合基金-A類型(累積) </option>';
+	}
+	
+
+	if('T34'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5923" >5923 德盛安聯四季雙收入息組合基金-B類型(月配現) </option>';
+	}
+	
+
+	if('T36'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9201" >9201 聯邦雙囍新興亞洲債券基金A-不配息 </option>';
+	}
+	
+
+	if('T36'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9202" >9202 聯邦雙囍新興亞洲債券基金B-月配現 </option>';
+	}
+	
+
+	if('T36'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9203" >9203 聯邦貨幣市場基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5601" >5601 元大寶來卓越 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5602" >5602 元大寶來經貿 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5603" >5603 元大寶來多福 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5604" >5604 元大寶來高科技 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5605" >5605 元大寶來新主流 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5606" >5606 元大寶來巴菲特 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5609" >5609 元大寶來店頭 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5610" >5610 元大寶來多多 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5614" >5614 元大寶來泛歐成長基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5615" >5615 元大寶來全球公用能源效率-A不配息 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5616" >5616 元大寶來亞太成長基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5621" >5621 元大寶來全球農業商機 </option>';
+	}
+
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5624" >5624 元大寶來新中國基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5625" >5625 元大寶來雙盈基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5626" >5626 元大寶來亞太政府公債指數基金-A不配息 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5627" >5627 元大寶來亞太政府公債指數基金-B月配現 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5628" >5628 元大寶來華夏中小基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5629" >5629 元大寶來全球成長基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5630" >5630 元大寶來中國機會債券基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5631" >5631 元大寶來人民幣貨幣市場基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5F01" >5F01 元大寶來中國平衡基金-人民幣 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5F02" >5F02 元大寶來中國機會債券基金-人民幣A(不配) </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5F03" >5F03 元大寶來中國機會債券基金-人民幣B(月配現) </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=5F04" >5F04 元大寶來人民幣貨幣市場基金-人民幣 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6201" >6201 元大寶來績效 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6204" >6204 元大寶來矽谷 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6210" >6210 元大寶來台灣加權股價指數 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6211" >6211 元大寶來全球ETF穩健組合基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6212" >6212 元大寶來全球不動產證券化基金-B-月配現 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6214" >6214 元大寶來全球不動產證券化基金-A </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6215" >6215 元大寶來全球新興市場精選組合基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6216" >6216 元大寶來全球ETF成長組合基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6217" >6217 元大寶來亞洲台資企業 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6218" >6218 元大寶來精準中小 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6222" >6222 元大寶來大中華價值指數基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6223" >6223 元大寶來商品指數期貨信託基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6224" >6224 元大寶來全球靈活配置債券組合基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6225" >6225 元大寶來新興亞洲龍頭基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6226" >6226 元大寶來巴西指數基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6227" >6227 元大寶來印度指數基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6228" >6228 元大寶來印尼指數基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6229" >6229 元大寶來黃金期貨信託基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6231" >6231 元大寶來全球國富債券基金-A-不配息 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6232" >6232 元大寶來新興市場ESG策略基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6233" >6233 元大寶來全球ETF棒組合基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=6234" >6234 元大寶來中國平衡基金 </option>';
+	}
+	
+
+	if('T37'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9101" >9101 元大寶來多元策略期貨信託基金 </option>';
+	}
+	
+
+	if('T38'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8901" >8901 瑞銀亞洲全方位不動產基金 </option>';
+	}
+	
+
+	if('T38'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8902" >8902 瑞銀全球創新趨勢 </option>';
+	}
+	
+
+	if('T38'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8904" >8904 瑞銀亞洲高收益債券基金-不配息 </option>';
+	}
+	
+
+	if('T38'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8905" >8905 瑞銀亞洲高收益債券基金-月配現 </option>';
+	}
+	
+
+	if('T40'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7901" >7901 德銀遠東DWS台灣旗艦 </option>';
+	}
+	
+
+	if('T40'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7902" >7902 德銀遠東DWS科技 </option>';
+	}
+	
+
+	if('T40'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7904" >7904 德銀遠東DWS全球原物料能源 </option>';
+	}
+	
+
+	if('T40'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7906" >7906 德銀遠東DWS多元集利組合-A累積型 </option>';
+	}
+	
+
+	if('T40'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7907" >7907 德銀遠東DWS多元集利組合-B月配息 </option>';
+	}
+	
+
+	if('T40'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7908" >7908 德銀遠東DWS亞洲高收益債券基金-A-累積型 </option>';
+	}
+	
+
+	if('T40'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7909" >7909 德銀遠東DWS亞洲高收益債券B-月配息 </option>';
+	}
+	
+
+	if('T40'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=7910" >7910 德銀遠東DWS全球神農基金 </option>';
+	}
+	
+
+	if('T43'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8101" >8101 華頓台灣 </option>';
+	}
+	
+
+	if('T43'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8102" >8102 華頓中小型 </option>';
+	}
+	
+
+	if('T43'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8105" >8105 華頓全球黑鑽油源基金 </option>';
+	}
+	
+
+	if('T43'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8109" >8109 華頓全球時尚精品 </option>';
+	}
+	
+
+	if('T43'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8110" >8110 華頓典範科技 </option>';
+	}
+	
+
+	if('T43'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8111" >8111 華頓全球新星股票基金 </option>';
+	}
+	
+
+	if('T43'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8113" >8113 華頓全球高收益債券基金A-不配息 </option>';
+	}
+	
+
+	if('T43'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8114" >8114 華頓全球高收益債券基金B-月配現 </option>';
+	}
+	
+
+	if('T43'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8115" >8115 華頓新興亞太債券基金A-不配息 </option>';
+	}
+	
+
+	if('T43'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8116" >8116 華頓新興亞太債券基金B-月配現 </option>';
+	}
+	
+
+	if('T44'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9301" >9301 惠理康和中國點心高收益債券基金 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8501" >8501 第一富蘭克林第一富 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8502" >8502 第一富蘭克林富蘭克林全球債券組合 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8503" >8503 第一富蘭克林全球股票組合基金 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8504" >8504 第一富蘭克林富蘭克林全球債券組合-月配現 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8505" >8505 第一富蘭克林新世界股票基金 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8506" >8506 第一富蘭克林中華基金 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8507" >8507 富蘭克林華美天然資源組合 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8508" >8508 富蘭克林華美新興市場股票組合 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8509" >8509 富蘭克林華美積極回報債券組合-累積型 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8510" >8510 富蘭克林華美積極回報債券組合-分配型 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8511" >8511 富蘭克林華美中國消費基金 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8512" >8512 富蘭克林華美台股傘型之高科技基金 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8513" >8513 富蘭克林華美台股傘型之傳產基金 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8514" >8514 富蘭克林華美全球高收益債券基金-累積 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8515" >8515 富蘭克林華美全球高收益債券基金-月配現 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8516" >8516 富蘭克林華美全球投資級債券基金-累積型 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8517" >8517 富蘭克林華美全球投資級債券基金-月配現 </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8B01" >8B01 富蘭克林華美全球高收益債券基金-累積型(澳幣) </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8B02" >8B02 富蘭克林華美全球高收益債券基金-月配現(澳幣) </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8E01" >8E01 富蘭克林華美全球高收益債券基金-累積型(美元) </option>';
+	}
+	
+
+	if('T45'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=8E02" >8E02 富蘭克林華美全球高收益債券基金-月配現(美元) </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9001" >9001 施羅德台灣主動基金 </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9003" >9003 施羅德世界資源基金 </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9004" >9004 施羅德全球策略高收益債券基金-累積型 </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9005" >9005 施羅德全球策略高收益債券基金-月配現 </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9006" >9006 施羅德新紀元貨幣市場基金 </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9007" >9007 施羅德中國高收益債券基金-累積型 </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9008" >9008 施羅德中國高收益債券基金-月配現 </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9009" >9009 施羅德樂活中小基金 </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9A01" >9A01 施羅德中國高收益債券基金-累積型(人民幣) </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9A02" >9A02 施羅德中國高收益債券基金-月配現(人民幣) </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9A03" >9A03 施羅德中國債券基金-累積型(人民幣) </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9A04" >9A04 施羅德中國債券基金-月配現(人民幣) </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9B01" >9B01 施羅德中國高收益債券基金-累積型(美元) </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9B02" >9B02 施羅德中國高收益債券基金-月配現(美元) </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9B03" >9B03 施羅德中國債券基金-累積型(美元) </option>';
+	}
+	
+
+	if('T49'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9B04" >9B04 施羅德中國債券基金-月配現(美元) </option>';
+	}
+	
+
+	if('T51'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9204" >9204 聯邦新興資源豐富國家高收益債券基金-A不配息 </option>';
+	}
+	
+
+	if('T51'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9205" >9205 聯邦新興資源豐富國家高收益債券基金-B配息 </option>';
+	}
+	
+
+	if('T52'==mgn)
+	{
+	ms=ms+'<option value="Effect_visit.jsp?fund_code=9401" >9401 康和多空成長期貨信託基金 </option>';
+	}
+	
+	$('#option_product2').setscsbOptions(ms);
+}
+function MM_jumpMenu(selObj,restore){ //v3.0
+  eval("location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+-->
+</SCRIPT>
+<form name="FundDetail" method="get" action="Effect_visi.htm">
+<div class="function"><!-- 登入 -->
+        	<div id="btn_login"><a href="https://ibank.scsb.com.tw/" target="_blank" onmouseover="MM_swapImage('btnLogin','','images/btn_logino.gif',1)" onmouseout="MM_swapImgRestore()"><img src="images/btn_login.gif" name="btnLogin" id="btnLogin" /></a></div>
+			<div id="quick_search"><span class="quick_search_title">快速查詢<span class="quick_search_title_arrow">&gt;&gt;</span></span> 產品代碼及名稱 
+		  <input class="quick_search_input" name="fund_code" type="text" /> <input type="button" value="GO" onclick='FundCheck();'/></div>
+        </div></form>
+        <div class="option_product">
+      <!-- 選項 -->
+      <form name="chgtrg" id="chgtrg">
+        <div class="option_product1">
+            <select id="option_product1" name="selectmgn" onchange="relMgn(this.value)" style="display: none;">
+              <option>請選擇基金公司</option>
+              <option value="001">安本集團(海外)</option>
+              <option value="002">柏瑞投信(海外)</option>
+              <option value="003">聯博基金(海外)</option>
+              <option value="005">霸菱投顧(海外)</option>
+              <option value="007">德盛安聯(海外)</option>
+              <option value="008">富達證券(海外)</option>
+              <option value="009" selected="selected">富蘭克林(海外)</option>
+              <option value="010">景順集團(海外)</option>
+              <option value="011">摩根(海外)</option>
+              <option value="012">貝萊德投信(海外)</option>
+              <option value="013">施羅德(海外)</option>
+              <option value="014">瀚亞投資(海外)</option>
+              <option value="017">法國巴黎投資(海外)</option>
+              <option value="019">瑞士銀行(海外)</option>
+              <option value="021">法國興業(海外)</option>
+              <option value="022">UOB大華(海外)</option>
+              <option value="025">駿利資產管理(海外)</option>
+              <option value="026">天利基金(海外)</option>
+              <option value="027">匯豐集團(海外)</option>
+              <option value="028">先機基金(海外)</option>
+              <option value="030">天達基金(海外)</option>
+              <option value="032">亨德森基金(海外)</option>
+              <option value="035">鋒裕(海外)</option>
+              <option value="036">英傑華(海外)</option>
+              <option value="039">ING(海外)</option>
+              <option value="041">瑞萬通博基金(海外)</option>
+              <option value="043">首域投資(海外)</option>
+              <option value="045">南方東英(海外)</option>
+              <option value="046">華夏基金(海外)</option>
+              <option value="047">資本國際(海外)</option>
+              <option value="048">安盛羅森堡(海外)</option>
+              <option value="331">PowerShares(ETF)</option>
+              <option value="332">SSGA(ETF)</option>
+              <option value="333">Barclays Global (ETF)</option>
+              <option value="334">World Gold (ETF)</option>
+              <option value="335">ProShares (ETF)</option>
+              <option value="336">Victoria Bay (ETF)</option>
+              <option value="33B">BlackRock (ETF)</option>
+              <option value="33C">Hang Seng (ETF)</option>
+              <option value="33D">Van Eck (ETF)</option>
+              <option value="33E">iShares(ETF)</option>
+              <option value="888">上海銀行(國內)</option>
+              <option value="T01">台新投信(國內)</option>
+              <option value="T02">永豐投信(國內)</option>
+              <option value="T04">景順投信(國內)</option>
+              <option value="T05">匯豐中華(國內)</option>
+              <option value="T07">保德信(國內)</option>
+              <option value="T08">柏瑞投信(國內)</option>
+              <option value="T09">日盛投信(國內)</option>
+              <option value="T11">新光投信(國內)</option>
+              <option value="T12">華南永昌(國內)</option>
+              <option value="T13">瀚亞投信(國內)</option>
+              <option value="T14">摩根投信(國內)</option>
+              <option value="T17">聯博投信(國內)</option>
+              <option value="T18">未來資產(國內)</option>
+              <option value="T19">第一金投信(國內)</option>
+              <option value="T20">貝萊德投信(國內)</option>
+              <option value="T21">國泰投信(國內)</option>
+              <option value="T22">兆豐國際投信(國內)</option>
+              <option value="T24">統一投信(國內)</option>
+              <option value="T26">富邦投信(國內)</option>
+              <option value="T27">富達投信(國內)</option>
+              <option value="T28">中信投信(國內)</option>
+              <option value="T29">復華投信(國內)</option>
+              <option value="T31">群益投信(國內)</option>
+              <option value="T32">安泰ING(國內)</option>
+              <option value="T33">德信投信(國內)</option>
+              <option value="T34">德盛投信(國內)</option>
+              <option value="T36">聯邦投信(國內)</option>
+              <option value="T37">元大寶來投信(國內)</option>
+              <option value="T38">瑞銀投信(國內)</option>
+              <option value="T40">德銀遠東(國內)</option>
+              <option value="T43">華頓投信(國內)</option>
+              <option value="T44">惠理康和(國內)</option>
+              <option value="T45">富蘭克林華美(國內)</option>
+              <option value="T49">施羅德投信(國內)</option>
+              <option value="T51">聯邦投信(國內)</option>
+              <option value="T52">康和期經(國內)</option>
+            </select>
+        </div>
+        <div class="option_product2">
+            <select id="option_product2" name="selstr" onchange="location = this.value" style="display: none;">
+              <option>請選擇查詢標的</option>
+              <option value="Effect_visit.jsp?fund_code=0801" selected="selected">0801 富蘭克林黃金(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0802">0802 富蘭克林成長(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0803">0803 富蘭克林公用事業-季配權(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0804">0804 富蘭克林高科技(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0806">0806 富蘭克林潛力組合(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0809">0809 富蘭克林高成長(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0821">0821 富蘭克林坦伯頓成長-美國註冊(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0822">0822 富蘭克林坦伯頓世界(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0823">0823 富蘭克林坦伯頓全球-美國註冊(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0824">0824 富蘭克林坦伯頓外國(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0825">0825 富蘭克林坦伯頓開發中國家(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0826">0826 富蘭克林坦伯頓中小型公司成長(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=0828">0828 富蘭克林坦伯頓法人機構專用(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1401">1401 富蘭克林坦伯頓美國政府-月配權 (美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1402">1402 富蘭克林坦伯頓公司債基金-月配權 (美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1404">1404 富蘭克林坦伯頓全球-盧森堡註冊(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1405">1405 富蘭克林坦伯頓中小型企業(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1406">1406 富蘭克林坦伯頓新興國家(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1407">1407 富蘭克林坦伯頓美元短期票券-月配權(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1408">1408 富蘭克林坦伯頓新興國家固定收益-季配權(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1410">1410 富蘭克林坦伯頓歐元全球(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1412">1412 富蘭克林坦伯頓亞洲成長(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1413">1413 富蘭克林坦伯頓歐洲(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1414">1414 富蘭克林坦伯頓拉丁美洲(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1415">1415 富蘭克林坦伯頓美國政府-月配息(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1416">1416 富蘭克林坦伯頓公司債-月配息(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1417">1417 富蘭克林坦伯頓新興國家固定收益-季配息(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1419">1419 富蘭克林坦伯頓歐元短期票券(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1421">1421 富蘭克林坦伯頓歐洲(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1423">1423 富蘭克林坦伯頓全球債券-月配權(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1425">1425 富蘭克林坦伯頓全球債券-月配息(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1427">1427 富蘭克林坦伯頓全球平衡-季配權(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1428">1428 富蘭克林坦伯頓東歐(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1429">1429 富蘭克林坦伯頓泰國(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1430">1430 富蘭克林坦伯頓潛力歐洲(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1432">1432 富蘭克林坦伯頓成長-盧森堡註冊(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1433">1433 富蘭克林坦伯頓高價差(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1434">1434 富蘭克林坦伯頓互利歐洲(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1435">1435 富蘭克林坦伯頓互利歐洲(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1436">1436 富蘭克林坦伯頓全球股票收益-季配權(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1437">1437 富蘭克林坦伯頓韓國(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1438">1438 富蘭克林坦伯頓印度(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1439">1439 富蘭克林坦伯頓亞洲債券-月配權(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1440">1440 富蘭克林坦伯頓歐洲高收益-月配息(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1441">1441 富蘭克林坦伯頓科技(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1442">1442 富蘭克林坦伯頓日本(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1444">1444 富蘭克林坦伯頓金磚四國(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1445">1445 富蘭克林坦伯頓新興國家固定收益-月配息(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1446">1446 富蘭克林坦伯頓東歐(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1447">1447 富蘭克林坦伯頓天然資源(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1448">1448 富蘭克林坦伯頓大中華基金(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1449">1449 富蘭克林坦伯頓全球投資系列亞洲債券基金美元A股-月配現</option>
+              <option value="Effect_visit.jsp?fund_code=1450">1450 富蘭克林坦伯頓全球投資系列新興國家基金(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1451">1451 富蘭克林坦伯頓全球投資系列全球平衡基金(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1452">1452 富蘭克林坦伯頓全球投資系列全球基金(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1453">1453 富蘭克林坦伯頓全球投資系列亞洲成長基金(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1454">1454 富蘭克林坦伯頓全球投資系列拉丁美洲基金(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1455">1455 富蘭克林坦伯頓生技領航基金(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1456">1456 富蘭克林坦伯頓穩定月收益基金-月配現(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1457">1457 富蘭克林坦伯頓穩定月收益基金-月配權(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1458">1458 富蘭克林坦伯頓亞洲小型企業基金(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1459">1459 富蘭克林坦伯頓全球債券總報酬基金-A-累積(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1460">1460 富蘭克林坦伯頓全球債券總報酬基金-A-月配現( 美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1461">1461 富蘭克林坦伯頓全球債券總報酬基金-A-月配現( 歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1462">1462 富蘭克林坦伯頓全球債券總報酬基金-A-月配現( 澳幣避險)</option>
+              <option value="Effect_visit.jsp?fund_code=1463">1463 富蘭克林坦伯頓公司債(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1464">1464 富蘭克林坦柏頓歐洲高收益基金-年配現(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1465">1465 富蘭克林坦伯頓歐洲高收益基金-累積(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=1466">1466 富蘭克林坦伯頓歐洲高收益基金-月配現(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1467">1467 富蘭克林坦伯頓新興國家小型企業基金(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=1468">1468 富蘭克林坦伯頓新興國家小型企業基金(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=2801">2801 富蘭克林坦伯頓公司債-B股-月配息(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2802">2802 富蘭克林坦伯頓公司債-B股-月配權(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2803">2803 富蘭克林坦伯頓美國政府-B股-月配息(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2805">2805 富蘭克林坦伯頓全球債券-B股-月配息(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2806">2806 富蘭克林坦伯頓全球債券-B股-月配權(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2808">2808 富蘭克林坦伯頓新興國家-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2809">2809 富蘭克林坦伯頓全球平衡-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2810">2810 富蘭克林坦伯頓全球-盧森堡註冊-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2811">2811 富蘭克林坦伯頓新興國家固定收益-B股-季配息(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2812">2812 富蘭克林坦伯頓亞洲債券-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2813">2813 富蘭克林坦伯頓全球股票收益-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2814">2814 富蘭克林坦伯頓美元短期票券-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2815">2815 富蘭克林坦伯頓亞洲成長-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2816">2816 富蘭克林坦伯頓拉丁美洲-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2817">2817 富蘭克林坦伯頓亞洲小型企業基金-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2818">2818 富蘭克林坦伯頓穩定月收益基金-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2819">2819 富蘭克林坦伯頓生技領航基金-B股(美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2820">2820 富蘭克林坦伯頓全球債券總報酬基金-B-月配現( 美元)</option>
+              <option value="Effect_visit.jsp?fund_code=2821">2821 富蘭克林坦伯頓歐洲高收益基金B股-月配現(歐元)</option>
+              <option value="Effect_visit.jsp?fund_code=2822">2822 富蘭克林坦伯頓歐洲高收益基金B股-月配現(美元)</option>
+            </select>
+        </div>
+         </form>
+       </div>
+        <div class="option_search option_search_0">
+        	<div class="menu menu_03">
+                 <ul id="navmenu-h">
+                  <li class="menu_1"><a href="fund_detail.htm" class="menu_on" title="走勢圖"><em>走勢圖</em></a>
+                  </li>
+                  <li class="menu_2"><a href="history_value.htm" title="歷史淨值"><em>歷史淨值</em></a>
+                  </li>
+                  <li class="menu_3"><a href="risk.htm" title="績效風險"><em>績效風險</em></a>
+                  </li>
+                  <li class="menu_4"><a href="datas.htm" title="基本資料"><em>基本資料</em></a>
+                  </li>
+                  <li class="menu_5"><a href="reports.htm" title="持股分布"><em>持股分布</em></a>
+                  </li>
+                  <li class="menu_6"><a href="fund_yierd.htm" title="基金配息"><em>基金配息</em></a>
+                  </li>
+                  <li class="menu_7"><a href="bank.htm" title="通路報酬"><em>通路報酬</em></a>
+                  </li>
+                  <li class="menu_8"><a href="Banch_Compare.htm" title="績效比較"><em>績效比較</em></a>
+                  </li>
+                 </ul> 
+            </div><!-- menu END --> 
+        </div>
+        <div class="table table_product_content">
+          <!-- 表格 -->
+          <div class="title">1712 聯博-全球高收益基金AT股(本基金主要係投資於非投資等級之高風險債券且本基金之配息政策可能致配息來源為本金) </div>
+          <div style="position:relative;">
+              <div style="position:absolute; top:60px; right: 188px; font-weight:bold;">績效截至：2015/03/03</div>
+          <div>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr class="table_title">
+                    <td class="table_product_content1 cr">日期</td>
+                    <td class="table_product_content2 cr">計價幣別</td>
+                    <td class="table_product_content3 cr">淨值</td>
+                    <td class="table_product_content4 cr">商品屬性</td>
+                    <td class="table_product_content5 cr">晨星評級</td>
+                    <td class="table_product_content6 cr">風險評級</td>
+                    <td class="table_product_content7 cr">資料下載</td>
+                    <td style=" width:15%">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td class="cr">2014/08/10</td>
+                    <td class="cr">美元</td>
+                    <td class="cr">4.6900</td>
+                    <td class="cr">專業投資人</td>
+                    <td class="cr">★★★★</td>
+                    <td class="cr">RR3</td>
+                    <td class="cr"><a href="#">月報 <img src="images/pdf.gif" style=" vertical-align:text-bottom;"></a></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </tbody>
+          </table>
+              <div id="btn_order"> <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btnOrder','','images/btn_ordero.png',1)"><img src="http://fund.scsb.com.tw/images/btn_order.png" name="btnOrder" id="btnOrder" onmouseover="MM_showHideLayers('btn_order_sub','','show')" /></a>
+                <div id="btn_order_sub" style=" visibility:hidden;">
+                  <div id="btn_order1" onmouseout="MM_showHideLayers('btn_order_sub','','hide')"> <a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0801" target="_blank"><img src="images/btn_order1.jpg" /></a></div>
+                    <div id="btn_order2" onmouseout="MM_showHideLayers('btn_order_sub','','hide')"> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0801" target="_blank"><img src="images/btn_order2.jpg" /></a></div>
+                  </div>
+              </div>
+      </div>
+      <div class="title">FLASH 線圖</div>
+      <iframe frameborder="0" style=" margin-top:10px;" marginheight="0" marginwidth="0" scrolling="no" height="588" width="945px" src="us_jpy.htm" title="Google Map"></iframe>
+<div class="notice"><!-- 注意事項 -->
+            <p class="cnyes">相關財經資訊由 <a href="http://www.cnyes.com/" target="_blank">cnYes 鉅亨網</a>提供，僅供參考，請勿視為買賣基金、有價證券之投資建議。</p>
+        	<p>警語：</p>
+            <ol class="notice_list">
+            	<li>本行上架之境內、境外基金經金管會核准或同意生效，惟不表示絕無風險。基金經理公司以往之經理績效不保證基金之最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責本基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書。</li>
+                <li>基金配息率不代表基金報酬率，且過去配息率不代表未來配息率，基金淨值可能因市場因素而上下波動。如基金之銷售文件（包括但不限於公開說明書、簡式公開說明書或境外基金投資人須知），有揭露基金得以其本金支付配息時，基金的配息可能由基金的收益或本金中支付，任何涉及由本金支出的部份，可能導致原始投資金額減損，有揭露基金配息前未先扣除應負擔之相關費用者，則該基金進行配息前未先扣除應負擔之相關費用。</li>
+                <li>有關基金負擔之費用（含分銷費用）已揭露於基金之公開說明書或投資人須知中，投資人請至境外基金資訊觀測站(<a href="http://www.fundclear.com.tw" target="_blank">http://www.fundclear.com.tw</a>)或公開資訊觀測站(<a href="http://newmops.tse.com.tw" target="_blank">http://newmops.tse.com.tw</a>)查詢。</li>
+                <li>手續費後收型基金﹙含B、C股﹚在贖回時，基金公司將依持有期間長短收取不同比率之遞延申購手續費，該費用將自贖回總額中扣除；另各基金公司需收取一定比率之分銷費用，將反映於每日基金淨值中，投資人無需額外支付。</li>
+                <li>本資料僅供參考，請勿將其視為買賣基金或其他任何投資之建議。</li>
+                <li>本行已盡力就可靠之資料來源提供訊息，但無法保證資料來源之完整性，如有疏漏或錯誤，本行恕不負任何法律責任。</li>
+                <li>本行受託投資國內、境外基金，不保本、不保息，投資所可能產生之本金虧損、匯率損失或基金解散、清算、移轉、合併等風險，均由投資人自行承擔。</li>
+                <li>相關報價及績效計算，皆以原幣別為計價單位，且皆已考慮配單位數或配發現金的情況。</li>
+                <li>本網頁基金淨值僅供參考，實際應以基金公司公告之淨值為準。</li>
+                <li>所有基金績效，均為過去績效，不代表未來之績效表現，亦不保證基金之最低投資收益。</li>
+                <li>定期定額投資試算，本行係以該基金公司最近一次淨值報價之營業日為扣款基準日，每營業日更新計算之。投資人不同時間進場，將有不同投資績效，且過去績效不代表未來績效之保證。</li>
+                <li class="notice_mark">投資新興市場可能比投資已開發國家有較大的價格波動及流動性較低的風險；投資人投資以高收益債券為訴求之基金不宜占其投資組合過高之比重，以高收益債券為訴求之基金經金管會核准，惟不表示絕無風險。由於高收益債券之信用評等未達投資等級或未經信用評等，且對利率變動的敏感度甚高，故以高收益債券為訴求之基金可能會因利率上升、市場流動性下降，或債券發行機構違約不支付本金、利息或破產而蒙受虧損。以高收益債券為訴求之基金不適合無法承擔相關風險之投資人。以高收益債券為訴求之基金經理公司以往之經理績效不保證基金之最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責以高收益債券為訴求之基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書。</li>
+                <li>投資區域包含中國、香港等地基金之特別注意風險：
+                	<ol class="notice_list2">
+                    	<li>(1) 境外基金不得超過基金淨資產價值之10%，而非完全投資於大陸地區有價證券。</li>
+                        <li>(2) 投資區域包含中國大陸及香港等地之基金，可能因產業循環或非經濟因素（如：政府政策、稅項、貨幣匯回限制或該投資區域之法律、規定），導致價格劇烈波動，以及市場機制不如已開發市場健全，產生流動性不足風險，而使資產價值受不同程度之影響。投資人申購前應詳閱基金公開說明書。</li>
+                    </ol>
+                </li>
+            </ol>
+        </div><!-- 注意事項end -->
+        
+    </div><!-- 主要內容end -->
+</div>
+
+
+<div id="footer">
+	<div id="footer_content"><!-- 頁尾內容 -->
+    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">服務據點</a></span>
+        <span class="footer_item footer_link">意見信箱：<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
+        <span class="footer_tel">客戶服務熱線：(02)2552-3111　免付費：0800-003-111</span><br />
+        <span class="footer_space"><img src="images/space.gif"/></span><br />
+		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">著作權聲明</a> c上海商業儲蓄銀行版權所有　最佳瀏覽環境1024 x 728視窗模式以上，IE8.0 &amp; Firefox 3.0 以上版本瀏覽器</span><br />
+        <span>若您無法看到Flash、PDF或匯率看板，建議您下載Flash Player、Adobe Reader與JAVA軟體</span>
+    </div><!-- 頁尾內容end -->
+</div>
+
+</body>
+</html>

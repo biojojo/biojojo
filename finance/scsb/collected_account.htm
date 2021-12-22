@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<title>上海商業儲蓄銀行-財富管理</title>
+<link type="image/x-icon" rel="icon" href="favicon.ico">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/fancyfields.css" rel="stylesheet">
+<link href="css/colorbox.css" rel="stylesheet">
+<link href="css/web.css" rel="stylesheet">
+<link href="css/fund_add.css" rel="stylesheet">
+<link href="css/nav-h.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swap.js"></script>
+<script src="js/fancyfields-1.2.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script src="js/login.js"></script>
+<script type="text/javascript" src="js/back-to-top.js"></script>
+<script>
+$(function(){
+	//該單元選單
+	$("#menu_products_overview").addClass("menu_choosen");
+	$("#collected_account").addClass("submenu_choosen");
+})
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/btn_logino.gif')">
+
+
+<div id="header">
+	<div id="header_content"><!-- 頁首內容 -->
+    
+		<div id="logo"><a href="index.htm" target="_self"><img src="images/logo.gif"/></a></div>
+        
+    	<div id="menu"><!-- 主選單 -->
+    		<div id="menu_products_overview" class="menu_item"><a href="fund_value.htm" target="_self">最新報價</a></div>
+    		<div id="menu_news" class="menu_item"><a href="news.htm" target="_self">即時新聞</a></div>
+    		<div id="menu_search" class="menu_item"><a href="search.htm" target="_self">基金搜尋</a></div>
+    		<div id="menu_finance" class="menu_item"><a href="finance.htm" target="_self">金融行情</a></div>
+    		<div id="menu_event" class="menu_item"><a href="account.htm" target="_self">理財試算</a></div>
+    		<div id="menu_back" class="menu_item menu_item_last"><a href="index.htm" target="_self">回到首頁</a></div>
+    	</div>
+        
+    </div><!-- 頁首內容end -->
+</div>
+<div id="container">
+	<div id="container_content" class="collected_account"><!-- 主要內容，class並設定本頁特化內容 -->
+    	
+
+<SCRIPT>
+<!--
+function FundCheck(){
+
+  if (document.FundDetail.fund_code.value=="") {
+     alert("此欄位不得空白");
+	   document.FundDetail.fund_code.focus();
+  }
+  else {
+     var ncm=document.FundDetail.fund_code.value.length;
+     if(ncm=='4')
+     {
+        document.FundDetail.submit();
+     }
+     else
+     {
+        alert("請輸入四位數基金代碼");
+        document.FundDetail.fund_code.focus();
+     }
+
+  }
+}
+//-->
+</SCRIPT>
+<form name="FundDetail" method="get" action="Effect_visi.htm">
+<div class="function"><!-- 登入 -->
+        	<div id="btn_login"><a href="https://ibank.scsb.com.tw/" target="_blank" onmouseover="MM_swapImage('btnLogin','','images/btn_logino.gif',1)" onmouseout="MM_swapImgRestore()"><img src="images/btn_login.gif" name="btnLogin" id="btnLogin" /></a></div>
+			<div id="quick_search"><span class="quick_search_title">快速查詢<span class="quick_search_title_arrow">&gt;&gt;</span></span> 產品代碼及名稱 
+		  <input class="quick_search_input" name="fund_code" type="text" /> <input type="button" value="GO" onclick='FundCheck();'/></div>
+        </div></form>
+        <div class="option_search option_search_0">
+        	<div class="menu menu_01">
+                 <ul id="navmenu-h">
+                  <li class="menu_1"><a href="products_overview.htm" title="商品總覽"><em>商品總覽</em></a>
+                  </li>
+                  <li class="menu_2"><a href="fund_value.htm" title="基金淨值"><em>基金淨值</em></a>
+                  </li>
+                  <li class="menu_3"><a href="funds_yierd.htm" title="基金配息"><em>基金配息</em></a>
+                  </li>
+                  <li class="menu_4"><a href="overseas_etf.htm" title="海外ETF"><em>海外ETF</em></a>
+                  </li>
+                  <li class="menu_5"><a href="collected_account.htm" class="menu_on" title="集合帳戶"><em>集合帳戶</em></a>
+                  </li>
+                  <li class="menu_6"><a href="overseas_bonds.htm" title="海外債券"><em>海外債券</em></a>
+                  </li>
+                  <li class="menu_7"><a href="linked_bonds.htm" title="結構型商品"><em>結構型商品</em></a>
+                  </li>
+                 </ul> 
+            </div><!-- menu END --> 
+        </div>
+        <div class="table table_collected_account"><!-- 表格 -->
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr class="table_title">
+                <td class="table_collected_account1">&nbsp;</td>
+                <td class="table_collected_account2">產品代號／名稱</td>
+                <td class="table_collected_account3 cr">風險屬性</td>
+                <td class="table_collected_account4 cr">日期</td>
+                <td class="table_collected_account5 rt">淨值</td>
+                <td class="table_collected_account6 rt">漲跌</td>
+                <td class="table_collected_account7 rt">漲跌幅</td>
+              </tr>
+              <tr>
+                <td class="cr">9996</td>
+                <td class="lt"><a href="com_visi.htm" target="_self">上海銀行全球ETF組合集合信託資金集合管理運用專戶 </a></td>
+                <td class="cr">穩健型</td>
+                <td class="cr">2014/05/30</td>
+                <td class="rt">10.820</td>
+                <td class="rt g">▼0.039</td>
+                <td class="rt g">▼0.363%</td>
+              </tr>
+              <tr>
+                <td class="cr">9997</td>
+                <td class="lt"><a href="com_visi.htm" target="_self">上海銀行全球債券型組合基金信託資金集合管理運用專戶 </a></td>
+                <td class="cr">保守型</td>
+                <td class="cr">2014/05/30</td>
+                <td class="rt">15.5061</td>
+                <td class="rt r">▲0.009</td>
+                <td class="rt r">▲0.003%</td>
+              </tr>
+              <tr>
+                <td class="cr">9998</td>
+                <td class="lt"><a href="com_visi.htm" target="_self">上海銀行全球潛力組合基金信託資金集合管理運用專戶 </a></td>
+                <td class="cr">穩健型</td>
+                <td class="cr">2014/05/30</td>
+                <td class="rt">13.0366</td>
+                <td class="rt r">▲0.063</td>
+                <td class="rt r">▲0.091%</td>
+              </tr>
+              <tr>
+                <td class="cr">9999</td>
+                <td class="lt"><a href="com_visi.htm" target="_self">上海銀行全球精選基金信託資金集合管理運用帳戶 </a></td>
+                <td class="cr">保守型</td>
+                <td class="cr">2014/05/30</td>
+                <td class="rt">14.341</td>
+                <td class="rt g">▼0.029</td>
+                <td class="rt g">▼0.208%</td>
+              </tr>
+            </table>
+        </div><!-- 表格 end -->
+        
+        <div class="notice"><!-- 注意事項 -->
+        	<p>集合帳戶警語：</p>
+            <ol class="notice_list">
+            	<li>信託資金集合管理運用帳戶具有風險，委託人簽約前應詳細閱讀集合管理運用帳戶約定條款。</li>
+                <li>信託業應盡善良管理人之注意義務，但不擔保信託資金集合管理運用帳戶之本金或最低收益。</li>
+                <li>委託人每次為加入集合管理運用帳戶之指示前，應確實於合理期間詳閱各該集合管理運用帳戶約定條款及各信託運用之相關資料及其規定，並瞭解其投資可能產生之風險，包括但不限於運用標的可能發生之跌價風險、信用風險或匯兌損失所導致之本金虧損，或運用標的暫停接受贖回及解散、清算等風險；且委託人承諾其係基於其獨立審慎之投資判斷，而自行決定加入各該集合管理運用帳戶。</li>
+                <li>信託資金管理運用所生之資本利得及其孳息收益等，悉數歸收益人所享有；其運用所生風險、費用及稅賦亦悉數由受益人負擔，受託人依法不得擔保信託本金及最低收益率。</li>
+                <li>信託資金經運用於存款以外之標的者，不受存款保險之保障。</li>
+            </ol>
+        </div><!-- 注意事項end -->
+        
+    </div><!-- 主要內容end -->
+</div>
+
+<div id="footer">
+	<div id="footer_content"><!-- 頁尾內容 -->
+    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">服務據點</a></span>
+        <span class="footer_item footer_link">意見信箱：<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
+        <span class="footer_tel">客戶服務熱線：(02)2552-3111　免付費：0800-003-111</span><br />
+        <span class="footer_space"><img src="images/space.gif"/></span><br />
+		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">著作權聲明</a> c上海商業儲蓄銀行版權所有　最佳瀏覽環境1024 x 728視窗模式以上，IE8.0 &amp; Firefox 3.0 以上版本瀏覽器</span><br />
+        <span>若您無法看到Flash、PDF或匯率看板，建議您下載Flash Player、Adobe Reader與JAVA軟體</span>
+    </div><!-- 頁尾內容end -->
+</div>
+</body>
+</html>

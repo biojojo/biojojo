@@ -1,0 +1,2217 @@
+@charset "utf-8";
+/* CSS Document */
+/* ------------------------------------body---------------------------------------- */
+body {
+	background:#f3f3f3;
+	min-height:600px;
+	min-width:980px;
+	color:#000000;
+	/*font-family: 微軟儷黑體, 微軟正黑體, Arial, Helvetica, Geneva, sans-serif;*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight:normal;
+	line-height:20px;
+	text-decoration: none;
+}
+form {
+	/*font-family: 微軟儷黑體, 微軟正黑體, Arial, Helvetica, Geneva, sans-serif;*/
+	font-family:Arial, Helvetica, sans-serif;
+}
+a, a:link, a:visited {
+	color:#000000;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:#000000;
+	text-decoration:none;
+}
+
+
+/* ------------------------------------header---------------------------------------- */
+#header {
+	background:#fdfdfd;
+	display:block;
+	float:left;
+	position:relative;
+	width:100%;
+	height:90px;
+}
+#header_index_content, #header_content {
+	position:relative;
+	width:980px;
+	height:100%;
+	margin:0px auto;
+}
+#header_index_content {background:url(../images/header_index_back.jpg) no-repeat top center;}
+#header_content {background:url(../images/header_back.jpg) no-repeat top center;}
+#logo {
+	position:absolute;
+	width:300px;
+	height:60px;
+	left:103px;
+	top:8px;
+}
+#index_menu, #menu {
+	position:absolute;
+	height:30px;
+	right:5px;
+	top:29px;
+}
+#index_menu {width:275px;}
+#menu {width:480px;}
+.menu_item {
+	background:url(../images/menu_line.gif) no-repeat center right;
+	float:left;
+	position:relative;
+	width:80px;
+	height:30px;
+	text-align:center;
+}
+#share_fb {width:175px;}
+#share_fb img {margin:0px 3px -5px 0px;}
+#favorite {width:100px;}
+.menu_item_last {background:none;}
+.menu_item a, .menu_item a:link, .menu_item a:visited, .menu_item a, .menu_item a:link, .menu_item a:visited{
+	display:block;
+	width:100%;
+	height:100%;
+	font-size:13px;
+	font-weight:bold;
+	line-height:30px;
+}
+.menu_item a, .menu_item a:link, .menu_item a:visited {color:#ffffff;}
+.menu_item a:hover, .menu_item a:active {color:#FF0;}
+.menu_choosen a, .menu_choosen a:link, .menu_choosen a:visited, .menu_choosen a:hover, .menu_choosen a:active {
+	background:url(../images/menu_item_back.png) no-repeat center;
+	color:#c30000;
+}
+
+
+/* ------------------------------------notice---------------------------------------- */
+.notice {
+	float:left;
+	position:relative;
+	width:100%;
+	font-size:12px;
+	text-align:left;
+	line-height:15px;
+	color:#000000;
+	font-weight:bold;
+}
+.news .notice {margin-top:20px;}
+.notice p {
+	padding:10px 0px 5px 8px;
+	font-size:12px;
+	font-weight:bold;
+}
+.notice_list {
+	padding-left:25px;
+	margin-left:5px;
+	letter-spacing:0.02em;
+	list-style:decimal outside;
+}
+.notice_list li {
+	margin-bottom:3px;
+}
+.notice_list2 {
+	padding-left:1.5em;
+	letter-spacing:0px;
+	text-indent:-1.5em;
+}
+.notice_mark {
+	color:#c30000;
+}
+.notice_list a, .notice_list a:link, .notice_list a:visited {color:#0068b7; text-decoration:underline;}
+.notice_list a:hover, .notice_list a:active {color:#0075cd; text-decoration:underline;}
+
+
+/* ------------------------------------article_foundation_content---------------------------------------- */
+.article_foundation_content {
+	float:left;
+	position:relative;
+	width:95%;
+	padding-left:3%;
+	padding-right:2%;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.article_foundation_content p {
+	margin-bottom:20px;
+	line-height:24px;
+}
+.article_foundation_content a, .article_foundation_content a:link, .article_foundation_content a:visited {color:#0068b7; text-decoration:underline;}
+.article_foundation_content a:hover, .article_foundation_content a:active {color:#0075cd; text-decoration:underline;}
+.article_foundation_content_add {
+	background:#f9f9f9;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+	float:left;
+	position:relative;
+	width:95%;
+	padding-left:3%;
+	padding-right:2%;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:13px;
+	line-height:22px;
+}
+.article_foundation_content_add a, .article_foundation_content_add a:link, .article_foundation_content_add a:visited {color:#c30000; text-decoration:underline;}
+.article_foundation_content_add a:hover, .article_foundation_content_add a:active {color:#F00; text-decoration:underline;}
+
+
+/* ------------------------------------footer---------------------------------------- */
+#footer {
+	background:#f3f3f3;
+	display:block;
+	float:left;
+	position:relative;
+	width:100%;
+	height:130px;
+}
+#footer_content {
+	background:url(../images/footer_back.jpg) no-repeat top center;
+	position:relative;
+	width:980px;
+	height:100px;
+	margin:0px auto;
+	padding-top:30px;
+	color:#555555;
+	font-size:12px;
+	line-height:22px;
+	text-align:center;
+}
+.footer_item {
+	background:url(../images/footer_line.gif) no-repeat center left;
+	padding:0px 9px;
+}
+.footer_tel {
+	background:url(../images/footer_block.png) no-repeat center;
+	padding:5px 12px;
+	color:#FFF;
+	line-height:25px;
+}
+.footer_link a, .footer_link a:link, .footer_link a:visited {text-decoration:underline;}
+.footer_link a:hover, .footer_link a:active {color:#c30000; text-decoration:underline;}
+.footer_space img{ height:5px;}
+
+
+/* ------------------------------------container---------------------------------------- */
+#container {
+	background:#fdfdfd;
+	display:block;
+	float:left;
+	position:relative;
+	width:100%;
+}
+#container_content {
+	background:#ffffff;
+	position:relative;
+	width:945px;
+	height:auto;
+	overflow-y:hidden;
+	margin:0px auto;
+	padding:0px 15px 40px 15px;
+}
+
+
+/* ------------------------------------function_index---------------------------------------- */
+#function_index {
+	float:left;
+	position:relative;
+	width:100%;
+	height:100px;
+	text-align:center;
+	margin-top:20px;
+}
+.function_index_item a, .function_index_item a:link, .function_index_item a:visited, .function_index_item a, .function_index_item a:link, .function_index_item a:visited{
+	position:relative;
+	padding:0px 0px 0px 15px;
+	margin:0px 12px;
+	font-weight:bold;
+	line-height:45px;
+}
+
+
+/* ------------------------------------index_show---------------------------------------- */
+#index_show {
+	float:left;
+	position:relative;
+	width:945px;
+	height:300px;
+	overflow:hidden;
+	margin-bottom:15px;
+}
+#index_show_group {
+	position:absolute;
+	width:99999px;
+	height:300px;
+	left:0px;
+	top:0px;
+}
+.index_banner {
+	float:left;
+	position:relative;
+	width:945px;
+	height:300px;
+}
+#index_arrow_prev {
+	position:absolute;
+	width:40px;
+	height:60px;
+	left:5px;
+	top:120px;
+}
+#index_arrow_next {
+	position:absolute;
+	width:40px;
+	height:60px;
+	right:5px;
+	top:120px;
+}
+
+
+/* ------------------------------------index_quick_search---------------------------------------- */
+#index_quick_search {
+	background:url(../images/index_quick_search_back.gif) no-repeat center top;
+	float:left;
+	position:relative;
+	width:260px;
+	height:260px;
+	overflow:hidden;
+	margin:0px 7px 0px 0px;
+}
+#index_quick_search_title {
+	position:absolute;
+	width:230px;
+	height:30px;
+	left:15px;
+	top:6px;
+	text-align:left;
+	font-weight:bold;
+	font-size:16px;
+	line-height:30px;
+	color:#d40000;
+	border-bottom:#d40000 1px dotted;
+}
+.index_quick_search_data {
+	position:absolute;
+	width:230px;
+	height:30px;
+	left:23px;
+	line-height:30px;
+	text-align:left;
+}
+#index_quick_search_data1 {top:45px;}
+#index_quick_search_data1_input {width:109px;}
+#index_quick_search_data1_btn {width:35px; padding:1px 2px; text-align:center;}
+#index_quick_search_data2 {top:75px;}
+#index_quick_search_data2 select {width:152px;}
+#index_quick_search_data3 {top:105px;}
+#index_quick_search_data3 select {width:152px;}
+#index_quick_search_data4 {top:135px;}
+#index_quick_search_data4 select {width:152px;}
+#index_quick_search_data5 {top:165px;}
+#index_quick_search_data5 select {width:152px;}
+#btn_products_overview {
+	position:absolute;
+	width:100px;
+	height:25px;
+	left:25px;
+	top:215px;
+}
+#btn_product_compare {
+	position:absolute;
+	width:100px;
+	height:25px;
+	left:25px;
+	top:215px;
+}
+#btn_product_value {
+	position:absolute;
+	width:100px;
+	height:25px;
+	left:135px;
+	top:215px;
+}
+
+
+/* ------------------------------------index_news---------------------------------------- */
+#index_news {
+	float:left;
+	background:#CCCCC;
+	position:relative;
+	width:505px;
+	height:260px;
+	overflow:hidden;
+	margin:0px 5px 0px 0px;
+}
+.index_news_content {
+	position:absolute;
+	width:503px;
+	height:214px;
+	border:1px solid #d5d5d5;
+	left:0px;
+	top:39px;
+	padding-top:5px;
+	display:none;
+}
+.index_news_tag {
+	background:#eeeeee;
+	position:absolute;
+	height:38px;
+	border-left:1px solid #d5d5d5;
+	border-right:1px solid #d5d5d5;
+	border-top:1px solid #d5d5d5;
+	line-height:38px;
+	text-align:center;
+	font-size:15px;
+}
+.index_news_tag a, .index_news_tag a:link, .index_news_tag a:visited {color:#000000;}
+.index_news_tag a:hover, .index_news_tag a:active {color:#d40000;}
+.index_news_tag_choosen {
+	background:#ffffff;
+	height:39px;
+	line-height:39px;
+	font-weight:bold;
+	color:#d40000;
+	font-size:16px;
+}
+.index_news_tag_choosen a, .index_news_tag_choosen a:link, .index_news_tag_choosen a:visited {color:#d40000;}
+.index_news_tag_choosen a:hover, .index_news_tag_choosen a:active {color:#d40000;}
+#index_news_tag1 {width:163px; left:0px;}
+#index_news_tag2 {width:163px; left:165px;}
+#index_news_tag3 {width:173px; left:330px;}
+.index_news_list {
+	position:relative;
+	width:92%;
+	height:20px;
+	float:left;
+	margin:8px 4% 0px 4%;
+	text-align:left;
+}
+#index_news_content2 .index_news_list {
+	margin:8px 4% 0px 4%;
+}
+.index_news_list a, .index_news_list a:link, .index_news_list a:visited {}
+.index_news_list a:hover, .index_news_list a:active {color:#d40000; text-decoration:underline;}
+.index_news_more {
+	position:relative;
+	background:#f9f9f9;
+	width:95%;
+	height:30px;
+	line-height:30px;
+	float:left;
+	margin:8px 1% 0px 1%;
+	padding-right:3%;
+	text-align:right;
+	font-size:13px;
+}
+.index_news_more a, .index_news_more a:link, .index_news_more a:visited {color:#d40000;}
+.index_news_more a:hover, .index_news_more a:active {color:#d40000; text-decoration:underline;}
+#index_news_content2 .index_news_list a span, #index_news_content2 .index_news_list a:link span, #index_news_content2 .index_news_list a:visited span {
+	color:#d40000;
+	text-decoration:none;
+	font-size:12px;
+	padding-right:10px;
+	padding-left:5px;
+}
+#index_news_content2 .index_news_list a:hover span, #index_news_content2 .index_news_list a:active span {
+	color:#d40000;
+	text-decoration:none;
+	font-size:12px;
+	padding-right:10px;
+	padding-left:5px;
+}
+
+
+/* ------------------------------------index_link---------------------------------------- */
+#index_link {
+	background:url(../images/index_link_back.gif) no-repeat top center;
+	float:right;
+	position:relative;
+	width:165px;
+	height:260px;
+	overflow:hidden;
+	margin:0px 0px 0px 0px;
+}
+.index_link_btn {
+	position:relative;
+	width:160px;
+	height:35px;
+	float:left;
+	margin:14px 0px 0px 15px;
+	line-height:35px;
+	font-weight:bold;
+}
+.index_link_btn a, .index_link_btn a:link, .index_link_btn a:visited {}
+.index_link_btn a:hover, .index_link_btn a:active {color:#c30000;}
+.index_link_btn img {margin:0px 0px -12px 0px; padding-right:8px;}
+
+
+/* ---------------------------------function_login------------------------------------- */
+.function {
+	float:left;
+	position:relative;
+	width:100%;
+	padding:10px 0px;
+}
+#btn_login {
+	float:right;
+	position:relative;
+	width:125px;
+	height:30px;
+}
+#btn_notice {
+	float:right;
+	position:relative;
+	width:100px;
+	height:30px;
+	margin-right:5px;
+}
+#quick_search {
+	float:left;
+	position:relative;
+	width:400px;
+	height:20px;
+	margin:10px 0px 0px 5px;
+}
+.quick_search_title {
+	color:#c30000;
+	font-size:16px;
+	font-weight:bold;
+}
+.quick_search_title_arrow {font-size:12px;}
+.quick_search_input {width:150px;}
+
+
+/* ----------------------------function_figure--------------------------------- */
+.function_figure {
+	background:url(../images/function_figure_back.jpg) repeat-x center;
+	line-height:45px;
+	font-weight:bold;
+	float:left;
+	position:relative;
+	width:100%;
+	height:45px;
+	text-align:left;
+}
+.funciton_figure_title {margin-left:25px; display:none;}
+.function_figure_option1 {margin-left:265px;}
+.function_figure_option2 {margin-left:45px;}
+.funciton_figure_btn {margin-left:35px;}
+.funciton_figure_btn img{margin-bottom:-7px;}
+
+
+/* ----------------------------function_calculate--------------------------------- */
+.function_calculate {
+	float:left;
+	position:relative;
+	width:100%;
+	height:45px;
+	margin:10px 0px 35px 0px;
+	text-align:center;
+}
+.function_calculate_btn {
+	height:35px;
+	margin:0px 15px;
+}
+/* ----------------------------function_combination--------------------------------- */
+.function_combination {
+	float:left;
+	position:relative;
+	width:100%;
+	height:45px;
+	margin:20px 0px 10px 0px;
+	text-align:center;
+}
+.btn_combination {
+	height:35px;
+	margin:0px 15px;
+}
+
+
+/* ----------------------------function_product_compare_1ststep--------------------------------- */
+.function_product_compare_1ststep {
+	background:url(../images/function_product_compare_1ststep_back.gif) no-repeat top center;
+	float:left;
+	position:relative;
+	width:100%;
+	height:110px;
+	margin:5px 0px 40px 0px;
+}
+.function_product_compare_1ststep1 {
+	position:absolute;
+	width:320px;
+	height:40px;
+	left:40px;
+	top:15px;
+}
+.function_product_compare_1ststep2 {
+	position:absolute;
+	width:320px;
+	height:40px;
+	left:380px;
+	top:15px;
+}
+.function_product_compare_1ststep3 {
+	position:absolute;
+	width:320px;
+	height:40px;
+	left:40px;
+	top:55px;
+}
+.function_product_compare_1ststep4 {
+	position:absolute;
+	width:320px;
+	height:40px;
+	left:380px;
+	top:55px;
+}
+.function_product_compare_1ststep_txt {
+	position:absolute;
+	width:100px;
+	left:0px;
+	top:9px;
+	text-align:right;
+}
+.function_product_compare_1ststep_option {
+	position:absolute;
+	width:200px;
+	left:110px;
+	top:1px;
+}
+#btn_compare_1ststep {
+	position:absolute;
+	width:115px;
+	height:35px;
+	right:45px;
+	top:40px;
+}
+.function_product_compare_1ststep_option .ffSelectButton, .function_product_compare_1ststep_option .ffSelectButton span {
+	background-image: url(../images/fancyfields/sprite_gray.png);
+}
+
+
+/* ----------------------------function_product_compare_2ndstep--------------------------------- */
+.function_product_compare_2ndstep {
+	background:url(../images/function_product_compare_2ndstep_back.gif) no-repeat top center;
+	float:left;
+	position:relative;
+	width:100%;
+	height:120px;
+	margin:5px 0px 0px 0px;
+}
+.function_product_compare_2ndstep_block {
+	position:absolute;
+	width:110px;
+	height:40px;
+	top:20px;
+}
+.function_product_compare_2ndstep_block input{
+	width:95px;
+	height:20px;
+	margin:3px 0px 0px 5px;
+}
+#function_product_compare_2ndstep1 {left:45px;}
+#function_product_compare_2ndstep2 {left:185px;}
+#function_product_compare_2ndstep3 {left:325px;}
+#function_product_compare_2ndstep4 {left:465px;}
+#function_product_compare_2ndstep5 {left:605px;}
+#btn_compare_2ndstep {
+	position:absolute;
+	width:115px;
+	height:35px;
+	right:45px;
+	top:28px;
+}
+
+
+/* ------------------------------------option_company---------------------------------------- */
+.option_company {
+	float:left;
+	position:relative;
+	width:100%;
+	height:65px;
+	padding-top:25px;
+	text-align:left;
+}
+.option_company1_title {
+	position:absolute;
+	width:100px;
+	height:30px;
+	left:130px;
+	top:30px;
+	font-weight:bold;
+	line-height:30px;
+	text-align:right;
+}
+.option_company1_content {
+	position:absolute;
+	width:200px;
+	height:30px;
+	left:240px;
+	top:25px;
+	text-align:left;
+}
+.option_company2_title {
+	position:absolute;
+	width:100px;
+	height:30px;
+	left:450px;
+	top:30px;
+	font-weight:bold;
+	line-height:30px;
+	text-align:right;
+}
+.option_company2_content {
+	position:absolute;
+	width:200px;
+	height:30px;
+	left:560px;
+	top:25px;
+	text-align:left;
+}
+
+
+/* ------------------------------------option_product---------------------------------------- */
+.option_product {
+	background:url(../images/option_s2_back.jpg) repeat-x center;
+	float:left;
+	position:relative;
+	width:100%;
+	height:45px;
+	margin-bottom:25px;
+	text-align:left;
+	z-index:100;
+}
+.option_product1 {
+	position:absolute;
+	width:200px;
+	height:30px;
+	left:80px;
+	top:4px;
+	text-align:left;
+}
+.product_show .option_product1 {left:180px;}
+.option_product2 {
+	position:absolute;
+	width:360px;
+	height:30px;
+	left:300px;
+	top:4px;
+	text-align:left;
+}
+.product_show .option_product2 {left:400px;}
+.option_product2 .ffSelectWrapper {width:340px;}
+.option_product3 {
+	position:absolute;
+	width:200px;
+	height:30px;
+	left:660px;
+	top:4px;
+	text-align:left;
+}
+
+
+/* ------------------------------------option_search---------------------------------------- */
+.option_search {
+	background:url(../images/option_search_back.jpg) repeat-x center;
+	float:left;
+	position:relative;
+	width:100%;
+	height:135px;
+	margin-bottom:10px;
+	text-align:left;
+	z-index:100;
+}
+.option_search_txt {
+	font-weight:bold;
+	position:absolute;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:right;
+}
+#option_search_txt1 {left:0px; top:18px;}
+#option_search_txt2 {left:290px; top:18px;}
+#option_search_txt3 {left:550px; top:18px;}
+#option_search_txt4 {left:0px; top:53px;}
+#option_search_txt5 {left:290px; top:53px;}
+#option_search_txt6 {left:550px; top:53px;}
+#option_search_txt7 {left:0px; top:88px;}
+#option_search_txt8 {left:290px; top:88px; display:none;}
+#option_search_txt9 {left:550px; top:88px;}
+
+.option_search_block {
+	position:absolute;
+	width:210px;
+	height:30px;
+	text-align:left;
+}
+.option_search_block .ffSelectButton, .option_search_block .ffSelectButton span {
+	background-image: url(../images/fancyfields/sprite_gray.png);
+}
+#option_search_block1 {left:85px; top:15px;}
+#option_search_block2 {left:375px; top:15px;}
+#option_search_block3 {left:635px; top:15px;}
+#option_search_block4 {left:85px; top:50px;}
+#option_search_block5 {left:375px; top:50px;}
+#option_search_block6 {left:635px; top:50px;}
+#option_search_block7 {left:85px; top:85px;}
+#option_search_block8 {left:280px; top:85px;}
+#option_search_block9 {left:375px; top:85px; display:none;}
+#option_search_block10 {left:635px; top:85px;}
+#option_search_block2 .ffSelectWrapper {width:170px;}
+#option_search_block3 .ffSelectWrapper {width:170px;}
+#option_search_block5 .ffSelectWrapper {width:170px;}
+#option_search_block6 .ffSelectWrapper {width:170px;}
+#option_search_block9 .ffSelectWrapper {width:170px;}
+#option_search_block10 .ffSelectWrapper {width:170px;}
+#option_search_block7 .ffSelectWrapper {width:200px;}
+#option_search_block8 .ffSelectWrapper {width:125px;}
+
+#btn_option_search {
+	position:absolute;
+	width:110px;
+	height:110px;
+	right:20px;
+	top:13px;
+}
+
+
+/* ------------------------------------option_global---------------------------------------- */
+.option_global {
+	float:left;
+	position:relative;
+	width:100%;
+	height:65px;
+	padding-top:25px;
+	text-align:left;
+}
+.option_global1_title {
+	position:absolute;
+	width:100px;
+	height:30px;
+	left:130px;
+	top:30px;
+	font-weight:bold;
+	line-height:30px;
+	text-align:right;
+}
+.option_global1_content {
+	position:absolute;
+	width:200px;
+	height:30px;
+	left:240px;
+	top:25px;
+	text-align:left;
+}
+.option_global2_title {
+	position:absolute;
+	width:100px;
+	height:30px;
+	left:450px;
+	top:30px;
+	font-weight:bold;
+	line-height:30px;
+	text-align:right;
+}
+.option_global2_content {
+	position:absolute;
+	width:200px;
+	height:30px;
+	left:560px;
+	top:25px;
+	text-align:left;
+}
+.finance_calculate .option_global1_title {left:300px;}
+.finance_calculate .option_global1_content {left:410px;}
+.finance_calculate .option_global2_title {display:none;}
+.finance_calculate .option_global2_content {display:none}
+
+
+/* ------------------------------------submenu---------------------------------------- */
+.submenu {
+	background:url(../images/submenu_back.jpg) repeat-x center;
+	float:left;
+	position:relative;
+	width:100%;
+	height:45px;
+	text-align:center;
+}
+.submenu_product {}
+.finance .submenu_finance {margin-bottom:30px;}
+.foreign_exchange .submenu_finance {margin-bottom:30px;}
+.nt_exchange_rate .submenu_finance {margin-bottom:30px;}
+.fc_exchange_rate .submenu_finance {margin-bottom:30px;}
+.submenu_event {margin-bottom:30px;}
+.submenu_item a, .submenu_item a:link, .submenu_item a:visited, .submenu_item a, .submenu_item a:link, .submenu_item a:visited{
+	position:relative;
+	padding:0px 0px 0px 15px;
+	margin:0px 30px;
+	font-weight:bold;
+	line-height:45px;
+}
+.submenu_item a, .submenu_item a:link, .submenu_item a:visited {
+	background:url(../images/submenu_arrow_gray.png) no-repeat center left;
+	color:#666666;
+}
+.submenu_item a:hover, .submenu_item a:active {
+	background:url(../images/submenu_arrow_black.png) no-repeat center left;
+	color:#000000;
+}
+.submenu_choosen a, .submenu_choosen a:link, .submenu_choosen a:visited, .submenu_choosen a:hover, .submenu_choosen a:active {
+	background:url(../images/submenu_arrow_red.png) no-repeat center left;
+	color:#c30000;
+}
+
+
+/* ------------------------------------title---------------------------------------- */
+.title {
+	background:url(../images/title_back.jpg) repeat-x center;
+	float:left;
+	position:relative;
+	width:98%;
+	height:45px;
+	padding-left:2%;
+	color:#333333;
+	font-size:18px;
+	font-weight:bold;
+	letter-spacing:1px;
+	line-height:45px;
+	text-align:left;
+}
+.title_note {
+	font-size:13px;
+	letter-spacing:0px;
+	padding-left:15px;
+}
+.title_add {
+	font-size:12px;
+	letter-spacing:0px;
+	margin-right:15px;
+	padding-top:2px;
+	float:right;
+}
+.title_add input {
+	font-size:12px;
+	margin-left:10px;
+}
+.title_step {
+	font-size:14px;
+	padding-right:25px;
+}
+#title_compare_1ststep, #title_compare_2ndstep {
+	background:url(../images/title_step_back.jpg) no-repeat left top;
+}
+#title_compare_1ststep {
+	margin-top:15px;
+}
+.title_foundation_content {
+	height:145px;
+}
+.title_foundation_back1 {background:url(../images/foundation/foundation_title_back1.jpg) no-repeat top right;}
+.title_foundation_back2 {background:url(../images/foundation/foundation_title_back2.jpg) no-repeat top right;}
+.title_foundation_back3 {background:url(../images/foundation/foundation_title_back3.jpg) no-repeat top right;}
+.title_foundation_back4 {background:url(../images/foundation/foundation_title_back4.jpg) no-repeat top right;}
+.title_foundation_back5 {background:url(../images/foundation/foundation_title_back5.jpg) no-repeat top right;}
+.title_foundation_back6 {background:url(../images/foundation/foundation_title_back6.jpg) no-repeat top right;}
+.title_foundation_back7 {background:url(../images/foundation/foundation_title_back7.jpg) no-repeat top right;}
+.title_foundation_back8 {background:url(../images/foundation/foundation_title_back8.jpg) no-repeat top right;}
+.title_foundation_sub {
+	position:absolute;
+	width:460px;
+	height:30px;
+	top:5px;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:14px;
+}
+.title_foundation_main {
+	position:absolute;
+	width:460px;
+	height:90px;
+	top:45px;
+	margin-left:5px;
+	color:#FFFFFF;
+	font-size:24px;
+	line-height:30px;
+	font-weight:bold;
+	overflow:hidden;
+}
+.title_foundation_back_btn {
+	position:absolute;
+	width:100px;
+	height:30px;
+	bottom:-35px;
+	right:20px;
+	text-align:right;
+	z-index:101;
+}
+.title_foundation_back_btn input {
+	font-size:12px;
+}
+#title_product_compare_result_data {
+	margin-top:15px;
+}
+.change_icon {
+	margin-right:-16px;
+	padding-left:2px;
+	margin-bottom:-2px;
+}
+.subtitle {
+	background:#f9f9f9;
+	float:left;
+	position:relative;
+	width:96%;
+	height:40px;
+	padding-left:2%;
+	padding-right:2%;
+	color:#000000;
+	font-size:15px;
+	letter-spacing:1px;
+	line-height:40px;
+	text-align:center;
+	margin-top:20px;
+}
+
+
+
+/* ------------------------------------news_title---------------------------------------- */
+.news_title {
+	background:url(../images/news_title_back.gif) no-repeat left center;
+	float:left;
+	position:relative;
+	width:100%;
+	height:45px;
+	font-size:16px;
+	font-weight:bold;
+	letter-spacing:1px;
+	line-height:45px;
+	text-align:left;
+}
+.news_title a, .news_title a:link, .news_title a:visited {color:#666666;}
+.news_title a:hover, .news_title a:active {color:#333333;}
+
+.news_title_choosen {background:url(../images/news_title_choosen_back.gif) no-repeat left center;}
+.news_title_choosen a, .news_title_choosen a:link, .news_title_choosen a:visited, .news_title_choosen a:hover, .news_title_choosen a:active {color:#000000;}
+
+.news_title a {margin-left:40px;}
+.news_content {
+	background:#ffffff;
+	float:left;
+	position:relative;
+	width:100%;
+	height:450px;
+	text-align:left;
+	display:none;
+}
+.btn_news_prev {
+	position:absolute;
+	width:100px;
+	height:100px;
+	left:5px;
+	top:175px;
+}
+.btn_news_next {
+	position:absolute;
+	width:100px;
+	height:100px;
+	right:5px;
+	top:175px;
+}
+
+/* ------------------------------------news_pop---------------------------------------- */
+#news_pop {
+	background:#FFFFFF;
+	position:relative;
+	width:96%;
+	padding:2%;
+}
+.news_pop_subtitle {
+	background:url(../images/news_pop_subtitle_back.jpg) no-repeat left center;
+	position:relative;
+	color:#FFF;
+	font-weight:bold;
+	width:100%;
+	height:30px;
+	font-size:16px;
+	line-height:30px;
+	text-align:left;
+	margin-bottom:18px;
+}
+.news_pop_subtitle span {margin-left:28px;}
+.news_pop_title {
+	position:relative;
+	width:96%;
+	margin-left:2%;
+	margin-right:2%;
+	font-size:18px;
+	font-weight:bold;
+	color:#000000;
+	border-bottom:1px dotted #666666;
+	line-height:26px;
+	text-align:left;
+	padding-bottom:15px;
+	margin-bottom:18px;
+}
+.news_pop_content {
+	position:relative;
+	width:96%;
+	margin-left:2%;
+	margin-right:2%;
+	text-align:left;
+	line-height:22px;
+}
+.news_pop_content p {
+	margin-bottom:15px;
+}
+.news_pop_source {
+	position:relative;
+	width:98%;
+	margin-left:1%;
+	margin-right:1%;
+	text-align:right;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+
+/* ------------------------------------notice_pop---------------------------------------- */
+#notice_pop {
+	background:#FFFFFF;
+	position:relative;
+	width:96%;
+	padding:2%;
+}
+#notice_pop .notice {
+	position:relative;
+	float:none;
+	clear:both;
+}
+.notice_pop_subtitle {
+	background:url(../images/news_pop_subtitle_back.jpg) no-repeat left center;
+	position:relative;
+	color:#FFF;
+	font-weight:bold;
+	width:100%;
+	height:30px;
+	font-size:16px;
+	line-height:30px;
+	text-align:left;
+	margin-bottom:18px;
+}
+.notice_pop_subtitle span {margin-left:28px;}
+
+
+/* ------------------------------------product_news_pop---------------------------------------- */
+#product_news_pop {
+	background:#FFFFFF;
+	position:relative;
+	width:96%;
+	padding:2%;
+}
+.product_news_pop_subtitle {
+	background:url(../images/news_pop_subtitle_back.jpg) no-repeat left center;
+	position:relative;
+	color:#FFF;
+	font-weight:bold;
+	width:100%;
+	height:30px;
+	font-size:16px;
+	line-height:30px;
+	text-align:left;
+	margin-bottom:18px;
+}
+.product_news_pop_subtitle span {margin-left:28px;}
+.product_news_pop_content {
+	position:relative;
+	width:96%;
+	margin-left:2%;
+	margin-right:2%;
+	text-align:left;
+	line-height:25px;
+}
+.product_news_pop_content p {
+	margin-bottom:15px;
+}
+.product_news_pop_content a, .product_news_pop_content a:link, .product_news_pop_content a:visited {color:#d40000; font-weight:bold;}
+.product_news_pop_content a:hover, .product_news_pop_content a:active {color:#d40000; font-weight:bold; text-decoration:underline;}
+
+
+/* ------------------------------------product_combination_pop---------------------------------------- */
+#product_combination_pop {
+	background:#FFFFFF;
+	position:relative;
+	width:96%;
+	padding:2%;
+}
+.product_combination_pop_subtitle {
+	background:url(../images/news_pop_subtitle_back.jpg) no-repeat left center;
+	position:relative;
+	color:#FFF;
+	font-weight:bold;
+	width:100%;
+	height:30px;
+	font-size:16px;
+	line-height:30px;
+	text-align:left;
+	margin-bottom:8px;
+}
+.product_combination_pop_subtitle span {margin-left:28px;}
+
+
+/* ------------------------------------finance_combination_pop---------------------------------------- */
+#finance_combination_pop {
+	background:#FFFFFF;
+	position:relative;
+	width:96%;
+	padding:2%;
+}
+finance_combination_pop_subtitle {
+	background:url(../images/news_pop_subtitle_back.jpg) no-repeat left center;
+	position:relative;
+	color:#FFF;
+	font-weight:bold;
+	width:100%;
+	height:30px;
+	font-size:16px;
+	line-height:30px;
+	text-align:left;
+	margin-bottom:8px;
+}
+.finance_combination_pop_subtitle span {margin-left:28px;}
+
+
+/* ------------------------------------table---------------------------------------- */
+.table {
+	float:left;
+	position:relative;
+	width:100%;
+	padding:5px 0px 15px 0px;
+	border-collapse: collapse;
+}
+.table_notice {
+	color:#999999;
+	float:left;
+	font-size:12px;
+	width:100%;
+	text-align:right;
+}
+.table_half1 {
+	width:49%;
+	float:left;
+}
+.table_half2 {
+	width:49%;
+	float:right;
+}
+.table_three1 {
+	width:30%;
+	float:left;
+	margin-left:2%;
+	margin-right:3%;
+}
+.table_three2 {
+	width:30%;
+	float:left;
+	margin-right:2%;
+}
+.table_three3 {
+	width:30%;
+	float:right;
+	margin-right:2%;
+}
+.table .table_title {
+	border-bottom:1px solid #c30000;
+	color:#c30000;
+	font-weight:bold;
+}
+.table_title_note {
+	color:#000000;
+	font-size:12px;
+	font-weight:normal;
+	padding-left:10px;
+}
+.table .table_subtitle {
+	border-bottom:1px solid #666666;
+	color:#000000;
+	font-weight:bold;
+}
+.table .list_title {
+	color:#c30000;
+	font-weight:bold;
+	text-align:right;
+	padding-right:15px;
+}
+.table tr {border-bottom:1px solid #e2e2e2;}
+.table td {
+	padding:10px 0px;
+	text-align:left;
+	vertical-align:middle;
+}
+.table td.small {font-size:13px;}
+.table tr.no_bottom_line {border-bottom:none;}
+.table tr.bottom_line_red {border-bottom:1px solid #c30000;}
+.table tr.height_higher td{padding:18px 0px;}
+.table td.gray {background:#f6f6f6;}
+.table td.align_left {text-align:left;}
+.table td.align_right {text-align:right;}
+.table td.vertical_align_top {vertical-align:top;}
+.green {color:#008309}
+.red {color:#c30000}
+.table a, .table a:link, .table a:visited {}
+.table a:hover, .table a:active {color:#c30000; text-decoration:underline;}
+
+
+/* ----------------------------table_product_combination--------------------------------- */
+.table_product_combination {
+	position:relative;
+	clear:both;
+	float:none;
+	width:98%;
+	padding:0;
+	margin-left:1%;
+	margin-right:1%;
+	margin-bottom:10px;
+}
+.table_product_combination1 {width:6%;}
+.table_product_combination2 {width:24%;}
+.table_product_combination3 {width:10%;}
+.table_product_combination4 {width:12%;}
+.table_product_combination5 {width:8%;}
+.table_product_combination6 {width:8%;}
+.table_product_combination7 {width:11%;}
+.table_product_combination8 {width:8%;}
+.table_product_combination9 {width:8%;}
+.table_product_combination10 {width:5%;}
+.table td.table_product_result2 {
+	text-align:left;
+	padding-left:20px;
+}
+
+
+/* ----------------------------table_combination_result--------------------------------- */
+.table_combination_result {
+	background:url(../images/combination_result_back.jpg) no-repeat top center;
+	margin-top:5px;
+	padding-bottom:0px;
+}
+.table_combination_result1 {width:10%;}
+.table_combination_result2 {width:22%;}
+.table_combination_result3 {width:22%;}
+.table_combination_result4 {width:22%;}
+.table_combination_result5 {width:22%;}
+.table_combination_result6 {width:2%;}
+.table_combination_result table {
+	width:96%;
+	margin:10px auto;
+}
+
+/* ----------------------------table_finance_combination_result--------------------------------- */
+.table_finance_combination_result {
+	background:url(../images/combination_result_back.jpg) no-repeat top center;
+	margin-top:5px;
+	padding-bottom:0px;
+}
+.table_finance_combination_result1 {width:10%;}
+.table_finance_combination_result2 {width:22%;}
+.table_finance_combination_result3 {width:22%;}
+.table_finance_combination_result4 {width:22%;}
+.table_finance_combination_result5 {width:22%;}
+.table_finance_combination_result6 {width:2%;}
+.table_finance_combination_result table {
+	width:96%;
+	margin:10px auto;
+}
+
+/* ----------------------------table_finance_combination--------------------------------- */
+.table_finance_combination {
+	position:relative;
+	clear:both;
+	float:none;
+	width:98%;
+	padding:0;
+	margin-left:1%;
+	margin-right:1%;
+	margin-bottom:10px;
+}
+.table_finance_combination1 {width:2%;}
+.table_finance_combination2 {width:21%;}
+.table_finance_combination3 {width:12%;}
+.table_finance_combination4 {width:14%;}
+.table_finance_combination5 {width:10%;}
+.table_finance_combination6 {width:10%;}
+.table_finance_combination7 {width:13%;}
+.table_finance_combination8 {width:10%;}
+.table_finance_combination9 {width:8%;}
+
+
+/* ----------------------------table_products_overview--------------------------------- */
+.table_products_overview {}
+.table_products_overview1 {width:8%;}
+.table_products_overview2 {width:35%;}
+.table_products_overview3 {width:11%;}
+.table_products_overview4 {width:9%;}
+.table_products_overview5 {width:9%;}
+.table_products_overview6 {width:9%;}
+.table_products_overview7 {width:10%;}
+.table_products_overview8 {width:10%;}
+.table td.table_products_overview_add1 {
+	text-align:left;
+	padding-left:50px;
+}
+
+
+/* ----------------------------table_fund_value--------------------------------- */
+.table_fund_value {}
+.table_fund_value1 {width:8%;}
+.table_fund_value2 {width:35%;}
+.table_fund_value3 {width:11%;}
+.table_fund_value4 {width:13%;}
+.table_fund_value5 {width:11%;}
+.table_fund_value6 {width:11%;}
+.table_fund_value7 {width:11%;}
+.table td.table_fund_value2 {
+	text-align:left;
+	padding-left:50px;
+}
+
+
+/* ----------------------------table_overseas_etf--------------------------------- */
+.table_overseas_etf {padding-top:20px;}
+.table_overseas_etf1 {width:8%;}
+.table_overseas_etf2 {width:30%;}
+.table_overseas_etf3 {width:12%;}
+.table_overseas_etf4 {width:12%;}
+.table_overseas_etf5 {width:14%;}
+.table_overseas_etf6 {width:12%;}
+.table_overseas_etf7 {width:12%;}
+.table td.table_overseas_etf2 {
+	text-align:left;
+	padding-left:50px;
+}
+
+
+/* ----------------------------table_collected_account--------------------------------- */
+.table_collected_account {padding-top:20px;}
+.table_collected_account1 {width:8%;}
+.table_collected_account2 {width:38%;}
+.table_collected_account3 {width:10%;}
+.table_collected_account4 {width:11%;}
+.table_collected_account5 {width:11%;}
+.table_collected_account6 {width:11%;}
+.table_collected_account7 {width:11%;}
+.table td.table_collected_account2 {
+	text-align:left;
+	padding-left:50px;
+}
+
+
+/* ----------------------------table_overseas_bonds--------------------------------- */
+.table_overseas_bonds {}
+.table_overseas_bonds1 {width:8%;}
+.table_overseas_bonds2 {width:26%;}
+.table_overseas_bonds3 {width:10%;}
+.table_overseas_bonds4 {width:10%;}
+.table_overseas_bonds5 {width:10%;}
+.table_overseas_bonds6 {width:12%;}
+.table_overseas_bonds7 {width:12%;}
+.table_overseas_bonds8 {width:12%;}
+
+.table td.table_overseas_bonds2 {
+	text-align:left;
+	padding-left:20px;
+}
+.table_linked_bonds_date {
+	color:#333333;
+	font-size:12px;
+}
+
+
+/* ----------------------------notice_bonds--------------------------------- */
+.notice_bonds {
+	border:1px solid #999999;
+	float:left;
+	position:relative;
+	width:90%;
+	margin:15px 3% 15px 3%;
+	padding:1% 2%;
+	text-align:left;
+}
+
+
+/* ----------------------------table_linked_bonds--------------------------------- */
+.table_linked_bonds {}
+.table_linked_bonds1 {width:8%;}
+.table_linked_bonds2 {width:20%;}
+.table_linked_bonds3 {width:12%;}
+.table_linked_bonds4 {width:12%;}
+.table_linked_bonds5 {width:12%;}
+.table_linked_bonds6 {width:12%;}
+.table_linked_bonds7 {width:12%;}
+.table_linked_bonds8 {width:12%;}
+.table td.table_linked_bonds2 {
+	text-align:left;
+	padding-left:20px;
+}
+.table_linked_bonds_date {
+	color:#333333;
+	font-size:12px;
+}
+
+
+/* ----------------------------table_product_content--------------------------------- */
+.table_product_content {
+	background:url(../images/product_content_back.jpg) no-repeat top center;
+	margin-top:15px;
+	padding-bottom:85px;
+}
+.table_product_content1 {width:19%;}
+.table_product_content2 {width:19%;}
+.table_product_content3 {width:19%;}
+.table_product_content4 {width:19%;}
+.table_product_content5 {width:19%;}
+.table_product_content6 {width:5%;}
+.table_product_content .title {
+	background:none;
+	color:#111111;
+	letter-spacing:0px;
+	font-size:20px;
+	line-height:30px;
+	width:90%;
+	height:60px;
+	padding-left:5%;
+	padding-right:5%;
+	vertical-align:middle;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.table_product_content table {
+	width:750px;
+	margin-left:55px;
+}
+#table_product_content_add {
+	text-align:left;
+	position:absolute;
+	width:250px;
+	height:25px;
+	left:50px;
+	top:153px;
+	margin-top:20px;
+}
+#btn_order {
+	position:absolute;
+	width:110px;
+	height:110px;
+	right:60px;
+	top:68px;
+}
+#btn_order_sub {
+	background:url(../images/btn_order_sub_back.png) no-repeat center;
+	position:absolute;
+	width:210px;
+	height:130px;
+	left:-50px;
+	bottom:-90px;
+	display:none;
+	z-index:99;
+}
+#btn_order1 {
+	position:absolute;
+	width:80px;
+	height:80px;
+	left:20px;
+	top:30px;
+}
+#btn_order2 {
+	position:absolute;
+	width:80px;
+	height:80px;
+	left:110px;
+	top:30px;
+}
+
+
+/* ----------------------------table_product_show_content--------------------------------- */
+.table_product_show_content {
+	background:url(../images/product_content_back2.jpg) no-repeat top center;
+	margin-top:15px;
+	padding-bottom:85px;
+}
+.table_product_show_content1 {width:20%;}
+.table_product_show_content2 {width:20%;}
+.table_product_show_content3 {width:20%;}
+.table_product_show_content4 {width:20%;}
+.table_product_show_content5 {width:20%;}
+.table_product_show_content6 {width:0%;}
+.table_product_show_content .title {
+	background:none;
+	color:#111111;
+	letter-spacing:0px;
+	font-size:20px;
+	line-height:30px;
+	width:90%;
+	height:60px;
+	padding-left:5%;
+	padding-right:5%;
+	vertical-align:middle;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.table_product_show_content table {
+	width:830px;
+	margin-left:55px;
+}
+#table_product_show_content_add {
+	text-align:left;
+	position:absolute;
+	width:250px;
+	height:25px;
+	left:50px;
+	top:153px;
+	margin-top:20px;
+}
+
+
+/* ----------------------------table_finance_content--------------------------------- */
+.table_finance_content {
+	background:url(../images/finance_content_back.jpg) no-repeat top center;
+	margin-top:15px;
+	padding-bottom:85px;
+}
+.table_finance_content1 {width:15%;}
+.table_finance_content2 {width:15%;}
+.table_finance_content3 {width:15%;}
+.table_finance_content4 {width:16%;}
+.table_finance_content5 {width:16%;}
+.table_finance_content6 {width:16%;}
+.table_finance_content7 {width:7%;}
+.table_finance_content .title {
+	background:none;
+	color:#111111;
+	letter-spacing:0px;
+	font-size:20px;
+	line-height:60px;
+	width:95%;
+	height:60px;
+	padding-left:5%;
+}
+.table_finance_content table {
+	width:750px;
+	margin-left:55px;
+}
+#table_finance_content_add {
+	text-align:left;
+	position:absolute;
+	width:250px;
+	height:25px;
+	left:50px;
+	top:153px;
+}
+.finance_content #btn_order {
+	top:48px;
+}
+.finance_calculate #btn_order {
+	top:48px;
+}
+
+
+/* ----------------------------table_product_day--------------------------------- */
+.table_product_day {}
+.table_product_day1 {width:25%;}
+.table_product_day2 {width:25%;}
+.table_product_day3 {width:25%;}
+.table_product_day4 {width:25%;}
+.product_show .table_product_day {margin-bottom:25px;}
+
+
+/* ----------------------------table_product_data--------------------------------- */
+.table_product_data {padding-bottom:40px;}
+.table_product_data1 {width:18%;}
+.table_product_data2 {width:40%;}
+.table_product_data3 {width:15%;}
+.table_product_data4 {width:27%;}
+
+/* ----------------------------table_product_family--------------------------------- */
+.table_product_family {padding-bottom:40px;}
+.table_product_family1 {width:4%;}
+.table_product_family2 {width:32%;}
+.table_product_family3 {width:32%;}
+.table_product_family4 {width:32%;}
+
+
+/* ----------------------------table_bar_chart--------------------------------- */
+.table_bar_area {padding-bottom:40px;}
+.table_bar_area1 {width:18%;}
+.table_bar_area2 {width:82%;}
+.table_bar_industry {padding-bottom:30px;}
+.table_bar_industry1 {width:18%;}
+.table_bar_industry2 {width:82%;}
+.progressbar {
+	margin-top:2px;
+	float:left;
+	width:82%;
+}
+.progressbar_percentage{
+	padding-left:10px;
+	float:left;
+}
+#table_bar_industry1 div, #table_bar_area1 div {background:#e4b2b1;}
+#table_bar_industry2 div, #table_bar_area2 div {background:#c2c2ff;}
+#table_bar_industry3 div, #table_bar_area3 div {background:#f9b981;}
+#table_bar_industry4 div, #table_bar_area4 div {background:#cce1b7;}
+#table_bar_industry5 div, #table_bar_area5 div {background:#c5bad6;}
+#table_bar_industry6 div, #table_bar_area6 div {background:#b9b286;}
+#table_bar_industry7 div, #table_bar_area7 div {background:#7eaddf;}
+#table_bar_industry8 div, #table_bar_area8 div {background:#b0dae5;}
+#table_bar_industry9 div, #table_bar_area9 div {background:#e3d9b0;}
+#table_bar_industry10 div, #table_bar_area10 div {background:#df8e7e;}
+
+
+
+/* ----------------------------table_product_performance--------------------------------- */
+.table_product_performance {}
+.table_product_performance1 {width:15%;}
+.table_product_performance2 {width:17%;}
+.table_product_performance3 {width:17%;}
+.table_product_performance4 {width:17%;}
+.table_product_performance5 {width:17%;}
+.table_product_performance6 {width:17%;}
+
+
+/* ----------------------------table_product_dividend--------------------------------- */
+.table_product_dividend {padding-bottom:40px;}
+.table_product_dividend1 {width:15%;}
+.table_product_dividend2 {width:17%;}
+.table_product_dividend3 {width:17%;}
+.table_product_dividend4 {width:17%;}
+.table_product_dividend5 {width:17%;}
+.table_product_dividend6 {width:17%;}
+
+
+/* ----------------------------table_product_dividend_content--------------------------------- */
+.table_product_dividend_content {}
+.table_product_dividend_content1 {width:20%;}
+.table_product_dividend_content2 {width:20%;}
+.table_product_dividend_content3 {width:18%;}
+.table_product_dividend_content4 {width:21%;}
+.table_product_dividend_content5 {width:21%;}
+
+
+/* ----------------------------table_product_right_content--------------------------------- */
+.table_product_right_content {}
+.table_product_right_content1 {width:25%;}
+.table_product_right_content2 {width:25%;}
+.table_product_right_content3 {width:22%;}
+.table_product_right_content4 {width:28%;}
+
+
+/* ----------------------------table_product_calculate--------------------------------- */
+.table_product_calculate {padding-bottom:40px;}
+.table_product_calculate1 {width:16%;}
+.table_product_calculate2 {width:25%;}
+.table_product_calculate3 {width:16%;}
+.table_product_calculate4 {width:43%;}
+.table_product_calculate_money {width:135px; padding:0px 5px;}
+.table_product_calculate_date {width:200px; padding:0px 5px;}
+.table_product_calculate_percentage {width:165px; padding:0px 5px;}
+.table_product_calculate_buydate {margin:0px 5px 0px 25px;}
+#btn_calculate {
+	position:absolute;
+	width:110px;
+	height:110px;
+	right:15px;
+	bottom:45px;
+}
+
+
+/* ----------------------------table_finance_calculate--------------------------------- */
+.table_finance_calculate {padding-bottom:40px;}
+.table_finance_calculate1 {width:16%;}
+.table_finance_calculate2 {width:25%;}
+.table_finance_calculate3 {width:16%;}
+.table_finance_calculate4 {width:43%;}
+.table_finance_calculate_money {width:135px; padding:0px 5px;}
+.table_finance_calculate_date {width:200px; padding:0px 5px;}
+.table_finance_calculate_percentage {width:165px; padding:0px 5px;}
+.table_finance_calculate_buydate {margin:0px 5px 0px 25px;}
+#btn_finance_calculate {
+	position:absolute;
+	width:110px;
+	height:110px;
+	right:15px;
+	bottom:45px;
+}
+
+
+/* ----------------------------table_product_compare_2ndstep--------------------------------- */
+.table_product_compare_2ndstep {padding-top:0px;}
+.table_product_compare_2ndstep td.align_right {padding-right:10px;}
+.table_product_compare_2ndstep1 {width:6%;}
+.table_product_compare_2ndstep2 {width:14%;}
+.table_product_compare_2ndstep3 {width:6%;}
+.table_product_compare_2ndstep4 {width:14%;}
+.table_product_compare_2ndstep5 {width:6%;}
+.table_product_compare_2ndstep6 {width:14%;}
+
+/* ----------------------------table_product_compare_2ndstep_point--------------------------------- */
+.table_product_compare_2ndstep_point {padding-top:0px;}
+.table_product_compare_2ndstep_point td.align_right {padding-right:10px;}
+.table_product_compare_2ndstep_point1 {width:9%;}
+.table_product_compare_2ndstep_point2 {width:11%;}
+.table_product_compare_2ndstep_point3 {width:9%;}
+.table_product_compare_2ndstep_point4 {width:11%;}
+.table_product_compare_2ndstep_point5 {width:9%;}
+.table_product_compare_2ndstep_point6 {width:11%;}
+
+
+/* ----------------------------table_product_result--------------------------------- */
+.table_product_result {}
+.table_product_result1 {width:8%;}
+.table_product_result2 {width:24%;}
+.table_product_result3 {width:10%;}
+.table_product_result4 {width:12%;}
+.table_product_result5 {width:8%;}
+.table_product_result6 {width:8%;}
+.table_product_result7 {width:12%;}
+.table_product_result8 {width:8%;}
+.table_product_result9 {width:10%;}
+.table td.table_product_result2 {
+	text-align:left;
+	padding-left:20px;
+}
+
+
+/* ----------------------------table_product_setting--------------------------------- */
+.table_product_setting {}
+.table_product_setting1 {width:28%;}
+.table_product_setting2 {width:10%;}
+.table_product_setting3 {width:10%;}
+.table_product_setting4 {width:10%;}
+.table_product_setting5 {width:10%;}
+.table_product_setting6 {width:8%;}
+.table_product_setting7 {width:8%;}
+.table_product_setting8 {width:8%;}
+.table_product_setting9 {width:8%;}
+
+
+/* ----------------------------table_finance_setting--------------------------------- */
+.table_finance_setting {}
+.table_finance_setting1 {width:28%;}
+.table_finance_setting2 {width:10%;}
+.table_finance_setting3 {width:10%;}
+.table_finance_setting4 {width:10%;}
+.table_finance_setting5 {width:10%;}
+.table_finance_setting6 {width:8%;}
+.table_finance_setting7 {width:8%;}
+.table_finance_setting8 {width:8%;}
+.table_finance_setting9 {width:8%;}
+
+
+/* ----------------------------table_finance_result--------------------------------- */
+.table_finance_result {}
+.table_finance_result1 {width:1%;}
+.table_finance_result2 {width:26%;}
+.table_finance_result3 {width:12%;}
+.table_finance_result4 {width:14%;}
+.table_finance_result5 {width:10%;}
+.table_finance_result6 {width:10%;}
+.table_finance_result7 {width:14%;}
+.table_finance_result8 {width:10%;}
+.table_finance_result9 {width:3%;}
+
+
+/* ----------------------------table_product_compare_result_data--------------------------------- */
+.table_product_compare_result_data {padding-bottom:40px;}
+.table_product_compare_result_data1 {width:8%;}
+.table_product_compare_result_data2 {width:30%;}
+.table_product_compare_result_data3 {width:9%;}
+.table_product_compare_result_data4 {width:7%;}
+.table_product_compare_result_data5 {width:10%;}
+.table_product_compare_result_data6 {width:10%;}
+.table_product_compare_result_data7 {width:26%;}
+.table td.table_product_compare_result_data2 {
+	text-align:left;
+	padding-left:50px;
+}
+
+
+/* ----------------------------table_product_compare_result_roi--------------------------------- */
+.table_product_compare_result_roi {padding-bottom:40px;}
+.table_product_compare_result_roi1 {width:8%;}
+.table_product_compare_result_roi2 {width:30%;}
+.table_product_compare_result_roi3 {width:12%;}
+.table_product_compare_result_roi4 {width:8%;}
+.table_product_compare_result_roi5 {width:8%;}
+.table_product_compare_result_roi6 {width:8%;}
+.table_product_compare_result_roi7 {width:8%;}
+.table_product_compare_result_roi8 {width:8%;}
+.table_product_compare_result_roi9 {width:10%;}
+.table td.table_product_compare_result_roi2 {
+	text-align:left;
+	padding-left:50px;
+}
+
+
+/* ----------------------------table_search_result--------------------------------- */
+.table_search_result {}
+.table_search_result1 {width:6%;}
+.table_search_result2 {width:22%;}
+.table_search_result3 {width:9%;}
+.table_search_result4 {width:9%;}
+.table_search_result5 {width:9%;}
+.table_search_result6 {width:9%;}
+.table_search_result7 {width:9%;}
+.table_search_result8 {width:9%;}
+.table_search_result9 {width:9%;}
+.table_search_result10 {width:9%;}
+.table td.table_search_result2 {
+	text-align:left;
+	padding-left:30px;
+}
+.table td.table_search_result3,
+.table td.table_search_result4,
+.table td.table_search_result5,
+.table td.table_search_result6,
+.table td.table_search_result7,
+.table td.table_search_result8,
+.table td.table_search_result9,
+.table td.table_search_result10
+{padding-right:8px;}
+
+
+/* ----------------------------table_search_shortterm_result--------------------------------- */
+.table_search_shortterm_result {}
+.table_search_shortterm_result1 {width:8%;}
+.table_search_shortterm_result2 {width:22%;}
+.table_search_shortterm_result3 {width:10%;}
+.table_search_shortterm_result4 {width:10%;}
+.table_search_shortterm_result5 {width:10%;}
+.table_search_shortterm_result6 {width:10%;}
+.table_search_shortterm_result7 {width:10%;}
+.table_search_shortterm_result8 {width:10%;}
+.table_search_shortterm_result9 {width:10%;}
+.table td.table_search_shortterm_result2 {
+	text-align:left;
+	padding-left:30px;
+}
+.table td.table_search_shortterm_result3,
+.table td.table_search_shortterm_result4,
+.table td.table_search_shortterm_result5,
+.table td.table_search_shortterm_result6,
+.table td.table_search_shortterm_result7,
+.table td.table_search_shortterm_result8,
+.table td.table_search_shortterm_result9
+{padding-right:8px;}
+
+
+/* ----------------------------table_search_longterm_result--------------------------------- */
+.table_search_longterm_result {}
+.table_search_longterm_result1 {width:6%;}
+.table_search_longterm_result2 {width:22%;}
+.table_search_longterm_result3 {width:9%;}
+.table_search_longterm_result4 {width:9%;}
+.table_search_longterm_result5 {width:9%;}
+.table_search_longterm_result6 {width:9%;}
+.table_search_longterm_result7 {width:9%;}
+.table_search_longterm_result8 {width:9%;}
+.table_search_longterm_result9 {width:9%;}
+.table_search_longterm_result10 {width:9%;}
+.table td.table_search_longterm_result2 {
+	text-align:left;
+	padding-left:30px;
+}
+.table td.table_search_longterm_result3,
+.table td.table_search_longterm_result4,
+.table td.table_search_longterm_result5,
+.table td.table_search_longterm_result6,
+.table td.table_search_longterm_result7,
+.table td.table_search_longterm_result8,
+.table td.table_search_longterm_result9,
+.table td.table_search_longterm_result10
+{padding-right:8px;}
+
+
+/* ----------------------------table_search_year_result--------------------------------- */
+.table_search_year_result {}
+.table_search_year_result1 {width:6%;}
+.table_search_year_result2 {width:22%;}
+.table_search_year_result3 {width:9%;}
+.table_search_year_result4 {width:9%;}
+.table_search_year_result5 {width:9%;}
+.table_search_year_result6 {width:9%;}
+.table_search_year_result7 {width:9%;}
+.table_search_year_result8 {width:9%;}
+.table_search_year_result9 {width:9%;}
+.table_search_year_result10 {width:9%;}
+.table td.table_search_year_result2 {
+	text-align:left;
+	padding-left:30px;
+}
+.table td.table_search_year_result3,
+.table td.table_search_year_result4,
+.table td.table_search_year_result5,
+.table td.table_search_year_result6,
+.table td.table_search_year_result7,
+.table td.table_search_year_result8,
+.table td.table_search_year_result9,
+.table td.table_search_year_result10
+{padding-right:8px;}
+
+
+/* ----------------------------table_finance--------------------------------- */
+.table_finance {}
+.table_finance1 {width:20%;}
+.table_finance2 {width:16%;}
+.table_finance3 {width:16%;}
+.table_finance4 {width:16%;}
+.table_finance5 {width:16%;}
+.table_finance6 {width:16%;}
+
+
+/* ----------------------------table_foreign_exchange--------------------------------- */
+.table_foreign_exchange {padding-bottom:5px;}
+.table_foreign_exchange1 {width:34%;}
+.table_foreign_exchange2 {width:22%;}
+.table_foreign_exchange3 {width:22%;}
+.table_foreign_exchange4 {width:22%;}
+.table_foreign_exchange .nation_icon {margin:-10px 8px -12px 0px;}
+
+
+/* ----------------------------table_foreign_exchange_content--------------------------------- */
+.table_foreign_exchange_content {
+	background:url(../images/foreign_exchange_content_back.jpg) no-repeat top center;
+	margin-top:0px;
+	padding-bottom:85px;
+}
+.table_foreign_exchange_content1 {width:16%;}
+.table_foreign_exchange_content2 {width:16%;}
+.table_foreign_exchange_content3 {width:16%;}
+.table_foreign_exchange_content4 {width:17%;}
+.table_foreign_exchange_content5 {width:17%;}
+.table_foreign_exchange_content6 {width:17%;}
+.table_foreign_exchange_content7 {width:1%;}
+.table_foreign_exchange_content .title {
+	background:none;
+	color:#111111;
+	letter-spacing:0px;
+	font-size:20px;
+	line-height:60px;
+	width:95%;
+	height:60px;
+	padding-left:5%;
+}
+.table_foreign_exchange_content table {
+	width:830px;
+	margin-left:55px;
+}
+#table_foreign_exchange_content_add {
+	text-align:left;
+	position:absolute;
+	width:250px;
+	height:25px;
+	left:50px;
+	top:153px;
+}
+
+
+/* ----------------------------table_finance_day--------------------------------- */
+.table_finance_day {}
+.table_finance_day1 {width:25%;}
+.table_finance_day2 {width:25%;}
+.table_finance_day3 {width:25%;}
+.table_finance_day4 {width:25%;}
+
+
+/* ----------------------------table_nt_exchange_rate--------------------------------- */
+.table_nt_exchange_rate {padding-bottom:5px;}
+.table_nt_exchange_rate1 {width:6%;}
+.table_nt_exchange_rate2 {width:22%;}
+.table_nt_exchange_rate3 {width:9%;}
+.table_nt_exchange_rate4 {width:9%;}
+.table_nt_exchange_rate5 {width:9%;}
+.table_nt_exchange_rate6 {width:9%;}
+.table_nt_exchange_rate7 {width:9%;}
+.table_nt_exchange_rate8 {width:9%;}
+.table_nt_exchange_rate9 {width:9%;}
+.table_nt_exchange_rate10 {width:9%;}
+.table_nt_exchange_rate .table_nt_exchange_rate_add1 {background:url(../images/table_nt_exchange_rate_add1.gif) no-repeat center bottom;}
+.table_nt_exchange_rate .table_nt_exchange_rate_add2 {background:url(../images/table_nt_exchange_rate_add2.gif) no-repeat center right;}
+.table_nt_exchange_rate .table_nt_exchange_rate_add3 {background:url(../images/table_nt_exchange_rate_add3.gif) no-repeat center right;}
+.table_nt_exchange_rate .align_left {padding-left:25px;}
+
+
+/* ----------------------------table_fc_exchange_rate--------------------------------- */
+.table_fc_exchange_rate {padding-bottom:5px;}
+.table_fc_exchange_rate0 {width:6%;}
+.table_fc_exchange_rate1 {width:20.5%;}
+.table_fc_exchange_rate2 {width:10.5%;}
+.table_fc_exchange_rate3 {width:10.5%;}
+.table_fc_exchange_rate4 {width:10.5%;}
+.table_fc_exchange_rate5 {width:10.5%;}
+.table_fc_exchange_rate6 {width:10.5%;}
+.table_fc_exchange_rate7 {width:10.5%;}
+.table_fc_exchange_rate8 {width:10.5%;}
+.table_fc_exchange_rate .nation_icon {margin:-10px 13px -12px 0px;}
+
+
+/* ----------------------------table_event--------------------------------- */
+.table_event {}
+.table_event1 {width:50%;}
+.table_event2 {width:50%;}
+.table_event img {margin:6px 0px 6px 0px;}
+
+
+/* ----------------------------table_news--------------------------------- */
+.table_news {
+	width:76%;
+	margin-top:10px;
+	margin-left:12%;
+	margin-right:12%;
+}
+.table_news1 {width:20%;}
+.table_news2 {width:10%;}
+.table_news3 {width:65%;}
+
+
+/* ----------------------------table_foundation--------------------------------- */
+.table_foundation {}
+.table_foundation1 {width:6%;}
+.table_foundation2 {width:76%;}
+.table_foundation3 {width:18%;}
+.table td.table_foundation2 {
+	text-align:left;
+	padding-left:240px;
+}
+
+
+/* ----------------------------table_foundation_content--------------------------------- */
+.table_foundation_content {}
+.table_foundation_content1 {width:3%;}
+.table_foundation_content2 {width:10%;}
+.table_foundation_content3 {width:87%;}
+
+
+/* ----------------------------product_value_figure--------------------------------- */
+.product_value_figure {
+	border:#e4e4e4 1px solid;
+	float:left;
+	position:relative;
+	width:943px;
+	margin:0px 0px 15px 0px;
+}
+#product_value_figure1 {height:430px;}
+#product_value_figure2 {height:440px; margin-bottom:40px;}
+
+
+/* ----------------------------product_compare_figure--------------------------------- */
+.product_compare_figure {
+	border:#e4e4e4 1px solid;
+	float:left;
+	position:relative;
+	width:943px;
+	margin:0px 0px 15px 0px;
+}
+#product_compare_figure1 {height:600px;}
+
+
+/* ----------------------------product_compare_figure--------------------------------- */
+#product_compare_figure2 {
+	border:#e4e4e4 1px solid;
+	float:left;
+	position:relative;
+	width:943px;
+	margin:0px 0px 20px 0px;
+	text-align:center;
+}
+.product_compare_figure2 {
+	position:relative;
+	float:left;
+	width:186px;
+	margin:0px 2px 0px 0px;
+}
+.product_compare_figure2_txt {
+	background:url(../images/product_compare_figure2_back.gif) no-repeat center;
+	position:relative;
+	width:186px;
+	height:75px;
+	text-align:center;
+	overflow:hidden;
+	
+}
+.product_compare_figure2_txt span{
+	display:block;
+	width:160px;
+	height:35px;
+	overflow:hidden;
+	margin:16px 13px;
+	font-size:13px;
+	line-height:18px;
+}
+.product_compare_figure2_figure {
+	position:relative;
+	width:100%;
+}
+
+
+/* ----------------------------product_performance_figure--------------------------------- */
+.product_performance_figure {
+	border:#e4e4e4 1px solid;
+	float:left;
+	position:relative;
+	width:943px;
+	height:380px;
+	margin:0px 0px 15px 0px;
+	text-align:center;
+	padding-top:40px;
+}
+#product_performance_figure1 {}
+#product_performance_figure2 {}
+#product_performance_figure3 {}
+
+
+/* ----------------------------product_calculate_figure--------------------------------- */
+.product_calculate_figure {
+	border:#e4e4e4 1px solid;
+	float:left;
+	position:relative;
+	width:943px;
+	height:430px;
+	margin:0px 0px 15px 0px;
+}
+#product_calculate_figure {}
+
+/* ----------------------------finance_calculate_figure--------------------------------- */
+.finance_calculate_figure {
+	border:#e4e4e4 1px solid;
+	float:left;
+	position:relative;
+	width:943px;
+	height:430px;
+	margin:0px 0px 15px 0px;
+}
+#finance_calculate_figure {}
+
+
+/* ----------------------------finance_content_figure--------------------------------- */
+.finance_content_figure {
+	border:#e4e4e4 1px solid;
+	float:left;
+	position:relative;
+	width:943px;
+	margin:0px 0px 15px 0px;
+}
+#finance_content_figure1 {height:400px;}
+#finance_content_figure2 {height:440px; margin-bottom:40px;}
+
+
+/* ----------------------------foreign_exchange_content_figure--------------------------------- */
+.foreign_exchange_content_figure {
+	border:#e4e4e4 1px solid;
+	float:left;
+	position:relative;
+	width:943px;
+	margin:0px 0px 15px 0px;
+}
+#foreign_exchange_content_figure1 {height:400px; margin-bottom:40px;}

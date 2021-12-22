@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+<title>上海商業儲蓄銀行-財富管理</title>
+<link type="image/x-icon" rel="icon" href="favicon.ico">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/fancyfields.css" rel="stylesheet">
+<link href="css/colorbox.css" rel="stylesheet">
+<link href="css/web.css" rel="stylesheet">
+<link href="css/fund_add.css" rel="stylesheet">
+<link href="css/nav-h.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swap.js"></script>
+<script src="js/fancyfields-1.2.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script src="js/login.js"></script>
+<script type="text/javascript" src="js/back-to-top.js"></script>
+<script src="js/products_dropdown.js"></script>
+<script src="js/AC_RunActiveContent.js"></script>
+<script>
+function shownews(fname,ftype){
+//$("#news_pop").load("systexnewdat.htm?newsname="+fname+"&newstype="+ftype);
+//$.colorbox({inline:true,href:"#news_pop", width:"730px"});
+$("#news_pop").load("systexnewdat.htm?newsname="+fname+"&newstype="+ftype , function(){
+  $.colorbox({inline:true,href:"#news_pop", width:"980px"});
+});
+}
+$(function(){
+	//該單元選單
+	$("#menu_finance").addClass("menu_choosen");
+	$("#products_overview").addClass("submenu_choosen");
+	//新聞跳出視窗
+	//$(".table_products_overview a").colorbox({inline:true, width:"730px"});
+	//$(".table_products_overview a").click(function(){alert('aaaa')});
+})
+$(function(){
+	//下拉選單
+	$('#option_search1').fancyfields();
+	$('#option_search2').fancyfields();
+	$('#option_search3').fancyfields();
+	$('#option_search4').fancyfields();
+	$('#option_search5').fancyfields();
+	$('#option_search6').fancyfields();
+	$('#option_search7').fancyfields();
+	$('#option_search8').fancyfields();
+	$('#option_search9').fancyfields();
+	$('#option_search10').fancyfields();
+})
+
+            function dosub(){
+                document.fundlist.submit();
+            }
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/btn_logino.gif')">
+
+
+<div id="header">
+	<div id="header_content"><!-- 頁首內容 -->
+    
+		<div id="logo"><a href="index.htm" target="_self"><img src="images/logo.gif"/></a></div>
+        
+    	<div id="menu"><!-- 主選單 -->
+    		<div id="menu_products_overview" class="menu_item"><a href="fund_value.htm" target="_self">最新報價</a></div>
+    		<div id="menu_news" class="menu_item"><a href="news.htm" target="_self">即時新聞</a></div>
+    		<div id="menu_search" class="menu_item"><a href="search.htm" target="_self">基金搜尋</a></div>
+    		<div id="menu_finance" class="menu_item"><a href="finance.htm" target="_self">金融行情</a></div>
+    		<div id="menu_event" class="menu_item"><a href="account.htm" target="_self">理財試算</a></div>
+    		<div id="menu_back" class="menu_item menu_item_last"><a href="index.htm" target="_self">回到首頁</a></div>
+    	</div>
+        
+    </div><!-- 頁首內容end -->
+</div>
+<div id="container">
+	<div id="container_content" class="products_overview"><!-- 主要內容，class並設定本頁特化內容 -->
+<form name="FundDetail" method="get" action="Effect_visi.htm">
+<div class="function"><!-- 登入 -->
+        	<div id="btn_login"><a href="https://ibank.scsb.com.tw/" target="_blank" onmouseover="MM_swapImage('btnLogin','','images/btn_logino.gif',1)" onmouseout="MM_swapImgRestore()"><img src="images/btn_login.gif" name="btnLogin" id="btnLogin" /></a></div>
+			<div id="quick_search"><span class="quick_search_title">快速查詢<span class="quick_search_title_arrow">&gt;&gt;</span></span> 產品代碼及名稱 
+		  <input class="quick_search_input" name="fund_code" type="text" /> <input type="button" value="GO" onclick='FundCheck();'/></div>
+        </div></form>
+        <div class="option_search option_search_0">
+        	<div class="menu menu_04">
+                 <ul id="navmenu-h" style=" width:762px;">
+                  <li class="menu_1"><a href="foreign_exchange.htm" title="銀行匯率 "><em>銀行匯率 </em></a>
+                  </li>
+                  <li class="menu_2"><a href="finance.htm" title="全球股市 "><em>銀行匯率 </em></a>
+                  </li>
+                  <li class="menu_3"><a href="forex.htm" class="menu_on" title="交叉匯率"><em>交叉匯率</em></a>
+                  </li>
+                  <li class="menu_4"><a href="bonds.htm" title="債券行情"><em>債券行情</em></a>
+                  </li>
+                  <li class="menu_5"><a href="products.htm" title="商品期貨"><em>商品期貨</em></a>
+                  </li>
+                  <li class="menu_6"><a href="schedule.htm" title="經濟指標"><em>經濟指標</em></a>
+                  </li>
+                 </ul> 
+            </div><!-- menu END --> 
+        </div> 	
+        <div class="title">交叉匯率<form>
+					<div class="option_search_block0 ption_search_block option_search_block00">
+                            <select id="option_search7" name="roi">
+                                <option value="選擇幣別">選擇幣別</option>
+                                <option value="美元">USD 美元</option>
+                                <option value="歐元">EUR 歐元</option>
+                            </select>
+                        </div></form>
+                </div><!-- 標題 -->
+        <div class="table table_products_overview"><!-- 表格 -->
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr class="table_title">
+                  <th abbr="FTime" class="cr">時間</th>
+                  <th abbr="FSymbol" class="cr">代碼</th>
+                  <th abbr="FSymbolName">商品名稱</th>
+                  <th abbr="FC" class="rt">成交</th>
+                  <th abbr="FDiff" class="rt">漲跌</th>
+                  <th abbr="FDiffRate" class="rt">漲幅</th>
+                  <th abbr="FH" class="rt">最高</th>
+                  <th abbr="FL" class="rt">最低</th>
+                  <th abbr="FYestPrice" class="rt">昨收</th>
+                  <th abbr="FChart" class="cr">走勢圖</th>
+                </tr>
+                <tr id="FX-USDJPY.S">
+                  <td abbr="FTime" class="cr">11:45:41</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/JPY&amp;rate=exchange" target="_blank">USDJPY.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/JPY&amp;rate=exchange" target="_blank">美元/日圓</a></td>
+                  <td abbr="FC" class="rt">101.899</td>
+                  <td abbr="FDiff" class="rt">-0.066</td>
+                  <td abbr="FDiffRate" class="rt">-0.0647%</td>
+                  <td abbr="FH" class="rt">101.969</td>
+                  <td abbr="FL" class="rt">101.830</td>
+                  <td abbr="FYestPrice" class="rt">101.965</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-EURUSD.S">
+                  <td abbr="FTime" class="cr">11:45:38</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=EUR/USD&amp;rate=exchange" target="_blank">EURUSD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=EUR/USD&amp;rate=exchange" target="_blank">歐元/美元</a></td>
+                  <td abbr="FC" class="rt">1.3655</td>
+                  <td abbr="FDiff" class="rt">0.027</td>
+                  <td abbr="FDiffRate" class="rt">0.0198%</td>
+                  <td abbr="FH" class="rt">1.360</td>
+                  <td abbr="FL" class="rt">1.350</td>
+                  <td abbr="FYestPrice" class="rt">1.368</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-GBPUSD.S">
+                  <td abbr="FTime" class="cr">11:45:36</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=GBP/USD&amp;rate=exchange" target="_blank">GBPUSD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=GBP/USD&amp;rate=exchange" target="_blank">英鎊/美元</a></td>
+                  <td abbr="FC" class="rt">1.676</td>
+                  <td abbr="FDiff" class="rt">-0.007</td>
+                  <td abbr="FDiffRate" class="rt">-0.418%</td>
+                  <td abbr="FH" class="rt">1.697</td>
+                  <td abbr="FL" class="rt">1.698</td>
+                  <td abbr="FYestPrice" class="rt">1.698</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-USDCHF.S">
+                  <td abbr="FTime" class="cr">11:45:41</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/CHF&amp;rate=exchange" target="_blank">USDCHF.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/CHF&amp;rate=exchange" target="_blank">美元/瑞士法郎</a></td>
+                  <td abbr="FC" class="rt">0.893</td>
+                  <td abbr="FDiff" class="rt">-0.007</td>
+                  <td abbr="FDiffRate" class="rt">-0.032%</td>
+                  <td abbr="FH" class="rt">0.891</td>
+                  <td abbr="FL" class="rt">0.890</td>
+                  <td abbr="FYestPrice" class="rt">0.897</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-USDCAD.S">
+                  <td abbr="FTime" class="cr">11:45:42</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/CAD&amp;rate=exchange" target="_blank">USDCAD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/CAD&amp;rate=exchange" target="_blank">美元/加幣</a></td>
+                  <td abbr="FC" class="rt">1.064</td>
+                  <td abbr="FDiff" class="rt">0.022</td>
+                  <td abbr="FDiffRate" class="rt">0.005%</td>
+                  <td abbr="FH" class="rt">1.077</td>
+                  <td abbr="FL" class="rt">1.073</td>
+                  <td abbr="FYestPrice" class="rt">1.042</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-AUDUSD.S">
+                  <td abbr="FTime" class="cr">11:45:36</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=AUD/USD&amp;rate=exchange" target="_blank">AUDUSD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=AUD/USD&amp;rate=exchange" target="_blank">澳元/美元</a></td>
+                  <td abbr="FC" class="rt">0.937</td>
+                  <td abbr="FDiff" class="rt">-0.038</td>
+                  <td abbr="FDiffRate" class="rt">-0.0406%</td>
+                  <td abbr="FH" class="rt">0.932</td>
+                  <td abbr="FL" class="rt">0.930</td>
+                  <td abbr="FYestPrice" class="rt">0.975</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-USDTWD.S">
+                  <td abbr="FTime" class="cr">11:44:07</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/TWD&amp;rate=exchange" target="_blank">USDTWD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/TWD&amp;rate=exchange" target="_blank">美元/台幣</a></td>
+                  <td abbr="FC" class="rt">29.983</td>
+                  <td abbr="FDiff" class="rt">0.041</td>
+                  <td abbr="FDiffRate" class="rt">0.169%</td>
+                  <td abbr="FH" class="rt">29.990</td>
+                  <td abbr="FL" class="rt">29.905</td>
+                  <td abbr="FYestPrice" class="rt">29.942</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-USDCNH.S">
+                  <td abbr="FTime" class="cr">11:45:38</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/CNH&amp;rate=exchange" target="_blank">USDCNH.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/CNH&amp;rate=exchange" target="_blank">美元/離岸人民幣</a></td>
+                  <td abbr="FC" class="rt">6.219</td>
+                  <td abbr="FDiff" class="rt">0.000</td>
+                  <td abbr="FDiffRate" class="rt">0.016%</td>
+                  <td abbr="FH" class="rt">6.231</td>
+                  <td abbr="FL" class="rt">6.229</td>
+                  <td abbr="FYestPrice" class="rt">6.230</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-USDCNY.S">
+                  <td abbr="FTime" class="cr">11:41:01</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/CNY&amp;rate=exchange" target="_blank">USDCNY.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/CNY&amp;rate=exchange" target="_blank">美元/人民幣</a></td>
+                  <td abbr="FC" class="rt">6.233</td>
+                  <td abbr="FDiff" class="rt">0.057</td>
+                  <td abbr="FDiffRate" class="rt">0.915%</td>
+                  <td abbr="FH" class="rt">6.234</td>
+                  <td abbr="FL" class="rt">6.223</td>
+                  <td abbr="FYestPrice" class="rt">6.225</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-USDHKD.S">
+                  <td abbr="FTime" class="cr">11:45:33</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/HKD&amp;rate=exchange" target="_blank">USDHKD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/HKD&amp;rate=exchange" target="_blank">美元/港幣</a></td>
+                  <td abbr="FC" class="rt">7.740</td>
+                  <td abbr="FDiff" class="rt">0.014</td>
+                  <td abbr="FDiffRate" class="rt">0.018%</td>
+                  <td abbr="FH" class="rt">7.570</td>
+                  <td abbr="FL" class="rt">7.750</td>
+                  <td abbr="FYestPrice" class="rt">7.726</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-CNYTWD.S">
+                  <td abbr="FTime" class="cr">11:45:00</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=CNY/TWD&amp;rate=exchange" target="_blank">CNYTWD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=CNY/TWD&amp;rate=exchange" target="_blank">人民幣/台幣</a></td>
+                  <td abbr="FC" class="rt">4.809</td>
+                  <td abbr="FDiff" class="rt">-0.007</td>
+                  <td abbr="FDiffRate" class="rt">-0.161%</td>
+                  <td abbr="FH" class="rt">4.813</td>
+                  <td abbr="FL" class="rt">4.805</td>
+                  <td abbr="FYestPrice" class="rt">4.814</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-HKDTWD.S">
+                  <td abbr="FTime" class="cr">11:45:00</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=HKD/TWD&amp;rate=exchange" target="_blank">HKDTWD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=HKD/TWD&amp;rate=exchange" target="_blank">港幣/台幣</a></td>
+                  <td abbr="FC" class="rt">3.865</td>
+                  <td abbr="FDiff" class="rt">-0.003</td>
+                  <td abbr="FDiffRate" class="rt">-0.0827%</td>
+                  <td abbr="FH" class="rt">3.868</td>
+                  <td abbr="FL" class="rt">3.862</td>
+                  <td abbr="FYestPrice" class="rt">3.868</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-NZDUSD.S">
+                  <td abbr="FTime" class="cr">11:45:36</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=NZD/USD&amp;rate=exchange" target="_blank">NZDUSD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=NZD/USD&amp;rate=exchange" target="_blank">紐元/美元</a></td>
+                  <td abbr="FC" class="rt">0.867</td>
+                  <td abbr="FDiff" class="rt">0.096</td>
+                  <td abbr="FDiffRate" class="rt">0.110%</td>
+                  <td abbr="FH" class="rt">0.862</td>
+                  <td abbr="FL" class="rt">0.560</td>
+                  <td abbr="FYestPrice" class="rt">0.862</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-USDNZD.S">
+                  <td abbr="FTime" class="cr">11:44:00</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/NZD&amp;rate=exchange" target="_blank">USDNZD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/NZD&amp;rate=exchange" target="_blank">美元/紐元</a></td>
+                  <td abbr="FC" class="rt">1.117</td>
+                  <td abbr="FDiff" class="rt">-0.000</td>
+                  <td abbr="FDiffRate" class="rt">-0.088%</td>
+                  <td abbr="FH" class="rt">1.139</td>
+                  <td abbr="FL" class="rt">1.116</td>
+                  <td abbr="FYestPrice" class="rt">1.157</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-NZDTWD.S">
+                  <td abbr="FTime" class="cr">11:45:37</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=NZD/TWD&amp;rate=exchange" target="_blank">NZDTWD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=NZD/TWD&amp;rate=exchange" target="_blank">紐元/台幣</a></td>
+                  <td abbr="FC" class="rt">26.019</td>
+                  <td abbr="FDiff" class="rt">-0.028</td>
+                  <td abbr="FDiffRate" class="rt">-0.105%</td>
+                  <td abbr="FH" class="rt">26.050</td>
+                  <td abbr="FL" class="rt">25.944</td>
+                  <td abbr="FYestPrice" class="rt">26.047</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-USDAUD.S">
+                  <td abbr="FTime" class="cr">11:45:30</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/AUD&amp;rate=exchange" target="_blank">USDAUD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/AUD&amp;rate=exchange" target="_blank">美元/澳元</a></td>
+                  <td abbr="FC" class="rt">1.0678</td>
+                  <td abbr="FDiff" class="rt">0.005</td>
+                  <td abbr="FDiffRate" class="rt">0.046%</td>
+                  <td abbr="FH" class="rt">1.068</td>
+                  <td abbr="FL" class="rt">1.066</td>
+                  <td abbr="FYestPrice" class="rt">1.063</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-AUDTWD.S">
+                  <td abbr="FTime" class="cr">11:45:00</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=AUD/TWD&amp;rate=exchange" target="_blank">AUDTWD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=AUD/TWD&amp;rate=exchange" target="_blank">澳元/台幣</a></td>
+                  <td abbr="FC" class="rt">28.053</td>
+                  <td abbr="FDiff" class="rt">-0.038</td>
+                  <td abbr="FDiffRate" class="rt">-0.133%</td>
+                  <td abbr="FH" class="rt">28.096</td>
+                  <td abbr="FL" class="rt">28.019</td>
+                  <td abbr="FYestPrice" class="rt">28.091</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-JPYUSD.S">
+                  <td abbr="FTime" class="cr">11:45:00</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=JPY/USD&amp;rate=exchange" target="_blank">JPYUSD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=JPY/USD&amp;rate=exchange" target="_blank">日圓/美元</a></td>
+                  <td abbr="FC" class="rt">0.008</td>
+                  <td abbr="FDiff" class="rt">0</td>
+                  <td abbr="FDiffRate" class="rt">-0.203%</td>
+                  <td abbr="FH" class="rt">0.009</td>
+                  <td abbr="FL" class="rt">0.009</td>
+                  <td abbr="FYestPrice" class="rt">0.008</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-JPYTWD.S">
+                  <td abbr="FTime" class="cr">11:40:00</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=JPY/TWD&amp;rate=exchange" target="_blank">JPYTWD.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=JPY/TWD&amp;rate=exchange" target="_blank">日圓/台幣</a></td>
+                  <td abbr="FC" class="rt">0.296</td>
+                  <td abbr="FDiff" class="rt">-0.008</td>
+                  <td abbr="FDiffRate" class="rt">-0.951%</td>
+                  <td abbr="FH" class="rt">0.296</td>
+                  <td abbr="FL" class="rt">0.296</td>
+                  <td abbr="FYestPrice" class="rt">0.294</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+                <tr id="FX-USDKRW.S">
+                  <td abbr="FTime" class="cr">11:45:40</td>
+                  <td abbr="FSymbol" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/KRW&amp;rate=exchange" target="_blank">USDKRW.S</a></td>
+                  <td abbr="FSymbolName" class="cr"><a href="http://www.cnyes.com/forex/flashchart.aspx?fccode=USD/KRW&amp;rate=exchange" target="_blank">美元/韓元</a></td>
+                  <td abbr="FC" class="rt">1,020.259</td>
+                  <td abbr="FDiff" class="rt">2.259</td>
+                  <td abbr="FDiffRate" class="rt">0.250%</td>
+                  <td abbr="FH" class="rt">1,021.155</td>
+                  <td abbr="FL" class="rt">1,018</td>
+                  <td abbr="FYestPrice" class="rt">1,018</td>
+                  <td abbr="FChart" class="cr"><a href="javascript:shownews('2014060410063100800000.xml','B');" class="ChartImg" abbr="FX-USDJPY.S"></a></td>
+                </tr>
+            </table>
+        </div><!-- 表格 end -->
+        <div class="notice"><!-- 注意事項 -->
+        	<p class="cnyes">相關財經資訊由 <a href="http://www.cnyes.com/" target="_blank">cnYes 鉅亨網</a>提供，僅供參考，請勿視為買賣基金、有價證券之投資建議。</p>
+        </div><!-- 注意事項end -->
+    </div><!-- 主要內容end -->
+</div>
+
+
+<div id="footer">
+	<div id="footer_content"><!-- 頁尾內容 -->
+    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">服務據點</a></span>
+        <span class="footer_item footer_link">意見信箱：<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
+        <span class="footer_tel">客戶服務熱線：(02)2552-3111　免付費：0800-003-111</span><br />
+        <span class="footer_space"><img src="images/space.gif"/></span><br />
+		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">著作權聲明</a> c上海商業儲蓄銀行版權所有　最佳瀏覽環境1024 x 728視窗模式以上，IE8.0 &amp; Firefox 3.0 以上版本瀏覽器</span><br />
+        <span>若您無法看到Flash、PDF或匯率看板，建議您下載Flash Player、Adobe Reader與JAVA軟體</span>
+    </div><!-- 頁尾內容end -->
+</div>
+<div style="display:none"><!-- 指數跳出視窗 -->
+	<div id="news_pop">
+        <div class="news_pop_content">
+        	<iframe width="900" height="700" frameborder="no" scrolling="no" marginwidth="0" marginheight="0" hspace="0" vspace="0" src="us_jpy.htm" id="chartFrame">
+            </iframe>
+        </div>
+    </div>
+</div>
+</body>
+</html>

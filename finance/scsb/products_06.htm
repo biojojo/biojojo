@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+<title>上海商業儲蓄銀行-財富管理</title>
+<link type="image/x-icon" rel="icon" href="favicon.ico">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/fancyfields.css" rel="stylesheet">
+<link href="css/colorbox.css" rel="stylesheet">
+<link href="css/web.css" rel="stylesheet">
+<link href="css/fund_add.css" rel="stylesheet">
+<link href="css/nav-h.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swap.js"></script>
+<script src="js/fancyfields-1.2.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script src="js/login.js"></script>
+<script type="text/javascript" src="js/back-to-top.js"></script>
+<script src="js/products_dropdown.js"></script>
+<script>
+$(function(){
+	//該單元選單
+	$("#menu_finance").addClass("menu_choosen");
+	$("#products_overview").addClass("submenu_choosen");
+})
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/btn_logino.gif')">
+
+
+<div id="header">
+	<div id="header_content"><!-- 頁首內容 -->
+    
+		<div id="logo"><a href="index.htm" target="_self"><img src="images/logo.gif"/></a></div>
+        
+    	<div id="menu"><!-- 主選單 -->
+    		<div id="menu_products_overview" class="menu_item"><a href="fund_value.htm" target="_self">最新報價</a></div>
+    		<div id="menu_news" class="menu_item"><a href="news.htm" target="_self">即時新聞</a></div>
+    		<div id="menu_search" class="menu_item"><a href="search.htm" target="_self">基金搜尋</a></div>
+    		<div id="menu_finance" class="menu_item"><a href="finance.htm" target="_self">金融行情</a></div>
+    		<div id="menu_event" class="menu_item"><a href="account.htm" target="_self">理財試算</a></div>
+    		<div id="menu_back" class="menu_item menu_item_last"><a href="index.htm" target="_self">回到首頁</a></div>
+    	</div>
+        
+    </div><!-- 頁首內容end -->
+</div>
+<div id="container">
+	<div id="container_content" class="products_overview"><!-- 主要內容，class並設定本頁特化內容 -->
+<form name="FundDetail" method="get" action="Effect_visi.htm">
+<div class="function"><!-- 登入 -->
+        	<div id="btn_login"><a href="https://ibank.scsb.com.tw/" target="_blank" onmouseover="MM_swapImage('btnLogin','','images/btn_logino.gif',1)" onmouseout="MM_swapImgRestore()"><img src="images/btn_login.gif" name="btnLogin" id="btnLogin" /></a></div>
+			<div id="quick_search"><span class="quick_search_title">快速查詢<span class="quick_search_title_arrow">&gt;&gt;</span></span> 產品代碼及名稱 
+		  <input class="quick_search_input" name="fund_code" type="text" /> <input type="button" value="GO" onclick='FundCheck();'/></div>
+        </div></form>
+        <div class="option_search option_search_0">
+        	<div class="menu menu_04">
+                 <ul id="navmenu-h" style=" width:762px;">
+                  <li class="menu_1"><a href="foreign_exchange.htm" title="銀行匯率 "><em>銀行匯率 </em></a>
+                  </li>
+                  <li class="menu_2"><a href="finance.htm" title="全球股市 "><em>銀行匯率 </em></a>
+                  </li>
+                  <li class="menu_3"><a href="forex.htm" title="交叉匯率"><em>交叉匯率</em></a>
+                  </li>
+                  <li class="menu_4"><a href="bonds.htm" title="債券行情"><em>債券行情</em></a>
+                  </li>
+                  <li class="menu_5"><a href="products.htm" class="menu_on" title="商品期貨"><em>商品期貨</em></a>
+                  </li>
+                  <li class="menu_6"><a href="schedule.htm" title="經濟指標"><em>經濟指標</em></a>
+                  </li>
+                 </ul> 
+            </div><!-- menu END --> 
+        </div> 	
+        <div class="title">商品期貨 
+            <ul class="forex">
+                <li><a href="products.htm"><em>商品期貨</em></a></li>
+                <li><a href="products_02.htm"><em>航運指數</em></a></li>
+                <li><a href="products_03.htm"><em>鋼鐵指數</em></a></li>
+                <li><a href="products_04.htm"><em>國際煤價</em></a></li>
+                <li><a href="products_05.htm"><em>國際紙價</em></a></li>
+                <li><a href="products_06.htm" class="current"><em>塑膠價格</em></a></li>
+            </ul>
+        </div><!-- 標題 -->
+		<div id="news_title1" class="news_title news_title_choosen"><a>遠東區塑膠原料海外現貨每週均價</a></div>
+        <div class="table table_products_overview"><!-- 表格 -->
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tr class="table_title">
+                <th width="8%" class="cr">日期</th>
+                <th width="38%" class="lt"><a>商品名稱</a></th>
+                <th width="14%" class="rt">本週均價</th>
+                <th width="13%" class="rt">漲跌</th>
+                <th width="13%" class="rt">漲%</th>
+                <th width="14%" class="rt">上週均價</th>
+              </tr>
+              <tr>
+                <td class="cr">09/02</td>
+                <td class="lt"><a>丙烯&#33096;-丁二烯-苯乙烯(ABS)</a></td>
+                <td class="rt">2,195</td>
+                <td class="rt">-20</td>
+                <td class="rt">-0.90</td>
+                <td class="rt">2,215.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/02</td>
+                <td class="lt"><a>高密度聚乙烯(HDPE)</a></td>
+                <td class="rt">1,375</td>
+                <td class="rt">0</td>
+                <td class="rt">0.00</td>
+                <td class="rt">1,375.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/02</td>
+                <td class="lt"><a>低密度聚乙烯(LDPE)</a></td>
+                <td class="rt">1,530</td>
+                <td class="rt">-10</td>
+                <td class="rt">-0.65</td>
+                <td class="rt">1,540.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/02</td>
+                <td class="lt"><a>線型低密度聚乙烯(LLDPE)</a></td>
+                <td class="rt">1,320</td>
+                <td class="rt">0</td>
+                <td class="rt">0.00</td>
+                <td class="rt">1,320.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/02</td>
+                <td class="lt"><a>聚丙烯(PP)</a></td>
+                <td class="rt">1,545</td>
+                <td class="rt">0</td>
+                <td class="rt">0.00</td>
+                <td class="rt">1,545.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/02</td>
+                <td class="lt"><a>聚苯乙烯(PS)</a></td>
+                <td class="rt">1,600</td>
+                <td class="rt">0</td>
+                <td class="rt">0.00</td>
+                <td class="rt">1,600.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/02</td>
+                <td class="lt"><a>聚氯乙烯(PVC)</a></td>
+                <td class="rt">1,100</td>
+                <td class="rt">-11</td>
+                <td class="rt">-0.99</td>
+                <td class="rt">1,111.00</td>
+              </tr>
+            </table>
+        </div><!-- 表格 end -->
+       
+        <div id="news_title1" class="news_title news_title_choosen"><a>遠東區石化中游原料海外現貨每週均價</a></div>
+        <div class="table table_products_overview"><!-- 表格 -->
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tr class="table_title">
+                <th width="8%" class="cr">日期</th>
+                <th width="38%" class="lt"><a>商品名稱</a></th>
+                <th width="14%" class="rt">本週均價</th>
+                <th width="13%" class="rt">漲跌</th>
+                <th width="13%" class="rt">漲%</th>
+                <th width="14%" class="rt">上週均價</th>
+              </tr>
+              <tr>
+                <td class="cr">09/03</td>
+                <td class="lt"><a>丙烯&#33096;(AN)</a></td>
+                <td class="rt">2,230</td>
+                <td class="rt">0</td>
+                <td class="rt">0.00</td>
+                <td class="rt">2,230.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/03</td>
+                <td class="lt"><a>乙內醯胺(CPL)</a></td>
+                <td class="rt">3,620</td>
+                <td class="rt">70</td>
+                <td class="rt">1.97</td>
+                <td class="rt">3,550.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/03</td>
+                <td class="lt"><a>二氯乙烷(EDC)</a></td>
+                <td class="rt">444</td>
+                <td class="rt">-21</td>
+                <td class="rt">-4.52</td>
+                <td class="rt">465.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/03</td>
+                <td class="lt"><a>苯二甲酸(PTA)</a></td>
+                <td class="rt">1,275</td>
+                <td class="rt">17</td>
+                <td class="rt">1.35</td>
+                <td class="rt">1,258.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/03</td>
+                <td class="lt"><a>醋酸乙烯(VAM)</a></td>
+                <td class="rt">1,085</td>
+                <td class="rt">0</td>
+                <td class="rt">0.00</td>
+                <td class="rt">1,085.00</td>
+              </tr>
+              <tr>
+                <td class="cr">09/03</td>
+                <td class="lt"><a>氯乙烯(VCM)</a></td>
+                <td class="rt">872</td>
+                <td class="rt">-38</td>
+                <td class="rt">-4.18</td>
+                <td class="rt">910.00</td>
+              </tr>
+            </table>
+        </div><!-- 表格 end -->
+        <div id="news_title1" class="news_title news_title_choosen"><a>台灣區石化原料海外現貨每週均價</a></div>
+        <div class="table table_products_overview"><!-- 表格 -->
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tr class="table_title">
+                <th width="8%" class="cr">日期</th>
+                <th width="38%" class="lt"><a>商品名稱</a></th>
+                <th width="14%" class="rt">本週均價</th>
+                <th width="13%" class="rt">漲跌</th>
+                <th width="13%" class="rt">漲%</th>
+                <th width="14%" class="rt">上週均價</th>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>純苯(BENZENE)</a></td>
+                <td class="rt">1,144</td>
+                <td class="rt">41</td>
+                <td class="rt">3.72</td>
+                <td class="rt">1,103.00</td>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>丁二烯(BUTADIENE)</a></td>
+                <td class="rt">3,820</td>
+                <td class="rt">-50</td>
+                <td class="rt">-1.29</td>
+                <td class="rt">3,870.00</td>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>乙烯(ETHYLENE)</a></td>
+                <td class="rt">1,151</td>
+                <td class="rt">-10</td>
+                <td class="rt">-0.86</td>
+                <td class="rt">1,161.00</td>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>異構混二甲苯(ISO-MX)</a></td>
+                <td class="rt">1,347</td>
+                <td class="rt">36</td>
+                <td class="rt">2.75</td>
+                <td class="rt">1,311.00</td>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>乙二醇(MEG)</a></td>
+                <td class="rt">1,253</td>
+                <td class="rt">26</td>
+                <td class="rt">2.12</td>
+                <td class="rt">1,227.00</td>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>鄰二甲苯(Orthoxylen)</a></td>
+                <td class="rt">1,417</td>
+                <td class="rt">67</td>
+                <td class="rt">4.96</td>
+                <td class="rt">1,350.00</td>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>對二甲苯(Paraxylene)</a></td>
+                <td class="rt">1,658</td>
+                <td class="rt">18</td>
+                <td class="rt">1.10</td>
+                <td class="rt">1,640.00</td>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>丙烯(PROPYLENE)</a></td>
+                <td class="rt">1,581</td>
+                <td class="rt">-30</td>
+                <td class="rt">-1.86</td>
+                <td class="rt">1,611.00</td>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>溶劑混二甲苯(SOL-MX)</a></td>
+                <td class="rt">1,194</td>
+                <td class="rt">11</td>
+                <td class="rt">0.93</td>
+                <td class="rt">1,183.00</td>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>苯乙烯(STYRENE)</a></td>
+                <td class="rt">1,506</td>
+                <td class="rt">28</td>
+                <td class="rt">1.89</td>
+                <td class="rt">1,478.00</td>
+              </tr>
+              <tr>
+                <td class="cr">08/29</td>
+                <td class="lt"><a>甲苯(TOLUENE)</a></td>
+                <td class="rt">1,155</td>
+                <td class="rt">-27</td>
+                <td class="rt">-2.28</td>
+                <td class="rt">1,182.00</td>
+              </tr>
+            </table>
+        </div><!-- 表格 end -->
+        
+        <div class="notice"><!-- 注意事項 -->
+        	<p class="cnyes">相關財經資訊由 <a href="http://www.cnyes.com/" target="_blank">cnYes 鉅亨網</a>提供，僅供參考，請勿視為買賣基金、有價證券之投資建議。</p>
+        </div><!-- 注意事項end -->
+    </div><!-- 主要內容end -->
+</div>
+
+
+<div id="footer">
+	<div id="footer_content"><!-- 頁尾內容 -->
+    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">服務據點</a></span>
+        <span class="footer_item footer_link">意見信箱：<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
+        <span class="footer_tel">客戶服務熱線：(02)2552-3111　免付費：0800-003-111</span><br />
+        <span class="footer_space"><img src="images/space.gif"/></span><br />
+		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">著作權聲明</a> c上海商業儲蓄銀行版權所有　最佳瀏覽環境1024 x 728視窗模式以上，IE8.0 &amp; Firefox 3.0 以上版本瀏覽器</span><br />
+        <span>若您無法看到Flash、PDF或匯率看板，建議您下載Flash Player、Adobe Reader與JAVA軟體</span>
+    </div><!-- 頁尾內容end -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+<title>上海商業儲蓄銀行-財富管理</title>
+<link type="image/x-icon" rel="icon" href="favicon.ico">
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/fancyfields.css" rel="stylesheet">
+<link href="css/colorbox.css" rel="stylesheet">
+<link href="css/web.css" rel="stylesheet">
+<link href="css/fund_add.css" rel="stylesheet">
+<link href="css/nav-h.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/swap.js"></script>
+<script src="js/fancyfields-1.2.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script src="js/login.js"></script>
+<script type="text/javascript" src="js/back-to-top.js"></script>
+<script src="js/products_dropdown.js"></script>
+<script>
+$(function(){
+	//該單元選單
+	$("#menu_finance").addClass("menu_choosen");
+	$("#products_overview").addClass("submenu_choosen");
+})
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/btn_logino.gif')">
+
+
+<div id="header">
+	<div id="header_content"><!-- 頁首內容 -->
+    
+		<div id="logo"><a href="index.htm" target="_self"><img src="images/logo.gif"/></a></div>
+        
+    	<div id="menu"><!-- 主選單 -->
+    		<div id="menu_products_overview" class="menu_item"><a href="fund_value.htm" target="_self">最新報價</a></div>
+    		<div id="menu_news" class="menu_item"><a href="news.htm" target="_self">即時新聞</a></div>
+    		<div id="menu_search" class="menu_item"><a href="search.htm" target="_self">基金搜尋</a></div>
+    		<div id="menu_finance" class="menu_item"><a href="finance.htm" target="_self">金融行情</a></div>
+    		<div id="menu_event" class="menu_item"><a href="account.htm" target="_self">理財試算</a></div>
+    		<div id="menu_back" class="menu_item menu_item_last"><a href="index.htm" target="_self">回到首頁</a></div>
+    	</div>
+        
+    </div><!-- 頁首內容end -->
+</div>
+<div id="container">
+	<div id="container_content" class="products_overview"><!-- 主要內容，class並設定本頁特化內容 -->
+<form name="FundDetail" method="get" action="Effect_visi.htm">
+<div class="function"><!-- 登入 -->
+        	<div id="btn_login"><a href="https://ibank.scsb.com.tw/" target="_blank" onmouseover="MM_swapImage('btnLogin','','images/btn_logino.gif',1)" onmouseout="MM_swapImgRestore()"><img src="images/btn_login.gif" name="btnLogin" id="btnLogin" /></a></div>
+			<div id="quick_search"><span class="quick_search_title">快速查詢<span class="quick_search_title_arrow">&gt;&gt;</span></span> 產品代碼及名稱 
+		  <input class="quick_search_input" name="fund_code" type="text" /> <input type="button" value="GO" onclick='FundCheck();'/></div>
+        </div></form>
+        <div class="option_search option_search_0">
+        	<div class="menu menu_04">
+                 <ul id="navmenu-h" style=" width:762px;">
+                  <li class="menu_1"><a href="foreign_exchange.htm" title="銀行匯率 "><em>銀行匯率 </em></a>
+                  </li>
+                  <li class="menu_2"><a href="finance.htm" title="全球股市 "><em>銀行匯率 </em></a>
+                  </li>
+                  <li class="menu_3"><a href="forex.htm" title="交叉匯率"><em>交叉匯率</em></a>
+                  </li>
+                  <li class="menu_4"><a href="bonds.htm" title="債券行情"><em>債券行情</em></a>
+                  </li>
+                  <li class="menu_5"><a href="products.htm" class="menu_on" title="商品期貨"><em>商品期貨</em></a>
+                  </li>
+                  <li class="menu_6"><a href="schedule.htm" title="經濟指標"><em>經濟指標</em></a>
+                  </li>
+                 </ul> 
+            </div><!-- menu END --> 
+        </div> 	
+        <div class="title">商品期貨 
+            <ul class="forex">
+                <li><a href="products.htm"><em>商品期貨</em></a></li>
+                <li><a href="products_02.htm"><em>航運指數</em></a></li>
+                <li><a href="products_03.htm" class="current"><em>鋼鐵指數</em></a></li>
+                <li><a href="products_04.htm"><em>國際煤價</em></a></li>
+                <li><a href="products_05.htm"><em>國際紙價</em></a></li>
+                <li><a href="products_06.htm"><em>塑膠價格</em></a></li>
+            </ul>
+        </div><!-- 標題 -->
+		<div id="news_title1" class="news_title news_title_choosen"><a>CRU鋼鐵物價指數單位：點數</a></div>
+        <div class="table table_products_overview"><!-- 表格 -->
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <thead>
+                <tr class="table_title">
+                  <th width="8%" class="cr">日期</th>
+                  <th width="30%" class="lt">碳鋼物價指數(週)</th>
+                  <th width="16%" class="rt">最新價</th>
+                  <th width="15%" class="rt">漲跌</th>
+                  <th width="15%" class="rt">漲%</th>
+                  <th width="16%" class="rt">前次價格</th>
+                </tr>
+                <tr>
+                  <td class="cr">06/27</td>
+                  <td>*碳鋼-全球價格指數</td>
+                  <td class="rt">162.10</td>
+                  <td class="rt">-0.69</td>
+                  <td class="rt">-0.42</td>
+                  <td class="rt">162.79</td>
+                </tr>
+                <tr>
+                  <td class="cr">06/27</td>
+                  <td>平板鋼材價格指數</td>
+                  <td class="rt">156.43</td>
+                  <td class="rt">-0.89</td>
+                  <td class="rt">-0.57</td>
+                  <td class="rt">157.32</td>
+                </tr>
+                <tr>
+                  <td class="cr">06/27</td>
+                  <td>長條鋼材價格指數</td>
+                  <td class="rt">175.29</td>
+                  <td class="rt">-0.42</td>
+                  <td class="rt">-0.24</td>
+                  <td class="rt">175.71</td>
+                </tr>
+                <tr>
+                  <td class="cr">06/27</td>
+                  <td>碳鋼-北美價格指數</td>
+                  <td class="rt">180.93</td>
+                  <td class="rt">-0.47</td>
+                  <td class="rt">-0.26</td>
+                  <td class="rt">181.40</td>
+                </tr>
+                <tr>
+                  <td class="cr">06/27</td>
+                  <td>碳鋼-亞洲價格指數</td>
+                  <td class="rt">160.38</td>
+                  <td class="rt">-0.34</td>
+                  <td class="rt">-0.21</td>
+                  <td class="rt">160.72</td>
+                </tr>
+                <tr>
+                  <td class="cr">06/27</td>
+                  <td>碳鋼-歐洲價格指數</td>
+                  <td class="rt">150.95</td>
+                  <td class="rt">-1.54</td>
+                  <td class="rt">-1.01</td>
+                  <td class="rt">152.49</td>
+                </tr>
+                <tr class="table_title">
+                  <th class="cr">日期</th>
+                  <th class="lt">其他鋼物價指數(月)</th>
+                  <th class="rt">最新價</th>
+                  <th class="rt">漲跌</th>
+                  <th class="rt">漲%</th>
+                  <th class="rt">昨收</th>
+                </tr>
+                <tr>
+                  <td class="cr">05/01</td>
+                  <td>不銹鋼價格指數</td>
+                  <td class="rt">130.80</td>
+                  <td class="rt">4.10</td>
+                  <td class="rt">3.24</td>
+                  <td class="rt">126.70</td>
+                </tr>
+                <tr>
+                  <td class="cr">05/01</td>
+                  <td>金屬鑄造原料價格指數</td>
+                  <td class="rt">277.80</td>
+                  <td class="rt">9.20</td>
+                  <td class="rt">3.43</td>
+                  <td class="rt">268.60</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>資料來源：www.CRUspi.com</p>
+        </div><!-- 表格 end -->
+       
+        <div id="news_title1" class="news_title news_title_choosen"><a>中鋼內銷鋼品盤價單位：新台幣/公噸</a></div>
+        <div class="table table_products_overview"><!-- 表格 -->
+        	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <thead>
+                <tr class="table_title">
+                  <th width="8%" class="cr">日期</th>
+                  <th width="30%" class="lt">商品名稱(季)</th>
+                  <th width="16%" class="rt">最新價</th>
+                  <th width="15%" class="rt">漲跌</th>
+                  <th width="15%" class="rt">漲%</th>
+                  <th width="16%" class="rt">前次價格</th>
+                </tr>
+                <tr>
+                  <td class="cr">07/01</td>
+                  <td>*熱軋鋼品</td>
+                  <td class="rt">18,400.00</td>
+                  <td class="rt">-500.00</td>
+                  <td class="rt">-2.65</td>
+                  <td class="rt">18,900.00</td>
+                </tr>
+                <tr>
+                  <td class="cr">07/01</td>
+                  <td>冷軋鋼品</td>
+                  <td class="rt">20,550.00</td>
+                  <td class="rt">-500.00</td>
+                  <td class="rt">-2.38</td>
+                  <td class="rt">21,050.00</td>
+                </tr>
+                <tr>
+                  <td class="cr">07/01</td>
+                  <td>棒線</td>
+                  <td class="rt">20,000.00</td>
+                  <td class="rt">0.00</td>
+                  <td class="rt">0.00</td>
+                  <td class="rt">20,000.00</td>
+                </tr>
+                <tr>
+                  <td class="cr">07/01</td>
+                  <td>電磁鋼捲</td>
+                  <td class="rt">21,700.00</td>
+                  <td class="rt">-500.00</td>
+                  <td class="rt">-2.25</td>
+                  <td class="rt">22,200.00</td>
+                </tr>
+                <tr>
+                  <td class="cr">07/01</td>
+                  <td>電鍍鋅鋼捲</td>
+                  <td class="rt">24,800.00</td>
+                  <td class="rt">0.00</td>
+                  <td class="rt">0.00</td>
+                  <td class="rt">24,800.00</td>
+                </tr>
+                <tr>
+                  <td class="cr">07/01</td>
+                  <td>熱浸鍍鋅鋼捲</td>
+                  <td class="rt">22,400.00</td>
+                  <td class="rt">-300.00</td>
+                  <td class="rt">-1.32</td>
+                  <td class="rt">22,700.00</td>
+                </tr>
+                <tr>
+                  <td class="cr">07/01</td>
+                  <td>鋼板</td>
+                  <td class="rt">19,600.00</td>
+                  <td class="rt">0.00</td>
+                  <td class="rt">0.00</td>
+                  <td class="rt">19,600.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>資料來源：中鋼</p>
+        </div><!-- 表格 end -->
+        <div class="notice"><!-- 注意事項 -->
+        	<p class="cnyes">相關財經資訊由 <a href="http://www.cnyes.com/" target="_blank">cnYes 鉅亨網</a>提供，僅供參考，請勿視為買賣基金、有價證券之投資建議。</p>
+        </div><!-- 注意事項end -->
+    </div><!-- 主要內容end -->
+</div>
+
+
+<div id="footer">
+	<div id="footer_content"><!-- 頁尾內容 -->
+    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">服務據點</a></span>
+        <span class="footer_item footer_link">意見信箱：<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
+        <span class="footer_tel">客戶服務熱線：(02)2552-3111　免付費：0800-003-111</span><br />
+        <span class="footer_space"><img src="images/space.gif"/></span><br />
+		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">著作權聲明</a> c上海商業儲蓄銀行版權所有　最佳瀏覽環境1024 x 728視窗模式以上，IE8.0 &amp; Firefox 3.0 以上版本瀏覽器</span><br />
+        <span>若您無法看到Flash、PDF或匯率看板，建議您下載Flash Player、Adobe Reader與JAVA軟體</span>
+    </div><!-- 頁尾內容end -->
+</div>
+
+</body>
+</html>

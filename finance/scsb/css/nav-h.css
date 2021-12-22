@@ -1,0 +1,77 @@
+
+
+/*----- 下拉選單預設值(以下為必要屬性值，不可隨意更動) -----*/
+ul#navmenu-h {margin:0 auto;padding:0;list-style:none;position:relative; height:109px; width:889px;}
+ul#navmenu-h ul {width:163px;}/* 第一層選單寬度，必須有數值 */
+ul#navmenu-h ul {margin:0; list-style: none; display: none; position: absolute; top: 100%; left: 0;border-bottom:1px #d5d5d5 solid;}
+ul#navmenu-h ul ul,ul#navmenu-h ul ul ul { top: 0; left: 100%; }
+ul#navmenu-h li { float: left; display: inline; position: relative; }
+ul#navmenu-h ul li { width: 100%; display: block; border-left:1px #d5d5d5 solid; border-right:1px #d5d5d5 solid;}
+/* 第一層選單連結與滑鼠移過樣式 */
+ul#navmenu-h a {float: left; display: block; font:12px PMingLiU; text-decoration: none;  color:#6c6c6c; text-align:left;}
+ul#navmenu-h a:hover,ul#navmenu-h li:hover a,ul#navmenu-h li.iehover a {}
+/* 第二層選單連結與滑鼠移過樣式 */
+ul#navmenu-h li:hover li a,ul#navmenu-h li.iehover li a { float: none;background:#e8e8e8;  color:#6c6c6c; width:154px; padding:0 3px 0 6px;}/* 可更換屬性值 */
+ul#navmenu-h li:hover li a:hover,ul#navmenu-h li:hover li:hover a,ul#navmenu-h li.iehover li a:hover {background:#069; color:#fff;}/* 可更換屬性值 */
+/* 選單顯示/隱藏效果 */
+ul#navmenu-h li:hover ul ul { display: none;}
+ul#navmenu-h li:hover ul,ul#navmenu-h ul li:hover ul,ul#navmenu-h ul ul li:hover ul,ul#navmenu-h li.iehover ul{ display: block;}
+
+
+/*----- 額外控制選單樣式 -----*/
+.menu { text-align:center; width:100%; margin:0 auto; padding:0; clear:both; overflow:hidden; height:119px; display:block;float: left;position: relative;top: 3px;}
+.menu ul{z-index:1000; padding:0;}
+.menu li {width:111px; text-indent:-9999px; display:inline-block; *display:inline; margin:0 8px; height:109px;}
+.menu li a { display:block; width:111px; height:109px; line-height:109px; float:none; background:url(../images/btn_00.png) top no-repeat;}
+.menu li.menu_1 a{ background-position:0 0;}
+.menu li.menu_1 a:hover,.menu ul li.menu_1 a.menu_on  { background-position:0 -109px;}
+.menu li.menu_2 a{ background-position:-128px 0;}
+.menu li.menu_2 a:hover,.menu ul li.menu_2 a.menu_on  { background-position:-128px -109px;}
+.menu li.menu_3 a{ background-position:-257px 0;}
+.menu li.menu_3 a:hover,.menu ul li.menu_3 a.menu_on  { background-position:-257px -109px;}
+.menu li.menu_4 a{ background-position:-385px 0;}
+.menu li.menu_4 a:hover,.menu ul li.menu_4 a.menu_on  { background-position:-385px -109px;}
+.menu li.menu_5 a{ background-position:-514px 0;}
+.menu li.menu_5 a:hover,.menu ul li.menu_5 a.menu_on  { background-position:-514px -109px;}
+.menu li.menu_6 a{ background-position:-642px 0;}
+.menu li.menu_6 a:hover,.menu ul li.menu_6 a.menu_on  { background-position:-642px -109px;}
+.menu li.menu_7 a{ background-position:-771px 0;}
+.menu li.menu_7 a:hover,.menu ul li.menu_7 a.menu_on  { background-position:-771px -109px;}
+.menu_01 li a{ background:url(../images/btn_01.png) top no-repeat;}
+.menu_02 li a{ background:url(../images/btn_02.png) top no-repeat;}
+.menu_03 li a{ background:url(../images/btn_03.png) top no-repeat;}
+.menu_04 li a{ background:url(../images/btn_04.png) top no-repeat;}
+.menu_05 li a{ background:url(../images/btn_05.png) top no-repeat;}
+.menu_06 li a{ background:url(../images/btn_06.png) top no-repeat;}
+.menu_07 li a{ background:url(../images/btn_07.png) top no-repeat;}
+.menu_08 li a{ background:url(../images/btn_08.png) top no-repeat;}
+.computer_01 li a{ background:url(../images/computer_01.png) top no-repeat;}
+.computer_02 li a{ background:url(../images/computer_02.png) top no-repeat;}
+.computer_03 li a{ background:url(../images/computer_03.png) top no-repeat;}
+.computer_04 li a{ background:url(../images/computer_04.png) top no-repeat;}
+.simulate_01 li a{ background:url(../images/simulate_01.png) top no-repeat;}
+.computer_01,.computer_02,.computer_03,.computer_04,.simulate_01{margin:0 auto;}
+
+.menu_03 li {width:110px; text-indent:-9999px; display:inline-block; *display:inline; margin:0px; height:109px;}
+.menu_03 li a { display:block; width:110px; height:109px; line-height:109px; float:none; background:url(../images/btn_03.png) top no-repeat;}
+.menu_03 li.menu_1 a{ background-position:-1 0;}
+.menu_03 li.menu_1 a:hover,.menu_03 ul li.menu_1 a.menu_on  { background-position:-1 -109px;}
+.menu_03 li.menu_2 a{ background-position:-111px 0;}
+.menu_03 li.menu_2 a:hover,.menu_03 ul li.menu_2 a.menu_on  { background-position:-111px -109px;}
+.menu_03 li.menu_3 a{ background-position:-221px 0;}
+.menu_03 li.menu_3 a:hover,.menu_03 ul li.menu_3 a.menu_on  { background-position:-221px -109px;}
+.menu_03 li.menu_4 a{ background-position:-331px 0;}
+.menu_03 li.menu_4 a:hover,.menu_03 ul li.menu_4 a.menu_on  { background-position:-331px -109px;}
+.menu_03 li.menu_5 a{ background-position:-441px 0;}
+.menu_03 li.menu_5 a:hover,.menu_03 ul li.menu_5 a.menu_on  { background-position:-441px -109px;}
+.menu_03 li.menu_6 a{ background-position:-551px 0;}
+.menu_03 li.menu_6 a:hover,.menu_03 ul li.menu_6 a.menu_on  { background-position:-551px -109px;}
+.menu_03 li.menu_7 a{ background-position:-661px 0;}
+.menu_03 li.menu_7 a:hover,.menu_03 ul li.menu_7 a.menu_on  { background-position:-661px -109px;}
+.menu_03 li.menu_8 a{ background-position:-772px 0;}
+.menu_03 li.menu_8 a:hover,.menu_03 ul li.menu_8 a.menu_on  { background-position:-772px -109px;}
+
+
+.menu ul#navmenu-h li.w140{  padding-right:0;  }
+.menu ul#navmenu-h li.w140 a{font:13px Verdana, Arial, Helvetica, sans-serif; color:#FFF;text-decoration:none; text-align:center;}
+.menu ul#navmenu-h li.w140 a:hover{  font:13px Verdana, Arial, Helvetica, sans-serif;color:#333;text-decoration:none; text-align:center;}
