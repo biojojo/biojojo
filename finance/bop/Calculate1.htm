@@ -1,0 +1,368 @@
+ 
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<link href="http://fund.cnyes.com/css/home_fund.css" rel="stylesheet" type="text/css" />
+<link href="http://fund.cnyes.com/css/public.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://b2b.cnyes.com/news/b2bfunc/js/switchTab.js"></script>
+<link  rel="stylesheet" type="text/css" href=http://b2b.cnyes.com/news/css/twlife_style.css />
+<script> 
+function Getobj(objid)
+{return document.getElementById(objid);}
+ 
+function isInt(elm){
+    if(elm.length ==0) return false ;
+    var fResult=true ; 
+  for(var i=0;i<elm.length;i++){
+    if ((elm.charAt(i)<"0" || elm.charAt(i)>"9" )&&  elm.charAt(i)!=".")
+      fResult = false;
+  }
+  return fResult ;
+}
+function chkratestr(thisCHK){
+	if (parseFloat(thisCHK.value)<0 || parseFloat(thisCHK.value)>20) {
+		alert('年利率輸入範圍為0~20。');
+			thisCHK.focus();
+			return false;
+	}
+	return true;
+}
+ 
+//單筆&定額試算
+function Calc(kind,id)
+{
+ 
+    //投資年報酬率＝投資年報酬率
+    //期末價值 = 每年投資金額 ×（1＋投資年報酬率）× [(1 + 投資年報酬率)投資年數 - 1] ÷ 投資年報酬率
+    //期末金額 = 期初金額 × (1+投資年報酬率)投資年數
+      if (id == "b")
+      {
+       switch(kind)
+        {
+        case '1': //每月投資金額
+						var RateP = 1.0;
+						var RateSum = 0.0;
+            for (var i=0; i < Math.round(Getobj(id+"val2").value * 12) ; i++)
+							{
+								RateP = RateP*(1.0 + (Getobj(id+"val3").value/100/12.0));
+								RateSum   = RateSum + RateP;
+							}
+						Getobj(id+"val1").value = Math.round(Getobj(id+"val4").value/RateSum);
+	            break;
+        case '2':   //  投資月數轉年
+							var insrate=Getobj(id+"val3").value/1200;
+							var tmpvalue=((Getobj(id+"val4").value*insrate/Getobj(id+"val1").value)/(1+insrate))+1;
+					 		Getobj(id+"val2").value =Math.round(Math.log(tmpvalue)/Math.log(1+insrate))/12;
+		            break;
+        case '3':  //年報酬率
+				        	var sum_temp;
+							    var rate_month = 10;	
+							    var rate_half = 0.1;
+							    for(count=1; count <100 ; count++) {
+												var RateP = 1.0;
+												var RateSum = 0.0;
+						            for (var i=0; i < Math.round(Getobj(id+"val2").value * 12) ; i++)
+													{
+														RateP = RateP*(1.0 + (rate_month/100/12.0));
+														RateSum   = RateSum + RateP;
+													}
+							      	sum_temp = Math.round( Getobj(id+"val1").value * RateSum);
+											if ( sum_temp == Getobj(id+"val4").value) break;
+											if ( sum_temp > Getobj(id+"val4").value) rate_month = rate_month - rate_half;  
+											else  rate_month = rate_month + rate_half;
+							    }
+	    					  Getobj(id+"val3").value=Math.round(rate_month*100)/100;
+									if ( Math.abs(sum_temp-Getobj(id+"val4").value)/sum_temp > 0.1) Getobj(id+"val3").value="不在0~20%間";
+	            break;
+        case '4':  //期末金額
+						var RateP = 1.0;
+						var RateSum = 0.0;
+            for (var i=0; i < Math.round(Getobj(id+"val2").value * 12) ; i++)
+							{
+								RateP = RateP*(1.0 + (Getobj(id+"val3").value/100/12.0));
+								RateSum   = RateSum + RateP;
+							}
+						Getobj(id+"val4").value =  Math.round( Getobj(id+"val1").value * RateSum);
+	            break;
+		       }
+      }
+      else
+      {
+		      switch(kind)
+		        {
+		        case '1': //每年投資金額
+									var insrate=(Math.pow(1+(Getobj(id+"val3").value/100),Getobj(id+"val2").value))-1;
+								  Getobj(id+"val1").value=Math.round((Getobj(id+"val4").value * (Getobj(id+"val3").value/100) / insrate) /(1+(Getobj(id+"val3").value/100)));
+			            break;
+		        case '2':   //  投資年數
+										var insrate=Getobj(id+"val3").value/100;
+										var tmpvalue=((Getobj(id+"val4").value*insrate/Getobj(id+"val1").value)/(1+insrate))+1;
+								 		Getobj(id+"val2").value =Math.round(Math.log(tmpvalue)/Math.log(1+insrate));
+				            break;
+		        case '3':  //年報酬率
+					        	var insrate;
+					        	var sum_temp;
+								    var rate_month = 10;	
+								    var rate_half = 0.5;
+						        for(count=1; count <100 ; count++) 
+						        {
+						            insrate =(Math.pow(1+(rate_month/100),Getobj(id+"val2").value))-1;
+						      	    sum_temp = Math.round((Getobj(id+"val1").value*(1+(rate_month/100)) * insrate)/ (rate_month/100));
+							        if ( sum_temp == Getobj(id+"val4").value) break;
+							        if ( sum_temp > Getobj(id+"val4").value) 
+							        {rate_month = rate_month - rate_half;}
+							        else  
+							        {rate_month = rate_month + rate_half;}
+							        if (Math.abs(Getobj(id+"val4").value/sum_temp)>1) rate_month = rate_month / (Getobj(id+"val4").value/sum_temp);
+							        if (Math.abs(sum_temp/Getobj(id+"val4").value)>1) rate_month = rate_month / (sum_temp/Getobj(id+"val4").value);
+						         }
+								     Getobj(id+"val3").value=Math.round(rate_month*100)/100;
+						         break;
+		        case '4':  //期末金額
+										var insrate=(Math.pow(1+(Getobj(id+"val3").value/100),Getobj(id+"val2").value))-1;
+									  Getobj(id+"val4").value=Math.round((Getobj(id+"val1").value*(1+(Getobj(id+"val3").value/100)) * insrate)/ (Getobj(id+"val3").value/100));
+								 //	 Getobj(id+"val4").value=Math.round(Getobj(id+"val1").value*(Math.pow((1+(Getobj(id+"val3").value/100)),Getobj(id+"val2").value)));
+			          	  break;
+				       }
+				    }   
+		       return;
+}
+function Change1(id)
+{
+ 
+    var checkField = new Array(id+'val2',id+'val3',id+'val4');
+	Getobj(id+"val1").readOnly=true;
+	Getobj(id+"val2").readOnly=false;
+	Getobj(id+"val3").readOnly=false;
+	Getobj(id+"val4").readOnly=false;
+	Getobj(id+"val1").className="tabBlueBlack";
+	Getobj(id+"val2").className="";
+	Getobj(id+"val3").className="";
+	Getobj(id+"val4").className="";
+	fieldNum = checkField.length;
+	for (i=0;i<fieldNum;i++){
+		objID = checkField[i];
+		objValue = document.getElementById(objID).value;
+			if (!isInt(objValue)) {return;}
+	}
+ 	Calc('1',id);
+	return;
+}
+function Change2(id)
+{
+ 
+    var checkField = new Array(id+'val1',id+'val3',id+'val4');
+	Getobj(id+"val1").readOnly=false;
+	Getobj(id+"val2").readOnly=true;
+	Getobj(id+"val3").readOnly=false;
+	Getobj(id+"val4").readOnly=false;
+	Getobj(id+"val1").className="";
+	Getobj(id+"val2").className="tabBlueBlack";
+	Getobj(id+"val3").className="";
+	Getobj(id+"val4").className="";
+	fieldNum = checkField.length;
+	for (i=0;i<fieldNum;i++){
+		objID = checkField[i];
+		objValue = document.getElementById(objID).value;
+			if (!isInt(objValue)) {return;}
+	}
+ 
+ 	Calc('2',id);
+	return;
+}
+function Change3(id)
+{
+ 
+    var checkField = new Array(id+'val1',id+'val2',id+'val4');
+	Getobj(id+"val1").readOnly=false;
+	Getobj(id+"val2").readOnly=false;
+	Getobj(id+"val3").readOnly=true;
+	Getobj(id+"val4").readOnly=false;
+	Getobj(id+"val1").className="";
+	Getobj(id+"val2").className="";
+	Getobj(id+"val3").className="tabBlueBlack";
+	Getobj(id+"val4").className="";
+	fieldNum = checkField.length;
+	for (i=0;i<fieldNum;i++){
+		objID = checkField[i];
+		objValue = document.getElementById(objID).value;
+			if (!isInt(objValue)) {return;}
+	}
+ 	Calc('3',id);
+	return;
+}
+function Change4(id)
+{
+ 
+    var checkField = new Array(id+'val1',id+'val2',id+'val3');
+	Getobj(id+"val1").readOnly=false;
+	Getobj(id+"val2").readOnly=false;
+	Getobj(id+"val3").readOnly=false;
+	Getobj(id+"val4").readOnly=true;
+	Getobj(id+"val1").className="";
+	Getobj(id+"val2").className="";
+	Getobj(id+"val3").className="";
+	Getobj(id+"val4").className="tabBlueBlack";
+	fieldNum = checkField.length;
+	for (i=0;i<fieldNum;i++){
+		objID = checkField[i];
+		objValue = document.getElementById(objID).value;
+			if (!isInt(objValue)) {return;}
+	}
+ 	Calc('4',id);
+	return;
+}
+function CheckData(id)
+{
+ 
+	var kind=0;
+		for(i = 0; i < 4; i++) {
+		if(Getobj(id+"kind"+i).checked) {
+			kind=Getobj(id+"kind"+i).value;
+			break;
+		}
+		}
+	if( kind==0)	{alert('未選擇試算方法！！'); return false ;}
+	      switch(kind)
+        {
+        case '1': //每年投資金額
+		        var checkField = new Array(id+'val2',id+'val3',id+'val4');
+	            var checkFieldDesc = new Array('請正確的投資期間!','請輸入正確的年報酬率!','請輸入正確的期末金額!');
+	            break;
+        case '2':   //  投資年數
+		        var checkField = new Array(id+'val1',id+'val3',id+'val4');
+	            var checkFieldDesc = new Array('請輸入正確的每年投資金額!','請輸入正確的年報酬率!','請輸入正確的期末金額!');
+		            break;
+        case '3':   //  年報酬率 
+		        var checkField = new Array(id+'val1',id+'val2',id+'val4');
+	            var checkFieldDesc = new Array('請輸入正確的每年投資金額!','請輸入正確的投資期間!','請輸入正確的期末金額!');
+		            break;
+        case '4':  //期末金額
+		        var checkField = new Array(id+'val1',id+'val2',id+'val3');
+	            var checkFieldDesc = new Array('請輸入正確的每年投資金額!','請輸入正確的投資期間!','請輸入正確的年報酬率!');
+	            break;
+		       }
+	fieldNum = checkField.length;
+ 
+	for (i=0;i<fieldNum;i++){
+		objID = checkField[i];
+		objDesc = checkFieldDesc[i];
+		objValue = document.getElementById(objID).value;
+			if (!isInt(objValue)) {alert(objDesc); document.getElementById(objID).focus(); return false ;}
+	}
+ 
+ 	Calc(kind,id);
+	return;
+}
+</script>
+<style> 
+.mtlinks a.tab_on { border:1px solid #ccc; border-bottom:0px; font-weight:bold; background:url(http://fund.cnyes.com/images/cnyes_xbg.gif) 0 0 repeat-x;}
+.mytools ul.mtnote li { line-height:1.2em;}
+</style>
+</head>
+<body>
+ 
+<div class="mytools" style="width:980px;">
+<div class="mtlinks" style="width:970px; margin:0; text-align:left;">
+<a id="Calculte1_tab_0" class ="current" onmouseover="javascript:switchTab('Calculte1',0,3);" href="#" style="border:1px solid #CCC; border-bottom:0;">單筆投資</a>
+<a id="Calculte1_tab_1" onmouseover="javascript:switchTab('Calculte1',1,3);" href="#">每月定期定額</a>
+<a id="Calculte1_tab_2" onmouseover="javascript:switchTab('Calculte1',2,3);" href="#">每年定期定額</a>
+</div>
+<div id="Calculte1_0">
+    <div class="mtconts">
+    <span><input name="akind" id="akind0" value="1" onClick="return Change1('a');" type="radio" />計算每年投資金額</span>
+    <span><input name="akind" id="akind1" value="2" onClick="return Change2('a');" type="radio" />計算投資期間</span>
+    <span><input name="akind" id="akind2" value="3" onClick="return Change3('a');" type="radio" />計算年報酬率</span>
+    <span><input name="akind" id="akind3" value="4" onClick="return Change4('a');" type="radio" />計算期末金額</span>
+    </div>
+ 
+    <ul class="fminput">
+    <li><label>每年投資金額</label><input name="aval1"  id="aval1" type="text" value="" size="10" class="texts" /> 元</li>
+    <li><label>投資期間</label><input name="aval2" type="text" id="aval2" value="" size="10" class="texts" /> 年</li>
+    <li><label>年報酬率</label><input name="aval3" type="text" id="aval3" onBlur="if(!this.readOnly) chkratestr(this);" value="" size="10" class="texts" /> %</li>
+    <li><label>期末金額</label><input name="aval4" type="text" id="aval4" value="" size="10" class="texts" /> 元</li>
+    </ul>
+ 
+    <div class="submits">
+    <input name="Submit" value="試算" onClick="return CheckData('a');" type="button" class="butn" /> 
+    <input name="Submit2" value="清除" type="reset" class="butn" />
+       
+ 
+    <ul class="mtnote" style="text-align:left;">
+    <li>此區計算數值僅供理財參考，並未加計任何可能產生的手續費用。</li>
+    <li>計算出的金額並未考量物價膨脹率及風險係數，也無保證和實際投資狀況相符。</li>
+    <li>任何投資皆有風險，購買產品前請先詳閱該產品之相關說明文件。</li>
+    <li>計算出的金額為概算數字，並未考量每日複利、物價膨脹率、浮動利率及風險係數等數字，也無保證和實際投資狀況相符。</li>
+    <li>需投資金額與投資期間將隨預期報酬率假設之不同而改變。</li>
+    <li>計算出的期末金額僅為假設情形，實際投資環境及經濟走勢有可能受國際金融局勢變動、國內外政治及經濟變化、股市之震盪等因素影響，而無法達成投資目的。</li>
+    <li>定期定額投資人因不同時點進場，將有不同之投資績效，基金以往之績效亦不代表未來績效之保證，投資人應慎選投資標的。</li>
+    </ul>
+    </div>
+</div>
+<div id="Calculte1_1" style="display :none ">
+    <div class="mtconts">
+    <span><input name="bkind" id="bkind0" value="1" onclick="return Change1('b');" type="radio" />計算每月投資金額</span>
+    <span><input name="bkind" id="bkind1" value="2" onclick="return Change2('b');" type="radio" />計算投資期間</span>
+    <span><input name="bkind" id="bkind2" value="3" onclick="return Change3('b');" type="radio" />計算年報酬率</span>
+    <span><input name="bkind" id="bkind3" value="4" onclick="return Change4('b');" type="radio" />計算期末金額</span>
+    </div>
+ 
+    <ul class="fminput">
+    <li><label>每月投資金額</label> <input name="bval1"  id="bval1" type="text" value="" size="10" class="texts" /> 元</li>
+    <li><label>投資期間</label> <input name="bval2" type="text" id="bval2" value="" size="10" class="texts" /> 年</li>
+    <li><label>年報酬率</label> <input name="bval3" type="text" id="bval3" onBlur="if(!this.readOnly) chkratestr(this);" value="" size="10" class="texts" /> %</li>
+    <li><label>期末金額</label> <input name="bval4" type="text" id="bval4" value="" size="10" class="texts" /> 元</li>
+    </ul>
+ 
+    <div class="submits">
+    <input name="Submit" value="試算" onClick="return CheckData('b');" type="button" class="butn" /> 
+    <input name="Submit2" value="清除" type="reset" class="butn" />
+    </div>
+ 
+    <ul class="mtnote" style="text-align:left;">
+    <li>此區計算數值僅供理財參考，並未加計任何可能產生的手續費用。</li>
+    <li>計算出的金額並未考量物價膨脹率及風險係數，也無保證和實際投資狀況相符。</li>
+    <li>任何投資皆有風險，購買產品前請先詳閱該產品之相關說明文件。</li>
+    <li>計算出的金額為概算數字，並未考量每日複利、物價膨脹率、浮動利率及風險係數等數字，也無保證和實際投資狀況相符。</li>
+    <li>需投資金額與投資期間將隨預期報酬率假設之不同而改變。</li>
+    <li>計算出的期末金額僅為假設情形，實際投資環境及經濟走勢有可能受國際金融局勢變動、國內外政治及經濟變化、股市之震盪等因素影響，而無法達成投資目的。</li>
+    <li>定期定額投資人因不同時點進場，將有不同之投資績效，基金以往之績效亦不代表未來績效之保證，投資人應慎選投資標的。</li>
+    </ul>
+</div>
+<div id="Calculte1_2" style="display :none ">
+    <div class="mtconts">
+    <span><input name="ckind" id="ckind0" value="1" onclick="return Change1('c');" type="radio" />計算每年投資金額</span>
+    <span><input name="ckind" id="ckind1" value="2" onclick="return Change2('c');" type="radio" />計算投資期間</span>
+    <span><input name="ckind" id="ckind2" value="3" onclick="return Change3('c');" type="radio" />計算年報酬率</span>
+    <span><input name="ckind" id="ckind3" value="4" onclick="return Change4('c');" type="radio" />計算期末金額</span>
+    </div>
+ 
+    <ul class="fminput">
+    <li><label>每年投資金額</label> <input name="cval1"  id="cval1" type="text" value="" size="10" class="texts" /> 元</li>
+    <li><label>投資期間</label> <input name="cval2" type="text" id="cval2" value="" size="10" class="texts" /> 年</li>
+    <li><label>年報酬率</label> <input name="cval3" type="text" id="cval3" onBlur="if(!this.readOnly) chkratestr(this);" value="" size="10" class="texts" /> %</li>
+    <li><label>期末金額</label> <input name="cval4" type="text" id="cval4" value="" size="10" class="texts" /> 元</li>
+    </ul>
+ 
+    <div class="submits">
+    <input name="Submit" value="試算" onClick="return CheckData('c');" type="button" class="butn" /> 
+    <input name="Submit2" value="清除" type="reset" class="butn" />
+    </div>
+ 
+    <ul class="mtnote" style="text-align:left;">
+    <li>此區計算數值僅供理財參考，並未加計任何可能產生的手續費用。</li>
+    <li>計算出的金額並未考量物價膨脹率及風險係數，也無保證和實際投資狀況相符。</li>
+    <li>任何投資皆有風險，購買產品前請先詳閱該產品之相關說明文件。</li>
+    <li>計算出的金額為概算數字，並未考量每日複利、物價膨脹率、浮動利率及風險係數等數字，也無保證和實際投資狀況相符。</li>
+    <li>需投資金額與投資期間將隨預期報酬率假設之不同而改變。</li>
+    <li>計算出的期末金額僅為假設情形，實際投資環境及經濟走勢有可能受國際金融局勢變動、國內外政治及經濟變化、股市之震盪等因素影響，而無法達成投資目的。</li>
+    <li>定期定額投資人因不同時點進場，將有不同之投資績效，基金以往之績效亦不代表未來績效之保證，投資人應慎選投資標的。</li>
+    </ul>
+</div>
+</div>
+ 
+</body>
+</html>
+

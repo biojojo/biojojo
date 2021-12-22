@@ -1,0 +1,541 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>板信基金理財網</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style3.css" rel="stylesheet" title="style3" type="text/css">
+<link rel="alternate stylesheet" href="css/style1.css" title="style1" type="text/css" />
+<link rel="alternate stylesheet" href="css/style2.css" title="style2" type="text/css" />
+
+<script type="text/javascript" src="http://img.cnyes.com/js/jquery.js"></script>
+<script type="text/javascript" src="js/styleswitch.js"></script>
+
+<link href="css/nav-h.css" rel="stylesheet" type="text/css" />
+<!--[if gte IE 5.5]><script language="JavaScript" src="js/jquery.ienav.js" type="text/javascript"></script><![endif]-->
+
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="top">
+    <div class="logo"><img src="images/logo.gif"></div>
+    <div class="color_link">
+      <ul class="color">
+        <li><a href="index.htm?style=style1" title="切換樣式1" rel="style1" class="styleswitch"><img src="images/color_g.gif"></a></li>
+        <li><a href="index.htm?style=style2" title="切換樣式2" rel="style2" class="styleswitch"><img src="images/color_p.gif"></a></li>
+        <li><a href="index.htm?style=style3" title="切換樣式3" rel="style3" class="styleswitch"><img src="images/color_b.gif"></a></li>
+      </ul>
+      <ul class="link">
+        <li class="home"><a href="http://www.bop.com.tw/" target="_blank">板信銀行首頁</a></li>
+        <li class="heart"><a href="javascript:window.external.AddFavorite('http://#','板信基金理財網')">加到我的最愛</a></li>
+        <li class="mouse"><a onclick="javascript:switchTabA('homedt', 0, 1);" href="javascript:;">設為首頁</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="menu">
+    <ul id="navmenu-h">
+      <li><a href="index.htm" class="menu_1">首頁</a></li>
+      <li><a href="page2_1.htm" class="menu_2">共同基金</a>
+          <ul class="w143">
+            <li><a href="page2_1.htm">基金總覽</a></li>
+            <li><a href="page2_2.htm">基金績效排行</a></li>
+            <li><a href="page2_3.htm">基金進階搜尋</a></li>
+            <li><a href="page2_4.htm">基金重大訊息</a></li>
+            <li><a href="page2_5.htm">配息資訊</a></li>
+            <li><a href="page2_6.htm">四四三三搜尋</a></li>
+          </ul></li>
+      <li class="menu_on"><a href="page3_1.htm" class="menu_3">國際金融</a>
+          <ul class="w143">
+            <li><a href="page3_1.htm">全球股市行情</a></li>
+            <!-- <li><a href="page3_2.htm">全球債市行情</a></li> -->
+            <li><a href="page3_3.htm">全球匯率行情</a></li>
+            <li><a href="page3_4.htm">全球利率行情</a></li>
+            <li><a href="page3_5.htm">全球經濟指標</a></li>
+            <li><a href="page3_6.htm">全球股市交易時間</a></li>
+            <li><a href="page3_7.htm">金融行事曆</a></li>
+          </ul></li>
+      <li><a href="page4_1.htm" class="menu_4">投資報告</a>
+          <ul class="w143">
+            <li><a href="page4_1.htm">投資氣象台</a></li>
+            <li><a href="page4_2.htm">基金研究報告</a></li>
+          </ul></li>
+      <li><a href="page5_1.htm" class="menu_5">投資須知</a>
+          <ul class="w143">
+            <li><a href="page5_1.htm">短線交易</a></li>
+            <li><a href="page5_2.htm">基金收費標準</a></li>
+            <li><a href="page5_3.htm">其他相關規定</a></li>
+            <li><a href="page5_4.htm">基金交易流程</a></li>
+          </ul></li>
+      <li><a href="page6_1.htm" class="menu_6">基金學院</a>
+          <ul class="w143">
+            <li><a href="page6_1.htm">基金名詞解釋</a></li>
+            <li><a href="page6_2.htm">理財規劃評量</a></li>
+            <li><a href="page6_3.htm">定期定額寶典</a></li>
+            <li><a href="page6_4.htm">投資目標試算</a></li>
+            <li><a href="page6_5.htm">投資模擬試算</a></li>
+          </ul></li>
+      <li><a class="menu_7 menu_0" title="頁面建置中">個人信託</a></li>
+    </ul>
+  </div>
+  
+  <div class="contents">
+    <div class="Left"><a href="https://netbank.bop.com.tw/" target="_blank"><img src="images/login.jpg"></a>
+      <div class="title_1"><em>關鍵字搜尋</em></div>
+      <table border="0" cellspacing="4" cellpadding="0">
+        <tr>
+          <td><input name="textfield" type="text" class="input_1" id="textfield"></td>
+          <td><a href="#"><img src="images/search_01.gif"></a></td>
+        </tr>
+        <tr>
+          <td colspan="2"><span class="text_1">熱門搜尋：<a href="#">黃金</a>、<a href="#">高收益</a>、<a href="#">連動債</a>、<a href="#">歐債</a>、<a href="#">大中華</a>、<a href="#">高收益</a>、<a href="#">連動債</a>、<a href="#">歐債</a></span></td>
+        </tr>
+      </table>
+    </div>
+    <div class="Right"> 
+      <div id="flash">
+      <script type="text/javascript" src="js/swfobject.js"></script>
+      <div id="flashcontent">為得到更佳的動畫效果，請更新您的 FlashPlayer 版本</div>
+	  <script type="text/javascript">var fo = new FlashObject("images/index_banner.swf", "mymovie", "745", "200", "8", "#FFFFFF");
+      fo.addParam("wmode", "transparent");fo.write("flashcontent");</script>
+      </div>
+    </div>
+  </div>
+  
+  <div class="contents">
+    <div class="main">
+	  <div class="root"><a href="index.htm">首頁</a> &gt; <a href="page3_1.htm">國際金融</a> &gt; 全球股市行情</div>
+      <div class="title_2"><em>全球股市行情</em></div>
+      
+      <div class="tab">
+        <ul class="tab_1">
+          <li><a href="page3_1.htm">亞洲股市</a></li>
+          <li><a href="page3_1_2.htm">美洲股市</a></li>
+          <li><a href="page3_1_3.htm">歐洲股市</a></li>
+          <li class="tab_on"><a href="page3_1_4.htm">區域指數</a></li>
+          <li><a href="page3_1_5.htm">產業指數</a></li>
+        </ul>
+      </div>
+      
+      <div class="bd2">
+        <div class="tabs1">
+          <table>
+            
+            <tr>
+              <th width="6%" class="tc">交易日</th>
+              <th class="tc">指數名稱</th>
+              <th width="8%" class="tr">收盤指數</th>
+              <th width="6%" class="tr">漲跌</th>
+              <th width="6%" class="tr">漲%</th>
+              <th width="8%" class="tr">開盤</th>
+              <th width="8%" class="tr">最高</th>
+              <th width="8%" class="tr">最低</th>
+              <th width="8%" class="tr">昨收</th>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSAWI.html">世界指數(所有國家)</a></td>
+              <td class="tr red">332.44</td>
+              <td class="tr red">1.60</td>
+              <td class="tr red">0.48</td>
+              <td class="tr red">330.85</td>
+              <td class="tr red">332.87</td>
+              <td class="tr red">330.65</td>
+              <td class="tr">330.84</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSWLD.html">世界指數(開發市場)</a></td>
+              <td class="tr red">1,303.00</td>
+              <td class="tr red">4.92</td>
+              <td class="tr red">0.38</td>
+              <td class="tr red">1,298.01</td>
+              <td class="tr red">1,304.95</td>
+              <td class="tr red">1,297.03</td>
+              <td class="tr">1,298.08</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSAAI.html">亞洲指數(所有國家)</a></td>
+              <td class="tr red">113.37</td>
+              <td class="tr red">0.99</td>
+              <td class="tr red">0.88</td>
+              <td class="tr red">112.13</td>
+              <td class="tr red">113.44</td>
+              <td class="tr red">111.96</td>
+              <td class="tr">112.38</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSASJ.html">亞洲指數-不含日本(所有國家)</a></td>
+              <td class="tr red">530.10</td>
+              <td class="tr red">7.06</td>
+              <td class="tr red">1.35</td>
+              <td class="tr red">523.77</td>
+              <td class="tr red">530.10</td>
+              <td class="tr red">523.50</td>
+              <td class="tr">523.04</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSEMA.html">亞洲指數(新興市場)</a></td>
+              <td class="tr red">435.43</td>
+              <td class="tr red">5.55</td>
+              <td class="tr red">1.29</td>
+              <td class="tr red">430.50</td>
+              <td class="tr red">435.43</td>
+              <td class="tr red">430.31</td>
+              <td class="tr">429.88</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSAPF.html">亞太指數(所有國家)</a></td>
+              <td class="tr red">128.25</td>
+              <td class="tr red">0.96</td>
+              <td class="tr red">0.75</td>
+              <td class="tr red">127.33</td>
+              <td class="tr red">128.33</td>
+              <td class="tr red">126.90</td>
+              <td class="tr">127.29</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSAPJ.html">亞太指數-不含日本(所有國家)</a></td>
+              <td class="tr red">447.77</td>
+              <td class="tr red">4.53</td>
+              <td class="tr red">1.02</td>
+              <td class="tr red">443.61</td>
+              <td class="tr red">447.92</td>
+              <td class="tr red">443.53</td>
+              <td class="tr">443.24</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSPFF.html">太平洋指數(所有國家)</a></td>
+              <td class="tr red">125.60</td>
+              <td class="tr red">0.85</td>
+              <td class="tr red">0.68</td>
+              <td class="tr red">124.78</td>
+              <td class="tr red">125.60</td>
+              <td class="tr red">124.34</td>
+              <td class="tr">124.75</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSPFJ.html">太平洋指數-不含日本(所有國家)</a></td>
+              <td class="tr red">436.61</td>
+              <td class="tr red">4.00</td>
+              <td class="tr red">0.92</td>
+              <td class="tr red">432.96</td>
+              <td class="tr red">436.83</td>
+              <td class="tr red">432.86</td>
+              <td class="tr">432.61</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSPCI.html">太平洋指數(開發市場)</a></td>
+              <td class="tr red">2,114.82</td>
+              <td class="tr red">9.11</td>
+              <td class="tr red">0.43</td>
+              <td class="tr red">2,106.35</td>
+              <td class="tr red">2,115.64</td>
+              <td class="tr red">2,093.69</td>
+              <td class="tr">2,105.71</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSPCJ.html">太平洋指數-不含日本(開發市場)</a></td>
+              <td class="tr red">1,250.04</td>
+              <td class="tr red">7.43</td>
+              <td class="tr red">0.60</td>
+              <td class="tr red">1,244.35</td>
+              <td class="tr red">1,252.05</td>
+              <td class="tr red">1,242.50</td>
+              <td class="tr">1,242.61</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSFEF.html">遠東指數(所有國家)</a></td>
+              <td class="tr red">110.27</td>
+              <td class="tr red">0.88</td>
+              <td class="tr red">0.80</td>
+              <td class="tr red">109.12</td>
+              <td class="tr red">110.27</td>
+              <td class="tr red">108.95</td>
+              <td class="tr">109.39</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSFEJ.html">遠東指數(所有國家-不含日本)</a></td>
+              <td class="tr red">500.71</td>
+              <td class="tr red">6.19</td>
+              <td class="tr red">1.25</td>
+              <td class="tr red">495.03</td>
+              <td class="tr red">500.71</td>
+              <td class="tr red">494.92</td>
+              <td class="tr">494.52</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSFAI.html">遠東指數(開發市場)</a></td>
+              <td class="tr red">2,522.83</td>
+              <td class="tr red">14.01</td>
+              <td class="tr red">0.56</td>
+              <td class="tr red">2,494.44</td>
+              <td class="tr red">2,522.83</td>
+              <td class="tr red">2,489.85</td>
+              <td class="tr">2,508.82</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSMFI.html">遠東指數(新興市場)</a></td>
+              <td class="tr red">386.44</td>
+              <td class="tr red">4.44</td>
+              <td class="tr red">1.16</td>
+              <td class="tr red">382.16</td>
+              <td class="tr red">386.44</td>
+              <td class="tr red">382.16</td>
+              <td class="tr">382.00</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSZHI.html">中華指數(所有國家)</a></td>
+              <td class="tr red">336.17</td>
+              <td class="tr red">5.85</td>
+              <td class="tr red">1.77</td>
+              <td class="tr red">330.54</td>
+              <td class="tr red">336.27</td>
+              <td class="tr red">330.54</td>
+              <td class="tr">330.32</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSGDI.html">金龍指數(所有國家)</a></td>
+              <td class="tr red">141.82</td>
+              <td class="tr red">1.76</td>
+              <td class="tr red">1.26</td>
+              <td class="tr red">140.10</td>
+              <td class="tr red">141.84</td>
+              <td class="tr red">140.10</td>
+              <td class="tr">140.06</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSAER.html">歐洲指數(所有國家)</a></td>
+              <td class="tr red">389.26</td>
+              <td class="tr red">1.34</td>
+              <td class="tr red">0.35</td>
+              <td class="tr red">388.90</td>
+              <td class="tr red">391.27</td>
+              <td class="tr red">386.70</td>
+              <td class="tr">387.92</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSEUI.html">歐洲指數(開發市場)</a></td>
+              <td class="tr red">1,397.11</td>
+              <td class="tr red">5.22</td>
+              <td class="tr red">0.38</td>
+              <td class="tr red">1,394.14</td>
+              <td class="tr red">1,404.59</td>
+              <td class="tr red">1,387.60</td>
+              <td class="tr">1,391.89</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSEOI.html">歐元區指數(開發市場)</a></td>
+              <td class="tr red">897.25</td>
+              <td class="tr red">4.45</td>
+              <td class="tr red">0.50</td>
+              <td class="tr red">897.25</td>
+              <td class="tr red">897.25</td>
+              <td class="tr red">897.25</td>
+              <td class="tr">892.80</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSEMU.html">歐洲指數(新興市場)</a></td>
+              <td class="tr gr">489.03</td>
+              <td class="tr gr">-0.89</td>
+              <td class="tr gr">-0.18</td>
+              <td class="tr gr">492.92</td>
+              <td class="tr gr">493.26</td>
+              <td class="tr gr">487.23</td>
+              <td class="tr">489.92</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSNCI.html">北歐指數(開發市場)</a></td>
+              <td class="tr red">5,179.59</td>
+              <td class="tr red">51.62</td>
+              <td class="tr red">1.01</td>
+              <td class="tr red">5,179.59</td>
+              <td class="tr red">5,179.59</td>
+              <td class="tr red">5,179.59</td>
+              <td class="tr">5,127.97</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSEME.html">東歐指數(新興市場)</a></td>
+              <td class="tr gr">225.11</td>
+              <td class="tr gr">-1.28</td>
+              <td class="tr gr">-0.57</td>
+              <td class="tr gr">228.02</td>
+              <td class="tr gr">228.09</td>
+              <td class="tr gr">224.33</td>
+              <td class="tr">226.39</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSAAM.html">美洲指數(所有國家)</a></td>
+              <td class="tr red">587.58</td>
+              <td class="tr red">2.46</td>
+              <td class="tr red">0.42</td>
+              <td class="tr red">585.47</td>
+              <td class="tr red">588.04</td>
+              <td class="tr red">584.69</td>
+              <td class="tr">585.12</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSNAI.html">北美指數(開發市場)</a></td>
+              <td class="tr red">1,456.90</td>
+              <td class="tr red">5.40</td>
+              <td class="tr red">0.37</td>
+              <td class="tr red">1,452.27</td>
+              <td class="tr red">1,457.79</td>
+              <td class="tr red">1,449.81</td>
+              <td class="tr">1,451.50</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSELA.html">拉丁美洲指數(新興市場)</a></td>
+              <td class="tr red">4,275.91</td>
+              <td class="tr red">51.09</td>
+              <td class="tr red">1.21</td>
+              <td class="tr red">4,241.45</td>
+              <td class="tr red">4,293.88</td>
+              <td class="tr red">4,233.92</td>
+              <td class="tr">4,224.82</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSEAFE.html">歐澳遠東指數(開發市場)</a></td>
+              <td class="tr red">1,571.22</td>
+              <td class="tr red">6.06</td>
+              <td class="tr red">0.39</td>
+              <td class="tr red">1,564.80</td>
+              <td class="tr red">1,576.04</td>
+              <td class="tr red">1,561.90</td>
+              <td class="tr">1,565.16</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSGSI.html">G7指數(開發市場)</a></td>
+              <td class="tr red">1,134.67</td>
+              <td class="tr red">4.22</td>
+              <td class="tr red">0.37</td>
+              <td class="tr red">1,129.75</td>
+              <td class="tr red">1,135.96</td>
+              <td class="tr red">1,129.34</td>
+              <td class="tr">1,130.45</td>
+            </tr>
+            <tr>
+              <td class="tc">02/28</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSEMI.html">新興市場指數(新興市場)</a></td>
+              <td class="tr red">1,068.82</td>
+              <td class="tr red">12.31</td>
+              <td class="tr red">1.17</td>
+              <td class="tr red">1,057.84</td>
+              <td class="tr red">1,070.26</td>
+              <td class="tr red">1,057.36</td>
+              <td class="tr">1,056.51</td>
+            </tr>
+            <tr>
+              <td class="tc">02/27</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSEBI.html">金磚四國指數(新興市場)</a></td>
+              <td class="tr gr">320.47</td>
+              <td class="tr gr">-3.40</td>
+              <td class="tr gr">-1.05</td>
+              <td class="tr gr">320.47</td>
+              <td class="tr gr">320.47</td>
+              <td class="tr gr">320.47</td>
+              <td class="tr">323.87</td>
+            </tr>
+            <tr>
+              <td class="tc">02/27</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSMMI.html">歐洲中東指數(新興市場)</a></td>
+              <td class="tr gr">416.48</td>
+              <td class="tr gr">-0.53</td>
+              <td class="tr gr">-0.13</td>
+              <td class="tr gr">416.48</td>
+              <td class="tr gr">416.48</td>
+              <td class="tr gr">416.48</td>
+              <td class="tr">417.01</td>
+            </tr>
+            <tr>
+              <td class="tc">02/27</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSEEI.html">歐洲中東非洲指數(新興市場)</a></td>
+              <td class="tr gr">359.86</td>
+              <td class="tr gr">-1.81</td>
+              <td class="tr gr">-0.50</td>
+              <td class="tr gr">359.86</td>
+              <td class="tr gr">359.86</td>
+              <td class="tr gr">359.86</td>
+              <td class="tr">361.67</td>
+            </tr>
+            <tr>
+              <td class="tc">02/27</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSEAI.html">非洲指數(新興與前趨市場)</a></td>
+              <td class="tr red">951.44</td>
+              <td class="tr red">6.52</td>
+              <td class="tr red">0.69</td>
+              <td class="tr red">951.44</td>
+              <td class="tr red">951.44</td>
+              <td class="tr red">951.44</td>
+              <td class="tr">944.92</td>
+            </tr>
+            <tr>
+              <td class="tc">09/29</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSAMI.html">阿拉伯市場指數(新興市場)</a></td>
+              <td class="tr red">506.61</td>
+              <td class="tr red">3.53</td>
+              <td class="tr red">0.70</td>
+              <td class="tr red">506.61</td>
+              <td class="tr red">506.61</td>
+              <td class="tr red">506.61</td>
+              <td class="tr">503.08</td>
+            </tr>
+            <tr>
+              <td class="tc">09/29</td>
+              <td class="tl"><a href="http://www.cnyes.com/usastock/Stocks/MSGCI.html">波灣國家指數(波灣市場)</a></td>
+              <td class="tr red">441.72</td>
+              <td class="tr red">3.50</td>
+              <td class="tr red">0.80</td>
+              <td class="tr red">441.72</td>
+              <td class="tr red">441.72</td>
+              <td class="tr red">441.72</td>
+              <td class="tr">438.22</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="copyright">本網站之相關財經資訊係由鉅亨網提供，其提供之資訊，僅係一般性參考用途，請勿視為買賣基金、有價證券等等之投資建議。<br />板信銀行僅提供相關資訊予客戶自行參考，本公司不就非本公司所提供之資訊負法律責任。</div>
+<div class="footer"><table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="60%" class="tl">板信商業銀行 版權所有© 2012 Bank of Pansin. All rights reserved<br />總行地址：新北市板橋區縣民大道二段68號</td>
+    <td width="40%" class="tr">24小時客戶服務專線：(02)2272-6866<br />申訴暨客服務專線：(02)0800-024-580</td>
+  </tr>
+</table></div>
+</body>
+</html>

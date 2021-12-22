@@ -1,0 +1,664 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>板信基金理財網</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/style3.css" rel="stylesheet" title="style3" type="text/css">
+<link rel="alternate stylesheet" href="css/style1.css" title="style1" type="text/css" />
+<link rel="alternate stylesheet" href="css/style2.css" title="style2" type="text/css" />
+
+<script type="text/javascript" src="http://img.cnyes.com/js/jquery.js"></script>
+<script type="text/javascript" src="js/styleswitch.js"></script>
+
+<link href="css/nav-h.css" rel="stylesheet" type="text/css" />
+<!--[if gte IE 5.5]><script language="JavaScript" src="js/jquery.ienav.js" type="text/javascript"></script><![endif]-->
+
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="top">
+    <div class="logo"><img src="images/logo.gif"></div>
+    <div class="color_link">
+      <ul class="color">
+        <li><a href="index.htm?style=style1" title="切換樣式1" rel="style1" class="styleswitch"><img src="images/color_g.gif"></a></li>
+        <li><a href="index.htm?style=style2" title="切換樣式2" rel="style2" class="styleswitch"><img src="images/color_p.gif"></a></li>
+        <li><a href="index.htm?style=style3" title="切換樣式3" rel="style3" class="styleswitch"><img src="images/color_b.gif"></a></li>
+      </ul>
+      <ul class="link">
+        <li class="home"><a href="http://www.bop.com.tw/" target="_blank">板信銀行首頁</a></li>
+        <li class="heart"><a href="javascript:window.external.AddFavorite('http://#','板信基金理財網')">加到我的最愛</a></li>
+        <li class="mouse"><a onclick="javascript:switchTabA('homedt', 0, 1);" href="javascript:;">設為首頁</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="menu">
+    <ul id="navmenu-h">
+      <li><a href="index.htm" class="menu_1">首頁</a></li>
+      <li class="menu_on"><a href="page2_1.htm" class="menu_2">共同基金</a>
+          <ul class="w143">
+            <li><a href="page2_1.htm">基金總覽</a></li>
+            <li><a href="page2_2.htm">基金績效排行</a></li>
+            <li><a href="page2_3.htm">基金進階搜尋</a></li>
+            <li><a href="page2_4.htm">基金重大訊息</a></li>
+            <li><a href="page2_5.htm">配息資訊</a></li>
+            <li><a href="page2_6.htm">四四三三搜尋</a></li>
+          </ul></li>
+      <li><a href="page3_1.htm" class="menu_3">國際金融</a>
+          <ul class="w143">
+            <li><a href="page3_1.htm">全球股市行情</a></li>
+            <!-- <li><a href="page3_2.htm">全球債市行情</a></li> -->
+            <li><a href="page3_3.htm">全球匯率行情</a></li>
+            <li><a href="page3_4.htm">全球利率行情</a></li>
+            <li><a href="page3_5.htm">全球經濟指標</a></li>
+            <li><a href="page3_6.htm">全球股市交易時間</a></li>
+            <li><a href="page3_7.htm">金融行事曆</a></li>
+          </ul></li>
+      <li><a href="page4_1.htm" class="menu_4">投資報告</a>
+          <ul class="w143">
+            <li><a href="page4_1.htm">投資氣象台</a></li>
+            <li><a href="page4_2.htm">基金研究報告</a></li>
+          </ul></li>
+      <li><a href="page5_1.htm" class="menu_5">投資須知</a>
+          <ul class="w143">
+            <li><a href="page5_1.htm">短線交易</a></li>
+            <li><a href="page5_2.htm">基金收費標準</a></li>
+            <li><a href="page5_3.htm">其他相關規定</a></li>
+            <li><a href="page5_4.htm">基金交易流程</a></li>
+          </ul></li>
+      <li><a href="page6_1.htm" class="menu_6">基金學院</a>
+          <ul class="w143">
+            <li><a href="page6_1.htm">基金名詞解釋</a></li>
+            <li><a href="page6_2.htm">理財規劃評量</a></li>
+            <li><a href="page6_3.htm">定期定額寶典</a></li>
+            <li><a href="page6_4.htm">投資目標試算</a></li>
+            <li><a href="page6_5.htm">投資模擬試算</a></li>
+          </ul></li>
+      <li><a class="menu_7 menu_0" title="頁面建置中">個人信託</a></li>
+    </ul>
+  </div>
+  
+  <div class="contents">
+    <div class="Left"><a href="https://netbank.bop.com.tw/" target="_blank"><img src="images/login.jpg"></a>
+      <div class="title_1"><em>關鍵字搜尋</em></div>
+      <table border="0" cellspacing="4" cellpadding="0">
+        <tr>
+          <td><input name="textfield" type="text" class="input_1" id="textfield"></td>
+          <td><a href="#"><img src="images/search_01.gif"></a></td>
+        </tr>
+        <tr>
+          <td colspan="2"><span class="text_1">熱門搜尋：<a href="#">黃金</a>、<a href="#">高收益</a>、<a href="#">連動債</a>、<a href="#">歐債</a>、<a href="#">大中華</a>、<a href="#">高收益</a>、<a href="#">連動債</a>、<a href="#">歐債</a></span></td>
+        </tr>
+      </table>
+    </div>
+    <div class="Right"> 
+      <div id="flash">
+      <script type="text/javascript" src="js/swfobject.js"></script>
+      <div id="flashcontent">為得到更佳的動畫效果，請更新您的 FlashPlayer 版本</div>
+	  <script type="text/javascript">var fo = new FlashObject("images/index_banner.swf", "mymovie", "745", "200", "8", "#FFFFFF");
+      fo.addParam("wmode", "transparent");fo.write("flashcontent");</script>
+      </div>
+    </div>
+  </div>
+  
+  <div class="contents">
+    <div class="main">
+	  <div class="root"><a href="index.htm">首頁</a> &gt; <a href="page2_1.htm">共同基金</a> &gt; 基金進階搜尋</div>
+      <div class="title_2"><em>基金進階搜尋</em></div>
+      
+      <div class="bd2">
+      
+      <table border="0" cellspacing="4" cellpadding="0" style="margin:5px auto;">
+        <tr>
+          <td><img src="http://b2b.cnyes.com/news/b2bfunc/tbb/page/images/zoom.jpg" align="absmiddle"></td>
+          <td><input name="textfield" type="text" class="input_1" id="textfield" value="基金名稱檢索" style="width:300px;"></td>
+          <td><a href="#"><img src="images/search_01.gif"></a></td>
+        </tr>
+      </table>
+      
+        <div class="mainboxs">
+          <ul class="hd4"><li><span>基金類型</span></li></ul>
+          <span class="sopen"><a href="#" onclick="openFullPage();" title="類型搜尋">類型搜尋</a></span>
+          
+          <div id="UpdatePanel1">
+	        <div class="dtlines">
+              <span>國內/境外</span><select name="D_nation" onchange="javascript:setTimeout('__doPostBack(\'D_nation\',\'\')', 0)" id="D_nation" style="width:400px;">
+                <option selected="selected" value="全部基金">全部基金</option>
+                <option value="國內基金">國內基金</option>
+                <option value="境外基金">境外基金</option>
+                </select></div>
+            <div class="dtlines">
+              <span>基金類型</span><select name="D_type1" onchange="javascript:setTimeout('__doPostBack(\'D_type1\',\'\')', 0)" id="D_type1" style="width:400px;">
+		        <option selected="selected" value="all">請選擇基金類別</option>
+		        <option value="Allocation">平衡型</option>
+		        <option value="Alternative">無分類</option>
+		        <option value="Cash">貨幣型</option>
+		        <option value="Equity">股票型</option>
+		        <option value="Fixed Income">固定收益型</option>
+		        <option value="Other">其他</option>
+                </select></div>
+            <div class="dtlines">
+              <span>基金組別</span><select name="D_type2" id="D_type2" style="width:400px;">
+		<option value="all">請選擇基金組別</option>
+		<option value=""></option>
+		<option value="土耳其股票">土耳其股票</option>
+		<option value="大中華股票">大中華股票</option>
+		<option value="中國股票">中國股票</option>
+		<option value="巴西股票">巴西股票</option>
+		<option value="日本大型股票">日本大型股票</option>
+		<option value="日本中小型股票">日本中小型股票</option>
+		<option value="日圓債券">日圓債券</option>
+		<option value="加拿大股票">加拿大股票</option>
+		<option value="北歐股票">北歐股票</option>
+		<option value="可轉換債券 - 全球">可轉換債券 - 全球</option>
+		<option value="可轉換債券 - 全球歐元對沖">可轉換債券 - 全球歐元對沖</option>
+		<option value="可轉換債券 - 亞洲/日本">可轉換債券 - 亞洲/日本</option>
+		<option value="可轉換債券 - 歐洲">可轉換債券 - 歐洲</option>
+		<option value="台灣大型股票">台灣大型股票</option>
+		<option value="台灣中小型股票">台灣中小型股票</option>
+		<option value="目標期限 2015+">目標期限 2015+</option>
+		<option value="全球大型均衡型股票">全球大型均衡型股票</option>
+		<option value="全球大型價值型股票">全球大型價值型股票</option>
+		<option value="全球大型增長型股票">全球大型增長型股票</option>
+		<option value="全球小型股票">全球小型股票</option>
+		<option value="全球高收益債券">全球高收益債券</option>
+		<option value="全球債券">全球債券</option>
+		<option value="全球債券 - 美元傾向">全球債券 - 美元傾向</option>
+		<option value="全球債券 - 美元對沖">全球債券 - 美元對沖</option>
+		<option value="全球債券 - 歐元傾向">全球債券 - 歐元傾向</option>
+		<option value="全球債券 - 歐元對沖">全球債券 - 歐元對沖</option>
+		<option value="全球新興市場股票">全球新興市場股票</option>
+		<option value="全球新興市場債券">全球新興市場債券</option>
+		<option value="全球新興市場債券 - 本地貨幣">全球新興市場債券 - 本地貨幣</option>
+		<option value="全球新興市場債券 - 歐元傾向">全球新興市場債券 - 歐元傾向</option>
+		<option value="全球靈活市值型股票">全球靈活市值型股票</option>
+		<option value="印尼股票">印尼股票</option>
+		<option value="印度股票">印度股票</option>
+		<option value="西班牙股票">西班牙股票</option>
+		<option value="亞太區不包括日本股票">亞太區不包括日本股票</option>
+		<option value="亞太區股票">亞太區股票</option>
+		<option value="亞洲不包括日本股票">亞洲不包括日本股票</option>
+		<option value="亞洲股債混合">亞洲股債混合</option>
+		<option value="亞洲債券">亞洲債券</option>
+		<option value="其他">其他</option>
+		<option value="其他亞太區股票">其他亞太區股票</option>
+		<option value="其他債券">其他債券</option>
+		<option value="房地產 - 全球（間接）">房地產 - 全球（間接）</option>
+		<option value="房地產 - 亞洲（間接）">房地產 - 亞洲（間接）</option>
+		<option value="房地產 - 歐洲（間接）">房地產 - 歐洲（間接）</option>
+		<option value="拉丁美洲股票">拉丁美洲股票</option>
+		<option value="東協國家股票">東協國家股票</option>
+		<option value="法國大型股票">法國大型股票</option>
+		<option value="金磚四國股票">金磚四國股票</option>
+		<option value="非洲及中東股票">非洲及中東股票</option>
+		<option value="非洲股票">非洲股票</option>
+		<option value="俄羅斯股票">俄羅斯股票</option>
+		<option value="美元公司債券">美元公司債券</option>
+		<option value="美元平衡型股債混合">美元平衡型股債混合</option>
+		<option value="美元多元化債券">美元多元化債券</option>
+		<option value="美元多元化債券 - 短期">美元多元化債券 - 短期</option>
+		<option value="美元保守型股債混合">美元保守型股債混合</option>
+		<option value="美元政府債券">美元政府債券</option>
+		<option value="美元高收益債券">美元高收益債券</option>
+		<option value="美元通膨連結債券">美元通膨連結債券</option>
+		<option value="美元債券 - 靈活策略">美元債券 - 靈活策略</option>
+		<option value="美元債券（靈活）">美元債券（靈活）</option>
+		<option value="美元積極型股債混合">美元積極型股債混合</option>
+		<option value="美元靈活型股債混合">美元靈活型股債混合</option>
+		<option value="美國大型均衡型股票">美國大型均衡型股票</option>
+		<option value="美國大型價值型股票">美國大型價值型股票</option>
+		<option value="美國大型增長型股票">美國大型增長型股票</option>
+		<option value="美國小型股票">美國小型股票</option>
+		<option value="美國中型股票">美國中型股票</option>
+		<option value="英國大型均衡型股票">英國大型均衡型股票</option>
+		<option value="英國大型價值型股票">英國大型價值型股票</option>
+		<option value="英國大型增長型股票">英國大型增長型股票</option>
+		<option value="英鎊多元化債券">英鎊多元化債券</option>
+		<option value="香港股票">香港股票</option>
+		<option value="泰國股票">泰國股票</option>
+		<option value="馬來西亞股票">馬來西亞股票</option>
+		<option value="產業股票 - 工業物料">產業股票 - 工業物料</option>
+		<option value="產業股票 - 公用事業">產業股票 - 公用事業</option>
+		<option value="產業股票 - 天然資源">產業股票 - 天然資源</option>
+		<option value="產業股票 - 水資源">產業股票 - 水資源</option>
+		<option value="產業股票 - 生物科技">產業股票 - 生物科技</option>
+		<option value="產業股票 - 其他">產業股票 - 其他</option>
+		<option value="產業股票 - 金融服務">產業股票 - 金融服務</option>
+		<option value="產業股票 - 科技">產業股票 - 科技</option>
+		<option value="產業股票 - 消費品及服務">產業股票 - 消費品及服務</option>
+		<option value="產業股票 - 能源">產業股票 - 能源</option>
+		<option value="產業股票 - 健康護理">產業股票 - 健康護理</option>
+		<option value="產業股票 - 基礎建設">產業股票 - 基礎建設</option>
+		<option value="產業股票 - 替代能源">產業股票 - 替代能源</option>
+		<option value="產業股票 - 貴金屬">產業股票 - 貴金屬</option>
+		<option value="產業股票 - 傳媒及通信">產業股票 - 傳媒及通信</option>
+		<option value="產業股票 - 農產品">產業股票 - 農產品</option>
+		<option value="產業股票 - 環境生態">產業股票 - 環境生態</option>
+		<option value="貨幣市場 - 美元">貨幣市場 - 美元</option>
+		<option value="貨幣市場 - 美元（短期）">貨幣市場 - 美元（短期）</option>
+		<option value="貨幣市場 - 英鎊">貨幣市場 - 英鎊</option>
+		<option value="貨幣市場 - 新台幣">貨幣市場 - 新台幣</option>
+		<option value="貨幣市場 - 瑞士法郎">貨幣市場 - 瑞士法郎</option>
+		<option value="貨幣市場 - 歐元">貨幣市場 - 歐元</option>
+		<option value="貨幣市場 - 澳元">貨幣市場 - 澳元</option>
+		<option value="替代投資 - 貨幣">替代投資 - 貨幣</option>
+		<option value="新加坡股票">新加坡股票</option>
+		<option value="新台幣保守型股債混合">新台幣保守型股債混合</option>
+		<option value="新台幣債券">新台幣債券</option>
+		<option value="新台幣積極型股債混合">新台幣積極型股債混合</option>
+		<option value="新興歐洲股票">新興歐洲股票</option>
+		<option value="新興歐洲債券">新興歐洲債券</option>
+		<option value="瑞士大型股票">瑞士大型股票</option>
+		<option value="瑞士中小型股票">瑞士中小型股票</option>
+		<option value="義大利股票">義大利股票</option>
+		<option value="德國大型股票">德國大型股票</option>
+		<option value="歐元公司債券">歐元公司債券</option>
+		<option value="歐元平衡型股債混合">歐元平衡型股債混合</option>
+		<option value="歐元多元化債券">歐元多元化債券</option>
+		<option value="歐元多元化債券 - 短期">歐元多元化債券 - 短期</option>
+		<option value="歐元保守型股債混合">歐元保守型股債混合</option>
+		<option value="歐元政府債券">歐元政府債券</option>
+		<option value="歐元高收益債券">歐元高收益債券</option>
+		<option value="歐元區大型股票">歐元區大型股票</option>
+		<option value="歐元區小型股票">歐元區小型股票</option>
+		<option value="歐元債券 - 超短期">歐元債券 - 超短期</option>
+		<option value="歐元債券 - 靈活策略">歐元債券 - 靈活策略</option>
+		<option value="歐元積極型股債混合">歐元積極型股債混合</option>
+		<option value="歐元靈活型股債混合">歐元靈活型股債混合</option>
+		<option value="歐非中東股票">歐非中東股票</option>
+		<option value="歐洲大型均衡型股票">歐洲大型均衡型股票</option>
+		<option value="歐洲大型價值型股票">歐洲大型價值型股票</option>
+		<option value="歐洲大型增長型股票">歐洲大型增長型股票</option>
+		<option value="歐洲小型股票">歐洲小型股票</option>
+		<option value="歐洲不包括英國大型股票">歐洲不包括英國大型股票</option>
+		<option value="歐洲中型股票">歐洲中型股票</option>
+		<option value="歐洲債券">歐洲債券</option>
+		<option value="澳洲及紐西蘭股票">澳洲及紐西蘭股票</option>
+		<option value="韓國股票">韓國股票</option>
+
+	</select></div>
+            <div class="dtlines">
+              <span>投資區域</span><select name="D_area" id="D_area" style="width:400px;">
+		<option value="all">請選擇投資區域</option>
+		<option value="新興亞洲">新興亞洲</option>
+		<option value="已發展亞洲">已發展亞洲</option>
+		<option value="已開發亞洲">已開發亞洲</option>
+		<option value="已發展國家">已發展國家</option>
+		<option value="新興市場">新興市場</option>
+		<option value="日本">日本</option>
+		<option value="大洋洲">大洋洲</option>
+		<option value="非洲/中東">非洲/中東</option>
+		<option value="中東">中東</option>
+		<option value="歐洲(不包括歐元區)">歐洲(不包括歐元區)</option>
+		<option value="已開發歐洲">已開發歐洲</option>
+		<option value="已發展歐洲">已發展歐洲</option>
+		<option value="歐元區">歐元區</option>
+		<option value="美國">美國</option>
+		<option value="非洲">非洲</option>
+		<option value="澳大利亞">澳大利亞</option>
+		<option value="英國">英國</option>
+		<option value="新興歐洲">新興歐洲</option>
+		<option value="北美">北美</option>
+		<option value="加拿大">加拿大</option>
+		<option value="拉丁美洲">拉丁美洲</option>
+		<option value="其他">其他</option>
+
+	</select></div>
+            <div class="dtlines">
+              <span>基金公司</span><select name="D_Company" id="D_Company" style="width:400px;">
+		<option value="all">請選擇基金公司</option>
+		<option value="ING(L)亞洲子基金">ING(L)亞洲子基金</option>
+		<option value="ING(L)非亞洲子基金">ING(L)非亞洲子基金</option>
+		<option value="元大投信-百達基金">元大投信-百達基金</option>
+		<option value="元大投信-梅隆基金">元大投信-梅隆基金</option>
+		<option value="元大投資信託公司">元大投資信託公司</option>
+		<option value="天達資產管理公司">天達資產管理公司</option>
+		<option value="日盛投資信託公司">日盛投資信託公司</option>
+		<option value="台新投資信託基金">台新投資信託基金</option>
+		<option value="未來資產投資信託公司">未來資產投資信託公司</option>
+		<option value="永豐投資信託公司">永豐投資信託公司</option>
+		<option value="兆豐國際投資信託公司">兆豐國際投資信託公司</option>
+		<option value="先機基金管理有限公司">先機基金管理有限公司</option>
+		<option value="合庫巴黎投資信託公司">合庫巴黎投資信託公司</option>
+		<option value="安本國際證券投資顧問">安本國際證券投資顧問</option>
+		<option value="安泰ING證券">安泰ING證券</option>
+		<option value="安泰ING證券投信">安泰ING證券投信</option>
+		<option value="利安資金管理有限公司">利安資金管理有限公司</option>
+		<option value="宏利投資信託公司">宏利投資信託公司</option>
+		<option value="貝萊德投資信託公司">貝萊德投資信託公司</option>
+		<option value="貝萊德證券投資顧問股">貝萊德證券投資顧問股</option>
+		<option value="法銀巴黎證券投資顧問">法銀巴黎證券投資顧問</option>
+		<option value="保德信投信">保德信投信</option>
+		<option value="保德信投資信託公司">保德信投資信託公司</option>
+		<option value="施羅德投資信託公司">施羅德投資信託公司</option>
+		<option value="施羅德投資顧問公司">施羅德投資顧問公司</option>
+		<option value="柏瑞投信－全盛系列">柏瑞投信－全盛系列</option>
+		<option value="柏瑞投資信託公司">柏瑞投資信託公司</option>
+		<option value="柏瑞投資－柏瑞環球">柏瑞投資－柏瑞環球</option>
+		<option value="英傑華系列基金">英傑華系列基金</option>
+		<option value="國泰投顧-首域基金">國泰投顧-首域基金</option>
+		<option value="第一金投資信託公司">第一金投資信託公司</option>
+		<option value="統一投資信託公司">統一投資信託公司</option>
+		<option value="荷寶資產管理公司">荷寶資產管理公司</option>
+		<option value="凱基投資信託公司">凱基投資信託公司</option>
+		<option value="創利德管理有限公司">創利德管理有限公司</option>
+		<option value="富邦投資信託公司">富邦投資信託公司</option>
+		<option value="富達投資顧問公司">富達投資顧問公司</option>
+		<option value="富鼎投資信託公司">富鼎投資信託公司</option>
+		<option value="富蘭克林投資顧問公司">富蘭克林投資顧問公司</option>
+		<option value="富蘭克林華美投資信託">富蘭克林華美投資信託</option>
+		<option value="復華投資信託公司">復華投資信託公司</option>
+		<option value="惠理康和投資信託公司">惠理康和投資信託公司</option>
+		<option value="景順投資顧問公司">景順投資顧問公司</option>
+		<option value="景順資產管理有限公司">景順資產管理有限公司</option>
+		<option value="華南永昌投資信託公司">華南永昌投資信託公司</option>
+		<option value="華頓投資信託公司">華頓投資信託公司</option>
+		<option value="匯豐中華投資信託公司">匯豐中華投資信託公司</option>
+		<option value="匯豐投資基金(香港)">匯豐投資基金(香港)</option>
+		<option value="新加坡大華基金">新加坡大華基金</option>
+		<option value="新光投資信託公司">新光投資信託公司</option>
+		<option value="瑞萬通博">瑞萬通博</option>
+		<option value="瑞銀投信">瑞銀投信</option>
+		<option value="群益投資信託公司">群益投資信託公司</option>
+		<option value="德利投資信託公司">德利投資信託公司</option>
+		<option value="德信投資信託公司">德信投資信託公司</option>
+		<option value="德盛安聯投信">德盛安聯投信</option>
+		<option value="德盛安聯投資顧問公司">德盛安聯投資顧問公司</option>
+		<option value="德銀遠東ＤＷＳ投信公">德銀遠東ＤＷＳ投信公</option>
+		<option value="摩根(亞洲)有限公">摩根(亞洲)有限公</option>
+		<option value="摩根證券投資信託公司">摩根證券投資信託公司</option>
+		<option value="歐義銳榮資產管理公司">歐義銳榮資產管理公司</option>
+		<option value="鋒裕資產管理公司">鋒裕資產管理公司</option>
+		<option value="聯博資產管理公司">聯博資產管理公司</option>
+		<option value="駿利投資顧問公司">駿利投資顧問公司</option>
+		<option value="瀚亞投信－M&amp;G系列">瀚亞投信－M&amp;G系列</option>
+		<option value="瀚亞投信－瀚亞系列">瀚亞投信－瀚亞系列</option>
+		<option value="瀚亞投資信託公司">瀚亞投資信託公司</option>
+		<option value="寶來投資信託公司">寶來投資信託公司</option>
+		<option value="霸菱投資顧問公司">霸菱投資顧問公司</option>
+
+	</select></div>
+            <div class="dtlines">
+              <span>計價幣別</span><select name="D_MoneyType" id="D_MoneyType" style="width:400px;">
+	<option value="all">不限</option>
+	<option value="日圓">日圓</option>
+	<option value="加元">加元</option>
+	<option value="美元">美元</option>
+	<option value="英鎊">英鎊</option>
+	<option value="港幣">港幣</option>
+	<option value="新加坡元">新加坡元</option>
+	<option value="新台幣">新台幣</option>
+	<option value="瑞士法郎">瑞士法郎</option>
+	<option value="瑞典克朗">瑞典克朗</option>
+	<option value="歐元">歐元</option>
+	<option value="澳元">澳元</option>
+</select></div>
+            <div class="dtlines">
+              <span>基金資產(億)</span><select name="D_TotalMoney" id="D_TotalMoney" style="width:400px;">
+	<option value="all">不限</option>
+	<option value="500"> &gt; 500億</option>
+	<option value="100"> &gt; 100億</option>
+	<option value="50"> &gt; 50億</option>
+	<option value="10"> &gt; 10億</option>
+	<option value="1"> &gt; 1億</option>
+</select></div>    
+          </div>
+        </div>
+      
+        <div class="mainboxs">
+          <ul class="hd4"><li><span>基金績效</span></li></ul>
+          <span class="sopen"><a href="#" onclick="openFullPage();" title="績效搜尋">績效搜尋</a></span>
+          
+    <div class="dtlines">
+    <span>一個月</span>
+    <label>報酬率<select name="D_1m_p" id="D_1m_p" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label>
+    <label><input name="T_1m_t" type="text" id="T_1m_t" style="width:65px;">%</label>　
+    <label>績效排名<select name="D_1m_s" id="D_1m_s" style="width:65px;">
+	<option value="99999">不限</option>
+	<option value="5">前05名</option>
+	<option value="10">前10名</option>
+	<option value="20">前20名</option>
+	<option value="30">前30名</option>
+	<option value="50">前50名</option>
+	<option value="100">前100名</option>
+	<option value="150">前150名</option>
+    </select></label></div>
+    <div class="dtlines">
+    <span>三個月</span>
+    <label>報酬率<select name="D_3m_p" id="D_3m_p" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label>
+    <label><input name="T_3m_t" type="text" id="T_3m_t" style="width:65px;">%</label>　
+    <label>績效排名<select name="D_3m_s" id="D_3m_s" style="width:65px;">
+	<option value="99999">不限</option>
+	<option value="5">前05名</option>
+	<option value="10">前10名</option>
+	<option value="20">前20名</option>
+	<option value="30">前30名</option>
+	<option value="50">前50名</option>
+	<option value="100">前100名</option>
+	<option value="150">前150名</option>
+    </select></label></div>
+    <div class="dtlines">
+    <span>六個月</span>
+    <label>報酬率<select name="D_6m_p" id="D_6m_p" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label>
+    <label><input name="T_6m_t" type="text" id="T_6m_t" style="width:65px;">%</label>　
+    <label>績效排名<select name="D_6m_s" id="D_6m_s" style="width:65px;">
+	<option value="99999">不限</option>
+	<option value="5">前05名</option>
+	<option value="10">前10名</option>
+	<option value="20">前20名</option>
+	<option value="30">前30名</option>
+	<option value="50">前50名</option>
+	<option value="100">前100名</option>
+	<option value="150">前150名</option>
+    </select></label></div>
+    <div class="dtlines">
+    <span>年初至今</span>
+    <label>報酬率<select name="D_YTD_p" id="D_YTD_p" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label>
+    <label><input name="T_YTD_t" type="text" id="T_YTD_t" style="width:65px;">%</label>　
+    <label>績效排名<select name="D_YTD_s" id="D_YTD_s" style="width:65px;">
+	<option value="99999">不限</option>
+	<option value="5">前05名</option>
+	<option value="10">前10名</option>
+	<option value="20">前20名</option>
+	<option value="30">前30名</option>
+	<option value="50">前50名</option>
+	<option value="100">前100名</option>
+	<option value="150">前150名</option>
+    </select></label></div>
+    <div class="dtlines">
+    <span>一年</span>
+    <label>報酬率<select name="D_1y_p" id="D_1y_p" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label><label>
+    <input name="T_1y_t" type="text" id="T_1y_t" style="width:65px;">%</label>　
+    <label>績效排名<select name="D_1y_s" id="D_1y_s" style="width:65px;">
+	<option value="99999">不限</option>
+	<option value="5">前05名</option>
+	<option value="10">前10名</option>
+	<option value="20">前20名</option>
+	<option value="30">前30名</option>
+	<option value="50">前50名</option>
+	<option value="100">前100名</option>
+	<option value="150">前150名</option>
+    </select></label></div>
+    <div class="dtlines">
+    <span>二年</span>
+    <label>報酬率<select name="D_2y_p" id="D_2y_p" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label>
+    <label><input name="T_2y_t" type="text" id="T_2y_t" style="width:65px;">%</label>　
+    <label>績效排名<select name="D_2y_s" id="D_2y_s" style="width:65px;">
+	<option value="99999">不限</option>
+	<option value="5">前05名</option>
+	<option value="10">前10名</option>
+	<option value="20">前20名</option>
+	<option value="30">前30名</option>
+	<option value="50">前50名</option>
+	<option value="100">前100名</option>
+	<option value="150">前150名</option>
+    </select></label></div>
+    <div class="dtlines">
+    <span>五年</span>
+    <label>報酬率<select name="D_5y_p" id="D_5y_p" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label>
+    <label><input name="T_5y_t" type="text" id="T_5y_t" style="width:65px;">%</label>　
+    <label>績效排名<select name="D_5y_s" id="D_5y_s" style="width:65px;">
+	<option value="99999">不限</option>
+	<option value="5">前05名</option>
+	<option value="10">前10名</option>
+	<option value="20">前20名</option>
+	<option value="30">前30名</option>
+	<option value="50">前50名</option>
+	<option value="100">前100名</option>
+	<option value="150">前150名</option>
+    </select></label></div>
+    <div class="dtlines">
+    <span>十年</span>
+    <label>報酬率<select name="D_10y_p" id="D_10y_p" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label><label>
+    <input name="T_10y_t" type="text" id="T_10y_t" style="width:65px;">%</label>　
+    <label>績效排名<select name="D_10y_s" id="D_10y_s" style="width:65px;">
+	<option value="99999">不限</option>
+	<option value="5">前05名</option>
+	<option value="10">前10名</option>
+	<option value="20">前20名</option>
+	<option value="30">前30名</option>
+	<option value="50">前50名</option>
+	<option value="100">前100名</option>
+	<option value="150">前150名</option>
+    </select></label></div>
+        </div>
+      
+        <div class="mainboxs">
+          <ul class="hd4"><li><span>基金風險</span></li></ul>
+          <span class="sopen"><a href="#" onclick="openFullPage();" title="風險搜尋">風險搜尋</a></span>
+          
+    <div class="dtlines">
+    <span>標準差</span>
+    <label><select name="D_Std" id="D_Std" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label>
+    <label><input name="T_Std" type="text" id="T_Std" style="width:65px;">%</label>
+    </div>
+    <div class="dtlines">
+    <span>貝它值</span>
+    <label><select name="D_Beta" id="D_Beta" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label>
+    <label><input name="T_Beta" type="text" id="T_Beta" style="width:65px;">%</label>
+    </div>
+    <div class="dtlines">
+    <span>夏普值</span>
+    <label><select name="D_SRatio" id="D_SRatio" style="width:65px;">
+	<option value="0">不限</option>
+	<option value="&gt;">大於</option>
+	<option value="&lt;">小於</option>
+    </select></label>
+    <label><input name="T_SRatio" type="text" id="T_SRatio" style="width:65px;">%</label>
+    </div>
+                    
+        </div>
+      
+        <div class="mainboxs">
+          <ul class="hd4"><li><span>基金評級</span></li></ul>
+          <span class="sopen"><a href="#" onclick="openFullPage();" title="評級搜尋">評級搜尋</a></span>
+          
+    <div class="dtlines">
+    <span>晨星評級≧</span>
+    <select name="D_MorningStar" id="D_MorningStar" style="width:145px;">
+	<option value="%%">不限</option>
+	<option value="5">★★★★★</option>
+	<option value="4">★★★★</option>
+	<option value="3">★★★</option>
+	<option value="2">★★</option>
+	<option value="1">★</option>
+    </select></div>
+    <div class="dtlines">
+    <span>理柏總回報≧</span>
+    <select name="D_Lipper1" id="D_Lipper1" style="width:145px;">
+	<option value="不限">不限</option>
+	<option value="5">5</option>
+	<option value="4">4</option>
+	<option value="3">3</option>
+	<option value="2">2</option>
+	<option value="1">1</option>
+    </select></div>
+    <div class="dtlines">
+    <span>理柏穩定回報≧</span>
+    <select name="D_Lipper2" id="D_Lipper2" style="width:145px;">
+	<option value="不限">不限</option>
+	<option value="5">5</option>
+	<option value="4">4</option>
+	<option value="3">3</option>
+	<option value="2">2</option>
+	<option value="1">1</option>
+    </select></div>
+    <div class="dtlines">
+    <span>理柏保本能力≧</span>
+    <select name="D_Lipper3" id="D_Lipper3" style="width:145px;">
+	<option value="不限">不限</option>
+	<option value="5">5</option>
+	<option value="4">4</option>
+	<option value="3">3</option>
+	<option value="2">2</option>
+	<option value="1">1</option>
+    </select></div>
+        </div>
+        
+        <div class="mainboxs" style="text-align:center; margin:5px auto 30px auto; border-top:1px solid #CCC;">
+          <input type="submit" name="Button1" value="全部搜尋" id="Button1" class="butn">
+          <input id="Button3" onclick="javascript:location.href='search.aspx';" class="butn" type="button" value="重設">
+        </div>
+        
+        <cite class="mgstarcopyr"><img src="http://fund.cnyes.com/images/moringstar.gif" alt="Moringstar Logo" /><span>備註：本基金說明僅供參考，所有資訊揭露以基金公司公告為主。</span></cite>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="copyright">本網站之相關財經資訊係由鉅亨網提供，其提供之資訊，僅係一般性參考用途，請勿視為買賣基金、有價證券等等之投資建議。<br />板信銀行僅提供相關資訊予客戶自行參考，本公司不就非本公司所提供之資訊負法律責任。</div>
+<div class="footer"><table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="60%" class="tl">板信商業銀行 版權所有© 2012 Bank of Pansin. All rights reserved<br />總行地址：新北市板橋區縣民大道二段68號</td>
+    <td width="40%" class="tr">24小時客戶服務專線：(02)2272-6866<br />申訴暨客服務專線：(02)0800-024-580</td>
+  </tr>
+</table></div>
+</body>
+</html>

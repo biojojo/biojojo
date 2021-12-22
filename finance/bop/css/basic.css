@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { margin:0; padding:0; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#000; margin:0; padding:0;}
+div, form, img, p, ul, ol, li, dl, dt, dd { margin:0; padding:0; border:0;}
+br { clear:both; height:0; font-size:1px; line-height:0;}
+input.texts,input.butn,select{ font-size:15px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#333;}
+h1,h2,h3,h4,h5,ul,li,form,th,p,cite,em { margin:0; padding:0; list-style:none; font-weight:normal;}
+ul { list-style-type:none;}
+ul, ol, li, dl, dt, dd { list-style:none;}
+table, td, tr, th { margin:0; padding:0; font-weight:normal;}
+fieldset, img, a img, a:hover img, table, th, td { border:0;}
+a { text-decoration:none;}
+a:hover { text-decoration:underline;}
+p { font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; color:#333;}
+.clear { content:"."; display:block; height:0; clear:both; visibility:hidden;}
+
+.disyshow { display:block;}
+.disyhidn { display:none;}
+
+.fl { float:left;}
+.fr { float:right;}
+
+.bl, .blue { color:#2781E3;}
+.red { color:#F00;}
+.gr { color:#070;}
+.pe { font:bold 12px Tahoma; color:#555;}
+.bk { color:#000;}
+.bkk { color:#333;}
+
+.tl { text-align:left;}
+.tc { text-align:center;}
+.tr { text-align:right;}
+
+.f11 { font-size:11px;}
+.f12 { font-size:12px;}
+.f13 { font-size:13px;}
+
+.ma10 { margin:10px 0;}
+.mab10 { margin-bottom:10px;}
+
+.lineH_01 { line-height:19px!important;}
+.lineH_02 { line-height:35px!important;}
+
+.overUl { list-style:decimal; margin-left:25px;}
+
+h3 { font-family:"微軟正黑體", Verdana, Arial, Helvetica, sans-serif; font-size:19px; color:#F00; font-weight:bold; line-height:30px;}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.title_2 { background:url(../images/title_g_02.gif) right top no-repeat;}
+.title_2 em { color:#589805; background:url(../images/title_g_01.gif) 0 0 no-repeat;}
+
+.tab { border-bottom:1px solid #6fac0a;}
+ul.tab_1 li.tab_on { background:url(../images/title_g_04.gif) right top no-repeat;}
+ul.tab_1 li.tab_on a { background:url(../images/title_g_03.gif) left top no-repeat;}
+ul.tab_2 li.tab_on { background:url(../images/title_g_04.gif) right top no-repeat;}
+ul.tab_2 li.tab_on a { background:url(../images/title_g_03.gif) left top no-repeat;}
+ul.tab_3 li.tab_on { background:url(../images/title_g_06.gif) right top no-repeat;}
+ul.tab_3 li.tab_on a { background:url(../images/title_g_05.gif) left top no-repeat;}
+
+.menuLt { width:100%; background:#e4f3c9; padding:5px 0 10px 0; margin-bottom:10px;}
+
+.more a { background:url(../images/more_g.gif) 0 0 no-repeat;}
+
+.list_1 li { background:url(../images/arrow_g.gif) 13px 10px no-repeat;}
+
+/******** Page ********************************************************************/
+.root { background:url(../images/now_g.gif) 0 0 no-repeat;}
+
+.hd4 { background:url(../images/bg_g_01.gif) 0 bottom repeat-x;}
+.hd4 li { border:1px solid #6dac1d; border-bottom:0;}
+.hd4 li a,.hd4 li span { color:#6dac1d;}
+
+
+
