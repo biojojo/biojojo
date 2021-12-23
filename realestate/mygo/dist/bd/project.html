@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/><meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="Description" content="海外買房,海外房產網,海外置業,海外購房,海外房產投資,海外買房移民,海外房產信息,海外買房投資,海外購房移民,馬來西亞房產,泰國房產,日本房產,日本二手房,台灣房產,台灣二手房,杜拜房產,海外置業房產,馬來西亞購房,房產投資移民,海外房產移民" />
+    <meta name="KeyWords" content="MyGo海外房產,精選海外買房,海外購房,海外房產網投資移民價格信息,包括泰國,日本,馬來西亞,杜拜,台灣等,售後安心無憂,TEL:02-2507-5685" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link href="favicon.ico" rel="Shortcut Icon" type="image/x-icon" />
+    <link href="images/logoIos.png" rel="shortcut icon" type="image/x-icon">
+    <link href="images/logoIos.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="images/logoIos.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="images/logoIos.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="images/logoIos.png" rel="apple-touch-icon" sizes="152x152">
+    <meta content="MyGo海外房產,精選海外買房,海外購房,海外房產網投資移民價格信息,包括泰國,日本,馬來西亞,杜拜,台灣等,售後安心無憂,TEL:02-2507-5685" property="og:title">
+    <meta content="https://shark.mygo.com/mygo/mygose/production/index.html" property="og:url">
+    <meta content="images/logoIos.png" property="og:image">
+    <meta content="MyGo海外房產,精選海外買房,海外購房,海外房產網投資移民價格信息,包括泰國,日本,馬來西亞,杜拜,台灣等,售後安心無憂,TEL:02-2507-5685" property="og:site_name">
+    <meta content="海外買房,海外房產網,海外置業,海外購房,海外房產投資,海外買房移民,海外房產信息,海外買房投資,海外購房移民,馬來西亞房產,泰國房產,日本房產,日本二手房,台灣房產,台灣二手房,杜拜房產,海外置業房產,馬來西亞購房,房產投資移民,海外房產移民" property="og:description">
+    <meta content="海外買房,海外房產網,海外置業,海外購房,海外房產投資,海外買房移民,海外房產信息,海外買房投資,海外購房移民,馬來西亞房產,泰國房產,日本房產,日本二手房,台灣房產,台灣二手房,杜拜房產,海外置業房產,馬來西亞購房,房產投資移民,海外房產移民" itemprop="name">
+    <meta content="海外買房,海外房產網,海外置業,海外購房,海外房產投資,海外買房移民,海外房產信息,海外買房投資,海外購房移民,馬來西亞房產,泰國房產,日本房產,日本二手房,台灣房產,台灣二手房,杜拜房產,海外置業房產,馬來西亞購房,房產投資移民,海外房產移民" itemprop="description">
+    <meta content="images/logoIos.png" itemprop="image">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>MyGo經銷平台</title>
+    <!-- Bootstrap -->
+    <link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- NProgress -->
+    <link href="../../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css">
+    <!-- Custom Theme Style -->
+    <link href="../../build/css/custom.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../../vendors/fancybox/css/fancybox/jquery.fancybox-buttons.css">
+    <link rel="stylesheet" href="../../vendors/fancybox/css/fancybox/jquery.fancybox-thumbs.css">
+    <link rel="stylesheet" href="../../vendors/fancybox/css/fancybox/jquery.fancybox.css">
+    <link href="../css/style_add.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- grid2 -->
+    <script type="text/javascript" src="../../vendors/grid/lib/greensock/TweenLite.min.js"></script>
+  </head>
+  <body class="xHidden nav-md"><a id="mainTop"></a>
+      <div class="graySub graySubCS">
+        <!-- subNav -->
+          <div class="container"><a class="back" href="admin.html">後台首頁</a> <i class="fa fa-angle-right crack"></i><a class="back" href="project.html">菁英公館</a><!--<i class="fa fa-angle-right crack"></i><a class="back" href="project.html">A Tower 70樓 Type A 一室一廳</a> -->
+            <ul class="pull-right sales hidden-xs">
+                <li>
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/avatars/avatar3.png" alt="">甲山林王小姐
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                        <li><a href="admin.html"><i class="fa fa-home"></i> 後台首頁</a></li>
+                        <li><a href="admin.html#mine"><i class="fa fa-book"></i> 我的Booking</a></li>
+                        <li><a href="admin.html#order"><i class="fa fa-book"></i> 我的小訂</a></li>
+                        <li><a href="admin.html#trace"><i class="fa fa-eye"></i> 我的追蹤</a></li>
+                        <li><a href="paymentLog.html"><i class="fa fa-bank"></i> 匯款記錄</a></li>
+                        <li><a href="login.html"><i class="fa fa-power-off"></i> 登出系統</a></li>
+                      </ul>
+                </li>
+            </ul>
+          </div>
+      <!-- subNav End -->
+      </div>
+      <div class="container body">
+      <div class="main_container col-xs-12">
+        <!-- page content -->
+        <script>
+          function show(id) {
+            document.getElementById(id).style.display = "block";
+          }
+          function hide(id) {
+            document.getElementById(id).style.display = "none";
+          }
+        </script>
+        <div role="main">
+            <div class="row">
+                      <div class="col-xs-12 col-sm-9 col-lg-10 admin adminProject">
+                        <h4 class="headWith"><span>菁英公館</span><small><a href="../buildDetail.html" target="_blank">前台畫面</a></small></h4>
+                        <h5>所有樓層部位</h5>
+                        <p><strong class="headLine">Tower A</strong></p>
+                        <!-- 33 floor -->
+                        <div class="x_panel tile location">
+                            <a class="collapse-link x_title paddingLeft0">
+                                <h2 class="">033層</h2>
+                                </a><ul class="nav navbar-right panel_toolbox">
+                                    <li>
+                                        <a href="../images/floorPlan_033.jpg" class="fancybox" rel="group" title="樓層圖"><i class="fa fa-image"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                                    </li>
+                                </ul>
+                            <div class="x_content ac disNone" style="display: block">
+                                <div class="panel-body text-left">
+                                    <ul class="floorLevel">
+                                        <li class="row">
+                                            <div class="floorInfo">
+                                                <ul>
+                                                    <li class="col-xs-1"><div>
+                                                        <ul class="grid domCell roomBooking">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1111</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">2020-03-30止</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomBooking" disabled="value">已被Booking</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetailOrder.html';">
+                                                        <ul class="grid domCell roomBooking">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1112</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">2020-03-30止</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomBooking" onclick="location.href='projectDetailBooking.html';">我的Booking</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetailFollow.html';">
+                                                        <ul class="grid domCell roomListed">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1113</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">2020-03-30止</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomListed" onclick="location.href='projectDetailFollow.html';">已被小訂</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetailOrder.html';">
+                                                        <ul class="grid domCell roomListing">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1114</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">2020-03-30止</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomListing" onclick="location.href='projectDetailOrder.html';">我的小訂</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div>
+                                                        <ul class="grid domCell roomSold">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1115</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSold" disabled="value">已售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ 33 floor -->
+                        <!-- 37 floor -->
+                        <div class="x_panel tile location">
+                            <a class="collapse-link x_title paddingLeft0">
+                                <h2 class="">034層</h2>
+                                </a><ul class="nav navbar-right panel_toolbox">
+                                    <li>
+                                        <a href="../images/floorPlan_034.jpg" class="fancybox" rel="group" title="樓層圖"><i class="fa fa-image"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                                    </li>
+                                </ul>
+                            <div class="x_content ac disNone">
+                                <div class="panel-body text-left">
+                                    <ul class="floorLevel">
+                                        <li class="row">
+                                            <div class="floorInfo">
+                                                <ul>
+                                                    <li class="col-xs-1"><div>
+                                                        <ul class="grid domCell roomSold">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1115</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSold" disabled="value">已售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ 37 floor -->
+                        <p><strong class="headLine">Tower B</strong></p>
+                        <!-- 39 floor -->
+                        <div class="x_panel tile location">
+                            <a class="collapse-link x_title paddingLeft0">
+                                <h2 class="">039層</h2>
+                                </a><ul class="nav navbar-right panel_toolbox">
+                                    <li>
+                                        <a href="../images/floorPlan_033.jpg" class="fancybox" rel="group" title="樓層圖"><i class="fa fa-image"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                                    </li>
+                                </ul>
+                            <div class="x_content ac disNone">
+                                <div class="panel-body text-left">
+                                    <ul class="floorLevel">
+                                        <li class="row">
+                                            <div class="floorInfo">
+                                                <ul>
+                                                    <li class="col-xs-1"><div>
+                                                        <ul class="grid domCell roomSold">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1115</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSold" disabled="value">已售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ 39 floor -->
+                        <!-- 45 floor -->
+                        <div class="x_panel tile location">
+                            <a class="collapse-link x_title paddingLeft0">
+                                <h2 class="">045層</h2>
+                                </a><ul class="nav navbar-right panel_toolbox">
+                                    <li>
+                                        <a href="../images/floorPlan_033.jpg" class="fancybox" rel="group" title="樓層圖"><i class="fa fa-image"></i></a>
+                                    </li>
+                                    <li>
+                                        <a class="collapse-link"><i class="fa fa-chevron-down"></i></a>
+                                    </li>
+                                </ul>
+                            <div class="x_content ac disNone">
+                                <div class="panel-body text-left">
+                                    <ul class="floorLevel">
+                                        <li class="row">
+                                            <div class="floorInfo">
+                                                <ul>
+                                                    <li class="col-xs-1"><div>
+                                                        <ul class="grid domCell roomSold">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1115</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSold" disabled="value">已售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                    <li class="col-xs-1"><div onclick="location.href='projectDetail.html';">
+                                                        <ul class="grid domCell roomSell">
+                                                            <li title="房號">
+                                                                <div class="col-xs-3"><img src="../images/roomIcon.jpg"></div>
+                                                                <div class="col-xs-9">Ａ1116</div>
+                                                                <div class="clearfix"></div>
+                                                            </li>
+                                                            <li title="面積" class="text-center">20平方公尺</li>
+                                                            <li title="原價" class="text-center">約300萬台幣</li>
+                                                            <li title="格局" class="text-center">2室1廳1衛</li>
+                                                            <li title="期限" class="text-center">--</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="text-center bookingOuter"><button class="btn btn-success roomSell" onclick="location.href='projectDetail.html';">可售</button></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ 45 floor -->
+                      </div>
+                      <div class="col-xs-12 col-sm-3 col-lg-2 overview">
+                        <div class="brokerInfo">
+                            <div class="clearfix"></div>
+                            <p style="margin:0"><strong class="headLine">立即來電MyGO</strong></p>
+                            <div class="component-agent-es-pc-2">
+                              <div class="ke-agent-sj-container">
+                                <div class="clearfix"></div>
+                                <div class="ke-agent-sj-top">
+                                    <div class="ke-agent-sj-fl">
+                                        <a href="#" class="ke-agent-sj-avatar"><img src="../images/agent_mygo.jpg" alt="MyGo國際地產"></a>
+                                    </div>
+                                    <div class="ke-agent-sj-fr">
+                                        <div>
+                                             <a class="ke-agent-sj-name pull-left MyGO" title=" MyGo國際地產" href="#" target="_blank"> MyGo國際地產</a>
+                                        </div>                        
+                                        <div class="info infoAdd">誰比我更懂你的心</div>
+                                        <a class="info phone" href="tel:+886225075685"><i class="fa fa-phone"></i>02-2507-5685</a>
+                                        <div class="row">
+                                            <div class="col-xs-6 text-center"><span class="info">房地產交易所</span><img src="../images/qr_mygo.png" class="qrcode"></div>
+                                            <div class="col-xs-6 text-center"><span class="info">line</span><img src="../images/qr_line.png" class="qrcode"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <hr>
+                              <div class="ke-agent-sj-container">
+                                <div class="clearfix"></div>
+                                <div class="ke-agent-sj-top">
+                                    <div class="ke-agent-sj-fl">
+                                        <a href="#" class="ke-agent-sj-avatar"><img src="../images/agent_00.jpg" alt="陳祐薇"></a>
+                                    </div>
+                                    <div class="ke-agent-sj-fr">
+                                        <div>
+                                             <a class="ke-agent-sj-name pull-left" title="陳祐薇" href="#" target="_blank"> 陳祐薇 </a>
+                                             <div class="pull-left"><span class="ke-agent-sj-tag MyGO">MyGo副總</span></div>
+                                        </div>                        
+                                        <div class="info infoAdd">立即取得海外房地產第一手資訊</div>
+                                        <a class="info phone" href="tel:+886905198565"><i class="fa fa-phone"></i>0905-198-565</a>
+                                        <div class="row">
+                                            <div class="col-xs-6 text-center"><span class="info">WeChat</span><img src="../images/jillQrcodeWechat.png" class="qrcode"></div>
+                                            <div class="col-xs-6 text-center"><span class="info">line</span><img src="../images/jillQrcodeLine.png" class="qrcode"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="ke-agent-sj-container">
+                                <div class="clearfix"></div>
+                                <div class="ke-agent-sj-top">
+                                    <div class="ke-agent-sj-fl">
+                                        <a href="#" class="ke-agent-sj-avatar"><img src="../images/agent_01.jpg" alt="張婷婷"></a>
+                                    </div>
+                                    <div class="ke-agent-sj-fr">
+                                        <div>
+                                             <a class="ke-agent-sj-name pull-left" title="張婷婷" href="#" target="_blank"> 張婷婷 </a>
+                                             <div class="pull-left"><span class="ke-agent-sj-tag MyGO">MyGo業務經理</span></div>
+                                        </div>                        
+                                        <div class="info infoAdd">立即取得海外房地產第一手資訊</div>
+                                        <a class="info phone" href="tel:+886910209005"><i class="fa fa-phone"></i>0910-209-005</a>
+                                        <div class="row">
+                                            <div class="col-xs-6 text-center"><span class="info">WeChat</span><img src="../images/tintinQrcodeWechat.png" class="qrcode"></div>
+                                            <div class="col-xs-6 text-center"><span class="info">line</span><img src="../images/tintinQrcodeLine.png" class="qrcode"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="ke-agent-sj-container">
+                                <div class="clearfix"></div>
+                                <div class="ke-agent-sj-top">
+                                    <div class="ke-agent-sj-fl">
+                                        <a href="#" class="ke-agent-sj-avatar"><img src="../images/agent_02.jpg" alt="鄭雅云"></a>
+                                    </div>
+                                    <div class="ke-agent-sj-fr">
+                                        <div>
+                                             <a class="ke-agent-sj-name pull-left" title="鄭雅云" href="#" target="_blank"> 鄭雅云 </a>
+                                             <div class="pull-left"><span class="ke-agent-sj-tag MyGO">MyGo業務經理</span></div>
+                                        </div>                        
+                                        <div class="info infoAdd">立即取得海外房地產第一手資訊</div>
+                                        <a class="info phone" href="tel:+886986743141"><i class="fa fa-phone"></i>0986-743-141</a>
+                                        <div class="row">
+                                            <div class="col-xs-6 text-center"><span class="info">WeChat</span><img src="../images/rueyaQrcodeWechat.png" class="qrcode"></div>
+                                            <div class="col-xs-6 text-center"><span class="info">line</span><img src="../images/rueyaQrcodeLine.png" class="qrcode"></div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+            <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <!-- /page content -->
+    <!--Footer-->
+    <footer id="footer" class="footer">
+        <div class="container text-center container_1366">
+            <div class="row footerInfo">
+                <div class="col-xs-12 col-sm-6">
+                    <h4 class="text-left" itemprop="alternateName">我們能為您做什麼?</h4>
+                    <p class="text-left" itemprop="description">MyGo買購國際地產是一家『房地產商業模式的創新工廠』，定位於智能空間的魔術師(APP+商業+空間+支付+區塊鏈)，將創新融於商業服務中。Mygo主要業務項目涵蓋『國內外房產地建築設計、投資興建、行銷、企劃、招商、通路銷售、新聞媒體、售後資產管理、經營』...一站式完整服務，致力於提供全球化專營房地產上下游產業鏈。目前商業觸角擴及台灣、中國大陸、馬來西亞、日本、東協，未來事業版圖將推及紐西蘭、澳洲、美國與英國，要帶著您、帶著台灣精神與創新智慧去世界探險，讓兩岸華人的生命力、爆發力榮耀世界。</p>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row lineLine">
+                                <h4 itemprop="name">MyGo海外置產諮詢</h4>
+                                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                                    <p class="text-center" itemprop="name">Line@ycq0424h</p>
+                                    <img src="../images/qr_line.png" class="qrcode" itemprop="image"><div class="clearfix"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                                    <p class="text-center" itemprop="name">Line</p>
+                                    <img src="../images/tintinQrcodeLine.png" class="qrcode" itemprop="image"><div class="clearfix"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                                    <p class="text-center" itemprop="name">Wechat</p>
+                                    <img src="../images/tintinQrcodeWechat.png" class="qrcode" itemprop="image"><div class="clearfix"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-3 text-center">
+                                    <p class="text-center" itemprop="name">Facebook</p>
+                                    <img src="../images/qr_fb.png" class="qrcode" itemprop="image"><div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="link">
+                    <strong>事業集團：</strong>
+                    <span itemprop="brand">| 興得建設有限公司 | 九天開發股份有限公司 | 九天資產管理股份有限公司 | 福州買購軟件科技有限公司 | 印記聯合建築師事務所 </span>
+                    <ul class="list-inline">
+                        <li><a href="http://www.mygo.com/about/aboutmygo">關於我們 |</a></li>
+                        <li><a href="thailand.html">泰國建案 |</a></li>
+                        <li><a href="malaysia.html">馬來西亞建案 |</a></li>
+                        <li><a href="nippon.html">日本建案 |</a></li>
+                        <li><a href="news.html">最新消息 |</a></li>
+                        <li><a href="class.html">投資講堂 |</a></li>
+                        <li><a href="qa.html">Q&amp;A |</a></li>
+                        <li><a href="service.html">服務 |</a></li><li><a href="privacy.html">隱私權 |</a></li>
+                        <li><a href="contactUs.html">聯繫我們 |</a></li>
+                    </ul>
+                    <font itemprop="telephone">T:<a href="tel:+886-2-27383123">+886-2-27383123</a> F:+886-2-27374152 <br class="rwd_1" itemprop="email">E-mail:<a href="mailto:myservice@mygo.com">myservice@mygo.com</a><br class="rwd_1" itemprop="adress"> 地址：10485 台北市中山區長春路176號4樓</font>
+                </div>
+                <div class="col-xs-12 copyWrite"><p>&copy; 2020 MyGo.com. All right reserved.</p></div>
+            </div>
+        </div>
+    </footer>
+<!--/ Footer-->
+
+<!-- jQuery -->
+<script src="../../vendors/jquery.easing/js/jquery.easing.min.js"></script>
+<!-- Bootstrap -->
+<script src="../../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../../vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="../../vendors/nprogress/nprogress.js"></script>
+<!-- jQuery Sparklines -->
+<script src="../../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- easy-pie-chart -->
+<script src="../../vendors/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+<!-- bootstrap-progressbar -->
+<script src="../../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<!-- FancyBox -->
+<script src="../../vendors/fancybox/js/fancybox/jquery.fancybox.js"></script>
+<script src="../../vendors/fancybox/js/fancybox/jquery.fancybox-buttons.js"></script>
+<script src="../../vendors/fancybox/js/fancybox/jquery.fancybox-thumbs.js"></script>
+<script src="../../vendors/fancybox/js/fancybox/jquery.easing-1.3.pack.js"></script>
+<script src="../../vendors/fancybox/js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	$(".fancybox").fancybox();
+	});
+</script>
+<!-- iCheck -->
+<script src="../../vendors/iCheck/icheck.min.js"></script>
+<script src="../../vendors/backtotop/js/back-to-topBD.js"></script>
+<!-- Custom Theme Scripts -->
+<script type="text/javascript" src="js/jquery.placeholder.js"></script><script src="../../build/js/custom.min.js"></script>
+    
+
+</body>
+</html>
