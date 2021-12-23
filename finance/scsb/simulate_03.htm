@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
-<title>�W���ӷ~�x�W�Ȧ�-�]�I�޲z</title>
+<title>上海商業儲蓄銀行-財富管理</title>
 <link type="image/x-icon" rel="icon" href="favicon.ico">
 <link href="css/reset.css" rel="stylesheet">
 <link href="css/fancyfields.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 <script src="js/products_dropdown.js"></script>
 <script>
 $(function(){
-	//�ӳ椸���
+	//該單元選單
 	$("#menu_event").addClass("menu_choosen");
 	$("#products_overview").addClass("submenu_choosen");
 })
@@ -36,7 +36,7 @@ function MM_showHideLayers() { //v9.0
     obj.visibility=v; }
 }
 $(function(){
-	//�U�Կ��
+	//下拉選單
 	$('#option_search1').fancyfields();
 	$('#option_search2').fancyfields();
 	$('#option_search3').fancyfields();
@@ -55,23 +55,23 @@ $(function(){
 
 
 <div id="header">
-	<div id="header_content"><!-- �������e -->
+	<div id="header_content"><!-- 頁首內容 -->
     
 		<div id="logo"><a href="index.htm" target="_self"><img src="images/logo.gif"/></a></div>
         
-    	<div id="menu"><!-- �D��� -->
-    		<div id="menu_products_overview" class="menu_item"><a href="fund_value.htm" target="_self">�̷s����</a></div>
-    		<div id="menu_news" class="menu_item"><a href="news.htm" target="_self">�Y�ɷs�D</a></div>
-    		<div id="menu_search" class="menu_item"><a href="search.htm" target="_self">����j�M</a></div>
-    		<div id="menu_finance" class="menu_item"><a href="finance.htm" target="_self">���Ħ污</a></div>
-    		<div id="menu_event" class="menu_item"><a href="account.htm" target="_self">�z�]�պ�</a></div>
-    		<div id="menu_back" class="menu_item menu_item_last"><a href="index.htm" target="_self">�^�쭺��</a></div>
+    	<div id="menu"><!-- 主選單 -->
+    		<div id="menu_products_overview" class="menu_item"><a href="fund_value.htm" target="_self">最新報價</a></div>
+    		<div id="menu_news" class="menu_item"><a href="news.htm" target="_self">即時新聞</a></div>
+    		<div id="menu_search" class="menu_item"><a href="search.htm" target="_self">基金搜尋</a></div>
+    		<div id="menu_finance" class="menu_item"><a href="finance.htm" target="_self">金融行情</a></div>
+    		<div id="menu_event" class="menu_item"><a href="account.htm" target="_self">理財試算</a></div>
+    		<div id="menu_back" class="menu_item menu_item_last"><a href="index.htm" target="_self">回到首頁</a></div>
     	</div>
         
-    </div><!-- �������eend -->
+    </div><!-- 頁首內容end -->
 </div>
 <div id="container">
-	<div id="container_content" class="products_overview"><!-- �D�n���e�Aclass�ó]�w�����S�Ƥ��e -->
+	<div id="container_content" class="products_overview"><!-- 主要內容，class並設定本頁特化內容 -->
     	
 
 <SCRIPT>
@@ -79,7 +79,7 @@ $(function(){
 function FundCheck(){
 
   if (document.FundDetail.fund_code.value=="") {
-     alert("����줣�o�ť�");
+     alert("此欄位不得空白");
 	   document.FundDetail.fund_code.focus();
   }
   else {
@@ -90,7 +90,7 @@ function FundCheck(){
      }
      else
      {
-        alert("�п�J�|��ư���N�X");
+        alert("請輸入四位數基金代碼");
         document.FundDetail.fund_code.focus();
      }
 
@@ -99,145 +99,145 @@ function FundCheck(){
 //-->
 </SCRIPT>
 <form name="FundDetail" method="get" action="Effect_visi.htm">
-<div class="function"><!-- �n�J -->
+<div class="function"><!-- 登入 -->
         	<div id="btn_login"><a href="https://ibank.scsb.com.tw/" target="_blank" onmouseover="MM_swapImage('btnLogin','','images/btn_logino.gif',1)" onmouseout="MM_swapImgRestore()"><img src="images/btn_login.gif" name="btnLogin" id="btnLogin" /></a></div>
-			<div id="quick_search"><span class="quick_search_title">�ֳt�d��<span class="quick_search_title_arrow">&gt;&gt;</span></span> ���~�N�X�ΦW�� 
+			<div id="quick_search"><span class="quick_search_title">快速查詢<span class="quick_search_title_arrow">&gt;&gt;</span></span> 產品代碼及名稱 
 		  <input class="quick_search_input" name="fund_code" type="text" /> <input type="button" value="GO" onclick='FundCheck();'/></div>
         </div></form>
         <div class="option_search option_search_0">
         	<div class="menu menu_05">
                  <ul id="navmenu-h" style=" width:508px;">
-                  <li class="menu_1"><a href="account.htm" title="�w���w�B�պ�"><em>�w���w�B�պ�</em></a>
+                  <li class="menu_1"><a href="account.htm" title="定期定額試算"><em>定期定額試算</em></a>
                   </li>
-                  <li class="menu_2"><a href="simulate.htm" class="menu_on" title="���զX�պ�"><em>���զX�պ�</em></a>
+                  <li class="menu_2"><a href="simulate.htm" class="menu_on" title="投資組合試算"><em>投資組合試算</em></a>
                   </li>
-                  <li class="menu_3"><a href="computer.htm" title="�z�]�p���"><em>�z�]�p���</em></a>
+                  <li class="menu_3"><a href="computer.htm" title="理財計算機"><em>理財計算機</em></a>
                   </li>
-                  <li class="menu_4"><a href="Banch_Compare.htm" title="�Z�Ĥ��"><em>�Z�Ĥ��</em></a>
+                  <li class="menu_4"><a href="Banch_Compare.htm" title="績效比較"><em>績效比較</em></a>
                   </li>
                  </ul> 
             </div><!-- menu END --> 
         </div>
-         <div class="title">Step2�G�нT�{���~�W��/��
-            <span class="title_add title_add_02"><input type="button" class="print" value="�ڭn�C�L"/></span></div><!-- ���D -->
+         <div class="title">Step2：請確認產品名稱/比重
+            <span class="title_add title_add_02"><input type="button" class="print" value="我要列印"/></span></div><!-- 標題 -->
         <div class="table table_products_overview">
-            <!-- ���� -->
+            <!-- 表格 -->
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr class="table_title">
-                <th class="cr">���~�N�X/���~�W��</th>
-                <th class="cr" width="13%">����(%)</th>
+                <th class="cr">產品代碼/產品名稱</th>
+                <th class="cr" width="13%">投資比重(%)</th>
                 <th width="10%"></th>
               </tr>
               <tr>
-                <td class="lt"><input type="text" value="1712" style=" width:50px;" class="cr"> <input type="text" style=" width:200px;" value=""> <a href="#" onclick="MM_showHideLayers('search_list','','show')" >�d�ߦW��</a>
-                  <div class="option_company option_company_02" id="search_list"><!-- �ﶵ --> 
+                <td class="lt"><input type="text" value="1712" style=" width:50px;" class="cr"> <input type="text" style=" width:200px;" value=""> <a href="#" onclick="MM_showHideLayers('search_list','','show')" >查詢名稱</a>
+                  <div class="option_company option_company_02" id="search_list"><!-- 選項 --> 
                       <div class="option_company1_content option_company1_content_03">
                                         <select id="option_company1" name="arealist" onChange="location.href = this.value">
-                                            <option value="">�p�հ��(���~)</option>
-                                            <option value="ING(L)�Ȭw�l���">ING(L)�Ȭw�l���</option>
-                                            <option value="ING(L)�D�Ȭw�l���">ING(L)�D�Ȭw�l���</option>
-                                            <option value="���j��H-�������">���j��H-�������</option>
-                                            <option value="�ѧQ�޲z�������q">�ѧQ�޲z�������q</option>
-                                            <option value="�ѹF�겣�޲z���q">�ѹF�겣�޲z���q</option>
-                                            <option value="���Ӹ겣�Ҩ��H���q">���Ӹ겣�Ҩ��H���q</option>
-                                            <option value="��������޲z�������q">��������޲z�������q</option>
-                                            <option value="�w������Ҩ����U��">�w������Ҩ����U��</option>
-                                            <option value="�ʹF���U-�ʹF���">�ʹF���U-�ʹF���</option>
-                                            <option value="�Q�w����޲z�������q">�Q�w����޲z�������q</option>
-                                            <option value="���Q���H�U���q">���Q���H�U���q</option>
-                                            <option value="���ܼw�Ҩ����U�ݪ�">���ܼw�Ҩ����U�ݪ�</option>
-                                            <option value="�k�Ȥھ��Ҩ����U��">�k�Ȥھ��Ҩ����U��</option>
-                                            <option value="�O�w�H��H">�O�w�H��H</option>
-                                            <option value="�Iù�w����U�ݤ��q">�Iù�w����U�ݤ��q</option>
-                                            <option value="�f���H�Х����t�C">�f���H�Х����t�C</option>
-                                            <option value="�f����Ьf�����y">�f����Ьf�����y</option>
-                                            <option value="��������U�ݤ��q">��������U�ݤ��q</option>
-                                            <option value="�^�ǵبt�C���">�^�ǵبt�C���</option>
-                                            <option value="������U-������">������U-������</option>
-                                            <option value="���_�겣�޲z���q">���_�겣�޲z���q</option>
-                                            <option value="�I�F�Ҩ�ѥ��������q">�I�F�Ҩ�ѥ��������q</option>
-                                            <option value="�I���J�L����U�ݤ��q">�I���J�L����U�ݤ��q</option>
-                                            <option value="��������U�ݤ��q">��������U�ݤ��q</option>
-                                            <option value="�����겣�޲z�������q">�����겣�޲z�������q</option>
-                                            <option value="���ק����(����)">���ק����(����)</option>
-                                            <option value="�s�[�Y�j�ذ��">�s�[�Y�j�ذ��</option>
-                                            <option value="��U�q��">��U�q��</option>
-                                            <option value="��ȧ�H-��h�t�C">��ȧ�H-��h�t�C</option>
-                                            <option value="��ȧ�H-�c�˳��t">��ȧ�H-�c�˳��t</option>
-                                            <option value="�ꥻ��ں޲z���q">�ꥻ��ں޲z���q</option>
-                                            <option value="�w�Q���H�U���q">�w�Q���H�U���q</option>
-                                            <option value="�w���w�p����U�ݤ��q">�w���w�p����U�ݤ��q</option>
-                                            <option value="����(�Ȭw)������">����(�Ȭw)������</option>
-                                            <option value="�ڸq�U�a�겣�޲z���q">�ڸq�U�a�겣�޲z���q</option>
-                                            <option value="�W�θ겣�޲z���q">�W�θ겣�޲z���q</option>
-                                            <option value="�p�ո겣�޲z���q">�p�ո겣�޲z���q</option>
-                                            <option value="�@�Q����U�ݤ��q">�@�Q����U�ݤ��q</option>
-                                            <option value="�v�ȧ�H��M_G�t�C">�v�ȧ�H��M&amp;G�t�C</option>
-                                            <option value="�v�ȧ�H���v�Ȩt�C">�v�ȧ�H���v�Ȩt�C</option>
-                                            <option value="�Q�٧���U�ݤ��q">�Q�٧���U�ݤ��q</option>
+                                            <option value="">聯博基金(海外)</option>
+                                            <option value="ING(L)亞洲子基金">ING(L)亞洲子基金</option>
+                                            <option value="ING(L)非亞洲子基金">ING(L)非亞洲子基金</option>
+                                            <option value="元大投信-梅隆基金">元大投信-梅隆基金</option>
+                                            <option value="天利管理有限公司">天利管理有限公司</option>
+                                            <option value="天達資產管理公司">天達資產管理公司</option>
+                                            <option value="未來資產證券投信公司">未來資產證券投信公司</option>
+                                            <option value="先機基金管理有限公司">先機基金管理有限公司</option>
+                                            <option value="安本國際證券投資顧問">安本國際證券投資顧問</option>
+                                            <option value="百達投顧-百達基金">百達投顧-百達基金</option>
+                                            <option value="利安資金管理有限公司">利安資金管理有限公司</option>
+                                            <option value="宏利投資信託公司">宏利投資信託公司</option>
+                                            <option value="貝萊德證券投資顧問股">貝萊德證券投資顧問股</option>
+                                            <option value="法銀巴黎證券投資顧問">法銀巴黎證券投資顧問</option>
+                                            <option value="保德信投信">保德信投信</option>
+                                            <option value="施羅德投資顧問公司">施羅德投資顧問公司</option>
+                                            <option value="柏瑞投信－全盛系列">柏瑞投信－全盛系列</option>
+                                            <option value="柏瑞投資－柏瑞環球">柏瑞投資－柏瑞環球</option>
+                                            <option value="美盛投資顧問公司">美盛投資顧問公司</option>
+                                            <option value="英傑華系列基金">英傑華系列基金</option>
+                                            <option value="國泰投顧-首域基金">國泰投顧-首域基金</option>
+                                            <option value="荷寶資產管理公司">荷寶資產管理公司</option>
+                                            <option value="富達證券股份有限公司">富達證券股份有限公司</option>
+                                            <option value="富蘭克林投資顧問公司">富蘭克林投資顧問公司</option>
+                                            <option value="景順投資顧問公司">景順投資顧問公司</option>
+                                            <option value="景順資產管理有限公司">景順資產管理有限公司</option>
+                                            <option value="匯豐投資基金(香港)">匯豐投資基金(香港)</option>
+                                            <option value="新加坡大華基金">新加坡大華基金</option>
+                                            <option value="瑞萬通博">瑞萬通博</option>
+                                            <option value="瑞銀投信-瑞士系列">瑞銀投信-瑞士系列</option>
+                                            <option value="瑞銀投信-盧森堡系">瑞銀投信-盧森堡系</option>
+                                            <option value="資本國際管理公司">資本國際管理公司</option>
+                                            <option value="德利投資信託公司">德利投資信託公司</option>
+                                            <option value="德盛安聯投資顧問公司">德盛安聯投資顧問公司</option>
+                                            <option value="摩根(亞洲)有限公">摩根(亞洲)有限公</option>
+                                            <option value="歐義銳榮資產管理公司">歐義銳榮資產管理公司</option>
+                                            <option value="鋒裕資產管理公司">鋒裕資產管理公司</option>
+                                            <option value="聯博資產管理公司">聯博資產管理公司</option>
+                                            <option value="駿利投資顧問公司">駿利投資顧問公司</option>
+                                            <option value="瀚亞投信－M_G系列">瀚亞投信－M&amp;G系列</option>
+                                            <option value="瀚亞投信－瀚亞系列">瀚亞投信－瀚亞系列</option>
+                                            <option value="霸菱投資顧問公司">霸菱投資顧問公司</option>
                                         </select>
                     </div>
                                     <div class="option_company2_content option_company2_content_03">
                                         <select id="option_company2" name="market_num" onChange="location.href = this.value">
-                                            <option value="">1712 �p�ե��y�����q�Ũ�AT��-��t��(����)</option>
-                                            <option value="����H�U���H�U���q">����H�U���H�U���q</option>
-                                            <option value="���j�_�ӧ��H�U���q">���j�_�ӧ��H�U���q</option>
-                                            <option value="�鲱���H�U���q">�鲱���H�U���q</option>
-                                            <option value="�x�s���H�U���q">�x�s���H�U���q</option>
-                                            <option value="���Ӹ겣���H�U���q">���Ӹ겣���H�U���q</option>
-                                            <option value="���ק��H�U���q">���ק��H�U���q</option>
-                                            <option value="���װ�ڧ��H�U���q">���װ�ڧ��H�U���q</option>
-                                            <option value="�X�@���w���H�U���q">�X�@���w���H�U���q</option>
-                                            <option value="�w��ING�Ҩ餽�q">�w��ING�Ҩ餽�q</option>
-                                            <option value="�w��ING�Ҩ��H">�w��ING�Ҩ��H</option>
-                                            <option value="���Q���H�U���q">���Q���H�U���q</option>
-                                            <option value="���ܼw���H�U���q">���ܼw���H�U���q</option>
-                                            <option value="�O�w�H���H�U���q">�O�w�H���H�U���q</option>
-                                            <option value="�Iù�w���H�U���q">�Iù�w���H�U���q</option>
-                                            <option value="�f����H�U���q">�f����H�U���q</option>
-                                            <option value="�Ĥ@�����H�U���q">�Ĥ@�����H�U���q</option>
-                                            <option value="�Τ@���H�U���q">�Τ@���H�U���q</option>
-                                            <option value="�Ͱ���H�U���q">�Ͱ���H�U���q</option>
-                                            <option value="�I�����H�U���q">�I�����H�U���q</option>
-                                            <option value="�I���J�L�ج����H�U">�I���J�L�ج����H�U</option>
-                                            <option value="�_�ا��H�U���q">�_�ا��H�U���q</option>
-                                            <option value="�f�z�d�M���H�U���q">�f�z�d�M���H�U���q</option>
-                                            <option value="�ثn�é����H�U���q">�ثn�é����H�U���q</option>
-                                            <option value="�عy���H�U���q">�عy���H�U���q</option>
-                                            <option value="���פ��ا��H�U���q">���פ��ا��H�U���q</option>
-                                            <option value="���ק��H�U���q">���ק��H�U���q</option>
-                                            <option value="�s�����H�U���q">�s�����H�U���q</option>
-                                            <option value="�s�q���H�U���q">�s�q���H�U���q</option>
-                                            <option value="�w�H���H�U���q">�w�H���H�U���q</option>
-                                            <option value="�w���w�p��H���q">�w���w�p��H���q</option>
-                                            <option value="�w�Ȼ��F�Ң���H��">�w�Ȼ��F�Ң���H��</option>
-                                            <option value="�����Ҩ���H�U���q">�����Ҩ���H�U���q</option>
-                                            <option value="�p���Ҩ���H�U���q">�p���Ҩ���H�U���q</option>
-                                            <option value="�v�ȧ��H�U���q">�v�ȧ��H�U���q</option>
+                                            <option value="">1712 聯博全球高收益債券AT股-月配息(美元)</option>
+                                            <option value="中國信託投資信託公司">中國信託投資信託公司</option>
+                                            <option value="元大寶來投資信託公司">元大寶來投資信託公司</option>
+                                            <option value="日盛投資信託公司">日盛投資信託公司</option>
+                                            <option value="台新投資信託公司">台新投資信託公司</option>
+                                            <option value="未來資產投資信託公司">未來資產投資信託公司</option>
+                                            <option value="永豐投資信託公司">永豐投資信託公司</option>
+                                            <option value="兆豐國際投資信託公司">兆豐國際投資信託公司</option>
+                                            <option value="合作金庫投資信託公司">合作金庫投資信託公司</option>
+                                            <option value="安泰ING證券公司">安泰ING證券公司</option>
+                                            <option value="安泰ING證券投信">安泰ING證券投信</option>
+                                            <option value="宏利投資信託公司">宏利投資信託公司</option>
+                                            <option value="貝萊德投資信託公司">貝萊德投資信託公司</option>
+                                            <option value="保德信投資信託公司">保德信投資信託公司</option>
+                                            <option value="施羅德投資信託公司">施羅德投資信託公司</option>
+                                            <option value="柏瑞投資信託公司">柏瑞投資信託公司</option>
+                                            <option value="第一金投資信託公司">第一金投資信託公司</option>
+                                            <option value="統一投資信託公司">統一投資信託公司</option>
+                                            <option value="凱基投資信託公司">凱基投資信託公司</option>
+                                            <option value="富邦投資信託公司">富邦投資信託公司</option>
+                                            <option value="富蘭克林華美投資信託">富蘭克林華美投資信託</option>
+                                            <option value="復華投資信託公司">復華投資信託公司</option>
+                                            <option value="惠理康和投資信託公司">惠理康和投資信託公司</option>
+                                            <option value="華南永昌投資信託公司">華南永昌投資信託公司</option>
+                                            <option value="華頓投資信託公司">華頓投資信託公司</option>
+                                            <option value="匯豐中華投資信託公司">匯豐中華投資信託公司</option>
+                                            <option value="匯豐投資信託公司">匯豐投資信託公司</option>
+                                            <option value="新光投資信託公司">新光投資信託公司</option>
+                                            <option value="群益投資信託公司">群益投資信託公司</option>
+                                            <option value="德信投資信託公司">德信投資信託公司</option>
+                                            <option value="德盛安聯投信公司">德盛安聯投信公司</option>
+                                            <option value="德銀遠東ＤＷＳ投信公">德銀遠東ＤＷＳ投信公</option>
+                                            <option value="摩根證券投資信託公司">摩根證券投資信託公司</option>
+                                            <option value="聯邦證券投資信託公司">聯邦證券投資信託公司</option>
+                                            <option value="瀚亞投資信託公司">瀚亞投資信託公司</option>
                                         </select>
                                     </div>
                   </div>
 </td>
                 <td class="cr"><input type="text" value="20" style=" width:50px;"></td>
-                <td class="cr"><input type="button" class="butn5" value="�[�J"></td>
+                <td class="cr"><input type="button" class="butn5" value="加入"></td>
               </tr>
             </table>
             <table cellspacing="0" cellpadding="0" border="0" width="100%" class="simulate_00">
               <tbody>
                 <tr class="table_title">
                   <th width="5%"></th>
-                  <th width="45%" class="cr md">���~�N�X/�W��</th>
-                  <th width="10%" class="cr md">�ӫ~����</th>
-                  <th width="10%" class="cr md">�ӫ~�ݩ�</th>
-                  <th width="10%" class="cr md">�p�����O</th>
-                  <th width="10%" class="cr md">��</th>
-                  <th width="10%" class="cr md">�R��</th>
+                  <th width="45%" class="cr md">產品代碼/名稱</th>
+                  <th width="10%" class="cr md">商品類型</th>
+                  <th width="10%" class="cr md">商品屬性</th>
+                  <th width="10%" class="cr md">計價幣別</th>
+                  <th width="10%" class="cr md">比重</th>
+                  <th width="10%" class="cr md">刪除</th>
                 </tr>
                 <tr>
                   <td class="cr">0001</td>
-                  <td><a target="_top" href="#">�f�票�H���(AI1) </a></td>
-                  <td class="cr">�Ѳ���</td>
-                  <td class="cr">í����</td>
+                  <td><a target="_top" href="#">柏瑞巨人基金(AI1) </a></td>
+                  <td class="cr">股票型</td>
+                  <td class="cr">穩健型</td>
                   <td class="cr">USD</td>
                   <td class="cr"><div class="ption_search_block ption_search_block_c">
                         <select name="percent" id="option_search1">
@@ -264,13 +264,13 @@ function FundCheck(){
                         </select>
                       </div>
                   </td>
-                  <td class="cr"><input type="button" onclick="javascript:DelConfrim(52019,68626)" value="�R��" name="Submit3" class="butn5" /></td>
+                  <td class="cr"><input type="button" onclick="javascript:DelConfrim(52019,68626)" value="刪除" name="Submit3" class="butn5" /></td>
                 </tr>
                 <tr>
                   <td class="cr">0002</td>
-                  <td><a target="_top" href="#">�f�票���Ũ���(AI2) </a></td>
-                  <td class="cr">�Ѳ���</td>
-                  <td class="cr">�O�u��</td>
+                  <td><a target="_top" href="#">柏瑞巨輪債券基金(AI2) </a></td>
+                  <td class="cr">股票型</td>
+                  <td class="cr">保守型</td>
                   <td class="cr">USD</td>
                   <td class="cr"><div class="ption_search_block ption_search_block_c">
                         <select name="percent" id="option_search2">
@@ -296,13 +296,13 @@ function FundCheck(){
                             <option>100%</option>
                         </select>
                       </div></td>
-                  <td class="cr"><input type="button" onclick="javascript:DelConfrim(52019,68626)" value="�R��" name="Submit" class="butn5" /></td>
+                  <td class="cr"><input type="button" onclick="javascript:DelConfrim(52019,68626)" value="刪除" name="Submit" class="butn5" /></td>
                 </tr>
                 <tr>
                   <td class="cr">0003</td>
-                  <td><a target="_top" href="#">�f�����Ѳ���� A acc(AAC)</a></td>
-                  <td class="cr">�Ѳ���</td>
-                  <td class="cr">í����</td>
+                  <td><a target="_top" href="#">柏瑞美國股票基金 A acc(AAC)</a></td>
+                  <td class="cr">股票型</td>
+                  <td class="cr">穩健型</td>
                   <td class="cr">USD</td>
                   <td class="cr"><div class="ption_search_block ption_search_block_c">
                         <select name="percent" id="option_search3">
@@ -328,13 +328,13 @@ function FundCheck(){
                             <option>100%</option>
                         </select>
                       </div></td>
-                  <td class="cr"><input type="button" onclick="javascript:DelConfrim(52019,68626)" value="�R��" name="Submit" class="butn5" /></td>
+                  <td class="cr"><input type="button" onclick="javascript:DelConfrim(52019,68626)" value="刪除" name="Submit" class="butn5" /></td>
                 </tr>
                 <tr>
                   <td class="cr">0004</td>
-                  <td><a target="_top" href="#">�f��Xĥ���y�wí�զX���(AI6) </a></td>
-                  <td class="cr">�Ѳ���</td>
-                  <td class="cr">í����</td>
+                  <td><a target="_top" href="#">柏瑞旗艦全球安穩組合基金(AI6) </a></td>
+                  <td class="cr">股票型</td>
+                  <td class="cr">穩健型</td>
                   <td class="cr">USD</td>
                   <td class="cr"><div class="ption_search_block ption_search_block_c">
                         <select name="percent" id="option_search4">
@@ -360,13 +360,13 @@ function FundCheck(){
                             <option>100%</option>
                         </select>
                       </div></td>
-                  <td class="cr"><input type="button" onclick="javascript:DelConfrim(52019,68627)" value="�R��" name="Submit4" class="butn5" /></td>
+                  <td class="cr"><input type="button" onclick="javascript:DelConfrim(52019,68627)" value="刪除" name="Submit4" class="butn5" /></td>
                 </tr>
                 <tr>
                   <td class="cr">0005</td>
-                  <td><a target="_top" href="#">�f��ԤB���w���A (A22)</a></td>
-                  <td class="cr">�Ѳ���</td>
-                  <td class="cr">í����</td>
+                  <td><a target="_top" href="#">柏瑞拉丁美洲基金A (A22)</a></td>
+                  <td class="cr">股票型</td>
+                  <td class="cr">穩健型</td>
                   <td class="cr">USD</td>
                   <td class="cr"><div class="ption_search_block ption_search_block_c">
                         <select name="percent" id="option_search5">
@@ -392,76 +392,76 @@ function FundCheck(){
                             <option>100%</option>
                         </select>
                       </div></td>
-                  <td class="cr"><input type="button" onclick="javascript:DelConfrim(52019,68626)" value="�R��" name="Submit" class="butn5" /></td>
+                  <td class="cr"><input type="button" onclick="javascript:DelConfrim(52019,68626)" value="刪除" name="Submit" class="butn5" /></td>
                 </tr>
               </tbody>
             </table>
             <div class="pd_10 cr">
-            <input name="Submit" type="submit" class="butn" onclick="MM_goToURL('parent','#');return document.MM_returnValue" value="���s�պ�"> <input name="Submit2" type="submit" class="butn" onclick="" value="�}�l�պ�">
+            <input name="Submit" type="submit" class="butn" onclick="MM_goToURL('parent','#');return document.MM_returnValue" value="重新試算"> <input name="Submit2" type="submit" class="butn" onclick="" value="開始試算">
             </div>
-            <p class="annotation">�����G</p>
+            <p class="annotation">說明：</p>
             <ul class="floor_02">
-                  <li> ���զX���S�����պ�å��Ҽ{����t���C</li>
-                  <li> ���պ�\��ȨѰѦҡA�Фŵ����R�����Ψ�L��ĳ���ܬ��C</li>
-                  <li> �H�W���Ъ����v�b�ȤΨϥζײv��cnYes�d������ѡA�������H���Ъ����ݤ��q�Ҥ��G���b�ȤΫ��w�Ȧ�A�ζײv���ǡC</li>
+                  <li> 投資組合報酬模擬試算並未考慮基金配息。</li>
+                  <li> 本試算功能僅供參考，請勿視為買賣基金或其他建議或邀約。</li>
+                  <li> 以上投資標的歷史淨值及使用匯率由cnYes鉅亨網提供，惟仍應以投資標的所屬公司所公佈之淨值及指定銀行適用匯率為準。</li>
            	</ul>
-      </div><!-- ���� end -->
-      <div class="title">�����</div><!-- ���D -->
-        <div class="table table_bar_industry"><!-- ���� -->
+      </div><!-- 表格 end -->
+      <div class="title">投資比例</div><!-- 標題 -->
+        <div class="table table_bar_industry"><!-- 表格 -->
    	  	  	<table width="100%" border="0" cellspacing="0" cellpadding="0">
 			
   				<tbody><tr>
-  				  	<td class="table_bar_industry1 list_title"><img src="images/list_arrow.gif">0001 �f�票�H���(AI1) </td>
+  				  	<td class="table_bar_industry1 list_title"><img src="images/list_arrow.gif">0001 柏瑞巨人基金(AI1) </td>
   				  	<td class="table_bar_industry3 lt"><div id="table_bar_industry1" class="progressbar ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="ui-progressbar-value ui-widget-header ui-corner-left ui-corner-right" style="width: 30%;"></div></div><div class="progressbar_percentage">33%</div></td>
 			  	</tr>
 			
   				<tr>
-  				  	<td class="table_bar_industry1 list_title"><img src="images/list_arrow.gif">0002 �f�票���Ũ���(AI2) </td>
+  				  	<td class="table_bar_industry1 list_title"><img src="images/list_arrow.gif">0002 柏瑞巨輪債券基金(AI2) </td>
   				  	<td class="table_bar_industry3 lt"><div id="table_bar_industry2" class="progressbar ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 16%;"></div></div><div class="progressbar_percentage">16%</div></td>
 			  	</tr>
 			
   				<tr>
-  				  	<td class="table_bar_industry1 list_title"><img src="images/list_arrow.gif">0003 �f�����Ѳ���� A acc(AAC)</td>
+  				  	<td class="table_bar_industry1 list_title"><img src="images/list_arrow.gif">0003 柏瑞美國股票基金 A acc(AAC)</td>
   				  	<td class="table_bar_industry3 lt"><div id="table_bar_industry3" class="progressbar ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="35"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 17%;"></div></div><div class="progressbar_percentage">17%</div></td>
 			  	</tr>
 			
   				<tr>
-  				  	<td class="table_bar_industry1 list_title"><img src="images/list_arrow.gif">0004 �f��Xĥ���y�wí�զX���(AI6) </td>
+  				  	<td class="table_bar_industry1 list_title"><img src="images/list_arrow.gif">0004 柏瑞旗艦全球安穩組合基金(AI6) </td>
   				  	<td class="table_bar_industry3 lt"><div id="table_bar_industry4" class="progressbar ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="27"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 25%;"></div></div><div class="progressbar_percentage">25%</div></td>
 			  	</tr>
 			
   				<tr>
-  				  	<td class="table_bar_industry1 list_title"><img src="images/list_arrow.gif">0005 �f��ԤB���w���A (A22)</td>
+  				  	<td class="table_bar_industry1 list_title"><img src="images/list_arrow.gif">0005 柏瑞拉丁美洲基金A (A22)</td>
   				  	<td class="table_bar_industry3 lt"><div id="table_bar_industry5" class="progressbar ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 9%;"></div></div><div class="progressbar_percentage">9%</div></td>
 			  	</tr>
 			</tbody></table>
-        </div><!-- ���� end -->
+        </div><!-- 表格 end -->
         <div class="table table_fund_value">
             <table width="100%" cellpadding="0" cellspacing="0">
               <tbody>
                 <tr class="table_title">
-                  <th colspan="11" class="cr">�Z�ĻP�t�m-���զX����Z�Ĳέp�`��</th>
+                  <th colspan="11" class="cr">績效與配置-投資組合基金績效統計總表</th>
                 </tr>
                 <tr class="table_subtitle">
-                  <th width="19%">���S�v% / ���I��</th>
-                  <th width="9%">�T�Ӥ�</th>
-                  <th width="9%">���Ӥ�</th>
-                  <th width="9%">�@�~</th>
-                  <th width="9%">�T�~</th>
-                  <th width="9%">���~</th>
-                  <th width="9%">���~�H��</th>
-                  <th width="9%">�зǮt</th>
-                  <th width="9%">�L������</th>
-                  <th width="9%">Beta��</th>
+                  <th width="19%">報酬率% / 風險值</th>
+                  <th width="9%">三個月</th>
+                  <th width="9%">六個月</th>
+                  <th width="9%">一年</th>
+                  <th width="9%">三年</th>
+                  <th width="9%">五年</th>
+                  <th width="9%">今年以來</th>
+                  <th width="9%">標準差</th>
+                  <th width="9%">夏普指數</th>
+                  <th width="9%">Beta值</th>
                 </tr>
                 <tr>
                   <td></td>
-                  <td class="cr r">��4.56%</td>
-                  <td class="cr r">��11.25%</td>
-                  <td class="cr r">��15.49%</td>
-                  <td class="cr r">��12.37%</td>
-                  <td class="cr r">��47.37%</td>
-                  <td class="cr r">��11.29%</td>
+                  <td class="cr r">▲4.56%</td>
+                  <td class="cr r">▲11.25%</td>
+                  <td class="cr r">▲15.49%</td>
+                  <td class="cr r">▲12.37%</td>
+                  <td class="cr r">▲47.37%</td>
+                  <td class="cr r">▲11.29%</td>
                   <td class="cr"> + 15.40</td>
                   <td class="cr"> + 0.54</td>
                   <td class="cr"> + 1.03</td>
@@ -469,150 +469,150 @@ function FundCheck(){
               </tbody>
             </table>
         </div>
-        <div class="title">�򥻸��
-        </div><!-- ���D -->
-        <div class="table table_fund_value"><!-- ���� -->
+        <div class="title">基本資料
+        </div><!-- 標題 -->
+        <div class="table table_fund_value"><!-- 表格 -->
         	<table width="100%" border="0" cellspacing="0" cellpadding="0">
   				<tbody><tr class="table_title">
     				<td class="table_fund_value1"></td>
-    				<td class="table_fund_value2" style="width:25%">���~�N�����W��</td>
-    				<td class="table_fund_value3 cr" style="width:21%">�̷s����</td>
-    				<td class="table_fund_value5 cr">�ӫ~�ݩ�</td>
-  				    <td class="table_fund_value3 cr">���ߤ��</td>
-  				    <td class="table_fund_value6 cr">�ӫ~����</td>
-  				    <td class="table_fund_value7 cr">��P����</td>
+    				<td class="table_fund_value2" style="width:25%">產品代號／名稱</td>
+    				<td class="table_fund_value3 cr" style="width:21%">最新報價</td>
+    				<td class="table_fund_value5 cr">商品屬性</td>
+  				    <td class="table_fund_value3 cr">成立日期</td>
+  				    <td class="table_fund_value6 cr">商品類型</td>
+  				    <td class="table_fund_value7 cr">晨星評級</td>
   				</tr>
 				
   				<tr>
     				<td class="cr">0001</td>
-    				<td class="lt"><a href="Effect_visi.htm?fund_code=1902" target="_self">�f�票�H���(AI1)</a></td>
+    				<td class="lt"><a href="Effect_visi.htm?fund_code=1902" target="_self">柏瑞巨人基金(AI1)</a></td>
     				<td class="cr">USD 122.80(2014/08/08)</td>
-    				<td class="cr">í����</td>
+    				<td class="cr">穩健型</td>
   				    <td class="cr">2014-08-08</td>
-  				    <td class="cr">���ū�</td>
-  				    <td class="cr">��</td>
+  				    <td class="cr">平衡型</td>
+  				    <td class="cr">★</td>
   				</tr>
   				<tr>
     				<td class="cr">0002</td>
-    				<td class="lt"><a href="Effect_visi.htm?fund_code=1903" target="_self">�f�票���Ũ���(AI2)</a></td>
+    				<td class="lt"><a href="Effect_visi.htm?fund_code=1903" target="_self">柏瑞巨輪債券基金(AI2)</a></td>
     				<td class="cr">USD 122.80(2014/08/08)</td>
-    				<td class="cr">í����</td>
+    				<td class="cr">穩健型</td>
   				    <td class="cr">2014-08-08</td>
-  				    <td class="cr">�f����</td>
-  				    <td class="cr">����</td>
+  				    <td class="cr">貨幣型</td>
+  				    <td class="cr">★★</td>
   				</tr>
   				<tr>
     				<td class="cr">0003</td>
-    				<td class="lt"><a href="Effect_visi.htm?fund_code=1904" target="_self">�f�����Ѳ���� A acc(AAC)</a></td>
+    				<td class="lt"><a href="Effect_visi.htm?fund_code=1904" target="_self">柏瑞美國股票基金 A acc(AAC)</a></td>
     				<td class="cr">USD 122.80(2014/08/08)</td>
-    				<td class="cr">í����</td>
+    				<td class="cr">穩健型</td>
   				    <td class="cr">2014-08-08</td>
-  				    <td class="cr">�Ѳ���</td>
-  				    <td class="cr">������</td>
+  				    <td class="cr">股票型</td>
+  				    <td class="cr">★★★</td>
   				</tr>
   				<tr>
     				<td class="cr">0004</td>
-    				<td class="lt"><a href="Effect_visi.htm?fund_code=1905" target="_self">�f��Xĥ���y�wí�զX���(AI6) </a></td>
+    				<td class="lt"><a href="Effect_visi.htm?fund_code=1905" target="_self">柏瑞旗艦全球安穩組合基金(AI6) </a></td>
     				<td class="cr">USD 122.80(2014/08/08)</td>
-    				<td class="cr">í����</td>
+    				<td class="cr">穩健型</td>
   				    <td class="cr">2014-08-08</td>
-  				    <td class="cr">�T�w���q��</td>
-  				    <td class="cr">��������</td>
+  				    <td class="cr">固定收益型</td>
+  				    <td class="cr">★★★★</td>
   				</tr>
   				<tr>
     				<td class="cr">0005</td>
-    				<td class="lt"><a href="Effect_visi.htm?fund_code=1906" target="_self">�f��ԤB���w���A (A22)</a></td>
+    				<td class="lt"><a href="Effect_visi.htm?fund_code=1906" target="_self">柏瑞拉丁美洲基金A (A22)</a></td>
     				<td class="cr">USD 122.80(2014/08/08)</td>
-    				<td class="cr">í����</td>
+    				<td class="cr">穩健型</td>
   				    <td class="cr">2014-08-08</td>
-  				    <td class="cr">��L</td>
-  				    <td class="cr">����������</td>
+  				    <td class="cr">其他</td>
+  				    <td class="cr">★★★★★</td>
   				</tr>
              </tbody>
            </table>
         </div>
-        <div class="title">����Z��</div><!-- ���D -->
+        <div class="title">投資績效</div><!-- 標題 -->
         <div class="table table_product_compare_result_roi">
-          <!-- ���� -->
+          <!-- 表格 -->
           <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tbody>
               <tr class="table_title">
                 <td class="table_product_compare_result_roi1"></td>
-                <td class="table_product_compare_result_roi2" style=" width:21%;">���~�N�����W��</td>
-                <td class="table_product_compare_result_roi4 cr">�T�Ӥ�<br />
-                  ���S�v<a href="javascript:location.href='search.htm';"><img src="images/change_icon.png" class="change_icon"></a></td>
-                <td class="table_product_compare_result_roi5 cr">���Ӥ�<br />
-                  ���S�v<a href="javascript:location.href='search.htm';"><img src="images/change_icon.png" class="change_icon"></a></td>
-                <td class="table_product_compare_result_roi6 cr">�@�~<br />
-                  ���S�v<a href="javascript:location.href='search.htm';"><img src="images/change_icon.png" class="change_icon"></a></td>
-                <td class="table_product_compare_result_roi7 cr">�T�~<br />
-                  ���S�v<a href="javascript:location.href='search.htm';"><img src="images/change_icon.png" class="change_icon"></a></td>
-                <td class="table_product_compare_result_roi8 cr">���~<br />
-                  ���S�v<a href="javascript:location.href='search.htm';"><img src="images/change_icon.png" class="change_icon"></a></td>
-                <td class="table_product_compare_result_roi9 cr" style=" width:19%;">���ȤU��</td>
+                <td class="table_product_compare_result_roi2" style=" width:21%;">產品代號／名稱</td>
+                <td class="table_product_compare_result_roi4 cr">三個月<br />
+                  報酬率<a href="javascript:location.href='search.htm';"><img src="images/change_icon.png" class="change_icon"></a></td>
+                <td class="table_product_compare_result_roi5 cr">六個月<br />
+                  報酬率<a href="javascript:location.href='search.htm';"><img src="images/change_icon.png" class="change_icon"></a></td>
+                <td class="table_product_compare_result_roi6 cr">一年<br />
+                  報酬率<a href="javascript:location.href='search.htm';"><img src="images/change_icon.png" class="change_icon"></a></td>
+                <td class="table_product_compare_result_roi7 cr">三年<br />
+                  報酬率<a href="javascript:location.href='search.htm';"><img src="images/change_icon.png" class="change_icon"></a></td>
+                <td class="table_product_compare_result_roi8 cr">五年<br />
+                  報酬率<a href="javascript:location.href='search.htm';"><img src="images/change_icon.png" class="change_icon"></a></td>
+                <td class="table_product_compare_result_roi9 cr" style=" width:19%;">網銀下單</td>
               </tr>
               <tr>
                 <td class="cr">0001</td>
-                <td class="lt"><a href="Effect_visit.jsp?fund_code=0101" target="_self">�f�票�H���(AI1)</a></td>
-                <td class="cr r">��13.20%</td>
-                <td class="cr g">��7.57%</td>
-                <td class="cr r">��4.79%</td>
-                <td class="cr r">��96.70%</td>
-                <td class="cr r">��69.58%</td>
-                <td class="cr"><a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0101" class="buy_01">�浧���</a> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0101" class="buy_02">�w���w�B</a></td>
+                <td class="lt"><a href="Effect_visit.jsp?fund_code=0101" target="_self">柏瑞巨人基金(AI1)</a></td>
+                <td class="cr r">▲13.20%</td>
+                <td class="cr g">▼7.57%</td>
+                <td class="cr r">▲4.79%</td>
+                <td class="cr r">▲96.70%</td>
+                <td class="cr r">▲69.58%</td>
+                <td class="cr"><a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0101" class="buy_01">單筆投資</a> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0101" class="buy_02">定期定額</a></td>
               </tr>
               <tr>
                 <td class="cr">0002</td>
-                <td class="lt"><a href="Effect_visit.jsp?fund_code=0102" target="_self">�f�票���Ũ���(AI2)</a></td>
-                <td class="cr r">��13.44%</td>
-                <td class="cr r">��15.93%</td>
-                <td class="cr r">��70.29%</td>
-                <td class="cr r">��63.96%</td>
-                <td class="cr r">��34.01%</td>
-                <td class="cr"><a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0101" class="buy_01">�浧���</a> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0102" class="buy_02">�w���w�B</a></td>
+                <td class="lt"><a href="Effect_visit.jsp?fund_code=0102" target="_self">柏瑞巨輪債券基金(AI2)</a></td>
+                <td class="cr r">▲13.44%</td>
+                <td class="cr r">▲15.93%</td>
+                <td class="cr r">▲70.29%</td>
+                <td class="cr r">▲63.96%</td>
+                <td class="cr r">▲34.01%</td>
+                <td class="cr"><a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0101" class="buy_01">單筆投資</a> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0102" class="buy_02">定期定額</a></td>
               </tr>
               <tr>
                 <td class="cr">0003</td>
-                <td class="lt"><a href="Effect_visit.jsp?fund_code=0103" target="_self">�f�����Ѳ���� A acc(AAC)</a></td>
-                <td class="cr r">��4.33%</td>
-                <td class="cr r">��7.86%</td>
-                <td class="cr r">��8.45%</td>
-                <td class="cr r">��24.09%</td>
-                <td class="cr r">��17.64%</td>
-                <td class="cr"><a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0101" class="buy_01">�浧���</a> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0103" class="buy_02">�w���w�B</a></td>
+                <td class="lt"><a href="Effect_visit.jsp?fund_code=0103" target="_self">柏瑞美國股票基金 A acc(AAC)</a></td>
+                <td class="cr r">▲4.33%</td>
+                <td class="cr r">▲7.86%</td>
+                <td class="cr r">▲8.45%</td>
+                <td class="cr r">▲24.09%</td>
+                <td class="cr r">▲17.64%</td>
+                <td class="cr"><a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0101" class="buy_01">單筆投資</a> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0103" class="buy_02">定期定額</a></td>
               </tr>
               <tr>
                 <td class="cr">0004</td>
-                <td class="lt"><a href="Effect_visit.jsp?fund_code=0104" target="_self">�f��Xĥ���y�wí�զX���(AI6)</a></td>
-                <td class="cr r">��6.28%</td>
-                <td class="cr r">��3.78%</td>
-                <td class="cr r">��7.19%</td>
-                <td class="cr r">��36.14%</td>
-                <td class="cr r">��12.46%</td>
-                <td class="cr"><a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0101" class="buy_01">�浧���</a> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0104" class="buy_02">�w���w�B</a></td>
+                <td class="lt"><a href="Effect_visit.jsp?fund_code=0104" target="_self">柏瑞旗艦全球安穩組合基金(AI6)</a></td>
+                <td class="cr r">▲6.28%</td>
+                <td class="cr r">▲3.78%</td>
+                <td class="cr r">▲7.19%</td>
+                <td class="cr r">▲36.14%</td>
+                <td class="cr r">▲12.46%</td>
+                <td class="cr"><a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0101" class="buy_01">單筆投資</a> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0104" class="buy_02">定期定額</a></td>
               </tr>
               <tr>
                 <td class="cr">0005</td>
-                <td class="lt"><a href="Effect_visit.jsp?fund_code=0105" target="_self">�f��ԤB���w���A (A22)</a></td>
-                <td class="cr r">��6.00%</td>
-                <td class="cr r">��11.03%</td>
-                <td class="cr r">��2.65%</td>
-                <td class="cr r">��23.21%</td>
-                <td class="cr r">��17.77%</td>
-                <td class="cr"><a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0101" class="buy_01">�浧���</a> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0105" class="buy_02">�w���w�B</a></td>
+                <td class="lt"><a href="Effect_visit.jsp?fund_code=0105" target="_self">柏瑞拉丁美洲基金A (A22)</a></td>
+                <td class="cr r">▲6.00%</td>
+                <td class="cr r">▲11.03%</td>
+                <td class="cr r">▲2.65%</td>
+                <td class="cr r">▲23.21%</td>
+                <td class="cr r">▲17.77%</td>
+                <td class="cr"><a href="https://ibank.scsb.com.tw/?fundfunc=2&amp;fundcode=0101" class="buy_01">單筆投資</a> <a href="https://ibank.scsb.com.tw/?fundfunc=3&amp;fundcode=0105" class="buy_02">定期定額</a></td>
               </tr>
             </tbody>
           </table>
         </div>
-        <!-- ���� end -->
-        <div class="title">���VS���զX�Z�Ĺ�</div><!-- ���D -->
+        <!-- 表格 end -->
+        <div class="title">基金VS投資組合績效圖</div><!-- 標題 -->
         <iframe frameborder="0" style=" margin-top:10px;" marginheight="0" marginwidth="0" scrolling="no" height="538" width="945px" src="simulate_flash.htm" title="Google Map"></iframe>
-        <div class="title">���զX�����ʤ��R</div><!-- ���D -->
-        <p>�����Y�� 0.62</p>
+        <div class="title">投資組合相關性分析</div><!-- 標題 -->
+        <p>相關係數 0.62</p>
         <div class="table table_product_compare_result_roi">
         	<table width="100%" cellpadding="0" cellspacing="0" class="five_com">
                 <tr>
-                  <td style="background:#ededed;" width="10%">���~�N��</td>
+                  <td style="background:#ededed;" width="10%">產品代號</td>
                   <th style="background:#0075cd;">0101</th>
                   <th style="background:#d00;">0102</th>
                   <th style="background:#f60;">0103</th>
@@ -621,7 +621,7 @@ function FundCheck(){
                 </tr>
                 <tr>
                   <th style="background:#0075cd;">0101</th>
-                  <td><a title="���ڤ饻(���)����^">1.00</a></td>
+                  <td><a title="摩根日本(日圓)基金）">1.00</a></td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -629,35 +629,35 @@ function FundCheck(){
                 </tr>
                 <tr>
                   <th style="background:#d00;">0102</th>
-                  <td><a title="���ڤ饻��ް��(���)">0.99</a></td>
-                  <td><a title="���ڤ饻��ް��(���)">1.00</a></td>
+                  <td><a title="摩根日本科技基金(日圓)">0.99</a></td>
+                  <td><a title="摩根日本科技基金(日圓)">1.00</a></td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
                 </tr>
                 <tr>
                   <th style="background:#f60;">0103</th>
-                  <td><a title="���ڨȤӤJ�����(����)">0.99</a></td>
-                  <td><a title="���ڨȤӤJ�����(����)">0.96</a></td>
-                  <td><a title="���ڨȤӤJ�����(����)">1.00</a></td>
+                  <td><a title="摩根亞太入息基金(美元)">0.99</a></td>
+                  <td><a title="摩根亞太入息基金(美元)">0.96</a></td>
+                  <td><a title="摩根亞太入息基金(美元)">1.00</a></td>
                   <td>-</td>
                   <td>-</td>
                 </tr>
                 <tr>
                   <th style="background:#deb887;">0104</th>
-                  <td><a title="���ڤӥ��v�Ҩ�(����)">0.93</a></td>
-                  <td><a title="���ڤӥ��v�Ҩ�(����)">0.97</a></td>
-                  <td><a title="���ڤӥ��v�Ҩ�(����)">0.88</a></td>
-                  <td><a title="���ڤӥ��v�Ҩ�(����)">1.00</a></td>
+                  <td><a title="摩根太平洋證券(美元)">0.93</a></td>
+                  <td><a title="摩根太平洋證券(美元)">0.97</a></td>
+                  <td><a title="摩根太平洋證券(美元)">0.88</a></td>
+                  <td><a title="摩根太平洋證券(美元)">1.00</a></td>
                   <td>-</td>
                 </tr>
                 <tr>
                   <th style="background:#9370db;">0105</th>
-                  <td><a title="���ڪF����(����)">0.99</a></td>
-                  <td><a title="���ڪF����(����)">1.00</a></td>
-                  <td><a title="���ڪF����(����)">0.98</a></td>
-                  <td><a title="���ڪF����(����)">0.95</a></td>
-                  <td><a title="���ڪF����(����)">1.00</a></td>
+                  <td><a title="摩根東協基金(美元)">0.99</a></td>
+                  <td><a title="摩根東協基金(美元)">1.00</a></td>
+                  <td><a title="摩根東協基金(美元)">0.98</a></td>
+                  <td><a title="摩根東協基金(美元)">0.95</a></td>
+                  <td><a title="摩根東協基金(美元)">1.00</a></td>
                 </tr>
             </table>
         </div>
@@ -666,32 +666,32 @@ function FundCheck(){
             	<table width="100%" cellpadding="0" cellspacing="0">
                   <tbody>
                     <tr class="table_title">
-                      <th colspan="3">�Ϥ@�G�겣���G</th>
+                      <th colspan="3">圖一：資產分佈</th>
                     </tr>
                     <tr>
                       <td colspan="3"><img src="images/chart_001a.png" /></td>
                     </tr>
                     <tr class="table_subtitle">
-                      <td colspan="2" class="cr">�겣</td>
-                      <td class="cr">���</td>
+                      <td colspan="2" class="cr">資產</td>
+                      <td class="cr">比例</td>
                     </tr>
                     <tr>
-                      <td class="lt">�{��</td>
+                      <td class="lt">現金</td>
                       <td class="lt" width="300"><div id="table_bar_industry1" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 1.75%;"></div></div></td>
                       <td class="cr">1.75%</td>
                    </tr>
                    <tr>
-                      <td class="lt">�Ѳ�</td>
+                      <td class="lt">股票</td>
                       <td class="lt"><div id="table_bar_industry2" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 54.6%;"></div></div></td>
                       <td class="cr">54.60%</td>
                    </tr>
                    <tr>
-                      <td class="lt">�Ũ�</td>
+                      <td class="lt">債券</td>
                       <td class="lt"><div id="table_bar_industry3" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 37.35%;"></div></div></td>
                       <td class="cr">37.35%</td>
                    </tr>
                    <tr class=" bor0">
-                      <td class="lt">��L</td>
+                      <td class="lt">其他</td>
                       <td class="lt"><div id="table_bar_industry4" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 6.30%;"></div></div></td>
                       <td class="cr">6.30%</td>
                     </tr>
@@ -702,22 +702,22 @@ function FundCheck(){
             	<table width="100%" cellpadding="0" cellspacing="0">
                   <tbody>
                     <tr class="table_title">
-                      <th colspan="3">�ϤG�G�p�����O</th>
+                      <th colspan="3">圖二：計價幣別</th>
                     </tr>
                     <tr>
                       <td colspan="3"><img src="images/chart_002.png" /></td>
                     </tr>
                     <tr class="table_subtitle">
-                      <td colspan="2" class="cr">���O</td>
-                      <td class="cr">���</td>
+                      <td colspan="2" class="cr">幣別</td>
+                      <td class="cr">比例</td>
                     </tr>
                     <tr>
-                      <td class="lt">�s�x��</td>
+                      <td class="lt">新台幣</td>
                       <td class="lt" width="300"><div id="table_bar_industry1" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 40%;"></div></div></td>
                       <td class="cr">40.00%</td>
                     </tr>
                     <tr>
-                      <td class="lt">����</td>
+                      <td class="lt">美元</td>
                       <td class="lt"><div id="table_bar_industry2" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 60%;"></div></div></td>
                       <td class="cr">60.00%</td>
                     </tr>
@@ -730,82 +730,82 @@ function FundCheck(){
             	<table width="100%" cellpadding="0" cellspacing="0">
                   <tbody>
                     <tr class="table_title">
-                      <th colspan="3">�ϤT�G���a��</th>
+                      <th colspan="3">圖三：投資地區</th>
                     </tr>
                     <tr>
                       <td colspan="3"><img src="images/chart_003.png" /></td>
                     </tr>
                     <tr class="table_subtitle">
-                      <td colspan="2" class="cr">�a��</td>
-                      <td class="cr">���</td>
+                      <td colspan="2" class="cr">地區</td>
+                      <td class="cr">比例</td>
                     </tr>
                     <tr>
-                      <td class="lt">����</td>
+                      <td class="lt">美國</td>
                       <td class="lt" width="300"><div id="table_bar_industry1" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 25.60%;"></div></div></td>
                       <td class="cr">25.60%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�[���j</td>
+                      <td class="lt">加拿大</td>
                       <td class="lt"><div id="table_bar_industry2" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 3.08%;"></div></div></td>
                       <td class="cr">3.08%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�ԤB���w</td>
+                      <td class="lt">拉丁美洲</td>
                       <td class="lt"><div id="table_bar_industry3" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 0.91%;"></div></div></td>
                       <td class="cr">0.91%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�^��</td>
+                      <td class="lt">英國</td>
                       <td class="lt"><div id="table_bar_industry4" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 4.43%;"></div></div></td>
                       <td class="cr">4.43%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�ڤ���</td>
+                      <td class="lt">歐元區</td>
                       <td class="lt"><div id="table_bar_industry5" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 2.77%;"></div></div></td>
                       <td class="cr">2.77%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�ڬw�]���]�A�ڤ��ϡ^</td>
+                      <td class="lt">歐洲（不包括歐元區）</td>
                       <td class="lt"><div id="table_bar_industry6" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 0.77%;"></div></div></td>
                       <td class="cr">0.77%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�s���ڬw</td>
+                      <td class="lt">新興歐洲</td>
                       <td class="lt"><div id="table_bar_industry7" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 0.15%;"></div></div></td>
                       <td class="cr">0.15%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�D�w</td>
+                      <td class="lt">非洲</td>
                       <td class="lt"><div id="table_bar_industry8" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 0.17%;"></div></div></td>
                       <td class="cr">0.17%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�饻</td>
+                      <td class="lt">日本</td>
                       <td class="lt"><div id="table_bar_industry9" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 0.40%;"></div></div></td>
                       <td class="cr">0.40%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�j�v�w</td>
+                      <td class="lt">大洋洲</td>
                       <td class="lt"><div id="table_bar_industry10" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 1.09%;"></div></div></td>
                       <td class="cr">1.09%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�s���Ȭw</td>
+                      <td class="lt">新興亞洲</td>
                       <td class="lt"><div id="table_bar_industry11" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 1.31%;"></div></div></td>
                       <td class="cr">1.31%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�w�o�i�Ȭw</td>
+                      <td class="lt">已發展亞洲</td>
                       <td class="lt"><div id="table_bar_industry12" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 19.30%;"></div></div></td>
                       <td class="cr">19.30%</td>
                     </tr>
                     <tr>
-                      <td class="lt">���F</td>
+                      <td class="lt">中東</td>
                       <td class="lt"><div id="table_bar_industry13" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 0.02%;"></div></div></td>
                       <td class="cr">0.02%</td>
                     </tr>
                     <tr>
-                      <td class="lt">��L�������a��</td>
+                      <td class="lt">其他未分類地區</td>
                       <td class="lt"><div id="table_bar_industry14" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 40%;"></div></div></td>
                       <td class="cr">40.00%</td>
                     </tr>
@@ -816,72 +816,72 @@ function FundCheck(){
             	<table width="100%" cellpadding="0" cellspacing="0">
                   <tbody>
                     <tr class="table_title">
-                      <th colspan="3">�ϥ|�G��겣�~</th>
+                      <th colspan="3">圖四：投資產業</th>
                     </tr>
                     <tr>
                       <td colspan="3"><img src="images/chart_004.png" /></td>
                     </tr>
                     <tr class="table_subtitle">
-                      <td colspan="2" class="cr">��~</td>
-                      <td class="cr">���</td>
+                      <td colspan="2" class="cr">行業</td>
+                      <td class="cr">比例</td>
                     </tr>
                     <tr>
-                      <td class="lt">�P���ʮ��O</td>
+                      <td class="lt">周期性消費</td>
                       <td class="lt" width="300"><div id="table_bar_industry1" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 2.51%;"></div></div></td>
                       <td class="cr">2.51%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�Цa��</td>
+                      <td class="lt">房地產</td>
                       <td class="lt"><div id="table_bar_industry2" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 0.40%;"></div></div></td>
                       <td class="cr">0.40%</td>
                     </tr>
                     <tr>
-                      <td class="lt">���u�ʮ��O</td>
+                      <td class="lt">防守性消費</td>
                       <td class="lt"><div id="table_bar_industry3" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 2.32%;"></div></div></td>
                       <td class="cr">2.32%</td>
                     </tr>
                     <tr>
-                      <td class="lt">���d�@�z</td>
+                      <td class="lt">健康護理</td>
                       <td class="lt"><div id="table_bar_industry4" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 2.22%;"></div></div></td>
                       <td class="cr">2.22%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�u�~</td>
+                      <td class="lt">工業</td>
                       <td class="lt"><div id="table_bar_industry5" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 2.95%;"></div></div></td>
                       <td class="cr">2.95%</td>
                     </tr>
                     <tr>
-                      <td class="lt">���</td>
+                      <td class="lt">科技</td>
                       <td class="lt"><div id="table_bar_industry6" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 11.48%;"></div></div></td>
                       <td class="cr">11.48%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�򥻪���</td>
+                      <td class="lt">基本物料</td>
                       <td class="lt"><div id="table_bar_industry7" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 11.79%;"></div></div></td>
                       <td class="cr">11.79%</td>
                     </tr>
                     <tr>
-                      <td class="lt">���ĪA��</td>
+                      <td class="lt">金融服務</td>
                       <td class="lt"><div id="table_bar_industry8" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 0.10%;"></div></div></td>
                       <td class="cr">0.10%</td>
                     </tr>
                     <tr>
-                      <td class="lt">����</td>
+                      <td class="lt">公用</td>
                       <td class="lt"><div id="table_bar_industry9" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 1.91%;"></div></div></td>
                       <td class="cr">1.91%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�෽</td>
+                      <td class="lt">能源</td>
                       <td class="lt"><div id="table_bar_industry10" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 18.75%;"></div></div></td>
                       <td class="cr">18.75%</td>
                     </tr>
                     <tr>
-                      <td class="lt">�q�T�A��</td>
+                      <td class="lt">電訊服務</td>
                       <td class="lt"><div id="table_bar_industry11" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 0.01%;"></div></div></td>
                       <td class="cr">0.01%</td>
                     </tr>
                     <tr>
-                      <td class="lt">��L��������~</td>
+                      <td class="lt">其他未分類行業</td>
                       <td class="lt"><div id="table_bar_industry12" class="progressbar_02 ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><div class="ui-progressbar-value ui-widget-header ui-corner-left" style="width: 45.56%;"></div></div></td>
                       <td class="cr">45.56%</td>
                     </tr>
@@ -889,43 +889,43 @@ function FundCheck(){
                 </table>
             </div>
         </div>
-        <div class="notice"><!-- �`�N�ƶ� -->
- 	        <p class="cnyes">�����]�g��T�� <a href="http://www.cnyes.com/" target="_blank">cnYes �d���</a>���ѡA�ȨѰѦҡA�Фŵ����R�����B�����Ҩ餧����ĳ�C</p>
-        	<p>ĵ�y�G</p>
+        <div class="notice"><!-- 注意事項 -->
+ 	        <p class="cnyes">相關財經資訊由 <a href="http://www.cnyes.com/" target="_blank">cnYes 鉅亨網</a>提供，僅供參考，請勿視為買賣基金、有價證券之投資建議。</p>
+        	<p>警語：</p>
             <ol class="notice_list">
-            	<li>����W�[���Ҥ��B�ҥ~����g���޷|�֭�ΦP�N�ͮġA�������ܵ��L���I�C����g�z���q�H�����g�z�Z�Ĥ��O�Ұ�����̧C��ꦬ�q�F����g�z���q���ɵ��}�޲z�H���`�N�q�ȥ~�A���t�d������������A�礣�O�ҳ̧C�����q�A���H���ʫe���Ծ\������}�����ѡC</li>
-                <li>����t���v���N��������S�v�A�B�L�h�t���v���N�����Ӱt���v�A����b�ȥi��]�����]���ӤW�U�i�ʡC�p������P����]�]�A�������󤽶}�����ѡB²�����}�����ѩιҥ~������H�����^�A�����S����o�H�䥻����I�t���ɡA������t���i��Ѱ�������q�Υ�������I�A����A�Υѥ�����X�������A�i��ɭP��l�����B��l�A�����S����t���e�����������t�ᤧ�����O�Ϊ̡A�h�Ӱ���i��t���e�����������t�ᤧ�����O�ΡC</li>
-                <li>��������t�ᤧ�O�Ρ]�t���P�O�Ρ^�w���S���������}�����ѩΧ��H�������A���H�Цܹҥ~�����T�[����(<a href="http://www.fundclear.com.tw" target="_blank">http://www.fundclear.com.tw</a>)�Τ��}��T�[����(<a href="http://newmops.tse.com.tw" target="_blank">http://newmops.tse.com.tw</a>)�d�ߡC</li>
-                <li>����O�᦬������}�tB�BC�ѡ~�bū�^�ɡA������q�N�̫����������u�������P��v���������ʤ���O�A�ӶO�αN��ū�^�`�B�������F�t�U������q�ݦ����@�w��v�����P�O�ΡA�N�ϬM��C�����b�Ȥ��A���H�L���B�~��I�C</li>
-                <li>����ƶȨѰѦҡA�ФűN������R�����Ψ�L�����ꤧ��ĳ�C</li>
-                <li>����w�ɤO�N�i�a����ƨӷ����ѰT���A���L�k�O�Ҹ�ƨӷ�������ʡA�p�����|�ο��~�A���殤���t����k�߳d���C</li>
-                <li>������U���ꤺ�B�ҥ~����A���O���B���O���A���ҥi�ಣ�ͤ��������l�B�ײv�l���ΰ���Ѵ��B�M��B����B�X�ֵ����I�A���ѧ��H�ۦ�Ӿ�C</li>
-                <li>�����������Z�ĭp��A�ҥH����O���p�����A�B�Ҥw�Ҽ{�t���Ʃΰt�o�{�������p�C</li>
-                <li>����������b�ȶȨѰѦҡA������H������q���i���b�Ȭ��ǡC</li>
-                <li>�Ҧ�����Z�ġA�����L�h�Z�ġA���N�����Ӥ��Z�Ī��{�A�礣�O�Ұ�����̧C��ꦬ�q�C</li>
-                <li>�w���w�B���պ�A����Y�H�Ӱ�����q�̪�@���b�ȳ�������~�鬰���ڰ�Ǥ�A�C��~���s�p�⤧�C���H���P�ɶ��i���A�N�����P����Z�ġA�B�L�h�Z�Ĥ��N�������Z�Ĥ��O�ҡC</li>
-                <li class="notice_mark">���s�������i�����w�}�o��a�����j������i�ʤάy�ʩʸ��C�����I�F���H���H�����q�Ũ鬰�D�D��������y�e����զX�L�����񭫡A�H�����q�Ũ鬰�D�D������g���޷|�֭�A�������ܵ��L���I�C�ѩ󰪦��q�Ũ餧�H�ε������F��굥�ũΥ��g�H�ε����A�B��Q�v�ܰʪ��ӷP�׬ư��A�G�H�����q�Ũ鬰�D�D������i��|�]�Q�v�W�ɡB�����y�ʩʤU���A�ζŨ�o����c�H������I�����B�Q���ί}���ӻX�����l�C�H�����q�Ũ鬰�D�D��������A�X�L�k�Ӿ�������I�����H�C�H�����q�Ũ鬰�D�D������g�z���q�H�����g�z�Z�Ĥ��O�Ұ�����̧C��ꦬ�q�F����g�z���q���ɵ��}�޲z�H���`�N�q�ȥ~�A���t�d�H�����q�Ũ鬰�D�D������������A�礣�O�ҳ̧C�����q�A���H���ʫe���Ծ\������}�����ѡC</li>
-                <li>���ϰ�]�t����B���䵥�a������S�O�`�N���I�G
+            	<li>本行上架之境內、境外基金經金管會核准或同意生效，惟不表示絕無風險。基金經理公司以往之經理績效不保證基金之最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責本基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書。</li>
+                <li>基金配息率不代表基金報酬率，且過去配息率不代表未來配息率，基金淨值可能因市場因素而上下波動。如基金之銷售文件（包括但不限於公開說明書、簡式公開說明書或境外基金投資人須知），有揭露基金得以其本金支付配息時，基金的配息可能由基金的收益或本金中支付，任何涉及由本金支出的部份，可能導致原始投資金額減損，有揭露基金配息前未先扣除應負擔之相關費用者，則該基金進行配息前未先扣除應負擔之相關費用。</li>
+                <li>有關基金負擔之費用（含分銷費用）已揭露於基金之公開說明書或投資人須知中，投資人請至境外基金資訊觀測站(<a href="http://www.fundclear.com.tw" target="_blank">http://www.fundclear.com.tw</a>)或公開資訊觀測站(<a href="http://newmops.tse.com.tw" target="_blank">http://newmops.tse.com.tw</a>)查詢。</li>
+                <li>手續費後收型基金﹙含B、C股﹚在贖回時，基金公司將依持有期間長短收取不同比率之遞延申購手續費，該費用將自贖回總額中扣除；另各基金公司需收取一定比率之分銷費用，將反映於每日基金淨值中，投資人無需額外支付。</li>
+                <li>本資料僅供參考，請勿將其視為買賣基金或其他任何投資之建議。</li>
+                <li>本行已盡力就可靠之資料來源提供訊息，但無法保證資料來源之完整性，如有疏漏或錯誤，本行恕不負任何法律責任。</li>
+                <li>本行受託投資國內、境外基金，不保本、不保息，投資所可能產生之本金虧損、匯率損失或基金解散、清算、移轉、合併等風險，均由投資人自行承擔。</li>
+                <li>相關報價及績效計算，皆以原幣別為計價單位，且皆已考慮配單位數或配發現金的情況。</li>
+                <li>本網頁基金淨值僅供參考，實際應以基金公司公告之淨值為準。</li>
+                <li>所有基金績效，均為過去績效，不代表未來之績效表現，亦不保證基金之最低投資收益。</li>
+                <li>定期定額投資試算，本行係以該基金公司最近一次淨值報價之營業日為扣款基準日，每營業日更新計算之。投資人不同時間進場，將有不同投資績效，且過去績效不代表未來績效之保證。</li>
+                <li class="notice_mark">投資新興市場可能比投資已開發國家有較大的價格波動及流動性較低的風險；投資人投資以高收益債券為訴求之基金不宜占其投資組合過高之比重，以高收益債券為訴求之基金經金管會核准，惟不表示絕無風險。由於高收益債券之信用評等未達投資等級或未經信用評等，且對利率變動的敏感度甚高，故以高收益債券為訴求之基金可能會因利率上升、市場流動性下降，或債券發行機構違約不支付本金、利息或破產而蒙受虧損。以高收益債券為訴求之基金不適合無法承擔相關風險之投資人。以高收益債券為訴求之基金經理公司以往之經理績效不保證基金之最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責以高收益債券為訴求之基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書。</li>
+                <li>投資區域包含中國、香港等地基金之特別注意風險：
                 	<ol class="notice_list2">
-                    	<li>(1) �ҥ~������o�W�L����b�겣���Ȥ�10%�A�ӫD��������j���a�Ϧ����Ҩ�C</li>
-                        <li>(2) ���ϰ�]�t����j���έ��䵥�a������A�i��]���~�`���ΫD�g�٦]���]�p�G�F���F���B�|���B�f���צ^����θӧ��ϰ줧�k�ߡB�W�w�^�A�ɭP����@�P�i�ʡA�H�Υ�������p�w�}�o���������A���ͬy�ʩʤ������I�A�Өϸ겣���Ȩ����P�{�פ��v�T�C���H���ʫe���Ծ\������}�����ѡC</li>
+                    	<li>(1) 境外基金不得超過基金淨資產價值之10%，而非完全投資於大陸地區有價證券。</li>
+                        <li>(2) 投資區域包含中國大陸及香港等地之基金，可能因產業循環或非經濟因素（如：政府政策、稅項、貨幣匯回限制或該投資區域之法律、規定），導致價格劇烈波動，以及市場機制不如已開發市場健全，產生流動性不足風險，而使資產價值受不同程度之影響。投資人申購前應詳閱基金公開說明書。</li>
                     </ol>
                 </li>
             </ol>
-        </div><!-- �`�N�ƶ�end -->
-    </div><!-- �D�n���eend -->
+        </div><!-- 注意事項end -->
+    </div><!-- 主要內容end -->
 </div>
 
 
 <div id="footer">
-	<div id="footer_content"><!-- �������e -->
-    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">�A�Ⱦ��I</a></span>
-        <span class="footer_item footer_link">�N���H�c�G<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
-        <span class="footer_tel">�Ȥ�A�ȼ��u�G(02)2552-3111�@�K�I�O�G0800-003-111</span><br />
+	<div id="footer_content"><!-- 頁尾內容 -->
+    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">服務據點</a></span>
+        <span class="footer_item footer_link">意見信箱：<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
+        <span class="footer_tel">客戶服務熱線：(02)2552-3111　免付費：0800-003-111</span><br />
         <span class="footer_space"><img src="images/space.gif"/></span><br />
-		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">�ۧ@�v�n��</a> c�W���ӷ~�x�W�Ȧ檩�v�Ҧ��@�̨��s������1024 x 728�����Ҧ��H�W�AIE8.0 &amp; Firefox 3.0 �H�W�����s����</span><br />
-        <span>�Y�z�L�k�ݨ�Flash�BPDF�ζײv�ݪO�A��ĳ�z�U��Flash Player�BAdobe Reader�PJAVA�n��</span>
-    </div><!-- �������eend -->
+		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">著作權聲明</a> c上海商業儲蓄銀行版權所有　最佳瀏覽環境1024 x 728視窗模式以上，IE8.0 &amp; Firefox 3.0 以上版本瀏覽器</span><br />
+        <span>若您無法看到Flash、PDF或匯率看板，建議您下載Flash Player、Adobe Reader與JAVA軟體</span>
+    </div><!-- 頁尾內容end -->
 </div>
 
 </body>

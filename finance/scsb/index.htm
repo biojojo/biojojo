@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta property="og:title" content="�W���ӷ~�x�W�Ȧ�-�]�I�޲z"/> <!-- ���ɪ�TITLE  -->
-<meta property="og:description" content="pukii�z�n�]�E�����ʰ_��"/> <!-- ���ɪ����e�y�z -->
-<meta property="og:url" content="http://fund.scsb.com.tw"/> <!-- ���ɺ������s�� -->
-<meta property="og:image" content="http://fund.scsb.com.tw/images/pukiifb.jpg"/> <!-- �Ϥ�URL -->
-<title>�W���ӷ~�x�W�Ȧ�-�]�I�޲z</title>
+<meta property="og:title" content="上海商業儲蓄銀行-財富管理"/> <!-- 分享的TITLE  -->
+<meta property="og:description" content="pukii理好財‧讓錢動起來"/> <!-- 分享的內容描述 -->
+<meta property="og:url" content="http://fund.scsb.com.tw"/> <!-- 分享網頁的連結 -->
+<meta property="og:image" content="http://fund.scsb.com.tw/images/pukiifb.jpg"/> <!-- 圖片URL -->
+<title>上海商業儲蓄銀行-財富管理</title>
 <link type="image/x-icon" rel="icon" href="favicon.ico">
 <link href="css/reset.css" rel="stylesheet">
 <link href="css/colorbox.css" rel="stylesheet">
@@ -40,7 +40,7 @@ function setsel(sel){
 function FundCheck(){
 
   if (document.FundDetail.fund_code.value=="") {
-     alert("����줣�o�ť�");
+     alert("此欄位不得空白");
 	   document.FundDetail.fund_code.focus();
   }
   else {
@@ -51,7 +51,7 @@ function FundCheck(){
      }
      else
      {
-        alert("�п�J�|��ư���N�X");
+        alert("請輸入四位數基金代碼");
         document.FundDetail.fund_code.focus();
      }
 
@@ -61,7 +61,7 @@ function FundCheck(){
 function bookmark()
 {
 bookmarkurl="http://fund.scsb.com.tw"
-bookmarktitle="�W���ӻȰ]�I�޲z��"
+bookmarktitle="上海商銀財富管理網"
 if (document.all)
 window.external.AddFavorite(bookmarkurl,bookmarktitle)
 else if (window.sidebar) // firefox
@@ -77,38 +77,38 @@ window.sidebar.addPanel(bookmarktitle, bookmarkurl, "");
 
 
 <div id="header">
-	<div id="header_index_content"><!-- �������e -->
+	<div id="header_index_content"><!-- 頁首內容 -->
     
 		<div id="logo"><img src="images/logo.gif"/></div>
         
-    	<div id="index_menu"><!-- �D��� -->
-    		<div id="share_fb" class="menu_item"><a href="javascript:;" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=http://fund.scsb.com.tw');return false;"><img src="images/facebook_icon.png"/>���ɥ�����facebook</a></div>
-    		<div id="favorite" class="menu_item menu_item_last"><a href="javascript:bookmark()">�[�J�ڪ��̷R</a></div>
+    	<div id="index_menu"><!-- 主選單 -->
+    		<div id="share_fb" class="menu_item"><a href="javascript:;" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=http://fund.scsb.com.tw');return false;"><img src="images/facebook_icon.png"/>分享本站至facebook</a></div>
+    		<div id="favorite" class="menu_item menu_item_last"><a href="javascript:bookmark()">加入我的最愛</a></div>
     	</div>
         
-    </div><!-- �������eend -->
+    </div><!-- 頁首內容end -->
 </div>
 <div id="container">
-	<div id="container_content" class="index"><!-- �D�n���e�Aclass�ó]�w�����S�Ƥ��e -->
+	<div id="container_content" class="index"><!-- 主要內容，class並設定本頁特化內容 -->
         <div class="menu">
              <ul id="navmenu-h">
-              <li class="menu_1"><a href="products_overview.htm" title="�̷s����"><em>�̷s����</em></a>
+              <li class="menu_1"><a href="products_overview.htm" title="最新報價"><em>最新報價</em></a>
               </li>
-              <li class="menu_2"><a href="news.htm" title="�Y�ɷs�D"><em>�Y�ɷs�D</em></a>
+              <li class="menu_2"><a href="news.htm" title="即時新聞"><em>即時新聞</em></a>
               </li>
-              <li class="menu_3"><a href="search.htm" title="����j�M"><em>����j�M</em></a>
+              <li class="menu_3"><a href="search.htm" title="基金搜尋"><em>基金搜尋</em></a>
               </li>
-              <li class="menu_4"><a href="Banch_Compare.htm" title="�z�]�պ�"><em>�z�]�պ�</em></a>
+              <li class="menu_4"><a href="Banch_Compare.htm" title="理財試算"><em>理財試算</em></a>
               </li>
-              <li class="menu_5"><a href="finance.htm" title="���Ħ污"><em>���Ħ污</em></a>
+              <li class="menu_5"><a href="finance.htm" title="金融行情"><em>金融行情</em></a>
               </li>
-              <li class="menu_6"><a href="event.htm" title="�u�f����"><em>�u�f����</em></a>
+              <li class="menu_6"><a href="event.htm" title="優惠活動"><em>優惠活動</em></a>
               </li>
-              <li class="menu_7"><a href="https://ibank.scsb.com.tw/" title="���ȵn�J"><em>���ȵn�J</em></a>
+              <li class="menu_7"><a href="https://ibank.scsb.com.tw/" title="網銀登入"><em>網銀登入</em></a>
               </li>
              </ul> 
         </div><!-- menu END --> 
-        <div id="index_show"><!-- ����banner���� -->
+        <div id="index_show"><!-- 首頁banner輪播 -->
        	    <div id="index_show_group">
                 <div class="index_banner"><a href="web/index.html" target="_blank"><img src="images/index_banner/index_banner6.jpg"/></a></div>
             	<div class="index_banner"><a href="./tarot/index.html" target="_blank"><img src="images/index_banner/index_banner1.jpg"/></a></div>
@@ -121,357 +121,357 @@ window.sidebar.addPanel(bookmarktitle, bookmarkurl, "");
             <div id="index_arrow_next"><a href="javascript:;"><img src="images/index_arrow_next.png"/></a></div>
         </div>
         
-        <div id="index_quick_search"><!-- �ֳt�d�� -->
-       	    <div id="index_quick_search_title">�ֳt�d��&gt;&gt;</div>
+        <div id="index_quick_search"><!-- 快速查詢 -->
+       	    <div id="index_quick_search_title">快速查詢&gt;&gt;</div>
 			<form name="FundDetail" method="get" action="Effect_visi.htm">
             <div id="index_quick_search_data1" class="index_quick_search_data">
-            	���~�N�X/�W�� 
+            	產品代碼/名稱 
                 <input id="index_quick_search_data1_input" name="fund_code" type="text" /> 
               <input type="button" id="index_quick_search_data1_btn" value="GO" onclick='FundCheck();'/>
             </div></form>
 			<form name="selform1">
             <div id="index_quick_search_data2" class="index_quick_search_data">
-            	���q�W�� 
+            	公司名稱 
             	<select name="select1" onchange="javascript:selform1.select2.selectedIndex=0;javascript:selform1.select3.selectedIndex=0;javascript:selform1.select4.selectedIndex=0;location = this.value" class="font05">
-                            <option>�п�ܬd�߶���</option>
+                            <option>請選擇查詢項目</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=009">�I���J�L
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=009">富蘭克林
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=013">�Iù�w
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=013">施羅德
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=008">�I�F�Ҩ�
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=008">富達證券
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=011">����
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=011">摩根
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=012">���ܼw��H
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=012">貝萊德投信
+							(海外)
 
 							</option>
                             
                             <option value="search.htm?showtype=spshow&amp;mgn_cod=039">ING
-							(���~)
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=010">��������
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=010">景順集團
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=003">�p�հ��
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=003">聯博基金
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=019">��h�Ȧ�
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=019">瑞士銀行
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=017">�k��ھ����
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=017">法國巴黎投資
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=025">�@�Q�겣�޲z
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=025">駿利資產管理
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=022">UOB�j��
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=022">UOB大華
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=035">�W��
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=035">鋒裕
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=005">�Q�٧��U
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=005">霸菱投顧
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=030">�ѹF���
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=030">天達基金
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=007">�w���w�p
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=007">德盛安聯
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=014">�v�ȧ��
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=014">瀚亞投資
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=047">�ꥻ���
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=047">資本國際
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=026">�ѧQ���
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=026">天利基金
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=036">�^�ǵ�
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=036">英傑華
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=001">�w������
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=001">安本集團
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=043">������
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=043">首域投資
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=048">�w��ù�˳�
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=048">安盛羅森堡
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=028">�������
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=028">先機基金
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=002">�f���H
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=002">柏瑞投信
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=027">���׶���
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=027">匯豐集團
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=041">��U�q�հ��
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=041">瑞萬通博基金
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=032">��w�˰��
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=032">亨德森基金
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=045">�n��F�^
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=045">南方東英
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=046">�خL���
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=046">華夏基金
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=021">�k�꿳�~
-							(���~)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=021">法國興業
+							(海外)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T37">���j�_�ӧ�H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T37">元大寶來投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T29">�_�ا�H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T29">復華投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T32">�w��ING
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T32">安泰ING
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T14">���ڧ�H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T14">摩根投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T05">���פ���
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T05">匯豐中華
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T31">�s�q��H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T31">群益投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T02">���ק�H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T02">永豐投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T45">�I���J�L�ج�
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T45">富蘭克林華美
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T34">�w����H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T34">德盛投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T07">�O�w�H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T07">保德信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T49">�Iù�w��H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T49">施羅德投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T08">�f���H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T08">柏瑞投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T22">���װ�ڧ�H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T22">兆豐國際投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T09">�鲱��H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T09">日盛投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T13">�v�ȧ�H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T13">瀚亞投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T11">�s����H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T11">新光投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T43">�عy��H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T43">華頓投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T19">�Ĥ@����H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T19">第一金投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T21">�����H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T21">國泰投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T04">������H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T04">景順投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T40">�w�Ȼ��F
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T40">德銀遠東
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T33">�w�H��H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T33">德信投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T26">�I����H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T26">富邦投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T18">���Ӹ겣
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T18">未來資產
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T28">���H��H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T28">中信投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T17">�p�է�H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T17">聯博投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T38">��ȧ�H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T38">瑞銀投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T24">�Τ@��H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T24">統一投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=888">�W���Ȧ�
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=888">上海銀行
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T36">�p����H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T36">聯邦投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T12">�ثn�é�
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T12">華南永昌
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T51">�p����H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T51">聯邦投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T20">���ܼw��H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T20">貝萊德投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T27">�I�F��H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T27">富達投信
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T44">�f�z�d�M
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T44">惠理康和
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T52">�d�M���g
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T52">康和期經
+							(國內)
 
 							</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T01">�x�s��H
-							(�ꤺ)
+                            <option value="search.htm?showtype=spshow&amp;mgn_cod=T01">台新投信
+							(國內)
 
 							</option>
                             
@@ -528,126 +528,126 @@ window.sidebar.addPanel(bookmarktitle, bookmarkurl, "");
             	</select>
             </div>
             <div id="index_quick_search_data3" class="index_quick_search_data">
-            	���~���� 
+            	產品類型 
             	<select name="select2" onchange="javascript:selform1.select1.selectedIndex=0;javascript:selform1.select3.selectedIndex=0;javascript:selform1.select4.selectedIndex=0;location = this.value" class="font05">
-                            <option>�п�ܬd�߶���</option>
+                            <option>請選擇查詢項目</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;fund_tpe=001">�Ѳ���</option>
+                            <option value="search.htm?showtype=spshow&amp;fund_tpe=001">股票型</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;fund_tpe=003">�T�w���q��(�Ũ髬)</option>
+                            <option value="search.htm?showtype=spshow&amp;fund_tpe=003">固定收益型(債券型)</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;fund_tpe=002">���ū�(�V�X��)</option>
+                            <option value="search.htm?showtype=spshow&amp;fund_tpe=002">平衡型(混合型)</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;fund_tpe=005">�զX��</option>
+                            <option value="search.htm?showtype=spshow&amp;fund_tpe=005">組合型</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;fund_tpe=004">�f����</option>
+                            <option value="search.htm?showtype=spshow&amp;fund_tpe=004">貨幣型</option>
                             
                             <option value="search.htm?showtype=spshow&amp;fund_tpe=008">ETF</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;fund_tpe=011">���f��������</option>
+                            <option value="search.htm?showtype=spshow&amp;fund_tpe=011">類貨幣市場型</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;fund_tpe=013">���f�H�U���</option>
+                            <option value="search.htm?showtype=spshow&amp;fund_tpe=013">期貨信託基金</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;fund_tpe=007">���ƪѲ���</option>
+                            <option value="search.htm?showtype=spshow&amp;fund_tpe=007">指數股票型</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;fund_tpe=014">���ƫ�</option>
+                            <option value="search.htm?showtype=spshow&amp;fund_tpe=014">指數型</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;fund_tpe=006">�O����</option>
+                            <option value="search.htm?showtype=spshow&amp;fund_tpe=006">保本型</option>
                             
             	</select>
             </div>
             <div id="index_quick_search_data4" class="index_quick_search_data">
-            	���a�� 
+            	投資地區 
             	<select name="select3" onchange="javascript:selform1.select1.selectedIndex=0;javascript:selform1.select2.selectedIndex=0;javascript:selform1.select4.selectedIndex=0;location = this.value" class="font05">
-                            <option>�п�ܬd�߶���</option>
+                            <option>請選擇查詢項目</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=aa">�Ȥ�</option>
+                            <option value="search.htm?showtype=spshow&amp;country=aa">亞太</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=gl">���y</option>
+                            <option value="search.htm?showtype=spshow&amp;country=gl">全球</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=as">�Ȭw(�t�饻)</option>
+                            <option value="search.htm?showtype=spshow&amp;country=as">亞洲(含日本)</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=aj">�Ȭw(���t�饻)</option>
+                            <option value="search.htm?showtype=spshow&amp;country=aj">亞洲(不含日本)</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=gc">�j����</option>
+                            <option value="search.htm?showtype=spshow&amp;country=gc">大中華</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=sa">�F��</option>
+                            <option value="search.htm?showtype=spshow&amp;country=sa">東協</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=em">�s������</option>
+                            <option value="search.htm?showtype=spshow&amp;country=em">新興市場</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=lm">�ԤB���w</option>
+                            <option value="search.htm?showtype=spshow&amp;country=lm">拉丁美洲</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=mea">���F�D�w</option>
+                            <option value="search.htm?showtype=spshow&amp;country=mea">中東非洲</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=ee">���ڪF��</option>
+                            <option value="search.htm?showtype=spshow&amp;country=ee">中歐東歐</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=eu">�ڬw(�t�^��)</option>
+                            <option value="search.htm?showtype=spshow&amp;country=eu">歐洲(含英國)</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=ue">�ڳ�(���t�^��)</option>
+                            <option value="search.htm?showtype=spshow&amp;country=ue">歐陸(不含英國)</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=gu">���y(���t����)</option>
+                            <option value="search.htm?showtype=spshow&amp;country=gu">全球(不含美國)</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=us">����</option>
+                            <option value="search.htm?showtype=spshow&amp;country=us">美國</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=tw">�x�W</option>
+                            <option value="search.htm?showtype=spshow&amp;country=tw">台灣</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=cn">����</option>
+                            <option value="search.htm?showtype=spshow&amp;country=cn">中國</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=hk">����</option>
+                            <option value="search.htm?showtype=spshow&amp;country=hk">香港</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=VN">�V�n</option>
+                            <option value="search.htm?showtype=spshow&amp;country=VN">越南</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=jp">�饻</option>
+                            <option value="search.htm?showtype=spshow&amp;country=jp">日本</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=sk">����</option>
+                            <option value="search.htm?showtype=spshow&amp;country=sk">韓國</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=sg">�s�[�Y</option>
+                            <option value="search.htm?showtype=spshow&amp;country=sg">新加坡</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=in">�L��</option>
+                            <option value="search.htm?showtype=spshow&amp;country=in">印度</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=id">�L��</option>
+                            <option value="search.htm?showtype=spshow&amp;country=id">印尼</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=ml">���Ӧ��</option>
+                            <option value="search.htm?showtype=spshow&amp;country=ml">馬來西亞</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=th">����</option>
+                            <option value="search.htm?showtype=spshow&amp;country=th">泰國</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=pp">��߻�</option>
+                            <option value="search.htm?showtype=spshow&amp;country=pp">菲律賓</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=at">�D�w</option>
+                            <option value="search.htm?showtype=spshow&amp;country=at">澳洲</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=ru">�Xù��</option>
+                            <option value="search.htm?showtype=spshow&amp;country=ru">俄羅斯</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=am">�_��</option>
+                            <option value="search.htm?showtype=spshow&amp;country=am">北美</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=bz">�ڦ�</option>
+                            <option value="search.htm?showtype=spshow&amp;country=bz">巴西</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=cd">�[���j</option>
+                            <option value="search.htm?showtype=spshow&amp;country=cd">加拿大</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=uk">�^��</option>
+                            <option value="search.htm?showtype=spshow&amp;country=uk">英國</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=de">�w��</option>
+                            <option value="search.htm?showtype=spshow&amp;country=de">德國</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=fr">�k��</option>
+                            <option value="search.htm?showtype=spshow&amp;country=fr">法國</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=it">�q�j�Q</option>
+                            <option value="search.htm?showtype=spshow&amp;country=it">義大利</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=sw">��h</option>
+                            <option value="search.htm?showtype=spshow&amp;country=sw">瑞士</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=za">�D�w</option>
+                            <option value="search.htm?showtype=spshow&amp;country=za">非洲</option>
                             
-                            <option value="search.htm?showtype=spshow&amp;country=za1">�n�D</option>
+                            <option value="search.htm?showtype=spshow&amp;country=za1">南非</option>
                             
             	</select>
             </div>
             <div id="index_quick_search_data5" class="index_quick_search_data">
-            	��P���� 
+            	晨星評級 
             	<select name="morningStar" onchange="javascript:selform1.select1.selectedIndex=0;javascript:selform1.select2.selectedIndex=0;javascript:selform1.select3.selectedIndex=0;location = this.value" class="font05">
-                            <option value="nolimit" >����</option>
-                                <option value="5star" >����������</option>
-                                <option value="4star" >��������</option>
-                                <option value="3star" >������</option>
-                                <option value="2star" >����</option>
-                                <option value="1star" >��</option>
+                            <option value="nolimit" >不限</option>
+                                <option value="5star" >★★★★★</option>
+                                <option value="4star" >★★★★</option>
+                                <option value="3star" >★★★</option>
+                                <option value="2star" >★★</option>
+                                <option value="1star" >★</option>
                             
             	</select>
             </div></form>
@@ -656,91 +656,91 @@ window.sidebar.addPanel(bookmarktitle, bookmarkurl, "");
           <div id="btn_product_value"><a href="collected_account.htm" target="_self" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btnProductValue','','images/btn_product_valueo.png',1)"><img src="images/btn_product_value.png" name="btnProductValue" id="btnProductValue" /></a></div>
       </div>
         
-        <div id="index_news"><!-- �s�D�϶� -->
+        <div id="index_news"><!-- 新聞區塊 -->
         	<div id="index_news_content1" class="index_news_content">
-            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">�m�j���ѥ��n�����}�^0.02%�A����O���z��</a></div>
-            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">�m�ӱ��n�{�C�i���A�P�G�F�ʤѵM�󽦴��f��^�L��</a></div>
-            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">�m����ѥ��n09:45�A���ͫ��ƶ^124.5�I�A��23166.54�I</a></div>
-            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">�m�F�ʪѥ��n09:45�A��g���ƺ�0.03�I�A��15034.28�I</a></div>
-            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">�m�j���g�١n��5��U�����n��������A13���B29���B8����</a></div>
-            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">�m�ӱ��n���Y�^�ɡA�P�G�ì����ֺ��ܤ@�P�b����</a></div>
-            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">�m�j�����~�n��ӬݪšA��Q�ѥ��@�饫�Ȼ]�o53��</a></div>
+            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">《大陸股市》滬指開跌0.02%，有色板塊弱勢</a></div>
+            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">《商情》逢低進場，周二東京天然橡膠期貨止跌微漲</a></div>
+            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">《香港股市》09:45，恆生指數跌124.5點，為23166.54點</a></div>
+            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">《東京股市》09:45，日經指數漲0.03點，為15034.28點</a></div>
+            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">《大陸經濟》陸5月下旬重要市場價格，13漲、29降、8持平</a></div>
+            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">《商情》空頭回補，周二紐約期棉漲至一周半高位</a></div>
+            	<div class="index_news_list" style="overflow: hidden"><a href="news.htm" target="_self">《大陸產業》券商看空，伊利股份一日市值蒸發53億</a></div>
             </div>
         	<div id="index_news_content2" class="index_news_content">
-                <div class="index_news_list"><a href="event.htm"><span>2014/5/20</span>�q���i8407���ץD�y�~�P����j�B�i8409�������y�Ͷ�...</a></div>
-                <div class="index_news_list"><a href="event.htm"><span>2014/5/19</span>�`�N�z�����Ҩ���H�U(��)�q���A�����c�˳��t�C��...</a></div>
-                <div class="index_news_list"><a href="event.htm"><span>2014/5/19</span>�`�N�z�W�����y�Ҩ� ( ���U )�q���A�i4802�W�����y��...</a></div>
-                <div class="index_news_list"><a href="event.htm"><span>2014/5/16</span>���i��s���פ����Ҩ���H�U(��)���q�g�z�����רt...</a></div>
-                <div class="index_news_list"><a href="event.htm"><span>2014/5/16</span>�q���i78XX�w��ING�t�C����j103�~6����Ȱ�������...</a></div>
-                <div class="index_news_list"><a href="event.htm"><span>2014/5/13</span>�i6014/6015�Ĥ@�����y�����q�Ũ��Ҩ���H�U����j...</a></div>
-                <div class="index_news_more"><a href="event.htm">&gt;&gt;��h�ӫ~�ʺA����</a></div>
+                <div class="index_news_list"><a href="event.htm"><span>2014/5/20</span>通知【8407永豐主流品牌基金】、【8409永豐環球趨勢...</a></div>
+                <div class="index_news_list"><a href="event.htm"><span>2014/5/19</span>總代理景順證券投資信託(股)通知，景順盧森堡系列基...</a></div>
+                <div class="index_news_list"><a href="event.htm"><span>2014/5/19</span>總代理鋒裕環球證券 ( 投顧 )通知，【4802鋒裕環球高...</a></div>
+                <div class="index_news_list"><a href="event.htm"><span>2014/5/16</span>公告更新匯豐中華證券投資信託(股)公司經理之匯豐系...</a></div>
+                <div class="index_news_list"><a href="event.htm"><span>2014/5/16</span>通知【78XX安泰ING系列基金】103年6月份暫停交易日期...</a></div>
+                <div class="index_news_list"><a href="event.htm"><span>2014/5/13</span>【6014/6015第一金全球高收益債券證券投資信託基金】...</a></div>
+                <div class="index_news_more"><a href="event.htm">&gt;&gt;更多商品動態消息</a></div>
             </div>
         	<div id="index_news_content3" class="index_news_content">
 			
-			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030618" target="_self">��а���|�t���u���~�g�z��iŪ�ѷ|�t�C�v2014�~6��18��]�T�^�������G���㲰�̪��зs&nbsp;&nbsp;�]��100���^</a></div>			
+			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030618" target="_self">文教基金會演講「企業經理精進讀書會系列」2014年6月18日（三）陳振祥：玩具盒裡的創新&nbsp;&nbsp;（第100場）</a></div>			
 			
-			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030609" target="_self">��а���|�t���u�ի���Q�t�C�v2014�~6��9��]�@�^�]�M�N�G�����O�W�����q&nbsp;&nbsp;�]��8���^</a></div>			
+			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030609" target="_self">文教基金會演講「謬思綺想系列」2014年6月9日（一）孫清吉：咱的臺灣咱的歌&nbsp;&nbsp;（第8場）</a></div>			
 			
-			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030707" target="_self">��а���|�t���u��L���a���^�t�C�v2014�~7��7��]�@�^���d���B�G�Ωk�G�����ڨȡи��Q��B�w�����J�B�x�W�@���a�@�~&nbsp;&nbsp;�]��3���^</a></div>			
+			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030707" target="_self">文教基金會演講「鍵盤玩家鋼琴系列」2014年7月7日（一）楊千瑩、鄭佳姍：異情歐亞－葛利格、德弗札克、台灣作曲家作品&nbsp;&nbsp;（第3場）</a></div>			
 			
-			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030627" target="_self">��а���|�t���u�״I�H�ͨt�C���y�v2014�~6��27��]���^����Y�G�x�W���N�q��&nbsp;&nbsp;�]��139���^</a></div>			
+			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030627" target="_self">文教基金會演講「豐富人生系列講座」2014年6月27日（五）楊艾琳：台灣藝術歌曲&nbsp;&nbsp;（第139場）</a></div>			
 			
-			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030623" target="_self">��а���|�t���u�Ⲥ�n�������t�C�v2014�~6��23��]�@�^�������G�q�����G��&nbsp;&nbsp;�]��67���^</a></div>			
+			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030623" target="_self">文教基金會演講「領略聲音之美系列」2014年6月23日（一）李葭儀：歌曲的故事&nbsp;&nbsp;（第67場）</a></div>			
 			
-			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030630" target="_self">��а���|�t���u�ѭ��ѽt�t�C�v2014�~6��30��]�@�^����L�G29�i����-��î�~���H��Ų�w&nbsp;&nbsp;�]��26���^</a></div>			
+			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030630" target="_self">文教基金會演講「書香書緣系列」2014年6月30日（一）秦嗣林：29張當票-門簾外的人生鑑定&nbsp;&nbsp;（第26場）</a></div>			
 			
-			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030611" target="_self">��а���|�t���u���d�֬��t�C���y�v2014�~6��11��]�T�^���N��G����`�Ѥj�ɩ�-�}�Ѳ{�N������ǰg��&nbsp;&nbsp;�]��62���^</a></div>			
+			<div class="index_news_list"  style="overflow: hidden"><a href="foundation_conten.htm?forumcoad=1030611" target="_self">文教基金會演講「健康樂活系列講座」2014年6月11日（三）朱筱桑：眼科常識大補帖-破解現代的眼科學迷思&nbsp;&nbsp;（第62場）</a></div>			
 			
             </div>
-        	<div id="index_news_tag1" class="index_news_tag"><a href="javascript:;">�]�g�J�I�s�D</a></div>
-            <div id="index_news_tag2" class="index_news_tag"><a href="javascript:;">�ӫ~�ʺA����</a></div>
-            <div id="index_news_tag3" class="index_news_tag"><a href="javascript:;">��а���|���y</a></div>
+        	<div id="index_news_tag1" class="index_news_tag"><a href="javascript:;">財經焦點新聞</a></div>
+            <div id="index_news_tag2" class="index_news_tag"><a href="javascript:;">商品動態報導</a></div>
+            <div id="index_news_tag3" class="index_news_tag"><a href="javascript:;">文教基金會講座</a></div>
         </div>
         
-        <div id="index_link"><!-- �ֳt�s�� -->
+        <div id="index_link"><!-- 快速連結 -->
         	<div class="index_link_btn">
             	<a href="https://ibank.scsb.com.tw/" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('indexLinkBtn1','','images/index_link_btn1o.png',1)">
-                <img src="images/index_link_btn1.png" name="indexLinkBtn1" id="indexLinkBtn1" />�����Ȧ�</a>
+                <img src="images/index_link_btn1.png" name="indexLinkBtn1" id="indexLinkBtn1" />網路銀行</a>
             </div>
             <div class="index_link_btn">
             	<a href="https://eatm.scsb.com.tw/" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('indexLinkBtn2','','images/index_link_btn2o.png',1)">
-                <img src="images/index_link_btn2.png" name="indexLinkBtn2" id="indexLinkBtn2" />����ATM</a>
+                <img src="images/index_link_btn2.png" name="indexLinkBtn2" id="indexLinkBtn2" />網路ATM</a>
             </div>
             <div class="index_link_btn">
             	<a href="http://www.scsb.com.tw/content/mobile-bank/index.html" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('indexLinkBtn3','','images/index_link_btn3o.png',1)">
-                <img src="images/index_link_btn3.png" name="indexLinkBtn3" id="indexLinkBtn3" />��ʻȦ�</a>
+                <img src="images/index_link_btn3.png" name="indexLinkBtn3" id="indexLinkBtn3" />行動銀行</a>
             </div>
             <div class="index_link_btn">
             	<a href="https://eatm.scsb.com.tw/sap/index.htm" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('indexLinkBtn4','','images/index_link_btn4o.png',1)">
-                <img src="images/index_link_btn4.png" name="indexLinkBtn4" id="indexLinkBtn4" />����ú�O</a>
+                <img src="images/index_link_btn4.png" name="indexLinkBtn4" id="indexLinkBtn4" />網路繳費</a>
             </div>
             <div class="index_link_btn">
             	<a href="https://corpbank.scsb.com.tw/b2c/" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('indexLinkBtn5','','images/index_link_btn5o.png',1)">
-                <img src="images/index_link_btn5.png" name="indexLinkBtn5" id="indexLinkBtn5" />���y�@���q</a>
+                <img src="images/index_link_btn5.png" name="indexLinkBtn5" id="indexLinkBtn5" />全球一路通</a>
             </div>
         </div>
               
-    </div><!-- �D�n���eend -->
+    </div><!-- 主要內容end -->
 </div>
 
 
 
 <div id="footer">
-	<div id="footer_content"><!-- �������e -->
-    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">�A�Ⱦ��I</a></span>
-        <span class="footer_item footer_link">�N���H�c�G<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
-        <span class="footer_tel">�Ȥ�A�ȼ��u�G(02)2552-3111�@�K�I�O�G0800-003-111</span><br />
+	<div id="footer_content"><!-- 頁尾內容 -->
+    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">服務據點</a></span>
+        <span class="footer_item footer_link">意見信箱：<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
+        <span class="footer_tel">客戶服務熱線：(02)2552-3111　免付費：0800-003-111</span><br />
         <span class="footer_space"><img src="images/space.gif"/></span><br />
-		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">�ۧ@�v�n��</a> c�W���ӷ~�x�W�Ȧ檩�v�Ҧ��@�̨��s������1024 x 728�����Ҧ��H�W�AIE8.0 &amp; Firefox 3.0 �H�W�����s����</span><br />
-        <span>�Y�z�L�k�ݨ�Flash�BPDF�ζײv�ݪO�A��ĳ�z�U��Flash Player�BAdobe Reader�PJAVA�n��</span>
-    </div><!-- �������eend -->
+		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">著作權聲明</a> c上海商業儲蓄銀行版權所有　最佳瀏覽環境1024 x 728視窗模式以上，IE8.0 &amp; Firefox 3.0 以上版本瀏覽器</span><br />
+        <span>若您無法看到Flash、PDF或匯率看板，建議您下載Flash Player、Adobe Reader與JAVA軟體</span>
+    </div><!-- 頁尾內容end -->
 </div>
 
-<div style="display:none"><!-- �ӫ~�ʺA���� -->
+<div style="display:none"><!-- 商品動態報導 -->
 	<div id="product_news_pop">
-    	<div class="product_news_pop_subtitle"><span>�ӫ~�ʺA����</span></div>
+    	<div class="product_news_pop_subtitle"><span>商品動態報導</span></div>
         <div class="product_news_pop_content">
-        	<p>�i4201������y���|���(First State Global Opportunities Fund)�j�]�H�U�١u������v�^�v���S�O�ѪF�|�Mĳ�q�L�׭q����������F���C�̾ڳq�L�׭q��������F�����Mĳ�A��2014�~2��24��_�N����First State Investment (Singapore)���N�����First State Investment Management (UK) Limited����������Ƨ��g�z�F�B�ܧ������^��W�٬��u����@�ɻ�����(First State Worldwide Leaders Fund)�v�H�ϬM�׭q�ᤧ���F���A�ԲӤ��e�аѾ\<a href="#">����</a>�C</p>
+        	<p>【4201首域全球機會基金(First State Global Opportunities Fund)】（以下稱「本基金」）」之特別股東會決議通過修訂本基金之投資政策。依據通過修訂本基金投資政策之決議，自2014年2月24日起將指派First State Investment (Singapore)取代原任之First State Investment Management (UK) Limited為本基金之副投資經理；且變更基金中英文名稱為「首域世界領先基金(First State Worldwide Leaders Fund)」以反映修訂後之投資政策，詳細內容請參閱<a href="#">附件</a>。</p>
         </div>
     </div>
 </div>

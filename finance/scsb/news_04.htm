@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>�W���ӷ~�x�W�Ȧ�-�]�I�޲z</title>
+<title>上海商業儲蓄銀行-財富管理</title>
 <link type="image/x-icon" rel="icon" href="favicon.ico">
 <link href="css/reset.css" rel="stylesheet">
 <link href="css/colorbox.css" rel="stylesheet">
@@ -23,20 +23,20 @@ $("#news_pop").load("systexnewdat.htm?newsname="+fname+"&newstype="+ftype , func
 });
 }
 $(function(){
-	//�ӳ椸���
+	//該單元選單
 	$("#menu_news").addClass("menu_choosen");
-	//��l���A
+	//初始狀態
 	$("#news_content1").show();
 	$("#news_title1").addClass("news_title_choosen");
 	
-	//��������
+	//切換頁籤
 	$("#news_title1 a").click(function() {
 		$(".news_content").stop().slideUp(300);
 		$("#news_content1").stop().slideDown(300);
 		$(".news_title").removeClass("news_title_choosen");
 		$("#news_title1").addClass("news_title_choosen");
     });
-	//�s�D���X����
+	//新聞跳出視窗
 	//$(".table_news a").colorbox({inline:true, width:"730px"});
 	//$(".table_news a").click(function(){alert('aaaa')});
 })
@@ -47,29 +47,29 @@ $(function(){
 
 
 <div id="header">
-	<div id="header_content"><!-- �������e -->
+	<div id="header_content"><!-- 頁首內容 -->
     
 		<div id="logo"><a href="index.htm" target="_self"><img src="images/logo.gif"/></a></div>
         
-    	<div id="menu"><!-- �D��� -->
-    		<div id="menu_products_overview" class="menu_item"><a href="fund_value.htm" target="_self">�̷s����</a></div>
-    		<div id="menu_news" class="menu_item"><a href="news.htm" target="_self">�Y�ɷs�D</a></div>
-    		<div id="menu_search" class="menu_item"><a href="search.htm" target="_self">����j�M</a></div>
-    		<div id="menu_finance" class="menu_item"><a href="finance.htm" target="_self">���Ħ污</a></div>
-    		<div id="menu_event" class="menu_item"><a href="account.htm" target="_self">�z�]�պ�</a></div>
-    		<div id="menu_back" class="menu_item menu_item_last"><a href="index.htm" target="_self">�^�쭺��</a></div>
+    	<div id="menu"><!-- 主選單 -->
+    		<div id="menu_products_overview" class="menu_item"><a href="fund_value.htm" target="_self">最新報價</a></div>
+    		<div id="menu_news" class="menu_item"><a href="news.htm" target="_self">即時新聞</a></div>
+    		<div id="menu_search" class="menu_item"><a href="search.htm" target="_self">基金搜尋</a></div>
+    		<div id="menu_finance" class="menu_item"><a href="finance.htm" target="_self">金融行情</a></div>
+    		<div id="menu_event" class="menu_item"><a href="account.htm" target="_self">理財試算</a></div>
+    		<div id="menu_back" class="menu_item menu_item_last"><a href="index.htm" target="_self">回到首頁</a></div>
     	</div>
         
-    </div><!-- �������eend -->
+    </div><!-- 頁首內容end -->
 </div>
 <div id="container">
-	<div id="container_content" class="news"><!-- �D�n���e�Aclass�ó]�w�����S�Ƥ��e -->
+	<div id="container_content" class="news"><!-- 主要內容，class並設定本頁特化內容 -->
 <SCRIPT>
 <!--
 function FundCheck(){
 
   if (document.FundDetail.fund_code.value=="") {
-     alert("����줣�o�ť�");
+     alert("此欄位不得空白");
 	   document.FundDetail.fund_code.focus();
   }
   else {
@@ -80,7 +80,7 @@ function FundCheck(){
      }
      else
      {
-        alert("�п�J�|��ư���N�X");
+        alert("請輸入四位數基金代碼");
         document.FundDetail.fund_code.focus();
      }
 
@@ -89,26 +89,26 @@ function FundCheck(){
 //-->
 </SCRIPT>
 <form name="FundDetail" method="get" action="Effect_visi.htm">
-<div class="function"><!-- �n�J -->
+<div class="function"><!-- 登入 -->
         	<div id="btn_login"><a href="https://ibank.scsb.com.tw/" target="_blank" onmouseover="MM_swapImage('btnLogin','','images/btn_logino.gif',1)" onmouseout="MM_swapImgRestore()"><img src="images/btn_login.gif" name="btnLogin" id="btnLogin" /></a></div>
-			<div id="quick_search"><span class="quick_search_title">�ֳt�d��<span class="quick_search_title_arrow">&gt;&gt;</span></span> ���~�N�X�ΦW�� 
+			<div id="quick_search"><span class="quick_search_title">快速查詢<span class="quick_search_title_arrow">&gt;&gt;</span></span> 產品代碼及名稱 
 		  <input class="quick_search_input" name="fund_code" type="text" /> <input type="button" value="GO" onclick='FundCheck();'/></div>
 </div></form>
 <div class="option_search option_search_0">
         	<div class="menu menu_02">
                  <ul id="navmenu-h" style=" width:508px;">
-                  <li class="menu_1"><a href="news.htm" title="���z�]"><em>���z�]</em></a>
+                  <li class="menu_1"><a href="news.htm" title="投資理財"><em>投資理財</em></a>
                   </li>
-                  <li class="menu_2"><a href="news_02.htm" title="�]�g�J�I"><em>�]�g�J�I</em></a>
+                  <li class="menu_2"><a href="news_02.htm" title="財經焦點"><em>財經焦點</em></a>
                   </li>
-                  <li class="menu_3"><a href="news_03.htm" title="�x�W�ѥ�"><em>�x�W�ѥ�</em></a>
+                  <li class="menu_3"><a href="news_03.htm" title="台灣股市"><em>台灣股市</em></a>
                   </li>
-                  <li class="menu_4"><a href="news_04.htm" class="menu_on" title="�ͬ��s�D"><em>�ͬ��s�D</em></a>
+                  <li class="menu_4"><a href="news_04.htm" class="menu_on" title="生活新聞"><em>生活新聞</em></a>
                   </li>
                  </ul> 
             </div><!-- menu END --> 
 </div>
-<div id="news_title1" class="news_title"><a href="javascript:;">���y�ͬ��s�D</a></div><!-- �]�g�J�I�s�D -->
+<div id="news_title1" class="news_title"><a href="javascript:;">全球生活新聞</a></div><!-- 財經焦點新聞 -->
         <div id="news_content1" class="news_content">
         	<div class="table table_news">
             	<table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -116,7 +116,7 @@ function FundCheck(){
 <tr >
     					<td class="table_news1">2014/06/04</td>
     					<td class="table_news2 align_left">08:39</td>
-    					<td class="table_news3 align_left"><a href="javascript:shownews('2014060410046900000001.xml','L');">�m���|�n���n���B��F�������j�B�A����30��</a></td>
+    					<td class="table_news3 align_left"><a href="javascript:shownews('2014060410046900000001.xml','L');">《社會》中南部、花東有局部大雨，高溫30度</a></td>
   					</tr>
 
 
@@ -124,63 +124,63 @@ function FundCheck(){
     					<td >2014/06/04</td>
     					<td class="align_left">08:34</td>
 
-    					<td class="align_left"><a href="javascript:shownews('2014060410046700200000.xml','L');">�m�T�֥@�ɡn�ѿ��ۻ{�W�H�A�M�a�G�����H��</a></td>
+    					<td class="align_left"><a href="javascript:shownews('2014060410046700200000.xml','L');">《娛樂世界》老蕭自認超人，專家：雙重人格</a></td>
   					</tr>
 
 
 <tr >
     					<td >2014/06/04</td>
     					<td class="align_left">08:34</td>
-    					<td class="align_left"><a href="javascript:shownews('2014060410046600200000.xml','L');">�m�T�֥@�ɡn��j�P������k�U�k�W�A��MV�rNG</a></td>
+    					<td class="align_left"><a href="javascript:shownews('2014060410046600200000.xml','L');">《娛樂世界》方大同葛仲珊男下女上，拍MV猛NG</a></td>
   					</tr>
 
 
 <tr >
     					<td >2014/06/04</td>
     					<td class="align_left">08:34</td>
-    					<td class="align_left"><a href="javascript:shownews('2014060410046500200000.xml','L');">�m�T�֥@�ɡn�w�w���D�k��ӡu�o�i�̺}�G�v</a></td>
+    					<td class="align_left"><a href="javascript:shownews('2014060410046500200000.xml','L');">《娛樂世界》歡歡媽挑女遺照「這張最漂亮」</a></td>
   					</tr>
 
 
 <tr >
     					<td >2014/06/04</td>
     					<td class="align_left">08:34</td>
-    					<td class="align_left"><a href="javascript:shownews('2014060410046400200000.xml','L');">�m�T�֥@�ɡn�i�ͮa�~�����N�A�ЪοE�G�P�B�}</a></td>
+    					<td class="align_left"><a href="javascript:shownews('2014060410046400200000.xml','L');">《娛樂世界》張睿家外熱內冷，剷肥激瘦星運開</a></td>
   					</tr>
 
 
 <tr >
     					<td >2014/06/04</td>
     					<td class="align_left">08:34</td>
-    					<td class="align_left"><a href="javascript:shownews('2014060410046300200000.xml','L');">�m�T�֥@�ɡn�]���ʼ��y�������A��Ʒ~�q�p</a></td>
+    					<td class="align_left"><a href="javascript:shownews('2014060410046300200000.xml','L');">《娛樂世界》包偉銘撞臉朴海鎮，拚事業巔峰</a></td>
   					</tr>
 
 
 <tr >
     					<td >2014/06/04</td>
     					<td class="align_left">08:34</td>
-    					<td class="align_left"><a href="javascript:shownews('2014060410046200200000.xml','L');">�m�T�֥@�ɡnJunior�u���v�����G�Q�ϡA�����]���@�۷Q�B</a></td>
+    					<td class="align_left"><a href="javascript:shownews('2014060410046200200000.xml','L');">《娛樂世界》Junior「表」錯情慘被甩，揮走夜店咖喊想婚</a></td>
   					</tr>
 
 
 <tr >
     					<td >2014/06/04</td>
     					<td class="align_left">08:34</td>
-    					<td class="align_left"><a href="javascript:shownews('2014060410046100200000.xml','L');">�m�T�֥@�ɡn�Où���]�`�ئ��}�A�٦V��Q�q�i</a></td>
+    					<td class="align_left"><a href="javascript:shownews('2014060410046100200000.xml','L');">《娛樂世界》保羅媽跑節目成癮，還向兒討通告</a></td>
   					</tr>
 
 
 <tr >
     					<td >2014/06/04</td>
     					<td class="align_left">08:34</td>
-    					<td class="align_left"><a href="javascript:shownews('2014060410046000200000.xml','L');">�m�T�֥@�ɡn�v�������l��|�A�餺�n�Ͱe�̫�@�{</a></td>
+    					<td class="align_left"><a href="javascript:shownews('2014060410046000200000.xml','L');">《娛樂世界》史哲維今追思會，圈內好友送最後一程</a></td>
   					</tr>
 
 
 <tr class="no_bottom_line">
     					<td >2014/06/04</td>
     					<td class="align_left">08:32</td>
-    					<td class="align_left"><a href="javascript:shownews('2014060410045800100000.xml','L');">�m��­����n�m���ƥ�A�Ϧ��ᶤ�ʤ�����</a></td>
+    					<td class="align_left"><a href="javascript:shownews('2014060410045800100000.xml','L');">《體壇風雲》鄉長事件，反成猿隊封王契機</a></td>
   					</tr>
 
 
@@ -196,25 +196,25 @@ function FundCheck(){
 
 
 
-        <!-- ���� end -->
+        <!-- 表格 end -->
         
-        <div class="notice"><!-- �`�N�ƶ� -->
-        	<p class="cnyes">�����]�g��T�� <a href="http://www.cnyes.com/" target="_blank">cnYes �d���</a>���ѡA�ȨѰѦҡA�Фŵ����R�����B�����Ҩ餧����ĳ�C</p>
-        </div><!-- �`�N�ƶ�end -->
+        <div class="notice"><!-- 注意事項 -->
+        	<p class="cnyes">相關財經資訊由 <a href="http://www.cnyes.com/" target="_blank">cnYes 鉅亨網</a>提供，僅供參考，請勿視為買賣基金、有價證券之投資建議。</p>
+        </div><!-- 注意事項end -->
 </div>
 
 <div id="footer">
-	<div id="footer_content"><!-- �������e -->
-    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">�A�Ⱦ��I</a></span>
-        <span class="footer_item footer_link">�N���H�c�G<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
-        <span class="footer_tel">�Ȥ�A�ȼ��u�G(02)2552-3111�@�K�I�O�G0800-003-111</span><br />
+	<div id="footer_content"><!-- 頁尾內容 -->
+    	<span class="footer_item footer_link"><a href="http://www.scsb.com.tw/content/about/about05_.htm" target="_blank">服務據點</a></span>
+        <span class="footer_item footer_link">意見信箱：<a href="mailto:service@scsb.com.tw">service@scsb.com.tw</a></span>
+        <span class="footer_tel">客戶服務熱線：(02)2552-3111　免付費：0800-003-111</span><br />
         <span class="footer_space"><img src="images/space.gif"/></span><br />
-		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">�ۧ@�v�n��</a> c�W���ӷ~�x�W�Ȧ檩�v�Ҧ��@�̨��s������1024 x 728�����Ҧ��H�W�AIE8.0 &amp; Firefox 3.0 �H�W�����s����</span><br />
-        <span>�Y�z�L�k�ݨ�Flash�BPDF�ζײv�ݪO�A��ĳ�z�U��Flash Player�BAdobe Reader�PJAVA�n��</span>
-    </div><!-- �������eend -->
+		<span class="footer_link"><a href="http://www.scsb.com.tw/content/link/link0.htm" target="_blank">著作權聲明</a> c上海商業儲蓄銀行版權所有　最佳瀏覽環境1024 x 728視窗模式以上，IE8.0 &amp; Firefox 3.0 以上版本瀏覽器</span><br />
+        <span>若您無法看到Flash、PDF或匯率看板，建議您下載Flash Player、Adobe Reader與JAVA軟體</span>
+    </div><!-- 頁尾內容end -->
 </div>
 
-<div style="display:none"><!-- �s�D���X���� -->
+<div style="display:none"><!-- 新聞跳出視窗 -->
 	<div id="news_pop">
     	<div class="news_pop_subtitle"><span></span></div>
         <div class="news_pop_title"></div>
