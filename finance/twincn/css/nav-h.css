@@ -1,0 +1,45 @@
+
+
+/*----- 下拉選單預設值(以下為必要屬性值，不可隨意更動) -----*/
+ul#navmenu-h {margin:0;padding:0;list-style:none;position:relative;}
+ul#navmenu-h ul {width:140px;}/* 第一層選單寬度，必須有數值 */
+ul#navmenu-h ul {margin:0; list-style: none; display: none; position: absolute; top: 100%; left: 0;}
+ul#navmenu-h ul ul,ul#navmenu-h ul ul ul { top: 0; left: 100%; }
+ul#navmenu-h li { float: left; display: inline; position: relative; }
+ul#navmenu-h ul li { width: 100%; display: block;}
+/* 第一層選單連結與滑鼠移過樣式 */
+ul#navmenu-h a {float: left; display: block; font:12px PMingLiU; text-decoration: none; height: 1%; color:#fff; text-align:left;}
+ul#navmenu-h a:hover,ul#navmenu-h li:hover a,ul#navmenu-h li.iehover a {}
+/* 第二層選單連結與滑鼠移過樣式 */
+ul#navmenu-h li:hover li a,ul#navmenu-h li.iehover li a { float: none;background:#35addf;  color:#fff; width:140px;line-height:26px; padding:0 0 0 6px;}/* 可更換屬性值 */
+ul#navmenu-h li:hover li a:hover,ul#navmenu-h li:hover li:hover a,ul#navmenu-h li.iehover li a:hover { color:#fff; background-color:#f60;}/* 可更換屬性值 */
+/* 選單顯示/隱藏效果 */
+ul#navmenu-h li:hover ul ul { display: none;}
+ul#navmenu-h li:hover ul,ul#navmenu-h ul li:hover ul,ul#navmenu-h ul ul li:hover ul,ul#navmenu-h li.iehover ul{ display: block;}
+
+
+/*----- 額外控制選單樣式 -----*/
+#menu { text-align: center;display: block; overflow: hidden; clear: both;}
+#menu ul{margin:0 auto; width:990px; z-index:8; padding:0; }
+#menu li a { display:block; width:180px; height:55px; line-height:55px; float:none;}
+#menu li a:hover { background-position:right bottom;}
+#menu li a em{ text-align:center; color:#fff;display: none; text-indent: -9999px; }
+#menu ul .menu_on a { background-position:left bottom;}
+#menu li .menu_1 { background:url(../images/btn_01.png) left top no-repeat; width:215px;}
+#menu li .menu_2 { background:url(../images/btn_02.png) left top no-repeat; width:86px;}
+#menu li .menu_3 { background:url(../images/btn_03.png) left top no-repeat; width:86px;}
+#menu li .menu_4 { background:url(../images/btn_04.png) left top no-repeat; width:85px;}
+#menu li .menu_5 { background:url(../images/btn_05.png) left top no-repeat; width:123px;}
+#menu li .menu_6 { background:url(../images/btn_06.png) left top no-repeat; width:93px;}
+#menu li .menu_7 { background:url(../images/btn_07.png) left top no-repeat; width:85px;}
+#menu li .menu_8 { background:url(../images/btn_08.png) left top no-repeat; width:121px;}
+#menu li .menu_9 { background:url(../images/btn_09.png) left top no-repeat; width:96px;}
+#menu ul#navmenu-h li.w140{  padding-right:0; width:141px; }
+#menu ul#navmenu-h li.w140 a{font:13px "Microsoft JhengHei","微軟正黑體",Arial; color:#fff;text-decoration:none; text-align:left;height:55px; line-height:55px;}
+#menu ul#navmenu-h li.w140 a:hover{  font:13px "Microsoft JhengHei","微軟正黑體",Arial; color:#b6000;text-decoration:none; text-align:left;height:55px; line-height:55px;}
+
+ul#SevenScreen{ margin:0 auto;*margin:10px auto 0 auto; padding:0; width:627px;} 
+ul#SevenScreen li{ width:77px; margin:3px 5px; list-style:none; display:inline-block;*display:inline;color:#fff; text-align:center;}
+ul#SevenScreen li a{ text-decoration:none; color:#fff; display:block;*display:inline;padding:2px 0; background-color:#233c59;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius: 8px;behavior: url(/PIE.htc); *padding:0 17px; height:17px;}
+ul#SevenScreen li.menu_on a,ul#SevenScreen li a:hover{ background-color:#b60000; color:#fff; display:block;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius: 8px;behavior: url(/PIE.htc);*display:inline}
+
