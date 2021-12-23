@@ -1,0 +1,214 @@
+
+@charset "utf-8";
+/*亞洲新富基金 CSS Document */
+
+body{  margin:0; padding:0; background-color:#ffffff;}
+
+div, form, img, p, ul, li, dl, dt, dd { margin:0; padding:0; border:0;}
+ol{ margin-left:33px;}
+ol li{ padding:3px 0px 5px 0px}
+br { clear:both; height:0; font-size:1px; line-height:0px;}
+input.texts,input.butn,select{ font-size:12px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#333;}
+
+h1,h2,h3,h4,h5,ul,form,th,p,cite,em { margin:0; padding:0; list-style:none; font-weight:normal;}
+
+h3{-webkit-margin-before: 0.83em;
+-webkit-margin-after: 0.83em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;}
+
+ul { list-style-type:none;}
+ul,li {list-style:none;margin:0px;padding:0px;}
+.disyhidn {display:none;}
+.disyshow {display:block;}
+
+table, td, tr, th { margin:0;/* padding:0; */ font-weight:normal;}
+
+fieldset, img, a img, a:hover img, table, th, td { border:0;}
+a { text-decoration:none;}
+a:link {color:#043B72;}
+a:hover { color:#ff6600; text-decoration:underline}
+a:visited {color:#043B72;}
+
+.clear { content:"."; display:block; height:0; clear:both; visibility:hidden;}
+
+.ft{line-height:20px;}
+.ft2{line-height:160%;}
+.ftSize_11{font-size:11px;}
+.ftSize_13{font-size:13px;}
+.ftSize_14{font-size:14px;}
+.ftSize_12{font-size:12px;}
+.ftSize_16{font-size:16px;}
+.BB{ font-weight:bold;}
+.white{ color:#FFFFFF}
+.gray{ color:#909094}
+.black{ color:#000000}
+.red{ color:#ff0000}
+.blue{ color:#043b72}
+.orange{ color:#ff6600}
+.ltP{ letter-spacing:1px;}
+.padT4{ padding-top:4px;}
+.padL1{ padding-left:50px;}
+.padL3{ padding-left:17px;}
+.H3Hand{cursor:hand;}
+.bLine{ border-bottom:1px solid #B1B1B4; border-right: 1px solid #B1B1B4; margin:0px;}
+.bLine2{ border-bottom:1px solid #B1B1B4; margin:0px;}
+.bLine3{ border-right: 1px solid #B1B1B4; margin:0px;}
+.bLine4{ border-bottom:1px solid #000000; margin:0px;}
+.lNum{ list-style:decimal; margin-top:7px;}
+.lHave{ list-style-image:url(../images/point.gif)}
+.lHave2{ list-style-image:url(../images/point2.gif)}
+.lHave3{ list-style-image:url(../images/point3.gif);}
+.fLEFT{ float:left}
+.fRIGHT{ float:right}
+.alignL{ text-align:left;}
+.top_btn{ width:944px; height:30px; float:right; padding-right:1px; line-height:30px; font-family:Arial, Helvetica, sans-serif;}
+.tLeft{ text-align:left;}
+.mTop{ margin-top:0px; margin-bottom:0px; margin-left:0px;}
+.mTop2{ margin-top:5px;}
+.mTop0{ margin-top:3px; margin-bottom:0px;}
+.mTop4{ margin-top:-3px;}
+.mTop5{ margin-top:-10px;}
+.mTop6{ margin-top:10px;}
+.mTop7{ margin-top:0px; margin-bottom:0px; margin-left:20px; padding:0px;}
+.mTop8{ margin-top:11px;}
+.mBottom{ margin-bottom:0px;}
+.BorR{ border-collapse:collapse; border:1px #cecece solid;}
+.BorR2{ width:944px;}
+.gb{ width:944px; height:544px;}
+#bor_02{ width:992px;background-color:#ff6600; padding-bottom:5px;}
+.bor_03{ padding:7px 16px; }
+.bor_03 a{color:#ffffff;}
+.bor_03 a:hover{color:#ffffff; text-decoration:underline}
+.whiteLine_01{height:1px; width:98%; background-color:#FFFFFF}
+#head{ width:944px; padding-left:5px}
+#Htop{ width:944px; height:144px; background:url(../images/top_banner.jpg) no-repeat left top; background-position:0px 0px;}
+#homeIc{ width:65px; height:24px; background:url(../images/homeIc.gif) no-repeat left top; background-position:0px 12px; float:right; padding:10px 10px 0px 0px;}
+#circle{ float:left; width:100px; height:144px; display:block;}
+
+
+#menu { display:block; width:944px; height:38px; float:left; padding:0px 0px;}
+#menu ul { display:block; width:944px; height:38px;}
+#menu li { float:left;}
+#menu ul .menu_on a { background-position:left bottom;}
+#menu li a { display:block; width:192px; height:38px; text-indent:-9999px;}
+#menu li .menu_1 { background:url(../images/btn_01.jpg) left top no-repeat; width:192px;}
+#menu li .menu_2 { background:url(../images/btn_02.jpg) left top no-repeat; width:187px;}
+#menu li .menu_3 { background:url(../images/btn_03.jpg) left top no-repeat; width:187px;}
+#menu li .menu_4 { background:url(../images/btn_04.jpg) left top no-repeat; width:187px;}
+#menu li .menu_5 { background:url(../images/btn_05.jpg) left top no-repeat; width:191px;}
+#menu li a:hover { background-position:left bottom;}
+
+#logo_ADD{ width:944px; height:36px; text-align:left; background:url(../images/COPY.jpg) no-repeat left top; background-position:10px 7px; display:block;}
+#logo_title{ width:944px; text-align:left; background:url(../images/COPY_title.jpg) no-repeat left top; background-position:20px 00px;}
+
+.elect01{ width:225px;display:block;float:left; display:block; text-align:left; padding:10px 0px 0px 4px;}
+.elect01 ul {width:225px;display:block; height:26px; text-align:left;}
+.elect01 li { float:left; width:225px;color:#043b72;display:block; height:26px; line-height:26px; text-align:left;display:block; padding:1px 0px 1px 0px;}
+.elect01 li a { float:left;color:#043b72;display:block;line-height:26px; padding:0px 0px 0px 10px; width:215px;}
+.elect01 ul .elect01_on a {background:url(../images/bar.gif) no-repeat center bottom; background-position:0px 0px; color:#ff6600; text-decoration:none; padding:0px 0px 0px 10px;display:block; line-height:26px; font-weight:bold; text-align:left; width:215px;}
+.elect01 ul .elect01_on a:hover {background:url(../images/bar.gif) no-repeat center bottom; background-position:0px 0px; color:#ff6600; text-decoration:none; padding:0px 0px 0px 10px;display:block; line-height:26px; font-weight:bold; text-align:left; width:215px;}
+.elect01 li .elect01_1 { padding:0px 0px 0px 10px; height:26px;color:#043b72;display:block;line-height:26px;}
+.elect01 li .elect01_1 a {color:#043b72;}
+.elect01 li a:hover { background:url(../images/bar.gif) no-repeat center bottom; background-position:0px 0px; color:#043b72; text-decoration:none;display:block; padding:0px 0px 0px 10px;line-height:26px;}
+
+.disyhidn {display:none;}
+.disyshow {display:block;}
+
+.concept{ width:695px; height:auto; padding:0px 0px; text-align:center; float:right; margin:0px; padding-right:5px;}
+.concept h2{ line-height:30px; color:#ff6600;}
+
+.concept2{ width:720px; height:auto; padding:5px 0px; text-align:center; float:right}
+.concept3{ width:944px; height:auto; }
+
+.concept2 p{ text-align:left; line-height:30px; padding-left:80px;}
+.concept2 ul{ text-align:left;}
+.concept2 li{ text-align:left; line-height:30px;}
+
+
+
+
+#concept4{ width:700px; height:1080px; padding:16px 0px;float:right}
+#process{ width:720px; display:block;  z-index:-1000; padding-top:480px;}
+#process p{ text-align:left;width:680px; padding-top:10px;}
+#process ul{ text-align:left; padding:10px 0px; width:680px;}
+#process ul li{ line-height:25px; list-style:decimal;}
+
+	div#headDiv{width:944px;height:54px;margin:10px 0;overflow:hidden; padding-left:10px;}
+	div#gnbDiv{width:944px;height:38px;overflow:hidden;background:url('../images/bgTopGnb.gif') no-repeat;}
+	div.contDiv{margin-top:20px;width:944px;overflow:hidden;}
+	div.mainContDiv{width:944px;overflow:hidden;}
+	div#footDiv{overflow:hidden;margin-top: 24px;}
+
+	div#headDiv h1{float:left;padding-left:5px;}
+	div#headDiv h2{display:none;}
+	div#headDiv .global_link {margin-top:10px;margin-right:5px;float:right;font-size:11px;font-weight:bold;}
+	div#headDiv .global_link * {margin-left:5px;vertical-align:bottom;color:#043b72;position:relative;left:3px;}
+	div#headDiv ul.nation{clear:right;float:right;margin-top:8px;overflow:hidden; padding-right:7px;}	
+	div#headDiv ul.nation li{float:left;padding:0 5px;background:url('../images//common/lineNationTop.gif') no-repeat right 7px;}
+	div#headDiv ul.nation li.end{background:none;}
+	div#headDiv ul.nation li a{font-size:0.7em;color:#043b72;}
+	div#headDiv ul.nation li a:hover{text-decoration:underline;}
+	div#headDiv ul.nation .end img{margin-right:-2px;vertical-align:text-bottom;}
+	
+		div#footDiv{ padding-bottom:5px; background-color:#ff6600; width:944px; color:#FFFFFF;}
+	div#footDiv a{color:#ffffff; font-size:small;}
+	div#footDiv div.address{width:944px; font-size:small; padding-right:5px;}
+	div#footDiv div.address ul{float:left; font-size:small; color:#ffffff; color:#FFFFFF; }
+	div#footDiv div.address li{float:left; padding:0 8px; overflow:hidden; background:url('../images//common/bulAddress.gif') no-repeat right center; color:#FFFFFF;}
+	div#footDiv div.address li a{color:#ffffff;}
+	div#footDiv div.address li.pLNone {padding-left:0;}
+	div#footDiv div.address li.end {background:none;}
+	div#footDiv div.address h4{float:right;text-align:right; font-size:12px; font-weight:normal; color:#ffffff; line-height:18px; }
+	div#footDiv div.address h4 a{text-decoration:underline; color:#ffffff; font-size:1em; font-weight:normal;}
+	div#footDiv div.hkCopy{margin-top:20px;margin-bottom:15px;float:left;text-align:left;font-size:small;}
+	div#footDiv div.hkCopy h5{color:#ffffff;font-weight:normal;font-size:0.8em;}
+	div#footDiv div.hkCopy h5 a{color:#ffffff;font-size:1em;text-decoration:underline;}
+	div#footDiv div.address p{float:left; line-height:18px; padding-left:20px;font-size:1em;font-weight:normal; color:#ffffff;}
+	div#footDiv div.address p a{text-decoration:underline; color:#ffffff; font-size:1em; font-weight:normal;}
+	
+	.out{ width:944px; background-color:043b72; margin:0px; padding:0px;}
+	.footDiv01 { color:#ffffff;padding:5px 10px; width:920px;  margin-top:0px; text-align:left;}
+    .footDiv01 h5 {font-size:68.75%; font-weight:bold; line-height:1.2em; padding-bottom:0.5em;}
+    .footDiv01 p {
+        font-size:68.75%; line-height:160%; padding-bottom:0em;
+    }
+    .footDiv01 a {color:#ffffff; }
+	.footDiv01 a :hover {color:#ffffff; text-decoration:underline; }
+	
+	div#titleDiv{ width:695px; margin:0; padding:0;}
+    div#titleDiv div.loca {padding-bottom:16px;font-size:0.75em; color:#9A9A9A; float:left; padding:24px 0px 20px 6px;}
+    div#titleDiv div.loca a {margin:0 3px; color:#9A9A9A;}
+    div#titleDiv div.loca span.on {color:#ff6600 !important;}
+    div#titleDiv h2{padding-bottom:20px;font-size:medium;font-weight:normal;color:#043b72;}
+    div#titleDiv h2 img{margin-top:4px;}
+	div#titleDiv h3{ font-size:14px ; color:#043b72; line-height:130%; text-align:left; padding:10px 15px 0px 0px; font-weight:bold;}
+	div#titleDiv ol{}
+	div#titleDiv li{ font-size:13px;#000000; line-height:160%; text-align:left; padding:0px 0px  0px  0px; list-style:outside;}
+	div#titleDiv2{ background:url(../images/pen.jpg) no-repeat right top; background-position:395px 236px; width:695px; margin:0; padding:0;}
+	div#titleDiv2 div.loca {padding-bottom:16px;font-size:0.75em; color:#9A9A9A; float:left; padding:24px 0px 20px 6px;}
+    div#titleDiv2 div.loca a {margin:0 3px; color:#9A9A9A;}
+    div#titleDiv2 div.loca span.on {color:#ff6600 !important;}
+	div#titleDiv2 h2{padding-bottom:20px;font-size:medium;font-weight:normal;color:#043b72;}
+    div#titleDiv2 h2 img{margin-top:4px;}
+	div#titleDiv2 h3{ font-size:14px ; color:#043b72; line-height:130%; text-align:left; padding:10px 15px 0px 0px; font-weight:bold;}
+	div#titleDiv2 ul{}
+	div#titleDiv2 li{ font-size:13px;#000000; line-height:160%; text-align:left; padding:0px 30px  0px  0px; list-style:decimal; margin-left:5px;}
+	
+	.title2 h3{ font-size:14px ; color:#043b72; line-height:130%; text-align:left; padding:10px 15px 0px 15px; font-weight:bold;}
+	.title2 ol{}
+	.title2 li{ font-size:13px;#000000; line-height:160%; text-align:left; padding:0px 30px  0px  0px; list-style:outside;}
+	
+	.ng_bg00{ background:url(../images/ng_bg.jpg) no-repeat top center; width:228px; height:60px; display:block; padding:0px 5px 0px 0px; line-height:20px; text-align:center; font-weight:900; }
+	.ng_bg01{ background:url(../images/ng_bg02.jpg) no-repeat top; width:228px; height:190px;display:block;padding:00px 5px 00px 0px; display:block; }
+	.ng_bg02{ background:url(../images/ng_bg04.jpg) no-repeat top; width:695px; height:37px;display:block;padding:10px 0px 10px 0px; background-position:-1px 0px;}
+	.ng_bg03{ background:url(../images/ng_bg.jpg) no-repeat top center; width:228px; height:46px; display:block; padding:2px 5px 0px 0px; line-height:20px; text-align:center; font-weight:900; }
+	
+	.ng_bg04{ background:url(../images/ng_bg06.jpg) no-repeat top; width:460px; height:85px;display:block;padding:0px 0px 0px 0px; margin-left:2px; }
+	
+	.ng_bg05{ background:url(../images/ng_bg08.jpg) no-repeat top; width:465px; height:128px;display:block;padding:0px 5px 0px 0px; margin-left:1px;}
+	.ng_bg07{ background:url(../images/ng_bg07.jpg) no-repeat top; width:228px; height:252px;display:block;padding:0px 5px 0px 0px; background-position:0px 3px; }
+	
+	#forum{ width:580px; padding-left:50px;}
+	#forum p{ line-height:160%;}
