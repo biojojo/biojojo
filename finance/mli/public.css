@@ -1,0 +1,88 @@
+@charset "utf-8";
+body { margin:0px; padding:0px; text-align:center; font-size:12px; font-family:Arial, Helvetica, sans-serif;}
+h1,h2,h3,h4,h5,h6,ul,li,form,th,p,cite,em {margin:0px; padding:0px; list-style:none; font-weight:normal; font-style:normal;}
+a {color:#00529B; text-decoration:none;}
+a:hover {text-decoration:underline;}
+img,table,th,td {border:0;}
+table {border-collapse:collapse;color:#333;width:100%;font:12px Arial, Helvetica, sans-serif;}
+th {font-weight:normal;}
+th,td {padding:0px 2px;}
+ul,ol,li {font:12px PMingLiU;}
+ul,ol {zoom:1;overflow:hidden;}
+input.texts,input.butn,select{font-size:12px;font-family:Verdana, Arial, Helvetica, sans-serif; color:#666666;}
+input.texts { border:1px solid #D1E0E7; height:16px; padding-top:3px;}
+input.butn { border:1px solid #999999;background:url(../images/cnyes_xbg.gif) #FFFFFF 0 -134px repeat-x;padding:1px 3px 0px 3px;*padding-top:3px;}
+.clear {content:".";display:block;height:0;clear:both;visibility:hidden;_display:inline;}
+#masthead,#headers,.container,#footers,#navigation {margin:0px auto; width:990px;overflow:hidden; height:1%; text-align:left;}
+.container { margin-top:8px;}
+/*------ masthead ------*/
+#masthead {font-family:PMingLiU;}
+#masthead ul {float:right; margin-top:5px; display:inline;}
+#masthead ul li {float:left; background:url(../images/pointBgv.png) right 3px no-repeat; padding-right:5px; margin-right:5px; line-height:1.3em;}
+#masthead ul li.mdtail{background:none; margin-right:0px; padding-right:0px;}
+#masthead a,#footers a { color:#666666;}
+/*------ headers ------*/
+#headers { margin:0px auto 0px auto;}
+.head {overflow:hidden; height:1%;}
+.brand { margin:0px 12px 0px 6px; float:left;width:242px;_width:238px;}
+.brand h1 {float:left;}
+.brand h1 span,.branding span { text-indent:20px; position:absolute;z-index:-1; color:#fff;}
+.branding { float:left; margin:10px 6px 0px 10px;padding:2px 5px 3px 5px;}
+ul.memberlinks { color:#888888;overflow:hidden; margin:60px 0px 0px 3px; width:210px;}
+ul.memberlinks li { line-height:1.5em;}
+ul.memberlinks a:link,ul.memberlinks a:visited {color:#0033CC;}
+ul.memberlinks a:hover { text-decoration:underline;}
+/*--------- main ---------*/
+#main1 { float:left; width:896px;}/*960*/
+#main2 { float:left; width:926px;}/*990*/
+#main3 { float:left; width:916px;height:1%;overflow:hidden;}
+#main4 { zoom:1; overflow:hidden;}
+/*-------- sider ---------*/
+#side1 {float:right; width:300px;height:1%;overflow:hidden;}
+/*------ navigation -----*/
+#navigation { background:url(../images/NavmenusBgs.gif) left -41px repeat-x; overflow:hidden;}
+#navigation .shell { background:url(../images/NavmenusBgs.gif) no-repeat left top; }
+#navigation .navi { background:url(../images/NavmenusBgs.gif) no-repeat right bottom;} 
+#navigation .submenus { padding-left:15px; height:38px; overflow:hidden; }
+#navigation .submenus li { float:left; font-size:13px;font-family:"PMingLiU";overflow:hidden;  }
+#navigation .submenus li a { float:left; display:block; padding:3px 0px 0px 13px;*padding-top:0px; line-height:37px;*line-height:44px; color:#000; }
+#navigation a:hover {text-decoration:underline;}
+#navigation .submenus li.current a {color:#FF6600;}
+#navigation .submenus li.index em,#navigation .submenus li.indexof em { display:none;}
+#navigation .submenus li.spltags { float:right; font-size:11px; text-align:right; padding-top:3px; margin-right:15px; display:inline;}
+#navigation .submenus li.spltags a { font-weight:bold;color:#FF6600;line-height:1.3em; text-decoration:none;}
+#navigation .submenus li.spltags em { display:block; font-size:10px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#666;}
+/*----- Google Ads -----*/
+.gads728x90 {float:right;}
+.gads728x90_2 {float:left;}
+.gads300x250 {margin-bottom:10px;}
+.gadstxt {border:1px solid #eee; padding:6px; margin-bottom:10px;}
+.gadstxt a:hover {color:#999;text-decoration:underline;}
+/*----- cnYes Ads -----*/
+.ads {float:left; width:18px; height:70px; padding-top:18px; border:1px solid #ccc; background-color:#f3f3f3; text-align:center; color:#666;}
+.adslist {float:left; width:230px; height:83px; padding:5px 0px 0px 10px; border:1px solid #ccc; border-left:0;}
+.adslist li {font:12px PMingLiU; }
+.adslist li a {height:20px; line-height:20px;display:block;overflow:hidden;}
+.cyorder {font-size:12px;margin-bottom:6px;border-top:1px solid #eee;}/*-- order 120x30 --*/
+.cyorder td {border-bottom:1px solid #eee; padding:4px 6px 4px 0px}
+.cyorder a {color:#666;}
+.cyads200x100 {float:left; margin-bottom:5px;}
+.cyads200x200 {float:left;}
+.cyads210x30 { margin:8px auto 5px auto;}
+.cyads210x30 a {padding:0px 5px;}
+.cyads650x100 {text-align:center;margin-bottom:10px;}
+.cyads650x250 {text-align:center;margin-bottom:10px;}
+.cyads160x600 {text-align:center; background:#eee;}
+.cyglodtxt { height:1%; overflow:hidden; text-align:center;padding-top:8px;} 
+.cyglodtxt a {color:#0033CC; text-decoration:underline; font-size:15px;}  
+.cyglodtxt a:hover {color:#3399CC;}
+/*------ footers ------*/
+#footers { color:#999999; margin:8px auto; border:1px solid #eee;}
+.legal{ margin-bottom:8px; padding:8px 0px 4px 0px; text-align:center; background-color:#F6F6F6;border-bottom:1px solid #eee;}
+.siteinfo ul { margin:0px auto;}
+.siteinfo ul li { display:inline;font-family:tahoma; }
+.copyrights span { font-size:10px;}
+.copyrights,.siteinfo,.contact { overflow:hidden; height:1%; margin:0px 0px 8px 10px;}
+.copyrights {margin-bottom:4px;}
+.cnyslogo { float:right; margin:-62px 10px 0px 0px;*margin:-58px 10px 0px 0px;}
+.mouseShow1 {cursor:hand;}
