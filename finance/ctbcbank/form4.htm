@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>中國信託人壽</title>
+<link type="image/x-icon" rel="icon" href="https://consumer.chinatrust.com.tw/favicon.ico">
+<link href="jquery.datepicker.css" rel="stylesheet" type="text/css">
+<link href="fund.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="nav-h.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+                <!-- 基金轉換:start -->
+                <div id="UpdatePanel4">
+	
+                        <div class="divinfo" id="fundTran1">
+                            <div class="charthd">
+                                <em>基金轉換</em><cite><a class="remove3" onclick="BOX_remove('fundTran1');" href="javascript:;"></a><a onclick="BOX_remove('fundTran1');" href="javascript:;">關閉</a></cite></div>
+                            <div class="bd">
+                                <div class="tabs2">
+                                    <input type="hidden" id="HF_fundTran1PoP_MasterId" name="HF_fundTran1PoP_MasterId">
+                                    <input type="hidden" id="HF_fundTran1PoP_fundId" name="HF_fundTran1PoP_fundId">
+                                    <input type="hidden" id="HF_fundTran1PoP_In_fundId" name="HF_fundTran1PoP_In_fundId">
+                                    <input type="hidden" id="HF_fundTran1PoP_TotalAmount" name="HF_fundTran1PoP_TotalAmount">
+                                    <input type="hidden" id="HF_fundTran1PoP_MarketTotal" name="HF_fundTran1PoP_MarketTotal">
+                                    <table>
+                                        <tbody><tr>
+                                            <td width="30%">
+                                                轉出基金名稱</td>
+                                            <td style="width: 203px; height: 30px;" id="fundTran1PoPname">
+                                                富蘭克林坦伯頓全球投資系列 - A-ACC-$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                轉出日期</td>
+                                            <td>
+                                                <input type="text" class="texts hasDatepicker" id="sd4Out" name="sd4Out" gtbfieldid="554">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="30%">
+                                                <input type="radio" id="fundTran1PoPRadio1" name="fundTran1PoPRadio1" value="fundTran1PoPRadio1">
+                                                轉出金額</td>
+                                            <td>
+                                                <input type="text" class="texts" value="輸出金額" onfocus="if(this.value=='輸出金額')this.value='';" id="MoneyText4" name="MoneyText4" gtbfieldid="555">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" id="fundTran1PoPRadio2" name="fundTran1PoPRadio1" value="fundTran1PoPRadio2">
+                                                轉出單位數</td>
+                                            <td>
+                                                <input type="text" class="texts" value="轉出單位" onfocus="if(this.value=='轉出單位')this.value='';" id="UnitText4" name="UnitText4" gtbfieldid="556">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                轉入基金公司</td>
+                                            <td>
+                                                <select style="width: 210px;" onchange="fundTran1_DDlchange('dd_company_Pop','dd_fund_Pop')" id="dd_company_Pop" name="dd_company_Pop" gtbfieldid="557">
+                                                <option value="GAM基金管理公司">GAM基金管理公司</option><option value="MFS國際有限公司">MFS國際有限公司</option><option value="Pictet Funds（Europe） S.A.">Pictet Funds（Europe） S.A.</option><option value="Pimco Global Advisors （Ireland） Limited">Pimco Global Advisors （Ireland） Limited</option><option value="大華銀證券投資顧問股份有限公司">大華銀證券投資顧問股份有限公司</option><option value="元大證券投資信託股份有限公司">元大證券投資信託股份有限公司</option><option value="天達環球策略基金有限公司">天達環球策略基金有限公司</option><option value="日盛證券投資信託股份有限公司">日盛證券投資信託股份有限公司</option><option value="木星單位信託管理有限公司">木星單位信託管理有限公司</option><option value="比利時聯合資產管理公司">比利時聯合資產管理公司</option><option value="台新證券投資信託股份有限公司">台新證券投資信託股份有限公司</option><option value="台壽保證券投資信託股份有限公司">台壽保證券投資信託股份有限公司</option><option value="台灣工銀證券投資信託股份有限公司">台灣工銀證券投資信託股份有限公司</option><option value="永豐證券投資信託股份有限公司">永豐證券投資信託股份有限公司</option><option value="玉山證券投資信託股份有限公司">玉山證券投資信託股份有限公司</option><option value="兆豐國際證券投資信託股份有限公司">兆豐國際證券投資信託股份有限公司</option><option value="先機環球基金（亞太）有限公司">先機環球基金（亞太）有限公司</option><option value="安本國際證券投資顧問股份有限公司">安本國際證券投資顧問股份有限公司</option><option value="安多利證券投資信託股份有限公司">安多利證券投資信託股份有限公司</option><option value="安泰證券投資信託股份有限公司">安泰證券投資信託股份有限公司</option><option value="安睿證券投資顧問股份有限公司">安睿證券投資顧問股份有限公司</option><option value="亨德森基金管理公司">亨德森基金管理公司</option><option value="利安資金管理公司">利安資金管理公司</option><option value="宏利證券投資信託股份有限公司">宏利證券投資信託股份有限公司</option><option value="貝萊德證券投資顧問股份有限公司">貝萊德證券投資顧問股份有限公司</option><option value="法國巴黎投資盧森堡公司">法國巴黎投資盧森堡公司</option><option value="法興盧森堡公司">法興盧森堡公司</option><option value="法儲銀資產管理全球聯合公司">法儲銀資產管理全球聯合公司</option><option value="金鼎證券投資信託股份有限公司">金鼎證券投資信託股份有限公司</option><option value="保誠資產管理（新加坡）有限公司">保誠資產管理（新加坡）有限公司</option><option value="保誠證券投資信託股份有限公司">保誠證券投資信託股份有限公司</option><option value="保德信證券投資信託股份有限公司">保德信證券投資信託股份有限公司</option><option value="恆生投資管理有限公司">恆生投資管理有限公司</option><option value="施羅德證券投資信託股份有限公司">施羅德證券投資信託股份有限公司</option><option value="星展資產管理公司">星展資產管理公司</option><option value="柏瑞投資愛爾蘭有限公司">柏瑞投資愛爾蘭有限公司</option><option value="柏瑞證券投資信託股份有限公司">柏瑞證券投資信託股份有限公司</option><option value="美盛證券投資顧問股份有限公司">美盛證券投資顧問股份有限公司</option><option value="英傑華環球投資（盧森堡）股份有限公司">英傑華環球投資（盧森堡）股份有限公司</option><option value="首域投資（香港）有限公司">首域投資（香港）有限公司</option><option value="紐約銀行邁倫全球管理有限公司">紐約銀行邁倫全球管理有限公司</option><option value="國泰證券投資顧問股份有限公司">國泰證券投資顧問股份有限公司</option><option value="康和比聯投信">康和比聯投信</option><option value="第一金證券投資信託股份有限公司">第一金證券投資信託股份有限公司</option><option value="統一證券投資信託股份有限公司">統一證券投資信託股份有限公司</option><option value="荷寶盧森堡管理公司">荷寶盧森堡管理公司</option><option value="凱基證券投資信託股份有限公司">凱基證券投資信託股份有限公司</option><option value="創利德管理 （盧森堡） 有限公司">創利德管理 （盧森堡） 有限公司</option><option value="富邦證券投資信託股份有限公司">富邦證券投資信託股份有限公司</option><option value="富達基金管理有限公司">富達基金管理有限公司</option><option value="富達證券投資信託股份有限公司">富達證券投資信託股份有限公司</option><option value="富鼎證券投資信託股份有限公司">富鼎證券投資信託股份有限公司</option><option value="富蘭克林華美證券投資信託股份有限公司">富蘭克林華美證券投資信託股份有限公司</option><option value="富蘭克林證券投資顧問股份有限公司">富蘭克林證券投資顧問股份有限公司</option><option value="復華證券投資信託股份有限公司">復華證券投資信託股份有限公司</option><option value="普信全球投資服務有限公司">普信全球投資服務有限公司</option><option value="景順投資管理亞洲有限公司">景順投資管理亞洲有限公司</option><option value="景順證券投資信託股份有限公司">景順證券投資信託股份有限公司</option><option value="華南永昌證券投資信託股份有限公司">華南永昌證券投資信託股份有限公司</option><option value="華頓證券投資信託股份有限公司">華頓證券投資信託股份有限公司</option><option value="匯豐中華證券投資信託股份有限公司">匯豐中華證券投資信託股份有限公司</option><option value="愛爾蘭安盛羅森堡有限公司">愛爾蘭安盛羅森堡有限公司</option><option value="愛德蒙得洛希爾資產管理公司">愛德蒙得洛希爾資產管理公司</option><option value="新光證券投資信託股份有限公司">新光證券投資信託股份有限公司</option><option value="瑞士及環球資產管理（盧森堡）公司">瑞士及環球資產管理（盧森堡）公司</option><option value="瑞意銀行">瑞意銀行</option><option value="瑞萬通博管理股份有限公司">瑞萬通博管理股份有限公司</option><option value="瑞銀證券投資信託股份有限公司">瑞銀證券投資信託股份有限公司</option><option value="群益證券投資信託股份有限公司">群益證券投資信託股份有限公司</option><option value="資本國際公司">資本國際公司</option><option value="道富環球投資">道富環球投資</option><option value="德信證券投資信託股份有限公司">德信證券投資信託股份有限公司</option><option value="德盛安聯資產管理香港有限公司">德盛安聯資產管理香港有限公司</option><option value="德盛安聯證券投資信託股份有限公司">德盛安聯證券投資信託股份有限公司</option><option value="德銀遠東證券投資信託股份有限公司">德銀遠東證券投資信託股份有限公司</option><option value="摩根士丹利投資管理有限公司">摩根士丹利投資管理有限公司</option><option value="摩根富林明證券投資信託股份有限公司">摩根富林明證券投資信託股份有限公司</option><option value="摩根富林明證券投資信託股份有限公司">摩根富林明證券投資信託股份有限公司</option><option value="標準人壽投資有限公司">標準人壽投資有限公司</option><option value="歐義銳榮資產管理公司">歐義銳榮資產管理公司</option><option value="鋒裕環球證券投資顧問股份有限公司">鋒裕環球證券投資顧問股份有限公司</option><option value="聯邦證券投資信託股份有限公司">聯邦證券投資信託股份有限公司</option><option value="聯博證券投資顧問股份有限公司">聯博證券投資顧問股份有限公司</option><option value="駿利資產管理國際有限公司">駿利資產管理國際有限公司</option><option value="羅素投資集團">羅素投資集團</option><option value="寶來證券投資信託股份有限公司">寶來證券投資信託股份有限公司</option><option value="霸菱國際投資管理有限公司">霸菱國際投資管理有限公司</option><option value="霸菱證券投資顧問股份有限公司">霸菱證券投資顧問股份有限公司</option><option value="犇華證券投資信託股份有限公司
+">犇華證券投資信託股份有限公司
+</option></select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                轉入基金名稱</td>
+                                            <td>
+                                                <select style="width: 210px;" onchange="dd_fund_PopOnchange()" id="dd_fund_Pop" name="dd_fund_Pop" gtbfieldid="558">
+	</select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                轉入日期</td>
+                                            <td>
+                                                <input type="text" class="texts hasDatepicker" id="sd4In" name="sd4In" gtbfieldid="559"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                備註</td>
+                                            <td>
+                                                <textarea style="height: 104px;" id="Remark4" cols="20" rows="2" name="Remark4"></textarea>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+                                <!-- tabs1:end -->
+                                <div class="sbmt">
+                                    <span class="go">
+                                        <input type="submit" id="Button5" onclick="return fundTran1PoP_Sumit();" value="確定" name="Button5">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- bd:end -->
+                        </div>
+                    
+</div>
+                <!-- 基金轉換:end -->
+</body>
+</html>

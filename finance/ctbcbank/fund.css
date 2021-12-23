@@ -1,0 +1,674 @@
+@charset "utf-8";
+#navigation .submenus li.indexof a { display:block; background:url(http://b2b.cnyes.com/news/manulife/images/fund_hd.png) 0 bottom no-repeat; width:38px; height:30px; margin-right:8px; padding-top:0px;} 
+#navigation .submenus li.index a { display:block; background:url(http://b2b.cnyes.com/news/manulife/images/fund_hd.png) 0 11px no-repeat; width:38px; height:30px; margin-right:8px; padding-top:0px;} 
+.disyhidn {display:none;}
+.disyshow {display:block;}
+.g {color:#009900!important;}
+.r {color:#FF0000!important;}
+.gb {background-color:#CCFF99;}
+.rb {background-color:#FFCCCC;}
+.cr {text-align:center;}
+.lt {text-align:left;}
+.rt {text-align:right;font-size:11px;}
+.dt {font-size:11px;} /* date/time */
+.pe {font-size:11px; text-align:center;} /* price */
+.rth {text-align:right;}
+
+.mainboxs {height:1%; overflow:hidden; margin-bottom:12px;}
+.sideboxs {height:1%; overflow:hidden; margin-bottom:10px;}
+.bd {padding:8px 10px; border:1px solid #c2c9db; border-top:0; height:100%; overflow:hidden;}
+.bd1 {border:1px solid #ddd; border-top:0; height:1%; overflow:hidden;}
+.bd2 {}
+.bd3 {padding:0px 10px 8px 10px;border:1px solid #ddd; border-top:0; height:1%; overflow:hidden;}
+.bd4 {margin:5px 0px 0px 0px;}
+.bd5 {padding:15px; border:1px solid #ddd; border-top:0; height:1%; overflow:hidden;}
+.borpic {text-align:center;}
+.borpic img {border:1px solid #ddd;}
+cite.tydate { float:right;font:11px Arial, Helvetica, sans-serif; color:#555; margin:-22px 5px 0px 0px;}
+cite.tydate2 { float:right;font:11px Arial, Helvetica, sans-serif; color:#555; margin:-27px 5px 0px 0px; *margin:-22px 5px 0px 0px;}
+.tydate3{font:11px Arial, Helvetica, sans-serif; color:#555;}
+cite.morecn { float:right;font:11px Arial, Helvetica, sans-serif; color:#555; margin:-22px 5px 0px 0px;}
+cite.morecn a { color:#333;}
+cite.links {float:right;font:12px Arial, Helvetica, sans-serif; color:#333; margin:-20px 0px 0px 0px;}
+cite.links a {padding:0px 8px 0px 0px;}
+.starrk {font-family:Verdana, Arial, Helvetica, sans-serif!important; font-size:11px!important;}
+.boxlt{float:left;}
+.boxrt{float:right;}
+.nsboxlt {float:left; width:463px;}
+.nsboxrt {float:right; width:463px;}
+
+/*--- top ---*/
+/*..topnav {background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) right 0 no-repeat; float:right; text-align:center;} ---*/
+/*.topnav a {background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -495px -70px no-repeat; color:#333; display:block; width:50px;height:23px; line-height:23px;} ---*/
+.topnav {background:url(http://b2b.cnyes.com/news/manulife/images/btnBgs_top.png) 0 0 no-repeat; float:right; text-align:center; font:11px Verdana, sans-serif;}
+.topnav a {background:url(http://b2b.cnyes.com/news/manulife/images/btnBgs_top.png) right 0 no-repeat; color:#333; display:block; margin-left:3px; padding-right:12px; width:40px;height:23px; line-height:23px;}
+
+/*--- switch tags ---*/
+.hd1,.hd3 {height:31px;line-height:31px;padding-left:8px; overflow:hidden;}
+.hd1 li {float:left;display:block;}
+.hd1 li a {padding:3px 8px 0px 10px;_padding-top:2px;float:left; display:block;color:#333;}
+.hd1 li.current {padding-right:2px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) right -206px repeat-x;}
+.hd1 li.current a {padding:3px 12px 0px 15px;_padding-top:0px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -112px -206px repeat-x; cursor:pointer;}
+.hd1 li.current em {text-align:center;font-weight:bold; display:block; float:left;_padding-top:3px;}
+.hd2 {height:30px; overflow:hidden; color:#0d6d47; margin-bottom:-1px; }
+.hd2 li {float:left; text-align:center;}
+.hd2 li a { float:left; display:block;height:30px;line-height:30px; color:#666; text-decoration:none;background:url(images/cnyes_icon2.png) -367px -137px no-repeat;width:133px; margin-right:3px; font-size:15px; font-family:"Microsoft JhengHei","微軟正黑體",Arial;}
+.hd2 li.current a {background:url(images/cnyes_icon2.png) -367px -167px no-repeat; color:#fff;font-weight:bold; cursor:default;}
+.hd2 li.current a:hover { color:#fff; font-weight:bold;}
+.hd1 li a:hover,.hd2 li a:hover,.hd5 li a:hover {color:#cc0000;text-decoration:none;}
+.hd3 li {float:left;display:block;color:#333;}
+.hd3 li.current {padding-right:2px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) right -206px repeat-x;}
+.hd3 li.current em {padding:3px 10px 0px 13px;text-align:center;float:left;display:block;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -112px -206px repeat-x;font-weight:bold;}
+.hd3 li a {color:#333; margin:0px 2px;}
+.hd3 li a:hover {color:#c00;}
+.hd4 {/*height:27px; */overflow:hidden;background:transparent url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 bottom repeat-x;}
+.hd4 li {float:left;text-align:center;margin-right:-1px;background:transparent url(images/cnyes_icon.png) -349px -284px no-repeat;padding:0px 0px 0px 24px;}
+.hd4 li a,.hd4 li span {float:left; height:27px;line-height:27px;display:block; text-decoration:none;color:#333; padding:0px 26px 0px 0px; background:transparent url(images/cnyes_icon.png) right -284px no-repeat; }
+.hd4 li a em {cursor:pointer; font-style:normal;}
+.hd4 li.current {font-weight:bold;background:url(http://b2b.cnyes.com/news/manulife/images/comparetabs.png) 0px 0px;}
+.hd4 li .rLine{ border-right:1px solid #c00;}
+
+.hd4 li.current a,.hd4 li.current span {font-weight:bold;background:url(http://b2b.cnyes.com/news/manulife/images/comparetabs.png) right 0px; color:#009c98; letter-spacing:1px; font-size:12px;}
+
+.hd4 li.current a em {height:27px;line-height:27px;display:inline-block;font-weight:bold;}
+.hd4 li a:hover {color:#cc0000;}
+
+
+
+
+.hd04 {height:27px; overflow:hidden;background:transparent url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 bottom repeat-x;}
+.hd04 li {float:left;text-align:center;margin-right:-1px;background:transparent url(images/cnyes_icon.png) -349px -284px no-repeat;padding:0px 0px 0px 24px;}
+.hd04 li a,.hd04 li span {float:left; height:27px;line-height:27px;display:block; text-decoration:none;color:#333; padding:0px 25px 0px 0px; background:transparent url(images/cnyes_icon.png) right -284px no-repeat;}
+.hd04 li a em {cursor:pointer; font-style:normal;}
+.hd04 li.current {font-weight:bold;background:url(http://b2b.cnyes.com/news/manulife/images/comparetabs.png) 0px 0px;}
+
+.hd04 li.current a,.hd4 li.current span {font-weight:bold;background:url(http://b2b.cnyes.com/news/manulife/images/comparetabs.png) right 0px; color:#009c98; letter-spacing:1px; font-size:12px;}
+
+.hd04 li.current a em {height:27px;line-height:27px;display:inline-block;font-weight:bold;}
+.hd04 li a:hover {color:#cc0000;}
+
+
+
+
+
+.hd5 {height:28px; overflow:hidden;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 bottom repeat-x;}
+.hd5 li { border:1px solid #ccc; border-bottom:0;float:left;text-align:center;margin-right:-1px; padding:0px 15px; height:27px; line-height:27px; font:12px Arial, Helvetica, sans-serif;}
+.hd5 li a { color:#333;float:left; height:27px;line-height:27px;display:block; text-decoration:none;}
+.hd5 li.current {background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 0 repeat-x;}
+.hd5 li.current a em {font-weight:bold;}
+.hd5 li a:hover {color:#cc0000;}
+.hd6 {height:26px; overflow:hidden;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 -220px repeat-x; margin-top:15px; padding-left:90px;}
+.hd6 li {float:left;text-align:center;}
+.hd6 li a {float:left; height:27px;line-height:26px;display:block; text-decoration:none;color:#333; padding:0px 10px}
+.hd6 li.current a {font-weight:bold;background:url(images/cnyes_xbg.gif) 0 -190px repeat-x; border:1px solid #becadf; border-bottom:0;}
+.movelt {padding-left:115px;}
+.movelt2 {padding-left:10px;}
+h5.subhd { float:left;margin:-20px 0px 0px 3px; font-weight:bold; color:#555; font:13px Arial, Helvetica, sans-serif;}
+h5.subhd2 { float:left;margin:-18px 0px 0px 3px;color:#555; font-size:12px;}
+
+.movelt li.current a em {background:none;}
+.fdrank .hd4 li a,.galrank .hd4 li a {width:54px;}
+
+.charthd { font-size:12px;border:1px solid #ddd; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 0 repeat-x;height:25px; line-height:25px; text-align:center;}
+.charthd em {font-weight:bold; color:#333;}
+.hdsm {font-size:13px; font-weight:bold;border-top:1px solid #ddd; border-bottom:2px solid #ddd; height:26px; line-height:26px;padding:0px 2px;*padding-top:3px;}
+.hdsm2 {font-size:13px; font-weight:bold; border-bottom:2px solid #d1c8ab; height:25px; line-height:25px;padding:0px 2px;*padding-top:3px;}
+.hdsm a,.hdsm2 a {color:#333;}
+.hdsm a:hover,.hdsm2 a:hover {color:#cc0000;}
+/*--- table ---*/
+table {border-collapse:collapse; color:#555555; width:100%;font:12px Arial, Helvetica, sans-serif;}
+th {font-weight:normal;padding:2px 3px 0px 3px; text-align:center;} 
+td {padding:0px 3px;}
+.borline_lt {border-left:1px solid #ddd; padding-left:5px;}
+.tabs1 th { height:2.1em; line-height:2.1em; border-bottom:2px solid #d1c8ab;}
+.tabs1 th.th02{ height:2.1em; line-height:2.1em; border-bottom:1px solid #c2c9db;}
+
+
+.tabs1 td {background:url(http://b2b.cnyes.com/news/manulife/images/pointline.png) 0 bottom repeat-x;  line-height:23px; padding:5px 0;}
+.tabs1 th a{ color:#333; text-decoration:underline;}
+.tabs1 tr.all{ background:none; border-bottom:2px solid #d1c8ab; background-color:#fff8a4;}
+
+
+.bgclr th {background:#ededed; border:0; border-bottom:1px solid #becadf;}
+tr.brbtm td {border-bottom:2px solid #ccc; background:#fff;}
+.tabs2 {border-top:1px solid #ccc; border-left:1px solid #ccc;*border:0px;}
+head:first-child+body .tabs2 {border:0px;}/* for IE8 */
+.tabs2 th {background:#e8e8e8; border:1px solid #ccc; height:1.6em; line-height:1.6em;}
+.tabs2 td { border:1px solid #ccc;font-size:11px; height:1.8em; line-height:1.8em;}
+.tabs3 {border-top:1px solid #ccc;}
+.tabs3 th {background:#eee; border-bottom:1px solid #ccc; height:1.9em; line-height:1.9em; font-weight:bold;padding:0px 5px;}
+.tabs3 td { border-bottom:1px solid #ccc;font-size:11px; height:1.9em; line-height:1.9em; padding:0px 5px;}
+.tabs1 tr:hover td,.tabs2 tr:hover td,.tabs3 tr:hover td {background-color:#ededed;}
+.tabs1 td.bk { color:#333;}
+.tabs1 tr.nobgs:hover td { background-color:#fff;}
+.tabs1 tr.nobgs td {padding:15px 0px;}
+.tabs1 tr.nobgs td table td { padding:0px 5px;}
+
+.bgnone {margin-top:10px;}
+.bgnone td {background:none;} 
+/*--- list ---*/
+.list li {padding-left:12px;line-height:1.5em; margin-bottom:3px;color:#666;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -496px -430px no-repeat;}
+.list li span {display:inline-block; color:#666; font:11px Arial, sans-serif; padding-right:6px;padding-top:2px;}
+.list2 li {padding-left:12px;line-height:1.5em; margin-bottom:3px;color:#666;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -50px -525px no-repeat; font-size:11px;}
+.list2 li span {display:inline-block; color:#666; font:11px Arial, sans-serif; padding-right:6px;padding-top:2px;}
+.ftsize1 { font-size:12px;}
+.ftsize2 { font-size:13px;}
+/*--- srchtools ---*/
+.srchtools .bd5 {padding-bottom:0px;}
+.srchtools .boxlt {width:470px;}
+.srchtools .boxrt {width:460px;}
+.srchtools .bd2 {border:1px solid #ddd; border-top:0; text-align:center;padding:8px; height:1%; overflow:hidden; margin-bottom:15px;}
+.srchtools .charthd {font-weight:bold; color:#555; text-align:left; padding-left:8px;}
+.selectlist { height:282px;*height:270px; overflow:scroll; overflow-x:hidden; border:1px solid #ddd; padding:8px 8px 0px 8px;}
+head:first-child+body .selectlist  { height:262px;}
+.selectlist li { height:20px; line-height:20px;color:#555; text-align:left;}
+.selectlist li a {display:block; text-decoration:none;}
+.selectlist li a:hover {background:#eee;}
+/*----- moneytools -----*/
+.moneytools .bd2 { margin-top:1px; border:1px solid #DDDDDD; border-top:0; height:1%; overflow:hidden; *padding-bottom:10px;}
+.moneytools .bd2 .toolslist { border:0; padding:8px 0px 0px 20px;}
+.moneytools .bd2 .toolslist a{ display:block;color:#555555; width:120px; font-size:14px;text-align:center; float:left;display:inline;background:none; margin:0px 10px 8px 0px;*margin:0px 10px 0px 0px; padding:3px 0px 2px 0px;*padding-top:6px; background:url(http://b2b.cnyes.com/news/manulife/images/tools_btns.gif) #FEE666 left bottom repeat-x; border:1px solid #FBB100;}
+.moneytools .bd2 .toolslist a:hover {color:#333333;}
+.toolslist div { margin-left:-22px;}
+.mytools { font-size:12px; overflow:hidden; height:1%; color:#555555; width:288px; margin:0px auto; padding:5px 0px; text-align:left;}
+.mytools .submits { text-align:center; width:auto; padding:0px; margin-bottom:8px;}
+ul.mtnote {  border-top:1px dashed #ddd; margin: 5px 8px 0px 10px; padding-top:8px; }
+.mytools ul.mtnote li { list-style:decimal; margin: 0px 0px 5px 28px; font-size:11px; line-height:1.7em; color:#CC0033; font-size:12px;}
+.mtlinks { overflow:hidden; height:1%; width:330px; margin:0px auto;}
+.mtlinks a { color:#00529B;width:79px; margin:0px 0px 0px 3px; border:1px solid #ddd; border-bottom:0px; display:block; text-align:center; padding:0px 3px; float:left; line-height:2.2em;}
+.mtlinks a.current { border:1px solid #ccc; border-bottom:0px; font-weight:bold; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 0 repeat-x;}
+.mtconts { padding-top:5px; overflow:hidden; height:1%;}
+.mtconts span { display:block; float:left; width:118px; line-height:2.1em; padding-left:10px}
+ul.fminput { overflow:hidden; height:1%; margin:8px; background:#F4F4F4;}
+ul.fminput li { overflow:hidden; height:1%;line-height:2.2em; border-bottom:1px solid #FFFFFF;}
+ul.fminput li label { float:left;width:90px; text-align:right; padding-right:8px;}
+ul.fminput li label.cntr { float:none; display:block; width:auto;text-align:center;}
+.tabBlueBlack { background:#EEEEEE; border:1px solid #CCCCCC; height:16px; padding-top:3px; font-size:12px; color:#333333; font-family:Verdana, Arial, Helvetica, sans-serif;}
+.txtred { color:#FF3333;}
+
+/*--- stksearch ---*/
+.stksearch {background:url(http://b2b.cnyes.com/news/manulife/images/srch_bgs.png) 0 bottom no-repeat; height:1%; overflow:hidden; margin-bottom:10px; color:#666;}
+.srchboxs {background:url(http://b2b.cnyes.com/news/manulife/images/srch_bgs.png) -300px 0 no-repeat; padding:8px 8px;}
+.srchboxs label {padding:0px 3px 2px 2px; display:inline-block;}
+.hotkywds {font:11px Arial, Helvetica, sans-serif; line-height:1.6em; margin:3px 0px 0px 2px; height:34px; overflow:hidden;}
+
+.hotkywds a {margin-right:5px; display:inline-block;}
+
+.btns1 {background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) right 0 no-repeat; height:23px; display:inline-block; margin-left:2px;}
+.btns1 input { width:40px; display:inline-block;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -495px -70px no-repeat; height:23px; line-height:23px;padding-bottom:4px; *padding:1px 0px 0px 0px;font:12px Arial, Helvetica, sans-serif; border:0;}
+/*--- exgchart ---*/
+.exgchart {float:left; width:150px; text-align:center;}
+.curexgtable {float:right; width:140px; color:#333;}
+.curexgtable th {border-bottom:2px solid #E6E6E6;height:18px;line-height:18px; padding:0px 2px 0px 2px; font-size:10px;}
+.curexgtable td { padding:0px 1px; height:16px; line-height:16px; font-size:11px;*font-size:10px;background:url(http://b2b.cnyes.com/news/manulife/images/pointline.png) left bottom repeat-x;}
+.exgchart_hd { height:21px; line-height:21px; border-bottom:2px solid #DDDDDD; margin-bottom:5px;}
+.exgchart_hd a { margin:0px 2px; color:#666666;}
+.exgchart_hd a.current {color:#00529B}
+.exgchart .sadstxts { height:23px; line-height:23px; display:block; text-align:left;}
+.curexgcr cite.links a {color:#00529B;}
+.curexgcr .bd2 {margin-top:3px;}
+/*--- cnyes message ---*/
+.cymsge {height:1%; overflow:hidden; margin-bottom:10px;}
+.cymsge .hd {height:27px;}
+.cymsge .hd li {float:left;margin-right:-2px; text-align:center;}
+.cymsge .hd li a {width:151px;height:27px;line-height:27px;display:block; text-decoration:none;color:#333;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -349px -284px no-repeat; }
+.cymsge .hd li.current a {font-weight:bold;background-position:-349px -311px;}
+.cymsge .hd li a:hover {color:#cc0000;}
+.cymsge .bd li {padding-left:12px; line-height:1.7em;color:#666666;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -496px -430px no-repeat;}
+
+/*--- snapmenu ---*/
+.fdname {font:bold 22px dfkai-sb, stkaiti;color:#005027;}
+.fdname em {display:block; margin:6px 0px 0px 3px; font:bold 11px Tahoma; color:#999;}
+.fdname a {color:#005027;}
+.tabs4 {height:1%; margin-top:10px;overflow:hidden;}
+.snapmenu .hd4 li {padding-left:14px; *padding-left:9px;_padding-left:6px;}
+.snapmenu .hd4 li a {padding-right:14px; *padding-left:9px;_padding-left:6px;}
+/*.snapmenu .hd4 li em {display:inline-block; width:100px;}*/
+.snapmenu .hd4 li.current em {width:70px;} 
+
+
+
+.snapmenu .hd04 li {padding-left:30px; *padding-left:15px;}/*padding-left:8px;*/
+.snapmenu .hd04 li a {padding-right:30px; *padding-left:15px;}/*padding-right:8px;*/
+/*.snapmenu .hd4 li em {display:inline-block; width:100px;}*/
+.snapmenu .hd04 li.current em {width:110px;} 
+
+
+
+
+.tabs4 table td.pe { text-align:left;font:bold 14px Arial, Helvetica, sans-serif;}
+.tabs4 table td.r span { display:inline-block;width:15px; height:14px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) 0 -305px no-repeat;}
+.tabs4 table td.g span { display:inline-block;width:15px; height:14px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) 0 -273px no-repeat;}
+.hdsd {border:1px solid #becadf; border-top:0; height:28px; line-height:28px; padding-left:8px; color:#999;}
+.hdsd a {color:#333;}
+.hdsd a.current {color:#fc600e; font-weight:bold;}
+.hdsd a:hover {color:#cc0000;}
+span.picsm {display:inline-block;margin:3px 6px 2px 0px; vertical-align:middle;}
+span.picsm img { padding:2px; border:1px solid #becadf;}
+.spec table th,.spec table td {padding:0px 10px;}
+.fdvalue .boxlt {width:302px; margin-right:9px; }
+.fdvalue .boxrt {float:left;width:303px;}
+.fdvalue .tabs1 table {border:1px solid #c2c9db;}
+.fdvalue .tabs1 table th,.fdvalue .tabs1 table td {padding:0px 8px;}
+#mainfund { float:left; width:720px;}
+
+.goal { float:left; width:463px;}
+.dist {float:right; width:463px;}
+.goal p,.goal2 p { font:12px Arial, Helvetica, sans-serif; line-height:1.7em; margin:5px 0px; padding-right:10px; color:#555;}
+.joinbtn { display:block; float:right; margin:-27px 0px 0px 0px; height:20px;padding-right:8px; line-height:20px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -408px -372px no-repeat;}
+.joinbtn a { color:#333; display:block; float:left;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -100px -297px no-repeat; padding-left:26px;*padding-top:2px;  height:20px;text-decoration:none;}
+.joinbtn2 { display:block; float:right; margin:-22px 0px 0px 0px; height:20px; line-height:20px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -396px -372px no-repeat;}
+.joinbtn2 a { color:#333;  float:left;*padding-top:2px;height:20px; text-decoration:none; padding-right:8px;}
+.joinbtn2 span { display:inline-block; float:left;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -50px -298px no-repeat;  height:20px; width:22px; margin-right:3px;}
+.joinbtn a:hover,.joinbtn2 a:hover {color:#cc0000;}
+.fopen { float:right;display:inline-block; margin:-24px 10px 0px 0px;line-height:22px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) right -372px no-repeat;}
+.fopen a {display:block; float:left; text-decoration:none;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -50px -321px no-repeat; text-align:left; padding-left:25px;width:80px; height:22px; line-height:22px; color:#666; font-size:11px;}
+.sphd {font-size:12px;border:1px solid #becadf; background:#efe9d3 url(images/cnyes_xbg.gif) 0 0 repeat-x;height:31px; line-height:31px; padding-left:8px; font-weight:bold;}
+.sphd a { color:#333;}
+.fprt { text-align:right; height:1%; overflow:hidden;}
+.fprint {display:inline-block; width:90px; height:20px; line-height:22px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) right -372px no-repeat; margin-top:10px;}
+.fprint span { float:left; display:block;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -50px -413px no-repeat; width:22px; height:20px;}
+.fprint a { float:right; display:block;text-decoration:none; text-align:left;width:60px; height:20px; padding:0px 0px 2px 5px;color:#666;}
+
+.hismn .hd {height:27px; line-height:27px; float:right; margin-right:30px;}
+.hismn .hd li {float:left; color:#999;}
+.hismn .hd li a { color:#333; display:block; float:left; padding:0px 3px; text-decoration:none; margin-top:-5px;}
+.hismn .hd li.current a {color:#fc600e; font-weight:bold;}
+.hismn .hd li a:hover {color:#cc0000; font-weight:bold;}
+
+ th.dottedrt , td.dottedrt{ border-right:1px dotted #ccc;}
+.tabs3 .dotted th ,.tabs3 .dotted td,.tabs1 .dotted td{ border-bottom:1px dotted #d1c8ab;}
+.thbgnone table th {background-color:transparent;}
+.thbgnone tr:hover th { background:#eee;}
+
+.tabs3 table td.r span { display:inline-block;width:15px; height:14px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) 0 -305px no-repeat;}
+.tabs3 table td.g span { display:inline-block;width:15px; height:14px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) 0 -273px no-repeat;}
+.tabs1 .solidbm th,.tabs1 .solidbm td { border-bottom:2px solid #d1c8ab; background:none; padding-top:5px;}
+
+.calen {position:absolute;margin:26px 0px 0px 232px;background-color:#ffffff;display:none ; height:250px; width:400px; padding:15px; border:2px solid #ddd;} 
+.calen .charthd { width:185px;}
+.calen .boxlt,.calen .boxrt {height:200px; overflow:hidden;}
+.calen .cr {padding:10px 0px;}
+.close { display:block; height:24px;}
+.close a {color:#333;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) no-repeat 33px -166px; padding-right:20px; display:block; float:right;}
+
+.lipperex {position:absolute;margin:-2px 0px 0px 48px;background-color:#ffffff;display:none;width:600px; padding:15px; border:2px solid #ddd;}
+.lipperex li {line-height:1.9em; margin-bottom:15px; color:#555;}
+
+.picbox {padding:10px; text-align:center;}
+.mgtp {margin-top:10px;}
+
+.fdbars td h5 {font:13px Arial, Helvetica, sans-serif; height:25px; line-height:25px;*padding-top:2px;}
+.fdbars td p {font-size:11px; line-height:1.5em; color:#666; padding-bottom:3px;}
+
+/*--- moringstart ---*/
+.mgstarcopyr { display:block; text-align:center; font:12px Arial, Helvetica, sans-serif; color:#666; height:1%; overflow:hidden;}
+.mgstarcopyr img { margin:6px 0px;}
+.mgstarcopyr span { display:block; height:20px; line-height:20px; text-align:left; text-indent:50px;}
+.mgstarcopyr span a {text-decoration:underline;}
+
+/*--- performance ---*/
+.performance {height:1%;overflow:hidden;margin-bottom:12px;}
+.performance .pics {float:left;}
+.performance .pics em {display:inline-block; height:30px; line-height:30px; font-size:11px; color:#999;}
+.performance .pics em a {color:#333; font:12px Arial, Helvetica, sans-serif; text-decoration:none;}
+.performance .pics em a.current {color:#00529B; font-weight:bold;}
+.performance .pics em a:hover {color:#cc0000;}
+.hdnavs {background:url(http://fund.cnyes.com/Chart/stock/CompareAndETF/File/perfe_bgx.gif) 0 0 repeat-x;height:31px;padding-left:8px;}
+.hdnavs li {float:left;text-align:center;}
+.hdnavs li a {float:left;font-size:12px;color:#666666;display:block;text-decoration:none;color:#333333;display:block;text-decoration:none;overflow:hidden;padding:3px 12px 0px 14px;height:28px;line-height:31px;}
+.hdnavs li.current {font-weight:bold;background:url(http://fund.cnyes.com/Chart/stock/CompareAndETF/File/perfe_bg.gif) right 0 no-repeat;}
+.hdnavs li.current a {background:url(http://fund.cnyes.com/Chart/stock/CompareAndETF/File/perfe_bg.gif) 0 0 no-repeat;margin-right:2px;}
+.hdnavs li a:hover{color:#cc0000;}
+.atdate {float:right;font-size:11px;margin:-21px 8px 0px 0px; color:#666;}
+.bdboxs {height:1%;overflow:hidden;padding:6px 0px 0px 0px; float:left;}
+.tabsperfm {float:right; width:520px; margin-left:20px;}
+.tabsperfm table {border-collapse:collapse;color:#333;width:100%;font:12px Arial, Helvetica, sans-serif;}
+.tabsperfm th {background:#fff;border-bottom:2px solid #e1e1e1;height:2em;line-height:2em;}
+.tabsperfm td {padding:0px 3px;*padding-top:2px;height:2em;line-height:2em;*height:1.8em;*line-height:1.8em; background:url(http://fund.cnyes.com/Chart/stock/images/point_line.gif) left bottom repeat-x;}
+.tabsperfm tr:hover td {background-color:#eee;}
+/*--- defintabs ---*/
+.defintabs {width:620px;text-align:left; border:5px solid #ddd; padding:8px;}
+.defintabs h4 { font:13px Arial, Helvetica, sans-serif; font-weight:bold; height:28px; line-height:28px; border-top:1px solid #ddd; border-bottom:2px solid #ddd;}
+.defintabs span { display:inline-block;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -48px -526px no-repeat; width:15px; height:15px;}
+.defintabs .tabs2 {width:200px; float:right; margin-left:15px;}
+.defintabs p { color:#333; line-height:1.7em; margin:10px 10px 15px 10px;}
+.dragAble2 {margin:0px 0px 0px 20px;background-color:#ffffff;display:none ;} /*position:absolute;*/
+.defintabs ul {margin:0px; padding:0px; color:#333;}
+.defintabs ul li {font:12px Arial, Helvetica, sans-serif;font-weight:bold; padding:0px 0px 6px 10px;}
+.linkslt { float:right; margin:-20px 10px 0px 0px;}
+/*-- Enter ---*/
+.enter {text-align: center; height:1%; overflow:hidden;margin:10px 0px;}
+
+.enter cite,.enter .numnp a {display:inline-block;height:18px;line-height:18px;margin-right:5px;padding:0px 6px; font-size:11px;}
+
+.enter span.np a {display:inline-block;font:11px "新細明體", "細明體";height:19px;line-height:19px;*height:17px;*line-height:17px;margin-right:5px;padding:0px 6px; *padding-top:2px; }
+
+.enter cite {background:#009c98;color:#fff;border:1px solid #b7a579;font-weight:bold; font-style:normal;}
+
+.enter .numnp a,.enter span.np a {background:#fff;color:#009c98;border:1px solid #b7a579;}
+
+.enter .numnp a:hover,.enter span.np a:hover {background:#ededed;}
+
+.enter .numnp,.enter span.np { display:inline-block; vertical-align:top;}
+
+
+/*--- myreport ---*/
+.myreport .tabs1 td a.remove { display:block; font-size:1px; height:9px; width:9px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) no-repeat 0 -169px;}
+.myreport .tabs1 td {line-height:1.6em;}
+/*--- manager  ---*/
+.items { height:1%; overflow:hidden; padding:8px 0px; border-bottom:1px dotted #ccc;}
+.items2 { height:1%; overflow:hidden; padding:6px 0px 8px 0px; border-bottom:1px dotted #ccc;}
+.mpic {float:left; }
+.mpic img {padding:3px; border:1px solid #ddd;}
+.description {float:left; width:136px; font:bold 13px Arial, Helvetica, sans-serif; height:108px; color:#555; padding-top:2px; margin-right:10px; border-right:1px dotted #ddd;}
+.description em {display:block;line-height:18px; font-weight:bold; margin-bottom:5px;}
+.description span {display:block; height:20px; line-height:20px; margin-bottom:3px;}
+.mconts {float:left; padding-top:2px; width:420px;}
+.mconts h3,.items2 h3 { font:bold 15px Arial, Helvetica, sans-serif; height:28px; line-height:28px; overflow:hidden;}
+.mconts p,.items2 p {color:#666; line-height:1.7em;}
+.viewdate {display:block; height:22px; line-height:22px;font:11px Tahoma; color:#666;}
+.viewdate2 { float:right; margin-top:-14px;height:16px; line-height:16px; font:11px Tahoma; color:#666;}
+
+.names {font:bold 13px Arial, Helvetica, sans-serif; height:26px; line-height:26px; color:#s333;}
+/*----- value -----*/
+.fundsrch,.fundsrch2 {border:1px solid #becadf;/*border-bottom:1px solid #becadf;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 0 repeat-x;*/height:35px;line-height:35px; padding:0px 8px;overflow:hidden;}
+.fundsrch .hd4 {float:left;margin-top:9px;position:absolute;margin-bottom:-1px;/*width: 405px;*width: 405px;_width: 405px;background-image: url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif);*/}
+.fundsrch .hd4 li { padding-left:15px;}
+.fundsrch .hd4 li a {padding-right:12px;}
+.fdsrch {/*float:right*/;_margin-top:5px;}
+.fdsrch select {margin-right:5px;}
+.fdsrch .texts {height:21px; border:1px solid #b7a579;margin-top:6px;_margin-top:-1px; padding-left:3px;vertical-align:middle; display:inline-block;} 
+head:first-child+body .fdsrch .texts {margin-top:7px;}
+.fdsrch .go {display:inline-block;}/* background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) right 0 no-repeat; *padding-right:5px; */
+.fdsrch .go input { text-align:center; border:1px solid #ccc;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) #FFF 0 -133px repeat-x; width:60px; padding:0px;font:12px Arial, Helvetica, sans-serif; height:22px; line-height:22px; cursor:pointer;blr:expression(this.onFocus=this.blur())}/* padding-left:5px;*padding-top:2px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -495px -70px no-repeat; border:0; */
+body > div .fdsrch .go input { margin-top:2px; padding-bottom:2px; height:22px;}
+.fdmenu { height:30px; line-height:30px; padding:0px 10px; border:1px solid #becadf; border-top:0; border-bottom:1px dotted #becadf; /*margin-bottom:10px;*/}
+.fdmenu a { margin-right:15px; color:#686868; font-size:12px;}
+.fdmenu a:hover {color:#cc0000;}
+.fdmenu a.current {font-weight:bold; color:#cc0000;}
+.fundserch .bd {border:1px solid #becadf; padding:10px 15px 10px 15px; border-top:none;}
+.fundserch .tabs1 table td {height:25px; line-height:17px; padding:5px 0;}
+.fundserch .tabs1 table th a { text-decoration:underline;}
+.pages { font:12px Arial, Helvetica, sans-serif; color:#666; margin-top:12px; text-align:center;}
+.pages span {color:#FF6600; margin:0px 2px;}
+.fundsrch2 {text-align:center;}
+.fundsrch2 cite {display:inline-block; vertical-align:middle;*padding-top:1px;}
+.fundsrch2 .texts {margin-top:6px;border:1px solid #b7a579;padding-left:3px; vertical-align:top;}
+.fundsrch2 .go input { margin-top:6px;*margin-top:7px;vertical-align:top; text-align:center; border:1px solid #ccc;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) #FFF 0 -133px repeat-x; width:70px; padding:0px;font:12px Arial, Helvetica, sans-serif; height:22px; line-height:22px; cursor:pointer;blr:expression(this.onFocus=this.blur())}/* padding-left:5px;*padding-top:2px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -495px -70px no-repeat; border:0; */
+
+/*--- joinfund ---*/
+.joinfund { background:#fff;  width:350px;z-index:999; }/*margin:-450px 0px 0px 350px;*/
+.joinfund .charthd { text-align:left;height:28px; line-height:28px; padding:0px 10px; *padding-top:2px; border:1px solid #ccc;}
+.joinfund .charthd em { float:left;}
+.joinfund .charthd cite {float:right;}
+.joinfund .charthd cite a.remove3{ display:block;font-size:1px; height:11px; width:11px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) no-repeat -25px -169px; margin:7px 5px 0px 0px; }
+.joinfund .charthd cite a { float:left; color:#666;}
+.joinfund .bd2 {border-left:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc; padding:10px 12px; background:#fff;}
+.joinfund ul {height:120px; overflow:auto; overflow-x:hidden;}
+.joinfund ul li {border-bottom:1px dotted #ddd;line-height:23px; color:#333;}
+.joinfund ul li span {display:block; float:left; width:20px; padding-top:7px;}
+a.remove2 { display:block; font-size:1px; height:9px; width:9px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) no-repeat 0 -169px;}
+.sbmt { margin-top:10px;text-align:center;}
+.sbmt .go{ margin-left:5px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) right 0 no-repeat; *padding-right:5px; display:inline-block;}
+.sbmt .go input { width:36px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -495px -70px no-repeat; border:0; font:12px Arial, Helvetica, sans-serif; padding-left:5px;*padding-top:2px; height:22px; line-height:20px; cursor:pointer;blr:expression(this.onFocus=this.blur())}
+
+/*--- News and Report ---*/
+.nwsrch {border:1px solid #ddd; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 0 repeat-x;height:32px;line-height:32px; padding:0px 8px; margin-bottom:10px; overflow:hidden;}
+.nwsrch span.dtwd { display:inline-block; margin-bottom:2px;}
+.nwsrch .texts {border:1px solid #b7a579; font:11px Tahoma; margin:4px 5px 0px 5px; text-align:left;}
+.dtimg {display:inline-block; margin-right:10px; width:23px; height:13px;*height:18px; margin-top:5px;}
+.dtimg a {display:block; width:23px; height:18px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) 0 -105px no-repeat;}
+.nwsrch .go{background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) right 0 no-repeat; *padding-right:5px; display:inline-block;}
+.nwsrch .go input {background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -495px -70px no-repeat; border:0; font:12px Arial, Helvetica, sans-serif; padding-left:5px;*padding-top:2px; height:22px; line-height:20px; cursor:pointer;blr:expression(this.onFocus=this.blur())}
+head:first-child+body .nwsrch .go input {padding-top:2px;} 
+.nwconts {}
+.nwtab { margin-bottom:10px;}
+.nwtab table {border-collapse:collapse; color:#555555; width:100%;font:12px Arial, Helvetica, sans-serif;}
+.nwtab th {font-weight:normal;padding:2px 3px 0px 3px; text-align:left;height:25px; line-height:25px; background:#eee;} 
+.nwtab td {padding:0px 3px;background:url(http://b2b.cnyes.com/news/manulife/images/pointline.png) 0 bottom repeat-x; height:25px; line-height:25px;}
+.nwtab tr:hover td {background-color:#eee;}
+
+.nwconts2 {margin-top:10px;}
+.nwconts .path ,.nwconts2 .path { margin:0px 0px 10px 16px; color:#666;}
+.nwconts h2,.nwconts2 h2 {font-family:BiauKai, DFKai-SB; padding:0px 15px 15px 15px;}
+.nwconts cite.infos,.nwconts2 cite.infos { font:11px Tahoma; color:#666;padding:5px 16px; display:block; line-height:1.5em;}
+cite.infos img {margin-right:6px;}
+.article {height:1%; overflow:hidden; padding:0px 20px;}
+.article p {font-family:BiauKai, Helvetica, sans-serif; line-height:1.7em; color:#333; margin-bottom:15px;}
+.artads { float:left; padding:5px; border:1px solid #ddd; margin-right:12px;}
+.article .photos { float:left; margin-right:15px;}
+.article .photos img {padding:6px; border:1px solid #ddd;}
+.astks {border:1px solid #ddd; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 0 repeat-x;height:28px;line-height:28px; padding:0px 8px;overflow:hidden; font-weight:bold; font-size:13px;}
+.astksbd { font:12px Arial, Helvetica, sans-serif;border:1px solid #ddd; border-top:0; padding:12px 12px 2px 12px; margin:0px 0px 12px 0px;}
+.astksbd a {margin:0px 10px 8px 0px; display:inline-block;}
+.nwconts ul {padding:0px 15px 0px 15px;}
+.nwconts li {font:15px Arial, Helvetica, sans-serif; padding-bottom:8px;}
+.nwconts li.borbm {border-bottom:1px dotted #ccc; margin-bottom:12px; }
+.nwconts li span {font:11px Tahoma; color:#666; display:inline-block; margin-right:15px;}
+.aboutnews ul {margin-top:10px; padding:0px;}
+.aboutnews ul li {background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -496px -430px no-repeat; padding-left:15px; font-size:13px; padding-bottom:5px;}
+.leht table td { padding-top:3px; padding-bottom:3px; line-height:1.7em; height:1.7em;}
+
+.nwtools { padding:0px 15px; text-align:right; height:1%; overflow:hidden; margin-top:5px; margin-bottom:10px;}
+.tolt {float:right; margin-top:-30px;}
+.pgs a,.words a,.friends a {display:inline-block; width:22px; height:20px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) no-repeat; margin-bottom:2px;}
+.words {margin:0px 10px;}
+.friends a.sends {background-position:-72px -413px;}
+.friends a.prints {background-position:-50px -413px;}
+.pgs a.nt { background-position:-89px -489px;}
+.pgs a.pv {background-position:-111px -489px;}
+.pgs a.nt2 { background-position:-136px -489px;}
+.pgs a.pv2 {background-position:-158px -489px;}
+.words a.em {background-position:-89px -466px;}
+.words a.sm {background-position:-111px -466px;}
+.blogs {height:1%; overflow:hidden; margin-right:10px;}
+.blogs a.bloger {width:82px; height:23px; display:inline-block; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -180px 0px no-repeat;}
+.blogs a.collect {width:82px; height:23px; display:inline-block; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -180px -31px no-repeat;}
+
+/*--- ratenote ---*/
+.ratenote {  border:1px solid #ddd; padding:10px 20px;}
+.ratenote .hdsm2 { margin-bottom:10px;}
+.ratenote .hdsm2 span { display:inline-block; width:10px; height:10px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) 0px -411px;} 
+.ratenote{ height:auto; overflow:hidden; zoom:1;}
+.ratenote .mainboxs {height:auto; overflow:hidden;}
+.ratenote em { font-weight:bold; display:block; color:#555; height:26px; line-height:26px;}
+.ratenote p {margin-bottom:12px; margin-left:15px;line-height:1.8em; color:#555;}
+.ratenote .pics {float:right;}
+/*--- knowlist ---*/
+.knowlist {padding:5px;}
+.knowlist h3 {font:bold 15px PMingLiU; color:#555;  height:30px; line-height:30px; margin-bottom:10px; border-bottom:2px solid #ddd; padding-left:2px;}
+.knowlist h4 {font:bold 15px PMingLiU; color:#FF6600; height:30px; line-height:30px; margin-bottom:10px;}
+.knowlist h5 {font:bold 13px Arial, Helvetica, sans-serif;color:#333; margin-bottom:3px; padding:0px;}
+.knowlist h3 span { float:left; width:20px; height:23px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) 0 -187px no-repeat;}
+.knowlist h4 span { float:left; width:15px; height:20px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) 0 -367px no-repeat;}
+.knowlist h5 span { float:left; width:10px; height:12px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) 0 -412px no-repeat;}
+.knowlist .bd2 { margin:0px 15px 10px 15px; height:1%; overflow:hidden;}
+.knowlist p {color:#333; font:13px PMingLiU; line-height:1.8em; margin-bottom:15px; height:1%; overflow:hidden;} 
+.knowlist h3 a { text-decoration:none;color:#555; cursor:pointer;blr:expression(this.onFocus=this.blur())}
+.knowlist h3 a:hover {color:#cc0000;}
+/*--- calendar ---*/
+.calen_month { height:1%; overflow:hidden;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 bottom repeat-x;}
+.calen_month li {float:left; font:11px Tahoma; height:28px; padding:5px 10px 0px 10px;}
+.calen_month li span {font:9px Helvetica, sans-serif; display:block; color:#999; text-align:center;}
+.calen_month li.current {border:1px solid #ccc; border-bottom:0; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 0 repeat-x;}
+.calen_month li.current a {font-weight:bold;}
+.calen_month .yr {width:90px; text-align:center; font:20px "Times New Roman", Times, serif; font-weight:bold;}
+.calen_month .yr a { margin:5px; color:#666;}
+.calen_month a,.calen_dy a {color:#333;}
+.calen_month a:hover {text-decoration:none; color:#cc0000;}
+.calen_dy {height:1%; overflow:hidden; border:1px solid #ccc; border-top:0; padding:8px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) 0 -119px repeat-x;}
+.calen_dy li {float:left; padding:0px 4px 0px 5px; font:12px Arial, Helvetica, sans-serif;}
+.calen_dy li.current a {color:#fff;background-color:#999; padding:0px 2px;}
+.calen_dy li a.hdy {color:#cc0000;}/*color:#FF9900;*/
+.todaydate {font:12px Arial, Helvetica, sans-serif; font-weight:bold; background-color:#eee; border:1px solid #ddd; text-align:center;padding:6px 0px; margin-bottom:12px;}
+
+.imptup { width:18px; height:16px; line-height:16px;*padding-top:2px; text-align:center; display:block;border:1px solid #993300; background:#cc0000; color:#fff;}
+.imptdn { width:18px; height:16px; line-height:16px;*padding-top:2px; text-align:center; display:block;border:1px solid #669900; background:#99CC00; color:#fff;}
+.imptmd { width:18px; height:16px; line-height:16px;*padding-top:2px; text-align:center; display:block;border:1px solid #FF6600; background:#FF9900; color:#fff;} 
+/*--- search ---*/
+.srchkeywrd {line-height:24px; border-top:1px dotted #ccc;}
+.srchkeywrd span {font:10px Arial, Helvetica, sans-serif;}
+.srchkeywrd em {color:#cc0000; font:bold 12px Arial, Helvetica, sans-serif; margin:0px 5px;}
+.formlist .hd4 li span { display:inline-block; width:80px;}
+.formlist .bd2 { margin-top:10px;}
+.dtlines { height:32px; line-height:32px; color:#3333;padding-left:12px;}
+.dtlines span { /*display:inline-block;*/ width:108px;}
+.dtlines .slt {width:400px}
+.dtlines .slt2 {width:70px;}
+.dtlines .slt3 {width:150px;}
+.dtlines .texts {width:60px; border:1px solid #b7a579; margin-left:3px; height:15px;}
+.dtlines label { /*display:inline-block;*/ margin-right:15px;}
+.submit {text-align:center}
+.submit input.butn {margin:0px 5px; width:60px;}
+.fundserch .tabs2 table td {vertical-align:top; padding:5px;}
+.fundserch .tabs2 strong {font-weight:bold; color:#cc0000;}
+
+.cyads170x40 { height:40px;}
+.cyads170x40 td {text-align:center;}
+.cyads920x100 {text-align:center; margin-bottom:12px;}
+.cyads920x100 ul{ height:1%; overflow:hidden; margin:0px auto;}/* background:url(http://b2b.cnyes.com/news/manulife/images/ads_btns_line.png) center bottom no-repeat; */
+.cyads920x100 ul li {float:left; display:inline; height:26px; width:170px; margin:0px 14px 0px 13px;}
+.cyads920x100 ul li span {display:block;height:26px;width:170px;background:url(http://b2b.cnyes.com/news/manulife/images/ads_btns.png) center 0 no-repeat;}
+.cyads920x100 ul li a {display:block; height:26px; width:170px; margin:0px auto;background:url(http://b2b.cnyes.com/news/manulife/images/ads_btns.png) 0 0 no-repeat;blr:expression(this.onFocus=this.blur())}
+.cyads920x100 ul li.current a {display:block;background:url(http://b2b.cnyes.com/news/manulife/images/ads_btns.png) 0 -26px no-repeat;}
+/*----- myfund -----*/
+.myfund .fundsrch .hd4 li a {width:67px;}
+.mybtns a { background:#ededed;display:inline-block; color:#827356; float:left; height:22px; line-height:22px; padding:0px 10px; margin-top:6px; margin-right:10px; border-width:1px; border-style:solid; border-color:#b7a579 #99885f #99885f #b7a579;}
+.mybtns a.current { background:#fff;color:#333; font-weight:bold;}
+.mybtns a:hover {color:#cc0000;text-decoration:none;}
+a.remove4,.romove4 { display:block; font-size:1px; height:9px; width:9px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) no-repeat 0 -169px;}
+.myfundbtns {padding:10px 0px 0px 258px;}/*float:left;margin:10px 0px 0px 258px;*/
+.myfundbtns a { color:#333;}
+.myfundbtns a:hover {color:#cc0000;}
+.fdprint {float:left;background:url(http://b2b.cnyes.com/news/manulife/images/icons.png) 0 0 no-repeat; height:22px;line-height:22px;padding-left:20px;margin-left:15px;}
+.myfdbtn {float:left;background:url(http://b2b.cnyes.com/news/manulife/images/icons.png) 0 -25px no-repeat; height:22px; line-height:22px;padding-left:20px; }
+
+.myfdclose {margin-top:8px; text-align:center;}
+.myfdclose a {text-decoration:underline;}
+.myfdclose a span {background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -25px -169px no-repeat; width:15px; height:12px; display:inline-block; text-decoration:none;}
+
+
+
+a.editor {float:left;background:url(http://b2b.cnyes.com/news/manulife/images/icons.png) 0 -25px no-repeat; display:block; float:left; height:20px; width:22px;margin:0px 3px;margin-top:3px; }
+a.dels {float:left;background:url(http://b2b.cnyes.com/news/manulife/images/icons.png) 0 -108px no-repeat; display:block; float:left; height:20px; width:22px;margin:0px 3px;margin-top:3px; }
+a.tabopen {background:url(http://b2b.cnyes.com/news/manulife/images/icons.png) 0 -50px no-repeat; display:inline-block;float:left; height:20px; width:22px;}
+a.tabclose {background:url(http://b2b.cnyes.com/news/manulife/images/icons.png) 0 -79px no-repeat; display:inline-block;float:left; height:20px; width:22px;}
+span.tabopen {background:url(http://b2b.cnyes.com/news/manulife/images/icons.png) 0 -50px no-repeat; display:inline-block;float:left; height:20px; width:22px;}
+span.tabclose {background:url(http://b2b.cnyes.com/news/manulife/images/icons.png) 0 -79px no-repeat; display:inline-block;float:left; height:20px; width:22px;}
+
+em.thtools{font-style:normal ;}
+em.thtools a { font-style:normal ;display:inline-block; margin:0px 5px; color:#FF6600;}
+em.thtools a:hover {color:#cc0000;}
+.thbg th,.thbg td {background:#fff8a4; border-bottom:1px solid #c2c9db; color:#333; font-weight:bold;}
+.thbg td a {font-weight:normal; text-decoration:underline;}
+.divinfo {width:300px; position:absolute; width:350px;z-index:999; background:#fff; border:3px solid #ddd;}
+.divinfo .bd {border-color:#ccc;}
+.divinfo .charthd { padding:0px 8px;border-color:#ccc;}
+.divinfo .charthd em {float:left;}
+.divinfo .charthd cite {float:right;}
+.divinfo .charthd cite a.remove3{ display:block;font-size:1px; height:11px; width:11px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) no-repeat -25px -169px; margin:7px 5px 0px 0px; }
+.divinfo .charthd cite a { float:left; color:#666;}
+.thbg2 th {background:#fff; height:2em; font-weight:bold;}
+.divinfo input.texts {border:1px solid #b7a579; font:11px Verdana, Arial, Helvetica, sans-serif; padding-left:5px; margin:3px;}
+.divinfo textarea {border:1px solid #b7a579;margin:3px;}
+.divinfo select {margin:3px;}
+
+
+.chosecont {height:1%;overflow:hidden;margin-top:12px; /*padding-left:16px;*/}
+.chosecont input.texts { margin:0; padding:0;margin-top:2px; *margin-top:1px; padding-top:3px;border:1px solid #b7a579; height:15px; font:12px PMingLiU; vertical-align:middle;}
+.cboxs {float:left;width:306px; padding-left:2px;}
+.cboxs2 {float:left;width:300px; padding-left:2px;}
+.cboxs4 {float:left;width:358px; padding-left:2px;}
+.cboxs3 {float:left;width:275px; padding-left:2px; margin-left:15px;}
+.chosrt {width:250px; margin-left:20px;}
+.chosrt2 {width:580px;}
+.cbutns {float:left; width:62px; padding-top:24px;}
+.cbutns span {display:block;width:54px;height:23px; margin-bottom:8px;padding:0px;border:0; background-image:url(http://b2b.cnyes.com/news/manulife/images/icons.png); background-repeat:no-repeat;cursor:pointer;}
+.cbutns span input {filter: Alpha(Opacity=0); Opacity:0;cursor:pointer; width:54px;}
+.cbtns1 {background-position:0 -132px;}
+.cbtns2 {background-position:0 -165px;}
+.cbtns3 {background-position:0 -230px;}
+.cbtns4 {background-position:0 -197px;}
+.chd {display:block;height:24px; line-height:24px; margin-bottom:5px;}
+.chd input.butn2 {font:11px "新細明體", "細明體"; height:20px; width:40px;padding-top:3px;padding-top:2px;*padding-top:3px; vertical-align:middle;margin-top:2px; *margin-top:1px;background:url(images/cnyes_xbg.gif) #fff 0 -133px repeat-x; border-width:1px; border-style:solid; border-color:#b7a579 #99885f #99885f #b7a579; color:#6b5832;}
+.selwd {width:245px;}
+.arowbg,.arowbg2 {background:url(http://b2b.cnyes.com/news/manulife/images/arrow_right.png) center right no-repeat;}
+.arowbg2 {margin-right:18px;}
+input.colwd {width:198px;}
+input.colwd2 {width:156px;}
+input.colwd3 {width:224px;}
+.chosecont input.colwd4 {width:65px; font:11px Tahoma; margin-right:8px;}
+.chosecont input.colwd5 {width:95px; font:11px Tahoma; margin-right:8px;}
+/*.cboxform {height:1%; overflow:hidden;border:1px solid #becadf;padding:8px 0px 8px 8px;}*/
+.cboxform {height:1%; overflow:hidden; background-color:#ededed; padding:8px 0px 8px 8px;}
+.cform { margin-top:7px; display:block; color:#333;}
+.cform cite {display:inline-block; vertical-align:top; padding:6px 6px 0px 0px;color:#333;}
+
+.gadstxtmcont1 {border:1px solid #eee; padding:8px 10px;}
+.gadstxtmcont2 {border:1px solid #eee; padding:8px 10px;}
+ 
+*.gadstxtm2 .gbox {display:block;padding:18px 10px 18px 10px;border:1px
+solid #CECFCF;}
+
+*.gadstxtm2 .rover .gbox a { display:block;padding:18px 10px 18px 10px;}
+
+.fdbors {border:1px solid #E7D296; padding:8px;}
+.fdbors1 {border:1px solid #E7D296;}
+.fdbors2 {border:3px solid #ECE8B7;}
+.fdbors .mainboxs {margin-bottom:0;}
+
+.eventmesg { border:1px solid #ccc;  border-top:0; padding:0px 8px; background:#f5f5f5; height:26px; line-height:26px;}
+
+.eventmesg cite {font:10px Verdana, Arial, Helvetica, sans-serif; color:#bbb; margin:0px 2px;}
+
+.eventmesg em { display:inline-block; background-color:#c00; color:#fff; padding:0px 5px; padding-top:2px; margin-right:10px; height:18px; line-height:18px;}
+
+.blank10 {overflow:hidden; height:10px;}   
+
+.thbgnone {margin-top:8px;}
+.snapmenu .hd4 li.current a {color:#5fa16d;}
+
+.fdbox {border:1px solid #E7D296; padding:3px; background-color:#ECE8B7;}
+.fdboxin {border:1px solid #E7D296; padding:12px;background-color:#fff; zoom:1; overflow:hidden;}
+.kinds {color:#666;zoom:1; overflow:hidden; border-bottom:1px dotted #ccc; margin-bottom:10px;}
+.kinds cite {float:left; height:24px; line-height:24px; }
+a.addfd { float:right; background:url(http://b2b.cnyes.com/news/manulife/images/addfund.png) 0 0 no-repeat; width:80px; height:22px; border:0; padding:0;}
+.fdboxin table { margin-top:8px; text-align:center; border:1px solid #e5e5e5;}
+.fdboxin table th {background-color:#f5f5f5; font:11px PMingLiU; border-bottom:1px solid #ddd; height:15px; line-height:15px;}
+.fdboxin table td {border-bottom:1px solid #eee; padding:3px;}
+.fdboxin td.pe {font:bold 12px Tahoma; color:#555;}
+.fdboxin td.r span { display:inline-block;width:20px; height:14px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -18px -299px no-repeat;*background-position:-18px -302px;}
+.fdboxin td.g span { display:inline-block;width:20px; height:14px;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -18px -268px no-repeat;*background-position:-18px -271px;}
+.fdboxin h3 {font:bold 22px dfkai-sb, stkaiti;color:#005027;}
+p.fden { font:bold 11px Arial,sans-serif, Times, serif; color:#666; padding:6px 3px 5px 3px;}
+em.events { display:block;background:#f5f5f5; margin-top:8px;}
+em.events img {float:left; margin-right:10px;}
+em.events cite {color:#ccc; font-size:11px;display:inline-block;}
+.events span {display:inline-block; height:20px; line-height:21px; padding-top:1px;}
+.fdtp {border-top:1px solid #ddd;}
+
+/*--myInvestment added 20100805--*/
+.arrowBx *{vertical-align:middle;}
+.arrowBx {float:right;margin:-26px 20px 0 0; color:#666;}
+.arrowBx a {margin-left:20px;}
+.arowt,.arowd {display:inline-block;width:14px; margin:0 5px; height:18px;margin-top:3px;}
+.arowt {background:url(http://b2b.cnyes.com/news/manulife/images/arrows.png) 0 0 no-repeat;}
+.arowd {background:url(http://b2b.cnyes.com/news/manulife/images/arrows.png) 0 -26px no-repeat;}
+
+.fdSrch2 .texts { height:21px ;border:1px solid #b7a579;margin-top:2px;_margin-top:-1px; padding-left:3px;vertical-align:middle; display:inline-block;}
+.fdSrch2 {float:right; margin:-38px 8px 0 0; *margin-right:5px;}
+.fdSrch2 .go {display:inline-block;}
+.fdSrch2 .go input { text-align:center; border:1px solid #ccc;background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_xbg.gif) #FFF 0 -133px repeat-x; width:60px; padding:0px;font:12px Arial, Helvetica, sans-serif; height:22px; line-height:22px; cursor:pointer;blr:expression(this.onFocus=this.blur())}/* padding-left:5px;*padding-top:2px; background:url(http://b2b.cnyes.com/news/manulife/images/cnyes_icon.png) -495px -70px no-repeat; border:0; */
+body > div .fdSrch2 .go input { margin-top:2px; padding-bottom:2px; height:22px;position: }
+
+.hd52 {height:65px; overflow:hidden; color:#444; margin-bottom:-1px; margin-top:-13px;position:relative;z-index:100000; !important }
+.hd52 li {float:left; text-align:center;}
+.hd52 li a { float:left; display:block;height:65px;line-height:16px; color:#666; width:120px; margin:0;padding:25px 21px 3px 11px;}
+.hd52 li a:hover{ color:#f60; background:none;}
+.hd52 li.current{background:url(images/gradation.png) no-repeat;_background:url(images/gradation.gif) no-repeat; color:#fff; }
+.hd52 li.current a {color:#fff}
+.hd52 li.current a:hover { color:#fff;}
+ol.expect {font-size: 11px;color: #555;line-height: 2em;border: 1px dotted #B7A579;padding: 12px;margin: 10px 0;}
+ol.expect li{ list-style:decimal; margin-left:22px; padding-left:5px;}
+ol.expect li li{ list-style:lower-roman;}

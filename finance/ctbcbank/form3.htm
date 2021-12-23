@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>中國信託人壽</title>
+<link type="image/x-icon" rel="icon" href="https://consumer.chinatrust.com.tw/favicon.ico">
+<link href="jquery.datepicker.css" rel="stylesheet" type="text/css">
+<link href="fund.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="nav-h.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+                <!-- 基金贖回:start -->
+                <div id="UpdatePanel3">
+	
+                        <div class="divinfo" id="fundBackPoP">
+                            <div class="charthd">
+                                <em>基金贖回</em><cite><a class="remove3" onclick="BOX_remove('fundBackPoP');" href="javascript:;"></a>
+                                <a onclick="BOX_remove('fundBackPoP');" href="javascript:;">關閉</a></cite></div>
+                            <div class="bd">
+                                <div class="tabs2">
+                                    <table>
+                                        <tbody><tr>
+                                            <th class="lt" id="fundBackPoPname" colspan="2">
+                                                富蘭克林坦伯頓全球投資系列-全球基金 - A-ACC-$</th>
+                                        </tr>
+                                        <tr>
+                                            <td width="30%">
+                                                交易日期</td>
+                                            <td>
+                                                <input type="text" class="texts hasDatepicker" id="sd3" name="sd3" gtbfieldid="551">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="30%">
+                                                <input type="radio" id="fundBackPoPRadio1" name="fundBackPoPRadio1" value="fundBackPoPRadio1">
+                                                贖回金額</td>
+                                            <td>
+                                                <input type="hidden" id="HF_fundBackPoP_TotalAmount" name="HF_fundBackPoP_TotalAmount">
+                                                <input type="hidden" id="HF_fundBackPoP_MarketTotal" name="HF_fundBackPoP_MarketTotal">
+                                                <input type="hidden" id="HF_fundBackPoP_fundId" name="HF_fundBackPoP_fundId">
+                                                <input type="hidden" id="HF_fundBackPoP_MasterId" name="HF_fundBackPoP_MasterId">
+                                                <input type="text" class="texts" value="請輸入金額" onfocus="if(this.value=='請輸入金額')this.value='';" id="MoneyText3" name="MoneyText3" gtbfieldid="552">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" id="fundBackPoPRadio2" name="fundBackPoPRadio1" value="fundBackPoPRadio2">
+                                                贖回單位數</td>
+                                            <td>
+                                                <input type="text" class="texts" value="請輸入單位" onfocus="if(this.value=='請輸入單位')this.value='';" id="UnitText3" name="UnitText3" gtbfieldid="553"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                備註</td>
+                                            <td>
+                                                <textarea style="height: 104px;" id="Remark2PoP" cols="20" rows="2" name="Remark2PoP"></textarea>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </div>
+                                <!-- tabs1:end -->
+                                <div class="sbmt">
+                                    <span class="go">
+                                        <input type="submit" id="Button4" onclick="return fundBackPoP_Sumit();" value="確定" name="Button4">
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- bd:end -->
+                        </div>
+                    
+</div>
+                <!-- 基金贖回:end -->
+</body>
+</html>

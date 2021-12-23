@@ -1,0 +1,69 @@
+/*
+Author: Craig Erskine
+Description: Dynamic Menu System - Horizontal/Vertical
+*/
+
+/* Root Menu Hover Persistence */
+ul#navmenu-h a:hover,ul#navmenu-h li:hover a,ul#navmenu-h li.iehover a { background-position:left bottom;}
+/* 2nd Menu */
+ul#navmenu-h li:hover li a,ul#navmenu-h li.iehover li a { float:none; text-indent:inherit; background:url(images/sub_01.jpg) top left repeat-x; color:#666;/*padding-top:5px;*/
+display:block; font:13px "新細明體", "Verdana", "Arial"; text-decoration:none; text-align:center; height:35px; line-height:35px; border-top:1px solid #dfdfdf;}
+/* 2nd Menu Hover Persistence */
+ul#navmenu-h li:hover li a:hover,ul#navmenu-h li:hover li:hover a,ul#navmenu-h li.iehover li a:hover,ul#navmenu-h li.iehover li.iehover a {color:#008773; font-weight:bold;}
+/* 3rd Menu */
+ul#navmenu-h li:hover li:hover li a,ul#navmenu-h li.iehover li.iehover li a { background:#999;}
+/* 3rd Menu Hover Persistence */
+ul#navmenu-h li:hover li:hover li a:hover,ul#navmenu-h li:hover li:hover li:hover a,ul#navmenu-h li.iehover li.iehover li a:hover,ul#navmenu-h li.iehover li.iehover li.iehover a { background:#666;}
+/* 4th Menu */
+ul#navmenu-h li:hover li:hover li:hover li a,ul#navmenu-h li.iehover li.iehover li.iehover li a { background:#666;}
+/* 4th Menu Hover */
+ul#navmenu-h li:hover li:hover li:hover li a:hover,ul#navmenu-h li.iehover li.iehover li.iehover li a:hover { background:#333;}
+/* Hover Function - Do Not Move */
+ul#navmenu-h li:hover ul ul,ul#navmenu-h li:hover ul ul ul,ul#navmenu-h li.iehover ul ul,ul#navmenu-h li.iehover ul ul ul { display: none;}
+ul#navmenu-h li:hover ul,ul#navmenu-h ul li:hover ul,ul#navmenu-h ul ul li:hover ul,ul#navmenu-h li.iehover ul,ul#navmenu-h ul li.iehover ul,ul#navmenu-h ul ul li.iehover ul { display:block;}
+
+
+#topnav ul#navmenu-h{ width:100%; }
+#topnav ul#navmenu-h li{ float:left; width:198px;}
+#topnav ul#navmenu-h li a {color:#FFF; float:none;}
+#topnav ul#navmenu-h li .menu_1{ display:block; background:url(images/btn_01.jpg) top left no-repeat; width:198px; height:40px; text-indent:-9999px;}
+#topnav ul#navmenu-h li .menu_2{ display:block; background:url(images/btn_02.jpg) top left no-repeat; width:198px; height:40px; text-indent:-9999px;}
+#topnav ul#navmenu-h li .menu_3{ display:block; background:url(images/btn_03.jpg) top left no-repeat; width:198px; height:40px; text-indent:-9999px;}
+#topnav ul#navmenu-h li .menu_4{ display:block; background:url(images/btn_04.jpg) top left no-repeat; width:198px; height:40px; text-indent:-9999px;}
+#topnav ul#navmenu-h li .menu_5{ display:block; background:url(images/btn_05.jpg) top left no-repeat; width:198px; height:40px; text-indent:-9999px;}
+
+#topnav ul#navmenu-h li a:hover{ background-position:bottom;}
+
+#topnav ul#navmenu-h li.noline{ background:none; padding-right:0;}
+#topnav ul#navmenu-h li.noline a.no{ display:block; width:198px;font:15px "Microsoft JhengHei","微軟正黑體",Arial; color:#FFF; line-height:40px; text-decoration:none; text-align:center;}
+#topnav ul#navmenu-h li.noline a.no:hover{ display:block;  width:198px; font:15px "Microsoft JhengHei","微軟正黑體",Arial; background:url(images/bt_topslice_on.jpg) repeat-x left top;color:#333; line-height:40px; text-decoration:none; text-align:center;}
+#topnav ul#navmenu-h .menu_on{ color:#333;}
+#topnav ul#navmenu-h .menu_on a { color:#333; background-position:bottom;}
+
+#topnav ul#navmenu-h li.noline_menu_on{ background: url(images/bt_topslice_on.jpg) repeat-x left top; color:#333; padding-right:0;}
+#topnav ul#navmenu-h li.noline_menu_on a.no{ display:block; width:198px;font:15px "Microsoft JhengHei","微軟正黑體",Arial; color:#333; line-height:40px; text-decoration:none; text-align:center;}
+#topnav ul#navmenu-h li.noline_menu_on a.no:hover{ display:block;  width:198px; font:15px "Microsoft JhengHei","微軟正黑體",Arial; background:url(images/bt_topslice_on.jpg) repeat-x left top;color:#333; line-height:40px; text-decoration:none; text-align:center;}
+
+
+#topnav ul#navmenu-h ul.w140 li.noline{ background:none; padding-right:0;}
+#topnav ul#navmenu-h ul.w140 li.noline a{ display:block; width:198px;font:15px "Microsoft JhengHei","微軟正黑體",Arial; color:#666; line-height:40px; text-decoration:none; text-align:center; font-weight:bold; }
+#topnav ul#navmenu-h ul.w140 li.noline a:hover{ display:block;  width:198px; font:15px "Microsoft JhengHei","微軟正黑體",Arial ;color:#008773; font-weight:bold; line-height:40px; text-decoration:none; text-align:center;}
+#topnav { }
+
+
+
+ul#navmenu-h { margin:0; padding:0; list-style:none; position:relative;}
+
+ul#navmenu-h ul { margin:0; list-style:none; display:none; position:absolute; top:40px;
+border-right:2px solid #FFF;}
+ul#navmenu-h ul.w120 { width:120px;*margin-left:-120px;}
+ul#navmenu-h ul.w140 { width:196px;/* border-top:1px solid #a6d8fb; }
+
+
+ul#navmenu-h ul ul,ul#navmenu-h ul ul ul { top:0; left:80px;}
+ul#navmenu-h li { float:left; display:inline; position:relative;}
+ul#navmenu-h ul li { display:block; width:100%; height:35px; }
+
+/* Root Menu */
+ul#navmenu-h a { float:left;}
+

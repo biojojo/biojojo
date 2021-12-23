@@ -1,0 +1,422 @@
+﻿#navigation .submenus li.indexof a { display:block; background:url(images/exchange_hd.png) 0 bottom no-repeat; width:38px; height:30px; margin-right:8px; padding-top:0px;} 
+#navigation .submenus li.index a { display:block; background:url(images/exchange_hd.png) 0 11px no-repeat; width:38px; height:30px; margin-right:8px; padding-top:0px;} 
+.disyhidn {display:none;}
+.disyshow {display:block;}
+.pe {font-size:11px; text-align:center;} /* price */
+.g {color:#009900!important;}
+.r {color:#FF0000!important;}
+.gb {background-color:#CCFF99;}
+.rb {background-color:#FFCCCC;}
+.cr {text-align:center;}
+.lt {text-align:left;font-size:11px;}
+.rt {text-align:right;font-size:11px;}
+.stars { font:10px Arial, Helvetica, sans-serif; text-align:right;}
+.dt {font-size:11px;} /* date/time */
+.imptup { width:18px; height:16px; line-height:16px;*padding-top:2px; text-align:center; display:block;border:1px solid #993300; background:#cc0000; color:#fff;}
+.imptdn { width:18px; height:16px; line-height:16px;*padding-top:2px; text-align:center; display:block;border:1px solid #669900; background:#99CC00; color:#fff;}
+.imptmd { width:18px; height:16px; line-height:16px;*padding-top:2px; text-align:center; display:block;border:1px solid #FF6600; background:#FF9900; color:#fff;} 
+
+.mainboxs {height:1%; overflow:hidden; margin-bottom:12px;}
+.sideboxs {height:1%; overflow:hidden; margin-bottom:10px;}
+.bd {padding:8px 10px; border:1px solid #ddd; border-top:0; height:1%; overflow:hidden;}
+.bd1 {border:1px solid #ddd; border-top:0; height:1%; overflow:hidden;}
+.bd2 {}
+.bd3 {padding:0px 10px 8px 10px;border:1px solid #ddd; border-top:0; height:1%; overflow:hidden;}
+.bd4 {margin:5px 0px 0px 0px;}
+.bd5 {margin-top:5px; border-bottom:1px solid #ddd;}
+.copyrs {text-align:center; line-height:1.6em; color:#666; display:block;}
+.copyrs img {margin:8px 0px;}
+cite.tydate { float:right;font:11px Arial, Helvetica, sans-serif; color:#555; margin:-22px 5px 0px 0px;}
+cite.tydate2 { float:right;font:11px Arial, Helvetica, sans-serif; color:#555; margin:-30px 5px 0px 0px;}
+cite.morecn { float:right;font:11px Arial, Helvetica, sans-serif; color:#555; margin:-22px 5px 0px 0px;}
+cite.links,cite.links2 {float:right;font:12px Arial, Helvetica, sans-serif; color:#333; margin:-20px 0px 0px 0px;}
+cite.links a {padding:0px 8px 0px 0px; color:#333;}
+cite.links2 a {padding:0px 8px 0px 0px; color:#00529B;}
+cite.morecn a { color:#333;}
+.datetime { color:#555; font:11px Arial, Helvetica, sans-serif; height:1%; overflow:hidden; border-bottom:1px dotted #ccc; padding-bottom:5px;}
+.boxlt{float:left;}
+.boxrt{float:right;}
+.nsboxlt {float:left; width:330px;}
+.nsboxrt {float:right; width:330px;}
+.go,.srch,.updt,.addin{background:url(images/cnyes_icon.png) right 0 no-repeat; *padding-right:5px; display:inline-block;}
+.go input{background:url(images/cnyes_icon.png) -495px -70px no-repeat; border:0; font:12px Arial, Helvetica, sans-serif; font-weight:bold; padding-left:5px; height:22px; line-height:22px; cursor:pointer;blr:expression(this.onFocus=this.blur())}
+.srch input,.updt input,.addin input {background:url(images/cnyes_icon.png) -495px -70px no-repeat; border:0; font:12px Arial, Helvetica, sans-serif;*padding-top:1px; padding-left:5px; height:22px; line-height:22px; cursor:pointer;blr:expression(this.onFocus=this.blur())}
+.anote {float:left; margin:-18px 0px 0px 160px;}
+.otrbtn { float:right; width:82px;background:url(images/cnyes_icon.png) right 0 no-repeat; text-align:center; padding-right:10px; display:block; margin:-27px 0px 0px 0px;}
+.otrbtn a{float:left; display:block;background:url(images/cnyes_icon.png) -495px -70px no-repeat; font:12px Arial, Helvetica, sans-serif;color:#333;height:22px; padding-left:10px; line-height:22px;*padding-top:1px; cursor:pointer;blr:expression(this.onFocus=this.blur())}
+
+.otrbtn2 {float:right;width:36px;background:url(images/cnyes_icon.png) right 0 no-repeat; text-align:center; padding-right:10px; margin:-32px 8px 0px 0px;height:22px;}
+.otrbtn2 a {float:left;display:block;background:url(images/cnyes_icon.png) -495px -70px no-repeat; font:12px Arial, Helvetica, sans-serif;color:#333;height:22px; padding-left:10px; line-height:22px;*padding-top:1px; cursor:pointer;blr:expression(this.onFocus=this.blur())}
+
+/*--- top ---*/
+.topnav {background:url(images/cnyes_icon.png) right 0 no-repeat; float:right; text-align:center;}
+.topnav a {background:url(images/cnyes_icon.png) -495px -70px no-repeat; color:#333; display:block; width:50px;height:23px; line-height:23px;}
+
+/*--- switch tags ---*/
+.hd1,.hd3 {height:31px;line-height:31px;padding-left:8px; overflow:hidden; background:url(images/cnyes_xbg.gif) 0 -75px repeat-x;}
+.hd1 li {float:left;display:block;}
+.hd1 li a {padding:3px 8px 0px 10px;_padding-top:2px;float:left; display:block;color:#333;}
+.hd1 li.current {padding-right:2px;background:url(images/cnyes_icon.png) right -206px repeat-x;}
+.hd1 li.current a {padding:3px 12px 0px 15px;_padding-top:0px;background:url(images/cnyes_icon.png) -112px -206px repeat-x; cursor:pointer;}
+.hd1 li.current em {text-align:center;font-weight:bold; display:block; float:left;_padding-top:3px;}
+
+.hd2 {height:23px; overflow:hidden;}
+.hd2 li {float:left;margin-right:-1px; text-align:center;}
+.hd2 li a { float:left; display:block;width:101px;height:23px;line-height:23px; color:#333; text-decoration:none;background:url(images/cnyes_icon.png) -400px -144px no-repeat;}
+.hd2 li.current a { font-weight:bold;background:url(images/cnyes_icon.png) -400px -167px no-repeat;}
+.hd1 li a:hover,.hd2 li a:hover {color:#cc0000;text-decoration:none;}
+
+.hd3 li {float:left;display:block;color:#333;}
+.hd3 li.current {padding-right:2px;background:url(images/cnyes_icon.png) right -206px repeat-x;}
+.hd3 li.current em {padding:3px 10px 0px 13px;text-align:center;float:left;display:block;background:url(images/cnyes_icon.png) -112px -206px repeat-x;font-weight:bold;}
+.hd3 li a {color:#333; margin:0px 2px;}
+.hd3 li a:hover {color:#cc0000;}
+
+.hd4 {height:27px; overflow:hidden;background:url(images/cnyes_xbg.gif) 0 bottom repeat-x;}
+.hd4 li {float:left;text-align:center;margin-right:-1px;background:url(images/cnyes_icon.png) -349px -284px no-repeat;padding:0px 0px 0px 15px;}
+.hd4 li a {float:left; height:27px;line-height:27px;display:block; text-decoration:none;color:#333; padding:0px 15px 0px 0px; background:url(images/cnyes_icon.png) right -284px no-repeat; }
+.hd4 li a em {cursor:pointer;}
+.hd4 li.current {font-weight:bold;background-position:-349px -311px;}
+.hd4 li.current a {font-weight:bold;background-position:right -311px;}
+.hd4 li.current a em { width:94px;height:27px;line-height:27px;display:inline-block;font-weight:bold;background:url(images/cnyes_icon.png) -136px -247px no-repeat;}
+.hd4 li a:hover {color:#cc0000;}
+.nws li { padding-left:17px;}
+.nws li a {padding-right:17px;}
+.nws li.current a {padding-right:18px;}
+.nws li.current a em { width:auto; background:none;}
+
+.tbtopbr {margin-top:6px;margin-bottom:10px;}
+.hdline { background:url(images/cnyes_xbg.gif) 0 -122px repeat-x;font:12px Arial, Helvetica, sans-serif;height:26px; padding-left:5px; font-weight:bold;}
+
+.hdsm {font-size:13px; font-weight:bold;border-top:1px solid #ddd; border-bottom:2px solid #ddd; height:26px; line-height:26px;padding:0px 2px;*padding-top:3px;}
+.hdsm a {color:#333;}
+.hdsm a:hover {color:#cc0000;}
+.charthd { font-size:12px;border:1px solid #ddd; background:url(images/cnyes_xbg.gif) 0 0 repeat-x;height:25px; line-height:25px; text-align:center;}
+.charthd em {font-weight:bold; color:#333;}
+.sphd {font-size:12px;border:1px solid #ddd; background:url(images/cnyes_xbg.gif) 0 0 repeat-x;height:25px; line-height:25px; padding-left:8px; font-weight:bold;}
+.sphd a { color:#333;}
+.sphd2 {font-size:12px;border:1px solid #ddd; background:url(images/cnyes_xbg.gif) 0 0 repeat-x;height:30px; line-height:30px; padding-left:8px;margin-bottom:5px;}
+.sphd2 span {display:inline-block; margin-right:8px; _margin-top:5px;}
+.sphd2 span img {border:2px solid #ddd; margin-right:8px;}
+.sphd3 {font-size:13px;border:1px solid #ddd; background:url(images/cnyes_xbg.gif) 0 0 repeat-x;height:32px; line-height:32px; padding-left:8px; font-weight:bold;}
+.sphd3 a { color:#333;}
+
+/*--- table ---*/
+table {border-collapse:collapse; color:#555555; width:100%;font:12px Arial, Helvetica, sans-serif;}
+th {font-weight:normal;padding:2px 3px 0px 3px; text-align:center;} 
+td {padding:0px 3px;}
+.borline_lt {border-left:1px solid #ddd; padding-left:5px;}
+.tabs1 th { height:1.9em; line-height:1.9em; border-bottom:2px solid #d1c9ab;}
+.tabs1 td {background:url(images/pointline.png) 0 bottom repeat-x; height:23px; line-height:23px;}
+.tabs1 td a{color:#333;}
+.bgclr th {background:#eee; border:0;}
+tr.brbtm td {border-bottom:2px solid #ccc; background:#fff;}
+tr.brbtm2 td {border-bottom:1px solid #ccc; background:#fff; font-weight:bold; color:#555;}
+
+.tabs2 {border-top:1px solid #ccc; border-left:1px solid #ccc;*border:0px;}
+head:first-child+body .tabs2 {border:0px;}/* for IE8 */
+.tabs2 th {background:#e8e8e8; border:1px solid #ccc; height:1.6em; line-height:1.6em;}
+.tabs2 td { border:1px solid #ccc;font-size:11px; height:1.8em; line-height:1.8em;}
+.tabs1 tr:hover td,.tabs2 tr:hover td {background-color:#ece6d1;}
+
+/*--- webtools ---*/
+.webToolLinkRow,.webToolAddRow {display:none;}
+.webToolTQTable {margin-top:5px;}
+.webToolTQTable td {height:1.7em; line-height:1.7em;}
+.webToolHeaderRow td {border-bottom:2px solid #ddd;}
+
+/*--- list ---*/
+.list li {padding-left:12px;line-height:1.5em; margin-bottom:3px;color:#666;background:url(images/cnyes_icon.png) -496px -430px no-repeat;}
+.list li span {display:inline-block; color:#666;font:11px Arial, sans-serif; padding-right:6px;padding-top:2px;}
+.list li em {display:block; font:11px Tahoma; color:#666;}
+.list1 li { font:12px Arial, Helvetica, sans-serif;line-height:1.6em; margin-bottom:3px;color:#333;}
+.list1 li span  {display:inline-block; color:#666;font:11px Arial, sans-serif; padding-right:8px;}
+.list a,.list1 a {color:#555;}
+.list a:hover,.list1 a:hover {color:#003399;}
+.linklist li {float:left; padding-left:10px; width:120px; height:22px; line-height:22px; background:url(images/cnyes_icon.png) -50px -523px no-repeat;}
+ol.infolist {*padding:0px;*margin:5px inherit; }
+ol.infolist li {padding:0px; margin:0px; color:#666; line-height:1.5em; list-style-type:decimal; margin-bottom:5px;}
+.major .bd2 {border:1px solid #ddd; padding-right:10px;}
+.arow {display:inline-block; background:url(images/ico_status.gif) 0 0 no-repeat; width:16px; height:18px; margin-right:15px;}
+.subtile {font-size:12px;}
+
+.fxcm .list {margin-top:5px;}
+.fxcm .list a {color:#00529B;}
+.ftsize li {font:13px Arial, Helvetica, sans-serif; height:20px; line-height:20px; width:292px;overflow:hidden;}
+
+/*--- headline(news) ---*/
+.headline {height:1%;overflow:hidden; margin-bottom:10px;}
+.headline h2 {font:18px Arial, Helvetica, sans-serif; font-weight:bold; text-align:center; *padding-top:3px; width:452px; overflow:hidden; height:25px; line-height:25px;}
+.headline h2 a {color:#003399;}
+.headline p {font-size:12px; color:#777; margin:3px 0px 5px 0px;line-height:1.5em;}
+.hdnews { float:right;width:465px; padding:0px 0px 0px 0px;}
+.hdnews li { font-size:13px;font-family:Arial, Helvetica, sans-serif; height:1.7em;line-height:1.7em; overflow:hidden; width:452px; background:url(images/cnyes_icon.png) -494px -429px no-repeat; padding-left:10px;}
+.hdnews li span {font-size:11px; color:#888888; padding-right:5px;font-family:Verdana, Arial, Helvetica, sans-serif;}
+.newsmore { float:right; margin:-24px 5px 0px 0px;display:inline-block; background:url(images/cnyes_icon.png) -50px -24px no-repeat;width:40px; height:20px;}
+.newsmore a {display:block; width:40px; height:20px;}
+.newsmore a span {display:none;}
+.idxcharts { float:left;width:201px; height:200px;}
+.idxcharts .hd4 li {padding-left:5px;}
+.idxcharts .hd4 li a {padding-right:5px;width:41px;}
+.idxcharts .hd4 li a em {width:41px;cursor:pointer;}
+.idxcharts .bd2 {border:1px solid #ddd; border-top:0; padding:8px 0px;}
+
+.realchart .hd4 li {padding-left:5px;}
+.realchart .hd4 li a {padding-right:5px;width:41px;}
+.realchart .hd4 li a em {width:41px;}
+
+/*--- stksearch ---*/
+.stksearch {background:url(images/srch_bgs.png) 0 bottom no-repeat; height:1%; overflow:hidden; margin-bottom:10px; color:#666;}
+.srchboxs {background:url(images/srch_bgs.png) -300px 0 no-repeat; padding:5px;}
+.srchboxs label {padding:0px 3px 2px 2px; display:inline-block;}
+.hotkywds {font:11px Arial, Helvetica, sans-serif; line-height:1.6em; margin:3px 0px 0px 2px;}
+.hotkywds a {margin-right:5px;}
+.btns1 {background:url(images/cnyes_icon.png) right 0 no-repeat; height:23px; display:inline-block; margin-left:2px;}
+.btns1 input { width:40px; display:inline-block;background:url(images/cnyes_icon.png) -495px -70px no-repeat; height:23px; line-height:23px;padding-bottom:4px; *padding:1px 0px 0px 0px;font:12px Arial, Helvetica, sans-serif; border:0;}
+.sohome {margin-bottom:10px; text-align:center;}
+
+/*--- exgchart ---*/
+.exgchart {float:left; width:150px; text-align:center;}
+.curexgtable {float:right; width:140px; color:#333;}
+.curexgtable th {border-bottom:2px solid #E6E6E6;height:18px;line-height:18px; padding:0px 2px 0px 2px; font-size:10px;}
+.curexgtable td { padding:0px 1px; height:16px; line-height:16px; font-size:11px;*font-size:10px;background:url(images/pointline.png) left bottom repeat-x;}
+.exgchart_hd { height:21px; line-height:21px; border-bottom:2px solid #DDDDDD; margin-bottom:5px;}
+.exgchart_hd a { margin:0px 2px; color:#666666;}
+.exgchart_hd a.current {color:#00529B}
+.exgchart .sadstxts { height:23px; line-height:23px; display:block; text-align:left;}
+.curexgcr cite.links a {color:#00529B;}
+.curexgcr .bd2 {margin-top:3px;}
+
+/*--- exchange ---*/
+.exchangesrch,.ecmysrch {border:1px solid #ccc; background:#eee; padding:8px;}
+.exchangesrch .texts {border:1px solid #ccc; height:15px; font-size:11px;}
+.exchangesrch select,.ecmysrch select {margin:0px 3px;}
+.exchangesrch p {font:11px Tahoma; color:#666; margin-top:5px;}
+.exchangesrch em {color:#cc0000; display:inline-block; padding-right:2px;}
+.exchsrch select {margin-right:5px;}
+
+/*--- forexlist ---*/
+.forexsrch {height:1%; overflow:hidden; margin-bottom:10px;padding-top:5px; padding-bottom:10px; text-align:center; border-bottom:1px dotted #ccc; color:#333;}
+.forexsrch select {margin:0px 5px; width:100px;}
+.forexsrch label {display:inline-block; margin:0px 15px;}
+.forexlist .bd {padding:10px 15px;}
+
+/*--- globalexchange ---*/
+.gblexcge .bd {padding-top:15px;}
+.gblexcge .tabs1 {margin-bottom:12px;}
+.gblexcge .sphd {height:30px; line-height:30px;}
+.gblexcge cite.tydate {margin-right:12px;}
+
+/*----- global chart -----*/
+.glchart { background:#EEEEEE; height:1%; overflow:hidden; margin-bottom:10px;}
+.glchart .boxs {width:630px; margin:0px auto;}
+.glchart .hd { float:left; width:18px;padding:0px;margint:0px;}
+.glchart .hd li a { text-decoration:none;color:#FFFFFF;display:block;background:url(images/cnyes_icon.png) -50px -225px no-repeat;height:21px;width:17px;_width:15px; line-height:21px; padding-left:3px;}/*line-height:23px;*/
+.glchart .hd li#glchart_tab_3 a {background:url(images/cnyes_icon.png) -50px -212px no-repeat;height:28px;_height:26px;width:17px;_width:15px; line-height:10px; padding-top:5px;_padding-top:5px; }
+.glchart .hd li.current a {background:url(images/cnyes_icon.png) -50px -265px no-repeat;}
+.glchart .hd li#glchart_tab_3.current a {background:url(images/cnyes_icon.png) -50px -253px no-repeat;}
+.glchart .bd {margin:0px; padding:0px; border:0;}
+.glchart .bd li { float:left;}
+.glchart .bd li img {margin-top:5px; display:inline;}
+
+/*--- News Listing ---*/
+.newslist {margin-bottom:12px; height:1%; overflow:hidden;}
+.nwsrch {border:1px solid #ddd; background:url(images/cnyes_xbg.gif) 0 0 repeat-x;height:32px;line-height:32px; padding:0px 8px; margin-bottom:10px; overflow:hidden;}
+.nwsrch span.dtwd { display:inline-block; margin-bottom:2px;}
+.nwsrch .texts {border:1px solid #ccc; font:11px Tahoma; margin:4px 5px 0px 5px; text-align:center;}
+.dtimg {display:inline-block; margin-right:10px; width:23px; height:13px;*height:18px; margin-top:5px;}
+.dtimg a {display:block; width:23px; height:18px;background:url(images/cnyes_icon.png) 0 -105px no-repeat;}
+.nwsrch .go{background:url(images/cnyes_icon.png) right 0 no-repeat; *padding-right:5px; display:inline-block;}
+.nwsrch .go input {background:url(images/cnyes_icon.png) -495px -70px no-repeat; border:0; font:12px Arial, Helvetica, sans-serif; padding-left:5px;*padding-top:2px; height:22px; line-height:20px; cursor:pointer;blr:expression(this.onFocus=this.blur())}
+head:first-child+body .nwsrch .go input {padding-top:2px;} 
+.nwwdrs {border-left:1px dotted #ccc; margin-left:20px; padding-left:10px;}
+.nwwdrs .texts {text-align:left; padding-left:3px; font:12px Arial, Helvetica, sans-serif;}
+.nwsrch .nwwdrs .go {width:60px;} 
+.nwsrch .nwwdrs .go input {padding-left:5px;*padding-left:0;}
+
+.nwconts {border:1px solid #ddd; border-top:0; padding:15px 0px;}
+.newslist .gadstxt {margin:0px 10px 10px 10px;}
+.nwtab { padding:0px 15px; margin-bottom:10px;}
+.nwtab table {border-collapse:collapse; color:#555555; width:100%;font:12px Arial, Helvetica, sans-serif;}
+.nwtab th {font-weight:normal;padding:2px 3px 0px 3px; text-align:left;height:25px; line-height:25px; background:#eee;} 
+.nwtab td {padding:0px 3px;background:url(images/pointline.png) 0 bottom repeat-x; height:25px; line-height:25px;}
+.nwtab tr:hover td {background-color:#eee;}
+.newslist .gadstxt {margin:0px 10px 10px 10px;}
+.nwconts .path { margin:0px 0px 10px 16px; color:#666;}
+.nwconts h2 {font:24px BiauKai, DFKai-SB; padding:0px 15px 10px 15px;}
+.nwconts cite.infos { font:11px Tahoma; color:#666;padding:5px 16px; display:block;}
+cite.infos img {margin-right:6px;}
+.article {height:1%; overflow:hidden; padding:0px 20px;}
+.article p {font-family:Arial, Helvetica, sans-serif; line-height:1.7em; color:#333; margin-bottom:15px;}
+
+.artads { float:left; padding:5px; border:1px solid #ddd; margin-right:12px;}
+.nwtools { padding:0px 15px; text-align:right; height:1%; overflow:hidden; margin-top:5px; margin-bottom:10px;}
+.pgs a,.words a,.friends a {display:inline-block; width:22px; height:20px; background:url(images/cnyes_icon.png) no-repeat; margin-bottom:2px;}
+.words {margin:0px 10px;}
+.friends a.sends {background-position:-72px -413px;}
+.friends a.prints {background-position:-50px -413px;}
+.pgs a.nt { background-position:-89px -489px;}
+.pgs a.pv {background-position:-111px -489px;}
+.words a.em {background-position:-89px -466px;}
+.words a.sm {background-position:-111px -466px;}
+.blogs {height:1%; overflow:hidden; margin-right:10px;}
+.blogs a.bloger {width:82px; height:23px; display:inline-block; background:url(images/cnyes_icon.png) -180px 0px no-repeat;}
+.blogs a.collect {width:82px; height:23px; display:inline-block; background:url(images/cnyes_icon.png) -180px -31px no-repeat;}
+
+/*--- myreport ---*/
+.myreport .tabs1 td a.remove { display:block; font-size:1px; height:9px; width:9px; background:url(images/cnyes_icon.png) no-repeat 0 -169px;}
+.myreport .tabs1 td {line-height:1.6em;}
+
+/*--- mystock ---*/
+.mystock { margin-bottom:6px;}
+.mystock .hd { padding-left:4px; height:33px; font-weight:bold; color:#676F79; background:url(images/cnyes_icon.png) no-repeat -51px -144px;}
+.mystock .hd li {display:block;float:left; margin-right:2px; width:145px;height:33px;text-align:center;}
+.mystock .hd li a {display:block; padding-top:13px; width:145px; height:20px; cursor:pointer;blr:expression(this.onFocus=this.blur())}
+.mystock .hd .current {background:url(images/cnyes_icon.png) -51px -99px no-repeat;}
+.mystock .bd { padding:0px 0px 10px 0px;background:url(images/mystock_dn.png) no-repeat 0 bottom;  height:1%;border:0;}
+.mystock .bd .disyshow {padding:5px 15px 8px 15px;background:url(images/cnyes_ybg.gif) repeat-y left top;}
+.mystock .bd th { height:22px; line-height:22px; color:#464646; border-bottom:2px solid #cccccc;}
+.mystock .bd td { height:22px; line-height:22px; color:#464646; text-align:center; font-size:11px; border-bottom:1px dotted #cccccc;}
+.mystock .bd td a { font-size:12px; margin-top:2px; display:block;}
+.mystock .bd td a.remove { display:block; font-size:1px; height:9px; width:9px; background:url(images/cnyes_icon.png) no-repeat 0 -169px;}
+.memberlog li { color:#555555; padding-bottom:1px; background:url(images/pointline.png) 0 bottom repeat-x; line-height:2em; text-align:center;}
+.memberlog li.lt { text-align:left;}
+.mystock input.texts {border:1px solid #CCCCCC; height:12px; width:75px; font-size:11px;}
+.mystock input.butn { font-size:11px; padding:3px 2px 0px 2px; border:1px solid #ccc;}
+
+/*--- cnyes message ---*/
+.cymsge {height:1%; overflow:hidden; margin-bottom:10px;}
+.cymsge .hd {height:27px;}
+.cymsge .hd li {float:left;margin-right:-2px; text-align:center;}
+.cymsge .hd li a {width:151px;height:27px;line-height:27px;display:block; text-decoration:none;color:#333;background:url(images/cnyes_icon.png) -349px -284px no-repeat; }
+.cymsge .hd li.current a {font-weight:bold;background-position:-349px -311px;}
+.cymsge .hd li a:hover {color:#cc0000;}
+.cymsge .bd li {padding-left:12px; line-height:1.7em;color:#666666;background:url(images/cnyes_icon.png) -496px -430px no-repeat;}
+
+/*-- Enter ---*/
+.enter { text-align: center;}
+.enter input { background:#fff;border:1px solid #ccc;padding:2px 4px 2px 4px; *padding:1px 4px 0px 4px;color: #2e6ab1;margin-right: 5px; *margin-bottom:1px;text-decoration: none; font:12px Arial, Helvetica, sans-serif;}
+.enter a:hover {color: #000; border: #999 1px solid; background-color: #eee;}
+.enter span.current {margin-bottom:1px; display:inline-block;padding:1px 6px 1px 6px;*padding:1px 6px 0px 6px; height:18px; line-height:18px; font-weight: bold;  color: #fff; margin-right: 5px; border:1px solid #999; background-color: #ccc;}
+.enter span.np input { padding:3px 3px 3px 3px;*padding:3px 3px 0px 3px;}
+
+/*--- calendar ---*/
+.spwd li.current a em {width:120px;background:url(images/cnyes_icon.png) -122px -247px no-repeat;}
+.spwd {margin-bottom:12px;}
+.calen_month { height:1%; overflow:hidden;background:url(images/cnyes_xbg.gif) 0 bottom repeat-x;}
+.calen_month li {float:left; font:11px Tahoma; height:28px; padding:5px 10px 0px 10px;}
+.calen_month li span {font:9px Helvetica, sans-serif; display:block; color:#999; text-align:center;}
+.calen_month li.current {border:1px solid #ccc; border-bottom:0; background:url(images/cnyes_xbg.gif) 0 0 repeat-x;}
+.calen_month li.current a {font-weight:bold;}
+.calen_month .yr {width:90px; text-align:center; font:20px "Times New Roman", Times, serif; font-weight:bold;}
+.calen_month .yr a { margin:5px; color:#666;}
+.calen_month a,.calen_dy a {color:#333;}
+.calen_month a:hover {text-decoration:none; color:#cc0000;}
+.calen_dy {height:1%; overflow:hidden; border:1px solid #ccc; border-top:0; padding:8px;background:url(images/cnyes_xbg.gif) 0 -119px repeat-x;}
+.calen_dy li {float:left; padding:0px 4px 0px 5px; font:12px Arial, Helvetica, sans-serif;}
+.calen_dy li.current a {color:#fff;background-color:#999; padding:0px 2px;}
+.calen_dy li a.hdy {color:#cc0000;}
+.todaydate {font:12px Arial, Helvetica, sans-serif; font-weight:bold; background-color:#eee; border:1px solid #ddd; text-align:center;padding:6px 0px;}
+
+/*--- form ---*/
+.fmtabs td {padding-bottom:3px;}
+.fmtabs td .texts {border:1px solid #ccc; font:11px Arial, Helvetica, sans-serif; height:15px;}
+.fmtabs td textarea {border:1px solid #ccc; font:11px Arial, Helvetica, sans-serif;}
+.fmtabs td span {display:inline-block;width:8px;}
+.fmtabs td .butn {margin-top:5px;}
+.fmlinks {border-top:1px dotted #ccc; margin-top:5px; padding-top:5px; text-align:center; color:#666;}
+.fmlinks a {padding-left:10px;}
+
+.twchage .sphd { height:30px; line-height:30px;}
+.sphdselt { float:left; margin:-28px 0px 0px 200px;_margin-left:130px; height:1%; overflow:hidden;}
+.twchage .sphdselt select {margin:0px 5px 0px 20px;}
+
+/*--- flag ---*/
+.fglist li {float:left; width:72px; height:28px;}
+.fglist img {border:2px solid #eee;}
+.fglist em {margin-left:2px; font:10px Arial, Helvetica, sans-serif;}
+.crate .bd1 {padding-left:8px; padding-top:8px;}
+
+/*--- mndaily ---*/
+.mndaily .hd1,.ldexcghd .hd1 ,.statistic .hd1 {padding-left:140px;}
+.excghd .hd1 {padding-left:90px;}
+.realchart .hd1 {padding-left:70px;}
+.gover .hd1,.gather .hd1 {padding-left:100px;}
+.statistic h5,.mndaily h5,.excghd h5,.ldexcghd h5,.gover h5,.gather h5 {float:left; margin:-21px 0px 0px 8px; color:#555; font-size:12px; font-weight:bold;}
+.realchart h5 {float:left; margin:-21px 0px 0px 3px; color:#555; font-size:12px; font-weight:bold;}
+.gover h5 a,.gather h5 a {color:#333;}
+.gover .hd1 li a,.gather .hd1 li a,.gather .hd1 li a  {padding:3px 4px 0px 8px;_padding-top:2px;float:left; display:block;color:#333; width:30px;}
+.realchart .hd1 li a  {padding:3px 8px 0px 10px;float:left;_padding-top:2px; display:block;color:#333;}
+.realchart .hd1 li.current a em {_padding:0px;}
+.gover .hd1 li a:hover,.gather .hd1 li a:hover,.realchart .hd1 li a:hover { color:#cc0000;}
+
+/*--- performance ---*/
+.performance {height:1%;overflow:hidden;margin-bottom:12px;}
+.performance .pics {float:left;}
+.hdnavs {background:url(http://fund.cnyes.com/Chart/stock/CompareAndETF/File/perfe_bgx.gif) 0 0 repeat-x;height:31px;padding-left:8px;}
+.hdnavs li {float:left;text-align:center;}
+.hdnavs li a {float:left;font-size:12px;color:#666666;display:block;text-decoration:none;color:#333333;display:block;text-decoration:none;overflow:hidden;padding:3px 12px 0px 14px;height:28px;line-height:31px;}
+.hdnavs li.current {font-weight:bold;background:url(http://fund.cnyes.com/Chart/stock/CompareAndETF/File/perfe_bg.gif) right 0 no-repeat;}
+.hdnavs li.current a {background:url(http://fund.cnyes.com/Chart/stock/CompareAndETF/File/perfe_bg.gif) 0 0 no-repeat;margin-right:2px;}
+.hdnavs li a:hover{color:#cc0000;}
+.atdate {float:right;font-size:11px;margin:-24px 8px 0px 0px;}
+.bdboxs {height:1%;overflow:hidden;padding:6px 0px 0px 0px;}
+.tabsperfm {float:right; width:320px;}
+.tabsperfm table {border-collapse:collapse;color:#333;width:100%;font:12px Arial, Helvetica, sans-serif;}
+.tabsperfm th {background:#ffffff;border-bottom:2px solid #e1e1e1;height:2em;line-height:2em;}
+.tabsperfm td {padding:0px 3px;*padding-top:2px;height:2em;line-height:2em;*height:1.8em;*line-height:1.8em; background:url(http://fund.cnyes.com/Chart/stock/images/point_line.gif) left bottom repeat-x;}
+.tabsperfm tr:hover td {background-color:#eee;}
+
+/*--- defintabs ---*/
+.defintabs {width:620px;text-align:left; border:5px solid #ddd; padding:8px;}
+.defintabs h4 { font:13px Arial, Helvetica, sans-serif; font-weight:bold; height:28px; line-height:28px; border-top:1px solid #ddd; border-bottom:2px solid #ddd;}
+.defintabs span { display:inline-block;background:url(images/cnyes_icon.png) -48px -526px no-repeat; width:15px; height:15px;}
+.defintabs .tabs2 {width:200px; float:right; margin-left:15px;}
+.defintabs p { color:#333; line-height:1.7em; margin:10px 10px 15px 10px;}
+.dragAble {position:absolute;margin:10px 0px 0px 20px; *margin:10px 0px 0px -165px;background-color:#ffffff;display:none ;z-index:999;}
+.defintabs ul {margin:0px; padding:0px; color:#333;}
+.defintabs ul li {font:12px Arial, Helvetica, sans-serif;font-weight:bold; padding:0px 0px 6px 10px;}
+.close {float:right; margin:-22px 0px 0px 0px;}
+.close a {color:#333;background:url(images/cnyes_icon.png) no-repeat 33px -166px; padding-right:20px; display:block; float:left;}
+.currency .anote { margin:-18px 0px 0px 140px;}
+
+.forexbars .tabs1 td {line-height:1.4em; padding-bottom:3px; padding-top:2px;}
+.forexbars .bd2 {border:1px solid #ddd; padding:15px 20px;}
+.forexbars .bd2 td {padding:3px;}
+.forexbars .bd2 td .texts {border:1px solid #ccc;}
+.forexbars .hdre {background:url(images/ico_status.gif) -30px 0px no-repeat; padding:3px 0px 8px 25px; margin-bottom:5px; font:12px Arial, Helvetica, sans-serif; color:#555; font-weight:bold; border-bottom:1px dotted #ccc;}
+
+/*--- 090619 add ---*/
+.fopen {display:inline-block; margin:0px 10px 0px 0px;line-height:22px; background:url(images/cnyes_icon.png) right -372px no-repeat;}
+.fopen a {display:block; float:left; text-decoration:none;background:url(images/cnyes_icon.png) -50px -321px no-repeat; text-align:left; padding-left:25px;width:80px; height:22px; line-height:22px; color:#666;}
+.fprint {display:inline-block; width:90px; height:20px; line-height:22px; background:url(images/cnyes_icon.png) right -372px no-repeat; margin-top:10px;}
+.fprint span { float:left; display:block;background:url(images/cnyes_icon.png) -50px -413px no-repeat; width:22px; height:20px;}
+.fprint a { float:right; display:block;text-decoration:none; text-align:left;width:60px; height:20px; padding:0px 0px 2px 5px;color:#666;}
+
+.javanote {display:inline-block;color:#666; padding-bottom:3px; overflow:hidden;}
+.javanote a { text-decoration:underline;background:url(images/java_icon.png) 3px 0 no-repeat;padding:0px 0px 0px 24px; height:20px;}
+
+.chartbtns { float:right; margin-top:-29px; height:1%; overflow:hidden;}
+.chartbtns span {background:url(images/cnyes_icon.png) right 0 no-repeat; text-align:center; padding-right:8px; display:inline-block; margin:0px 5px 0px 0px;}
+.chartbtns span a{float:left; display:block;background:url(images/cnyes_icon.png) -495px -70px no-repeat; font:12px Arial, Helvetica, sans-serif;color:#333;height:22px; padding-left:10px; line-height:22px;*padding-top:1px; cursor:pointer;blr:expression(this.onFocus=this.blur())}
+.chartbtns span.current a {color:#cc0000;}
+.chartbtns span a:hover {color:#cc0000;}
+
+.pfms {height:1%; overflow:hidden; border:1px solid #c3a030;}
+.pfms .box {border:3px solid #d9c78a; padding:10px 15px;}
+.pfms h3 { font:16px Arial, Helvetica, sans-serif; font-weight:bold; color:#b08b1a;}
+.pfms h4 {font:12px Arial, Helvetica, sans-serif; font-weight:bold; color:#666; background:#eee; height:24px; line-height:24px; padding-left:5px;}
+
+.fmbox2 {background:#eee; border-left:1px solid #ddd;color:#333;border-right:1px solid #ddd;color:#333; text-align:center; padding-top:6px;}
+.fmbox2 span {display:inline-block; margin:5px;}
+.javachart .chart_ex,.comparechart .chart_ex {text-align:center; padding:12px 0px;}
+.anote2 { margin-left:12px; font:12px Arial, Helvetica, sans-serif; }
+.anote2 a {color:#00529B;}
+.dragAble2 {position:absolute;margin:10px 0px 0px 20px; *margin:10px 0px 0px 0px;background-color:#ffffff;display:none ;} 
+.histy {border:1px solid #ddd; border-top:0; padding-top:8px;}
+
+
+.hdbox { height:1%; overflow:hidden;}
+.spads150x30 {margin-top:0px; padding-left:20px;}
+.spads150x30 span {margin:0px 30px ;}
+.spads150x30 img {margin:0px 5px ;}
