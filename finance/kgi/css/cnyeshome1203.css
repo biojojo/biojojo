@@ -1,0 +1,397 @@
+@charset "utf-8";
+/*-----Block Content -----*/
+.bd {overflow:hidden;height:1%;border-width:0px 1px 1px 1px; border-style:solid;border-color:#ccc;}
+.mgbor {padding:8px 12px;}
+.mgbor2 {padding:4px 12px 6px 12px;}
+.mgbor3 {padding:6px 12px 6px 12px;}
+.mgbor4 {padding:10px 12px 6px 12px;}
+.mgbor5 {padding:8px 12px 0px 12px;}
+.box {margin:10px 10px; height:1%; overflow:hidden;}
+.box2 {margin:8px 12px 10px 12px; height:1%; overflow:hidden;}
+/*-----表-----*/
+.list li {height:1.8em;line-height:1.8em;padding-left:12px;overflow:hidden;background:url(../images/point.png) left 8px no-repeat;}
+.list li:hover {background-color:#f3f3f3;}/*#f8f8f8*/
+.row { float:left;height:1.8em;line-height:1.8em;width:220px;margin-right:10px;overflow:hidden;}
+.row2 { float:left;height:1.8em;line-height:1.8em;width:170px;margin-right:10px;overflow:hidden;}
+.row3 { float:left;height:1.8em;line-height:1.8em;width:225px;margin-right:10px;overflow:hidden;}
+.rowF { float:left;height:1.8em;line-height:1.8em;width:285px;margin-right:10px;overflow:hidden;}
+.ownerL {color:#666;background:url(../images/vline.png) 0 0 no-repeat; padding-left:6px; margin-left:6px;}
+.ownerR {color:#666;background:url(../images/vline.png) right 0 no-repeat; padding-right:6px; margin-right:6px;}
+.timeR {color:#666;padding-right:6px; margin-right:6px;color:#999; font:11px Tahoma;}
+.ownerR a:link,.ownerR a:visited {color:#666;}
+.ownerR a:hover {color:#cc0000;}
+.htcik {color:#999; font:11px Arial, sans-serif; display:inline-block; line-height:20px;}
+.sortL {color:#999;font:11px Tahoma; display:inline-block; line-height:22px;}
+.sortR {color:#999;font:11px Tahoma; display:inline-block; line-height:22px;text-align:right; width:65px; _float:right;}
+/*---------*/
+.newshd {height:232px;overflow:hidden;}/*height:244px;border:1px solid #ddd;padding:6px 12px 0px 12px;*/
+.headline {margin-bottom:6px;}
+.headline h2 {font:bold 19px "Microsoft JhengHei",PMingLiU; *padding:0px 0px 1px 0px;}
+.headline h2 a:link,.headline h2 a:visited {color:#1f3a87;}/*color:#2b2b2b;*/
+.cyads200x200 {float:left;width:200px;}
+#ShowBox{float:left;}
+.adnums{float:right; margin:-28px 8px 0px 0px;}
+.adnums li{float:left;font:11px Arial, Helvetica, sans-serif;}
+.adnums li a{display:inline-block;margin:5px 0px 0px 3px;background-color:#999;padding:0 4px;border:1px solid #666;color:#fff;text-decoration:none;}
+.adnums li.current a,.adnums a:hover {border-color:#000;background:#555;color:#fff;}
+.focusnews {float:right;width:460px;}/*width:430px;*/
+.focusnews .hd li a {width:37px;}
+.focusnews .hd li.current a {width:37px;}
+.focusnews .hd li#news_tab_s a {width:50px;color:#ff0000;}
+.focusnews .hd li#news_tab_s.current a {width:50px;color:#ff0000;}
+.focusnews .hd li#news_tab_10 a,.focusnews .hd li#news_tab_10.current a {width:55px;color:#ff0000;}
+.focusnews .mrarowr {float:right;margin-top:-26px; line-height:17px;}
+.focusnews .mrarowr a {color:#1f3a87;}
+.listnw {margin:10px 0px 0px 2px;}
+.listnw li {height:24px;line-height:24px;overflow:hidden;font:13px PMingLiU;}
+.ncamera { display:inline-block; width:14px; height:14px;background:url(../images/cnyeshomeIcon.png) 0 -321px no-repeat; *background-position:0 -323px; margin-left:5px;}
+.nvideo { display:inline-block; width:16px; height:14px;background:url(../images/cnyeshomeIcon.png) 0 -369px no-repeat; *background-position:0 -371px; margin-left:5px;}
+
+/*.listnw li a:link,.listnw li a:visited {color:#2b2b2b;}*/
+.lsline {margin:5px 0px 5px 2px;}
+.lsline li {height:23px;line-height:23px;}
+.adbox { border-top:1px dotted #ccc; padding-top:6px; height:1%;overflow:hidden;}
+.adbox .clt {float:left; border:1px solid #666; background-color:#999;width:18px; text-align:center; height:57px; *height:56px;padding-top:4px; margin:2px 8px 0 2px; line-height:14px; overflow:hidden;} 
+.adbox .clt2 {float:left; border:1px solid #666; background-color:#999;width:18px; text-align:center; height:65px; *height:65px;padding-top:8px; margin:5px 8px 0 2px; line-height:14px; overflow:hidden;} 
+.adbox .clt a,.adbox .clt2 a {color:#fff;}
+.adbox .clr {float:right; width:418px;}
+.adboxl {float:left;width:205px;margin-top:4px;}
+.adboxr {float:right;width:205px;margin-top:4px;}
+/*----------*/
+.channels {border:1px solid #ddd; overflow:hidden;}
+.channels em {padding-right:10px;font:bold 12px PMingLiU;background:url(../images/vline.png) right 1px no-repeat;}
+.channels th,.channels td { height:24px; line-height:24px;font:12px PMingLiU; padding:0;}
+.channels th {text-align:right;}
+.channels td a {margin-left:8px;color:#666;}
+.channels td.n a {margin-left:5px;color:#666;}
+tr.cga {background:#f2f2f2;}
+/*----------*/
+.ranking .hd2 li em {width:108px;}
+.ranking .hd2 li em.url2 {width:123px;}
+.ranking .hd2 li em.url2 a { margin:0px 2px;}
+.tlt {float:left;width:500px;}
+.cyads150x120 {float:right;width:150px;padding:2px;border:1px solid #ddd; margin-top:15px;}
+/*----- 策略贏家 -----*/
+.winner .hd li a {width:73px;} 
+.winner .hd li.current a {width:76px;} 
+/*----- 走勢 -----*/
+.chartex2 {float:left;width:157px;}
+.chartex2 .bd {padding:3px 0px; width:155px;text-align:center;}
+.copyr {display:block;color:#999;height:20px;line-height:22px;}
+.chartex2 .hd li a {width:38px;}
+.hotxts {float:right;width:130px;border-top:1px dotted #ccc;}
+.hotxts li {height:1.9em;line-height:1.9em; border-bottom:1px dotted #ccc; padding:0px 2px; overflow:hidden;}
+.httxt {border:1px solid #ddd; background-color:#f5f5f5; text-align:center; height:22px; line-height:22px;}
+/*---------*/
+.cnyesbar .hd li a,.cnyesblog .hd li a {width:80px;}
+.cnyesbar .bd,.cnyesblog .bd { height:148px; overflow:hidden;}
+.hotwords {margin:8px 12px 0px 12px; padding-bottom:6px; border-bottom:1px dotted #ccc; height:36px;line-height:18px; overflow:hidden; color:#666;}
+.hotwords a {margin-left:2px;}
+.top5 {float:left;width:142px;padding:8px 0px 8px 12px; background:url(../images/top10Bgs.png) 15px 8px no-repeat;}
+.top10 {float:right;width:142px;padding:8px 12px 8px 0px;background:url(../images/top10Bgs.png) -156px 7px no-repeat;}
+.top5 li,.top10 li {padding:1px 0px 2px 20px;height:22px;line-height:22px;overflow:hidden; font-family:PMingLiU;}
+.top5 li a,.top10 li a {float:left;height:22px;line-height:22px;width:90px;margin-right:10px;overflow:hidden;}
+.cnyesblog .boxpl2 {float:left;width:141px; padding:8px 10px 0px 10px; overflow:hidden;}
+h4.subtitle2 {font:bold 12px PMingLiU; height:22px; line-height:20px; overflow:hidden;}
+/*---------*/
+.magaz .hd li a,.repts .hd li a {width:80px;}
+.pic {float:left; margin-right:12px;border:1px solid #ddd; padding:2px;}
+h4.subtitle {font:bold 13px PMingLiU; height:22px; line-height:20px; overflow:hidden;}
+p.summary {color:#888; line-height:1.4em; margin:3px 0px 2px 0px; height:35px; overflow:hidden; font-family:PMingLiU;}
+p.summary a:link,p.summary a:visited {color:#888;}
+/*----- 多空調查 -----*/
+.inquired li.idx em {width:83px;border-bottom:1px solid #ccc;}
+.inquired li em {width:42px;}
+.inquired li.current em a {color:#cc0000;}
+.inquired li.idx em a {color:#333;}
+.lines {height:30px;}
+.linebg {float:left; border:2px solid #eee;width:100px; margin:3px 12px 0px 0px;}
+.pert {display:inline-block;height:12px;background:url(../images/inquireBgs.png) repeat-x;}
+.lna .pert {background-position:0 -80px;border:1px solid #bf615f;}/**/
+.lnb .pert {background-position:0 -98px;border:1px solid #a5c26a;}
+.lnc .pert {background-position:0 -116px;border:1px solid #648bbc;}
+.percent {float:left;font:11px Tahoma; line-height:23px; width:50px;}
+.items {float:left;font:12px PMingLiU; line-height:23px; width:50px;}
+.lines input {width:52px;height:24px;padding:0;border:0;background:url(../images/inquireBgs.png) transparent no-repeat;}
+.lna input {background-position:0 0;}
+.lnb input {background-position:0 -25px;}
+.lnc input {background-position:0 -50px;}
+.expon {display:block;color:#666;}
+.expdot {border-bottom:1px dotted #ccc; padding-bottom:5px; margin-bottom:5px;}
+.expon a:link,.expon a:visited {text-decoration:underline; margin-right:3px;}
+.expon .nums {margin-right:12px;}
+.expon .r {background:url(../images/inquireBgs.png) 0 -132px no-repeat; padding-left:11px;}
+.expon .g {background:url(../images/inquireBgs.png) 0 -151px no-repeat; padding-left:11px;}
+/*----------*/
+.change {border:1px solid #ccc;margin-bottom:5px;padding:8px 10px 7px 10px;background-color:#f0f0f0;vertical-align:top; height:1%; overflow:hidden;}
+.compute { height:1%; overflow:hidden;}
+.count {display:block; width:280px; margin-top:5px;}
+.change .txts {width:45px;color:#666;border-width:1px; border-style:solid;border-color:#999 #bbb #bbb #999;margin:0px 3px;padding:0px 2px;height:17px;*height:19px;*line-height:19px;}
+.change .srchbtn {width:32px;border-width:1px;border-style:solid; border-color:#999 #bbb #bbb #999; font:bold 11px Arial, Helvetica, sans-serif; padding:0px;height:20px;line-height:20px;*line-height:normal;text-align:center;background:url(../images/TagsBgX.png) #fff 0 bottom repeat-x;}
+.count em {font-weight:bold;color:#cc0000;}
+.change label {display:inline-block;*padding-bottom:2px;}
+.change cite {float:left; height:22px; line-height:22px;color:#666;}
+/*-----外匯-----*/
+.chartex {float:left;width:150px;}
+.tags {height:26px;text-align:center; margin-bottom:8px;}
+.tags em {float:left; font:12px PMingLiU;}
+.tags em a { float:left;width:50px;height:26px;line-height:27px;border-bottom:2px solid #ccc;color:#333;}
+.tags em.current a {border-bottom:2px solid #1f3a87;color:#1f3a87;font-weight:bold;}
+.tabsm {float:right;width:140px;}
+.tabsm th {height:26px;border-bottom:2px solid #ccc;padding:0 1px;*height:21px;*padding-top:5px;}
+.tabsm td { font:11px PMingLiU;height:15px;line-height:15px; padding:0 1px; border-bottom:1px dotted #ddd;}
+.tabsm td.rt {font:10px Tahoma;}
+.atlinks a { float:left;padding-top:6px;display:block;text-decoration:underline;line-height:1.5em;}
+/*----------*/
+.invest .hd li a {width:73px;}
+.invest .hd li.current a {width:76px;}
+.invest .tab {padding-top:5px;}
+.invest th.ltpd,.invest td.ltpd {padding-left:10px;}
+.invest .tab table td {white-space: nowrap;}
+.invest .tab table td a {letter-spacing:-1pt;}
+/*----- infomation -----*/
+.information .hd li a {width:63px;}
+.information .hd li.current a {width:63px;}
+/*.information .hd li#info_tab_9 a,.information .hd li#info_tab_9.current a {width:92px;color:#993399;}*/
+.links {height:36px;line-height:36px; margin:0px 12px; border-bottom:1px dotted #ccc;}
+.links a:link,.links a:visited {margin-right:12px;text-decoration:underline;}
+.crtm {float:left;}
+.frt {float:right; width:304px;}/*width:324px;*/
+.frt2 {float:right; width:379px;}
+.frt2 cite {text-align:right;}
+.flt3 {float:left;width:312px;}
+.frt3 {float:right; width:312px;}
+.frt4 {float:right; width:319px;}
+.barlong_h {width:298px;}
+.chrthd {text-align:center;font:12px PMingLiU;color:#333;height:24px;line-height:24px; margin-bottom:5px;}
+.chartbars {background:url(../images/cnyesbgs1.png) 0px 0px no-repeat; zoom:1; overflow:hidden; padding-top:18px;}
+.chartbars_lt {background:url(../images/cnyesbgs2.png) 0px 0px no-repeat; zoom:1; overflow:hidden; padding-top:18px;padding-left:10px;}
+.chartbars li ,.chartbars_lt li{height:18px;overflow:hidden;}
+span.brlt{text-align:right;}
+span.brrt{text-align:left;}
+span.brlt,span.brrt{float:left;width:114px; height:16px;font:10px Arial, Helvetica, sans-serif;}
+.chartbars_lt span.brlt,.chartbars_lt span.brrt {width:220px;}
+em.itemhd { float:left; width:58px; text-align:center; font:11px PMingLiU; color:#555; padding-top:2px;}
+span.brlt span,span.brrt span {display:inline-block; overflow:hidden;height:10px;border-width:1px; border-style:solid;margin:0px 4px;}
+.clr1 {border-color:#d9c01a;background-color:#fff000;}
+.clr2 {border-color:#705dec;background-color:#c2c2ff;}
+.clr3 {border-color:#d1620a;background-color:#f9b981;}
+.clr4 {border-color:#a5b032;background-color:#c9e0b2;}
+.clr5 {border-color:#976bb0;background-color:#ccbad6;}
+.clr6 {border-color:#8f721c;background-color:#d9be6d;}
+.clr7 {border-color:#b63d43;background-color:#e3b2b0;}
+.clr8 {border-color:#3189b4;background-color:#b0dae5;}
+
+/*-----globalchart -----*/
+.hdv {float:left;width:33px; background:url(../images/vline.png) right 0 repeat-y;border-bottom:1px solid #ccc;}
+.hdv li {display:block;margin-bottom:-1px;height:24px;line-height:24px;border:1px solid #ccc;}
+.hdv li a:link,.hdv li a:visited { color:#333;padding-left:3px;display:block;width:28px;}
+.hdv li.current a {font-weight:bold;color:#cc0000;border-right:1px solid #fff;background:url(../images/hbgs.png) left 0 repeat-y;}
+.hdv li a:hover {color:#cc0000;}
+.crtg {float:right;border:1px solid #ccc;border-left:0;padding:9px 2px 0px 7px;height:140px;overflow:hidden;}
+.crtg span {float:left;padding-right:3px;margin-right:3px;}
+.dotr {border-right:1px dotted #ccc;}
+.chartad {float:left;}
+/*-----ortnews -----*/
+.newcetr .bd {padding:10px 12px;}
+.newcetr .hd li a {width:100px;}
+p.summary2 {color:#888; line-height:1.4em; margin:3px 0px 2px 0px; height:50px; overflow:hidden; font-family:PMingLiU;}
+p.summary2 a:link,p.summary2 a:visited {color:#888;}
+.sortnews .hd li a {width:90px;} 
+.sortnews .hd li.current a {width:90px;} 
+.sortnews .list li a {color:#666;}
+.boxpl {float:left;padding:5px 5px 0px 14px;width:315px; height:93px; _margin-left:-2px;}
+.gbgs {background-color:#eeeeff;}
+.sortnews .clt {float:left;width:18px; border:1px solid #ccc; line-height:18px; background-color:#f1f1f1; text-align:center; margin-top:3px; margin-right:8px;height:80px;}
+.sortnews .clt a:link,.sortnews .clt a:visited {color:#333;}
+.vacr { display:inline-block; height:34px; *height:38px;}
+.vacr2 { display:inline-block; height:26px; *height:30px;}
+.vacr3 { display:inline-block; height:18px; *height:22px;}
+/*-----cymsge -----*/
+.cymsge .hd li a {width:148px;}
+.cymsge .hd li.current a {width:149px;}
+/*.cymsge .bd {height:146px;*height:147px;}*/
+/*---hover ---*/
+.hbox li a:hover,.adslist li a:hover,.tab a:hover,.tabsm a:hover,.headline h2 a:hover,.listnw li a:hover,.channels td a:hover,.channels td a:hover,.top5 li a:hover,.top10 li a:hover,h4.subtitle2 a:hover,h4.subtitle a:hover,p.summary a:hover,p.summary2 a:hover,.sortnews .list a:hover,.sortnews .clt a:hover {text-decoration:underline;}
+
+.hdbox2 {background:url(../images/TagsBgX.png) 0 2px repeat-x;border:1px solid #ccc; padding:0px 8px; height:28px;}
+.hdbox2 em { float:left; font-weight:bold; height:27px; line-height:29px;}
+.hdbox2 em cite { display:inline-block;background:url(../images/vline.png) 0 center no-repeat; padding:0px 8px;margin-left:8px; }
+.hdbox2 em a {color:#333; }
+.hdbox2 em cite a {padding-right:8px;}
+.hdbox2 em cite a:hover {color:#c00; text-decoration:underline;}
+.movie .ico {background:url(../images/cnyeshomeIcon.png) 0 -341px no-repeat; height:21px; width:24px; float:left;}
+.image .ico {background:url(../images/cnyeshomeIcon.png) 0 -291px no-repeat; height:21px; width:24px; float:left;}
+.image .list {margin-top:4px;}
+.movie .row {width:210px;}
+.movie .hd li a {width:161px;}
+.movie .hd li.current a {width:161px;}
+
+
+
+.shift2,.shift3 {float:right; padding-top:8px;}
+.shift2 a.moreinfo {float:left;width:14px;height:14px;background:url(../images/cnyeshomeIcon.png) 0 -150px no-repeat;}
+.shift3 span {float:left; margin-right:15px; font:11px Verdana, sans-serif;}
+.shift3 span cite {color:#F60;}
+.shift3 a { float:left;width:14px;height:14px;}
+.shift3 .prevs {background:url(../images/cnyeshomeIcon.png) 0 -100px no-repeat;}
+.shift3 .nexts {background:url(../images/cnyeshomeIcon.png) 0 -150px no-repeat;}
+.shift3 .disabled {cursor:default;filter:alpha(opacity=50);opacity:0.5;}
+.mager h4.subtitle {font:12px PMingLiU; line-height:18px; height:34px; color:#666; margin-bottom:6px; overflow:hidden;}
+.mager p.summary2 {font:13px PMingLiU;line-height:18px;height:34px;overflow:hidden;  }
+.mager p.summary2 a {color:#00529b;}
+
+.emerging .hd2 li.current em {width:120px;}
+.emerging .tab table td { line-height:17px; height:17px;}
+.colR .blank12 {height:10px;}
+
+.globalrest .hd2 li.current em {width:120px;}
+.globalrest .tab table td { line-height:17px; height:17px;}
+
+.topnav {background:url(../images/btnBgs_top.png) 0 0 no-repeat; float:right; text-align:center; font:11px Verdana, sans-serif;}
+.topnav a {background:url(../images/btnBgs_top.png) right 0 no-repeat; color:#333; display:block; margin-left:3px; padding-right:12px; width:40px;height:23px; line-height:23px;}
+
+.bank li.idx em {width:68px;border-bottom:1px solid #ccc;}
+.bank li em {width:45px;}
+.bank li.current em a {color:#cc0000;}
+.bank li.idx em a {color:#333;}
+.bank .bd {padding-top:5px; border:0;}
+
+.property {float:left;width:300px;text-align:left;}
+.property .hd2 {height:26px;background:url(http://chart.cnyes.com/images/cnyeshomeBgX.png) 0 bottom repeat-x;}
+.property .hd2 li {float:left;height:24px;line-height:24px;margin-right:-1px;text-align:center;border:1px solid #ccc;border-bottom:0;}
+.property .hd2 li a:link,.hd2 li a:visited {color:#333;}
+.property .hd2 li a:hover {font-weight:bold;color:#cc0000; text-decoration:none;}
+.property .hd2 li em {width:107px;text-align:center; color:#999; display:block;float:left; text-align:center;background:url(http://chart.cnyes.com/images/TagsBgX.png) 0 bottom repeat-x;}
+.property .hd2 li.current em {font-weight:bold; border-bottom:1px solid #fff; background:url(http://chart.cnyes.com/images/TagsBgX.png) 0 0 repeat-x;}
+.property .hd2 li.current em a:link,.property .hd2 li.current em a:visited {color:#cc0000;}
+.property .hd2 li.idx em {width:82px; border-bottom:1px solid #ccc;}
+.property .hd2 li.idx em a:link,.property .hd2 li.idx em a:visited {color:#333;}
+.property .hd2 li.current em a:hover {color:#cc0000;}
+.slt1{width:95px;margin-right:8px;color:#333;}
+.slt2{width:74px;margin-right:8px;color:#333;}
+.txts {width:189px;color:#333;border-width:1px;*margin-top:-1px; vertical-align:top;border-style:solid; border:1px solid #8fbdd7;padding:0px 2px;height:19px;line-height:20px;}
+.srchbtn {width:50px;border-width:1px; border-style:solid; border-color:#999 #bbb #bbb #999; padding:0px;height:21px;line-height:20px;text-align:center;background:url(http://chart.cnyes.com/images/TagsBgX.png) #fff 0 bottom repeat-x;}
+.srchbtn2 {margin-left:-4px;width:80px;border-width:1px; border-style:solid; border-color:#999 #bbb #bbb #999; padding:0px;height:21px;line-height:20px;text-align:center;background:url(http://chart.cnyes.com/images/TagsBgX.png) #fff 0 bottom repeat-x;}
+.property label {display:inline-block;height:20px;line-height:18px;}
+ 
+.stnews .hd li a {width:63px;}
+.stnews .hd li.current a {width:67px;}
+p.summary3 {color:#888; line-height:1.4em; margin:0px 0px 2px 0px; height:50px; overflow:hidden; font-family:PMingLiU;}
+p.summary4 {color:#888; line-height:1.4em; margin:1px 0px 2px 0px; height:40px; overflow:hidden; font-size:11px; font-family:PMingLiU;}
+.magzs .box {margin:8px 10px 5px 10px;}
+.magaz .bd {background-color:#fff;}
+.magzs .list{padding-top:2px;}
+.magzs .list li {height:1.6em;line-height:1.6em;}
+/*.chinayesbx {background-color:#f0f7ff; zoom:1; overflow:hidden; padding-bottom:6px;border:1px solid #c0d6ea;}
+.chinayesbx h3 { font:bold 15px "Microsoft JhengHei"; height:32px; line-height:26px; padding:0px 8px; margin-bottom:5px; background:url(http://www.cnyes.com/images/srchBg.png) #fdfeff 0 4px repeat-x;}
+.chinayesbx h3 a {color:#006;}
+*/
+
+.chinayesbx {background-color:#d6d6d6; zoom:1; overflow:hidden; padding-bottom:6px;border:1px solid #d6d6d6;}
+.chinayesbx .boxL {margin-left:6px;_margin-left:3px;}
+.chinayesbx .boxR {margin-right:6px;_margin-right:3px;}
+.chinayesbx h3 { font:bold 15px "Microsoft JhengHei"; height:32px; line-height:26px; padding:0px 8px; margin-bottom:5px; background:url(http://www.cnyes.com/images/srchBg_grey.png) #fdfeff 0 4px repeat-x;}
+.chinayesbx h3 a {color:#313131;}
+.chinayesbx ul a{color:#737373;}
+.chinayesbx ul a:hover{color:#ce0000;}
+.chinayesbx .ownerR a {color:#856f16;background:url(http://www.cnyes.com/images/vline.png) right 0 no-repeat; padding-right:6px; margin-right:6px;}
+.chinayesbx .ownerR a:link,.chinayesbx .ownerR a:visited {color:#856f16;}
+.chinayesbx .ownerR a:hover {color:#ce0000;};}
+
+.chinayesbx .bxgn .list {margin-bottom:3px;}
+.chinayesbx .bxgn .list li { height:1.8em;line-height:1.8em;}
+.chinayesbx .bxgn .list li a {color:#666!important;}
+.chinayesbx .bxgn .list li .ownerR a {color:#390!important;}
+.chinayesbx .ownerR {background:none;}
+
+em.linkrt2 {float:right; margin-top:-20px; margin-right:5px;}
+.bxgn a {color:#390!important;}
+.bxpk a {color:#dd1f66!important;}
+.hd2 li.idx cite,h3.acdnhd cite {float:left;border:1px solid #c60; width:2px; background-color: #c90; height:10px; margin:6px 8px 0px 8px;}
+.picsp {padding:10px;}
+.picsp td img {border:1px solid #ddd; padding:1px; background:#fff;}
+.picsp td .nobor img {padding:0; border:none;}
+.rankmkt .bd {padding:8px;}
+.rankmkt li.idx em {width:101px;border-bottom:1px solid #ccc;}
+.rankmkt li em {width:73px;}
+.rankmkt li.current em a {color:#cc0000;}
+.rankmkt li.idx em a {color:#333;}
+
+/*--- focusNews ---*/
+.colA .headlines { margin:0 auto; padding:2px 0 0 15px;}
+.colA .headlines p { margin:0; line-height:20px;}
+.colA .specialheadlines .bigsize { font-size:15px; font-family:"Microsoft JhengHei"; font-weight:bold;; padding:8px 0 0 0px;}
+.colA .headlines .bigsize { font-family:"Microsoft JhengHei"; font-weight:bold;}
+
+.bigsize{font-weight:bold; padding:5px 0 2px; font-size:18px;}
+.cDRed,.cDRed:visited,.cDRed a{color:#CC0000;}
+.cdred,.cdred:visited,.cdred a{color:#CC0000;}
+
+.gads300x250 { margin:3px auto; width:300px; height:250px; overflow:hidden;} 
+/*--- fundarea ---*/
+
+.fundRank .hd2 li em {width:110px;}
+.fundRank .hd2 li.current em {width:113px;}
+.fundRank .tab {margin:0px 12px;}
+.fundMesg { height:45px; margin-top:-1px; background:#f5f5f5; padding:8px 10px; border-top:1px solid #ddd;}
+.fundMesg li { float:left; display:inline; width:316px; margin-right:6px; height:24px; line-height:24px; overflow:hidden;}
+.fundMesg cite {color:#c00;}
+.fundMesg a.ownerR {color:#666;}
+.fdhot { position:absolute;display:inline-block; margin:-8px 0 0 80px;*margin:-8px 0 0 -30px;margin:-8px 0 0 -30px\9; width:30px; height:11px;background:url(http://chart.cnyes.com/images/fundHot.gif) 0 0 no-repeat;}
+.fundsuits {float:left;display:inline;}
+.fundsuits img { float:left;background-color:#fff; padding:1px; margin-right:12px; border:1px solid #ddd;}
+.fundsuits cite {display:block; height:20px; line-height:20px;color:#666; overflow:hidden;}
+.fundsuits cite a{color:#666;}
+.fundsuits h3 { font:bold 15px PMingLiU; line-height:24px;}
+.fundsuits h4 { font:12px PMingLiU;line-height:18px; height:38px; overflow:hidden;}
+.fundsuits em {display:block; height:24px;line-height:24px; overflow:hidden;}
+.fundsuits p {color:#999; line-height:18px; margin-bottom:5px;}
+.BigBx {width:390px;padding:10px;}
+.SmlBx {padding:10px 10px 0 0; width:245px; height:80px; overflow:hidden;}
+.hd li#info_tab_8 a,.hd li#info_tab_9 a{ width:77px;}
+.tydate {float:right; margin:-20px 0 0 0; font-size:11px;}
+.fdnew { position:absolute;display:inline-block; margin:-8px 0 0 80px;*margin:-8px 0 0 -32px;margin:-8px 0 0 -32px\9; width:32px; height:11px;background:url(http://chart.cnyes.com/images/fundNew.gif) 0 0 no-repeat;}
+.Cobrand {text-align:center; padding-left:32px;}
+.Cobrand li { float:left;display:inline;width:182px; margin:12px 8px 6px 10px; background-color:#f3f3f3; height:110px;overflow:hidden;}
+.Cobrand span {display:block;background:#fff;height:50px;border:1px solid #e8e8e8;}
+.Cobrand em {display:block; height:30px; line-height:30px;background:#f3f3f3;border:1px solid #e3e3e3; border-top:0;}
+.Cobrand em a,.Cobrand em a:link,.Cobrand em a:visited{ display:inline-block; border:1px solid #730c03; border-top:1px solid #bf1a0b; border-left:1px solid #bf1a0b; color:#fff; margin:4px 5px 0 5px; height:20px; line-height:20px; padding:0 8px;background:url(http://chart.cnyes.com/images/redBgline.png) 0 bottom repeat-x;}
+.Cobrand strong {display:block;font-weight:normal; height:24px; line-height:24px; padding-top:3px; *margin-bottom:5px; overflow:hidden; background-color:#fff;}
+.Cobrand em.gry a {border:1px solid #999; border-top:1px solid #ccc; border-left:1px solid #ccc;background:url(http://chart.cnyes.com/images/grayBgline.png) 0 bottom repeat-x;}
+
+.boxR1 .hd2 li em {width:106px;}
+.boxR1 .hd2 li.current em {width:109px;}
+
+.cnyesfashionbx { background:url(http://www.cnyes.com/images/cnyesfashionBg.gif) left top #d6d6d6 repeat-x; zoom:1; overflow:hidden; padding-bottom:9px; border:1px solid #d6d6d6;}
+.cnyesfashionbx h3{ float:left;font:bold 15px "Microsoft JhengHei"; text-indent:-9999px; height:32px; line-height:26px; padding:0px 8px; margin-bottom:5px; background:url(http://www.cnyes.com/images/cnyesfashion_logo.jpg) 4px 4px #fff no-repeat ;}
+.cnyesfashionbx h3 a{ display:block; height:32px; width:90px;}
+.cnyesfashionbx .hd { float:left; height:40px; background:none;}
+.cnyesfashionbx .hd li {float:left; height:30px; width:125px; line-height:30px; margin:5px 5px 0; text-align:center; border:0; padding:0; padding-bottom:5px;}
+.cnyesfashionbx .hd li a{ width:125px; color:#856f16!important; display:block;float:left; text-align:center; border:0; background:none; }
+.cnyesfashionbx .hd li.current a { font-size:13px; width:125px; height:35px; font-weight:normal; color:#666!important; background:#d6d6d6; border:1px solid #c0c0c0; border-bottom:0; }
+.cnyesfashionbx .boxL { float:left; width:660px; padding:9px 0 0 8px; margin:0;}
+.cnyesfashion .bd { border:0; }
+.cnyesfashion .box { float:left; background:#fff; margin:0 5px 0 0; padding:10px; width:192px; overflow:hidden; border:1px solid #a7a7a7;}
+.cnyesfashion .pic {float:none; margin:0; border:1px solid #ddd; padding:1px;}
+.cnyesfashion .pic img { width:188px; height:108px; overflow:hidden;}
+.cnyesfashion h4.subtitle { margin-top:5px; height:40px;}
+.cnyesfashion h4.subtitle a { color:#737373; font-weight:normal; font-size:12px;}
+.cnyesfashion h4.subtitle a:hover { color:#ce0000; text-decoration:none;}
+
+
+#inqu_0 .expdot,#inqu_1 .expdot,#inqu_2 .expdot,#inqu_3 .expdot,#inqu_4 .expdot{ border-top:1px dotted #ccc; padding-top:6px;}
+.expon a.strhd { margin-right:40px; font-weight:bold; color:#333; text-decoration:none;}
+.listinq li { height:22px; line-height:22px;}
+.listinq li a { float:left;height:22px; line-height:22px; width:200px; overflow:hidden;}
+.listinq li cite.htcik {float:right; width:64px; text-align:right;}
+
+
+.cyorder {font-size:12px;}/*-- order 120x30 --*/
+.cyorder td { padding:2px 6px 3px 0px}
+.cyorder a {color:#666666;}
+
+.twPhoto { margin-left:1px; _margin-left:-1px;}
+.twPhoto li {width:69px; height:134px; display:inline-block; margin-left:5px; overflow:hidden; float:left; }
+.twPhoto li .pic { margin-right:0; float:none;}
+.twPhoto li h4.subtitle {height:32px; line-height:16px; font-size:12px; font-weight:normal;}
