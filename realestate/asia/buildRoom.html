@@ -42,25 +42,20 @@
     <link href="build/css/custom.min.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="js/iCheck/skins/flat/green.css" rel="stylesheet">
-	  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+        <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="js/fancybox/css/fancybox/jquery.fancybox-buttons.css">
     <link rel="stylesheet" href="js/fancybox/css/fancybox/jquery.fancybox-thumbs.css">
     <link rel="stylesheet" href="js/fancybox/css/fancybox/jquery.fancybox.css">
-    <!-- grid -->
-    <script src="js/grid/js/parallax.js" type="text/javascript" charset="utf-8"></script>
-    <link rel="stylesheet" id="mk-style-css" href="js/grid/css/theme-styles.css" type="text/css" media="all">
-    <link rel="stylesheet" href="js/grid/css/action.css">
-    <link href="js/grid/css/grid.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="js/flexslider/css/flexslider.css" type="text/css"/>
     <link href="css/style_add.css" rel="stylesheet">
     <style>
         .banner{background-size:auto 100%;}
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- grid2 -->
-    <script type="text/javascript" src="../vendors/grid/lib/greensock/TweenLite.min.js"></script>
-    <script src="../vendors/grid/js/action.js" type="text/javascript" charset="utf-8"></script>
+
   </head>
   <body class="xHidden nav-md"><a id="mainTop"></a>
         <!-- Navigation bar 表頭 -->
@@ -106,7 +101,7 @@
                 <ul class="nav navbar-nav navbar-right">
                       <li class="first"><a href="index.html">首頁</a></li>
                       <li class=""><a href="aboutUs.html">關於我們</a></li>
-                      <li class="dropdown"><a href="thailand.html" onclick="CheckIcon()" data-toggle="dropdown" aria-expanded="true">泰國</a>
+                      <li class="dropdown active"><a href="thailand.html" onclick="CheckIcon()" data-toggle="dropdown" aria-expanded="true">泰國</a>
                         <ul id="menu1" class="dropdown-menu">
                             <li><a href="thailand.html">關於泰國</a></li>
                             <li><a href="thaiBuild.html">優選建案</a></li>
@@ -162,7 +157,7 @@
                         </ul>
                       </li>
                       <li class=""><a href="news.html"  onclick="CheckIcon()">最新消息</a></li>
-                      <li class="active"><a href="class.html">投資講堂</a></li>
+                      <li><a href="class.html">投資講堂</a></li>
                       <li class="dropdown"><a href="allQA.html"  onclick="CheckIcon()" data-toggle="dropdown" aria-expanded="true">Ｑ&amp;Ａ</a>
                         <ul id="menu5" class="dropdown-menu">
                             <li><a href="allQA.html#thai">泰國</a></li>
@@ -179,190 +174,227 @@
           </div>
         </nav>
         <!-- / Navigation bar 表頭 -->
-      <div class="graySub">
-          <div class="th-list" style="padding-right: 20px;">
-                    <header class="filter-classic">
-                            <div data-view="mk-portfolio-loop-111" class="mk-portfolio-orientation"><a href="#" class="mk-list-view"><i class="fa fa-th-list"></i></a><a href="#" class="mk-grid-view current"><i class="fa fa-th"></i></a></div>
-                    </header>
-                </div>
+      <div class="graySub graySubCS">
+        <!-- subNav -->
+          <div class="container_1366">
+              <a class="back" href="buildDetail.html"><i class="fa fa-angle-left"></i> 返回菁英公館 NICHE MONO</a>
+          </div>
+      <!-- subNav End -->
       </div>
       <div class="container container_1366 body">
-      <div class="col-xs-12 articleNews">
+      <div class="main_container col-xs-12">
         <!-- page content -->
-                <section id="mk-portfolio-loop-111" class="mk-portfolio-loop-111 mk-portfolio-container mk-theme-loop isotop-enabled mk-portfolio-classic page-nav-style isotope mk-portfolio-grid pro3-nav">
-                        <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_01.jpg" alt="image">
+        <div role="main">
+          <section class="row">
+              <div class="col-xs-12">
+		          <div class="row marginTop20" role="tabpanel" data-example-id="togglable-tabs">
+                    <ul id="myRoomTab" class="nav nav-tabs bar_tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">全部</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">一房</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">兩房</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="#tab_content4" role="tab" id="profile-tab3" data-toggle="tab" aria-expanded="false">三房</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="#tab_content5" role="tab" id="profile-tab4" data-toggle="tab" aria-expanded="false">四房</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="#tab_content6" role="tab" id="profile-tab5" data-toggle="tab" aria-expanded="false">五房以上</a>
+                        </li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content marginTop40">
+                        <div role="tabpanel" class="tab-pane active in" id="tab_content1">
+                                <div class="col-xs-6 col-sm-3 buildList">
+                                    <div class="country">
+                                      <div class="image view view-first postEDM">
+                                        <a class="fancybox photoAlign2" rel="group" href="images/buildRoomb_001.jpg" title="文字說明文字說明" itemprop="photo"><img style="width: 100%; display: block;" src="images/buildRoom_001.jpg"></a>
+                                      </div>
+                                      <div class="caption">
+
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-12 lineGrid"><lable class="title">兩房一廳一室</lable></div><div class="col-xs-12 lineGrid"><lable class="title">100平方公尺</lable></div><div class="col-xs-12 lineGrid"><lable class="title">總價</lable><lable class="title">新台幣</lable><lable class="price red"  itemprop="priceRange">267萬</lable></div><div class="col-xs-12 lineGrid"><lable class="title">座北朝南</lable></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div><div class="clearfix"></div>
+                                  </div>
+                                <div class="col-xs-6 col-sm-3 buildList">
+                                    <div class="country">
+                                      <div class="image view view-first postEDM">
+                                        <a class="fancybox photoAlign2" rel="group" href="images/buildRoomb_002.jpg" title="文字說明文字說明" itemprop="photo"><img style="width: 100%; display: block;" src="images/buildRoom_002.jpg" alt="image"></a>
+                                      </div>
+                                      <div class="caption">
+
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-12 lineGrid"><lable class="title">兩房一廳一室</lable></div><div class="col-xs-12 lineGrid"><lable class="title">100平方公尺</lable></div><div class="col-xs-12 lineGrid"><lable class="title">總價</lable><lable class="title">新台幣</lable><lable class="price red"  itemprop="priceRange">267萬</lable></div><div class="col-xs-12 lineGrid"><lable class="title">座北朝南</lable></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div><div class="clearfix"></div>
+                                  </div>
+                                <div class="col-xs-6 col-sm-3 buildList">
+                                    <div class="country">
+                                      <div class="image view view-first postEDM">
+                                        <a class="fancybox photoAlign2" rel="group" href="images/buildRoomb_001.jpg" title="文字說明文字說明" itemprop="photo"><img style="width: 100%; display: block;" src="images/buildRoom_001.jpg" alt="image"></a>
+                                      </div>
+                                      <div class="caption">
+
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-12 lineGrid"><lable class="title">兩房一廳一室</lable></div><div class="col-xs-12 lineGrid"><lable class="title">100平方公尺</lable></div><div class="col-xs-12 lineGrid"><lable class="title">總價</lable><lable class="title">新台幣</lable><lable class="price red"  itemprop="priceRange">267萬</lable></div><div class="col-xs-12 lineGrid"><lable class="title">座北朝南</lable></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div><div class="clearfix"></div>
+                                  </div>
+                                <div class="col-xs-6 col-sm-3 buildList">
+                                    <div class="country">
+                                      <div class="image view view-first postEDM">
+                                        <a class="fancybox photoAlign2" rel="group" href="images/buildRooms_002.jpg" title="文字說明文字說明" itemprop="photo"><img style="width: 100%; display: block;" src="images/buildRoom_002.jpg" alt="image"></a>
+                                      </div>
+                                      <div class="caption">
+
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-12 lineGrid"><lable class="title">兩房一廳一室</lable></div><div class="col-xs-12 lineGrid"><lable class="title">100平方公尺</lable></div><div class="col-xs-12 lineGrid"><lable class="title">總價</lable><lable class="title">新台幣</lable><lable class="price red"  itemprop="priceRange">267萬</lable></div><div class="col-xs-12 lineGrid"><lable class="title">座北朝南</lable></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div><div class="clearfix"></div>
+                                  </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab_content2">
+                                            <div class="col-xs-6 col-sm-3 buildList">
+                                                <div class="country">
+                                                  <div class="image view view-first postEDM">
+                                                    <a class="fancybox photoAlign2" rel="group" href="images/buildRooms_003.jpg" title="文字說明文字說明" itemprop="photo"><img style="width: 100%; display: block;" src="images/buildRoom_003.jpg"></a>
+                                                  </div>
+                                                  <div class="caption">
+
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-xs-12 lineGrid"><lable class="title">兩房一廳一室</lable></div><div class="col-xs-12 lineGrid"><lable class="title">100平方公尺</lable></div><div class="col-xs-12 lineGrid"><lable class="title">總價</lable><lable class="title">新台幣</lable><lable class="price red"  itemprop="priceRange">267萬</lable></div><div class="col-xs-12 lineGrid"><lable class="title">座北朝南</lable></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div><div class="clearfix"></div>
+                                              </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="tab_content3">
+                                            <div class="col-xs-6 col-sm-3 buildList">
+                                                <div class="country">
+                                                  <div class="image view view-first postEDM">
+                                                    <a class="fancybox photoAlign2" rel="group" href="images/buildRooms_001.jpg" title="文字說明文字說明" itemprop="photo"><img style="width: 100%; display: block;" src="images/buildRoom_001.jpg" alt="image"></a>
+                                                  </div>
+                                                  <div class="caption">
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-xs-12 lineGrid"><lable class="title">兩房一廳一室</lable></div><div class="col-xs-12 lineGrid"><lable class="title">100平方公尺</lable></div><div class="col-xs-12 lineGrid"><lable class="title">總價</lable><lable class="title">新台幣</lable><lable class="price red"  itemprop="priceRange">267萬</lable></div><div class="col-xs-12 lineGrid"><lable class="title">座北朝南</lable></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div><div class="clearfix"></div>
+                                              </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="tab_content4">
+                                            <div class="col-xs-6 col-sm-3 buildList">
+                                    <div class="country">
+                                      <div class="image view view-first postEDM">
+                                        <a class="fancybox photoAlign2" rel="group" href="images/buildRoom_001.jpg" title="文字說明文字說明" itemprop="photo"><img style="width: 100%; display: block;" src="images/buildRoom_001.jpg" alt="image"></a>
+                                      </div>
+                                      <div class="caption">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-12 lineGrid"><lable class="title">兩房一廳一室</lable></div><div class="col-xs-12 lineGrid"><lable class="title">100平方公尺</lable></div><div class="col-xs-12 lineGrid"><lable class="title">總價</lable><lable class="title">新台幣</lable><lable class="price red"  itemprop="priceRange">267萬</lable></div><div class="col-xs-12 lineGrid"><lable class="title">座北朝南</lable></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div><div class="clearfix"></div>
+                                  </div>
+                                    <div class="col-xs-6 col-sm-3 buildList">
+                                        <div class="country">
+                                          <div class="image view view-first postEDM">
+                                            <a class="fancybox photoAlign2" rel="group" href="images/buildRoom_001.jpg" title="文字說明文字說明" itemprop="photo"><img style="width: 100%; display: block;" src="images/buildRoom_001.jpg" alt="image"></a>
+                                          </div>
+                                          <div class="caption">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 lineGrid"><lable class="title">兩房一廳一室</lable></div><div class="col-xs-12 lineGrid"><lable class="title">100平方公尺</lable></div><div class="col-xs-12 lineGrid"><lable class="title">總價</lable><lable class="title">新台幣</lable><lable class="price red"  itemprop="priceRange">267萬</lable></div><div class="col-xs-12 lineGrid"><lable class="title">座北朝南</lable></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div><div class="clearfix"></div>
+                                      </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="tab_content5">
+                                            <div class="col-xs-6 col-sm-3 buildList">
+                                                <div class="country">
+                                                  <div class="image view view-first postEDM">
+                                                    <a class="fancybox photoAlign2" rel="group" href="images/buildRoom_001.jpg" title="文字說明文字說明" itemprop="photo"><img style="width: 100%; display: block;" src="images/buildRoom_001.jpg"></a>
+                                                  </div>
+                                                  <div class="caption">
+
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-xs-12 lineGrid"><lable class="title">兩房一廳一室</lable></div><div class="col-xs-12 lineGrid"><lable class="title">100平方公尺</lable></div><div class="col-xs-12 lineGrid"><lable class="title">總價</lable><lable class="title">新台幣</lable><lable class="price red"  itemprop="priceRange">267萬</lable></div><div class="col-xs-12 lineGrid"><lable class="title">座北朝南</lable></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div><div class="clearfix"></div>
+                                              </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="tab_content6">
+                                            <div class="col-xs-6 col-sm-3 buildList">
+                                                <div class="country">
+                                                  <div class="image view view-first postEDM">
+                                                    <a class="fancybox photoAlign2" rel="group" href="images/buildRoom_001.jpg" title="文字說明文字說明" itemprop="photo"><img style="width: 100%; display: block;" src="images/buildRoom_001.jpg"></a>
+                                                  </div>
+                                                  <div class="caption">
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-xs-12 lineGrid"><lable class="title">兩房一廳一室</lable></div><div class="col-xs-12 lineGrid"><lable class="title">100平方公尺</lable></div><div class="col-xs-12 lineGrid"><lable class="title">總價</lable><lable class="title">新台幣</lable><lable class="price red"  itemprop="priceRange">267萬</lable></div><div class="col-xs-12 lineGrid"><lable class="title">座北朝南</lable></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+                                                </div><div class="clearfix"></div>
+                                              </div>
                                         </div>
                                     </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
+                                    <div class="clearfix "></div>
                                 </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                        <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_02.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                        <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_03.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                    <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_04.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                    <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_05.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                    <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_01.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                        <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_02.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                        <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_03.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                </section>
-            <div class="clearfix"></div>
+                            </div>
+                  </section>
+        </div>
       </div>
     </div>
-    <div class="clearfix"></div>
     <!-- /page content -->
     <!--Footer-->
     <footer id="footer" class="footer">
@@ -481,12 +513,11 @@
 <!-- iCheck -->
 <script src="js/iCheck/icheck.min.js"></script>
 <script src="js/backtotop/back-to-top.js"></script>
-<!-- grid -->
-<script type="text/javascript" src="js/grid/js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="js/grid/js/theme-scripts-min.js"></script>
+<script src="js/fixtotop/fix-to-top.js"></script>
 <!-- Custom Theme Scripts -->
-<script type="text/javascript" src="js/jquery.placeholder.js"></script><script src="build/js/custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script><script src="../build/js/custom.min.js"></script>
     
 
 </body>
 </html>
+

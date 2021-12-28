@@ -42,25 +42,20 @@
     <link href="build/css/custom.min.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="js/iCheck/skins/flat/green.css" rel="stylesheet">
-	  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+        <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="js/fancybox/css/fancybox/jquery.fancybox-buttons.css">
     <link rel="stylesheet" href="js/fancybox/css/fancybox/jquery.fancybox-thumbs.css">
     <link rel="stylesheet" href="js/fancybox/css/fancybox/jquery.fancybox.css">
-    <!-- grid -->
-    <script src="js/grid/js/parallax.js" type="text/javascript" charset="utf-8"></script>
-    <link rel="stylesheet" id="mk-style-css" href="js/grid/css/theme-styles.css" type="text/css" media="all">
-    <link rel="stylesheet" href="js/grid/css/action.css">
-    <link href="js/grid/css/grid.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="js/flexslider/css/flexslider.css" type="text/css"/>
     <link href="css/style_add.css" rel="stylesheet">
     <style>
         .banner{background-size:auto 100%;}
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- grid2 -->
-    <script type="text/javascript" src="../vendors/grid/lib/greensock/TweenLite.min.js"></script>
-    <script src="../vendors/grid/js/action.js" type="text/javascript" charset="utf-8"></script>
+
   </head>
   <body class="xHidden nav-md"><a id="mainTop"></a>
         <!-- Navigation bar 表頭 -->
@@ -105,7 +100,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                       <li class="first"><a href="index.html">首頁</a></li>
-                      <li class=""><a href="aboutUs.html">關於我們</a></li>
+                      <li class="active"><a href="aboutUs.html">關於我們</a></li>
                       <li class="dropdown"><a href="thailand.html" onclick="CheckIcon()" data-toggle="dropdown" aria-expanded="true">泰國</a>
                         <ul id="menu1" class="dropdown-menu">
                             <li><a href="thailand.html">關於泰國</a></li>
@@ -162,7 +157,7 @@
                         </ul>
                       </li>
                       <li class=""><a href="news.html"  onclick="CheckIcon()">最新消息</a></li>
-                      <li class="active"><a href="class.html">投資講堂</a></li>
+                      <li><a href="class.html">投資講堂</a></li>
                       <li class="dropdown"><a href="allQA.html"  onclick="CheckIcon()" data-toggle="dropdown" aria-expanded="true">Ｑ&amp;Ａ</a>
                         <ul id="menu5" class="dropdown-menu">
                             <li><a href="allQA.html#thai">泰國</a></li>
@@ -179,190 +174,189 @@
           </div>
         </nav>
         <!-- / Navigation bar 表頭 -->
-      <div class="graySub">
-          <div class="th-list" style="padding-right: 20px;">
-                    <header class="filter-classic">
-                            <div data-view="mk-portfolio-loop-111" class="mk-portfolio-orientation"><a href="#" class="mk-list-view"><i class="fa fa-th-list"></i></a><a href="#" class="mk-grid-view current"><i class="fa fa-th"></i></a></div>
-                    </header>
-                </div>
+        <div class="banners class index">
+                <div class="slider">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li class="banner"><a href=""><img itemprop="image" src="images/aboutUs.jpg"/></a></li>
+                        </ul>
+                    </div>
+                <!--FlexSlider-->
+                 <script defer src="js/flexslider/js/jquery.flexslider.js"></script>
+                <script type="text/javascript">
+                    $(window).load(function(){
+                      $('.flexslider').flexslider({
+                        animation: "slide",
+                        start: function(slider){
+                          $('body').removeClass('loading');
+                        }
+                      });
+                    });
+                </script>
+            </div>
+        </div>
+        <!--/ Banner-->
+      <div class="graySub fix" id="fixtoTop">
+        <!-- subNav -->
+          <ul class="navbar-nav row seven-cols" style="padding:0">
+              <li class="col-md-55 col-xs-4 text-center active"><a href="#about">關於我們</a></li>
+              <li class="col-md-55 col-xs-4 text-center"><a href="#history">歷史沿革</a></li>
+              <li class="col-md-55 col-xs-4 text-center"><a href="#brand">品牌故事</a></li>
+              <li class="col-md-55 col-xs-4 text-center"><a href="#founder">創辦人</a></li>
+              <li class="col-md-55 col-xs-4 text-center"><a href="#awards">得獎榮耀</a></li>
+            </ul>
+          <!-- subNav End -->
       </div>
       <div class="container container_1366 body">
-      <div class="col-xs-12 articleNews">
+      <div class="main_container col-xs-12">
         <!-- page content -->
-                <section id="mk-portfolio-loop-111" class="mk-portfolio-loop-111 mk-portfolio-container mk-theme-loop isotop-enabled mk-portfolio-classic page-nav-style isotope mk-portfolio-grid pro3-nav">
-                        <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_01.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                        <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_02.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                        <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_03.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                    <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_04.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                    <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_05.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                    <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_01.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                        <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_02.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                        <article class="mk-portfolio-item mk-portfolio-classic-item mk-isotop-item portfolio-three-column portfolio-full-layout portfolio-image portfolios-asia isotope-item isotope-hidden">
-                           <ul class="list-unstyled msg_list">
-                            <li><a onclick="javascript:location.href='classDetail.html'">
-                                <div class="row">
-                                    <div class="pull-left">
-                                        <div class="image view view-first">
-                                            <img style="width: 100%; display: block;" src="images/invite_03.jpg" alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="message">
-                                        <h4 itemprop="event">購買東協八國房產&nbsp;&nbsp;投資攻略精華版</h4>
-                                          <p itemprop="datePublished" datetime="2019-11-28 14:30:00">活動時間:2019-11-28(四)</p>
-                                          <p itemprop="location">活動地點:台北市長春路176號4樓(MyGo房交所)</p>
-                                          <div class="row text-center"><button class="btn btn-success">馬上報名</button></div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a></li>
-                          </ul>
-                        </article>
-                </section>
+        <div role="main">
+            <section class="row" id="about">
+              <div class="col-xs-12">
+                <h4 class="headWith" itemprop="alternateName"><span>關於我們</span><small>About Us</small></h4>
+              </div>
+              <div class="">
+                  <div class="col-xs-12 col-md-3 image view view-first">
+                    <a title="MyGo房產交易所">
+                        <div class="gallery-content">
+                            <img src="images/classing.jpg" style="width:100%; display: block;" itemprop="image">
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-md-9" itemprop="description">
+                      <h4>專業東南亞不動產投資專家-買購國際地產</h4>
+                      <p><strong>九天資產管理股份有限公司</strong></p>
+                      <p>九天資產管理股份有限公司是一家全球房產代理銷售公司，從購屋到交屋之後提供代租、代管、代售的全方位服務。業務拓展橫跨整個台灣、中國大陸以及全球海外包含馬來西亞、英國、日本、印尼、西班牙、澳洲、新西蘭、泰國、柬埔寨等多個國家均有辦事處和團隊共創多贏的未來。</p>
+                  </div>
+              </div>
+            </section>
+            <section class="row" id="history">
+              <div class="col-xs-12">
+                <h4 class="headWith" itemprop="alternateName"><span>歷史沿革</span><small>History</small></h4>
+              </div>
+              <div class="col-xs-12 col-md-3 image view view-first">
+                    <a title="重慶CIC國際商務會館">
+                        <div class="gallery-content">
+                            <img src="images/classing_02.jpg" style="width:100%; display: block;" itemprop="image">
+                        </div>
+                    </a>
+                  </div>
+              <div class="col-xs-12 col-md-9">
+                  <ol class="disc">
+                    <li><label>2008年5月</label>MyGo.com房地產網絡正式上線 </li>
+                    <li><label>2010年7月</label>MyGonews房地產新聞正式上線</li>
+                    <li><label>2014年6月</label>正式成立MyGo海外地產，進軍代理銷售馬來西亞房產</li>
+                    <li><label>2016年7月</label>成立MyGo房產交易所</li>
+                    <li><label>2016年</label>中國重慶CIC天和國際中心完工開幕</li>
+                    <li><label>2017年</label>中國重慶CIC國際商務會館正式公開</li>
+                    <li><label>2018年</label>正式進軍日本、泰國房產，代理銷售</li>
+                    <li><label>2019年</label>籌備MyGo SE，預計2020 Q1上市</li>
+                  </ol>
+              </div>
+            </section>
+            <section class="row" id="brand">
+              <div class="col-xs-12">
+                <h4 class="headWith" itemprop="alternateName"><span>品牌故事</span><small>Brand</small></h4>
+              </div>
+              <div class="col-xs-12">
+                  <div class="col-xs-12 col-md-3 image view view-first ">
+                        <div class="brandLogo" itemprop="brand">
+                            <img src="images/logo.png" itemprop="logo" itemprop="image">
+                        </div>
+                  </div>
+                  <div class="col-xs-12 col-md-9" itemprop="description">
+                      <h4>經營理念: 以人為本 以成鑄信<small class="marginTop10" style="display: block;">九天資產管理股份有限公司是一家全球房產代理銷售公司，從購屋到交屋之後提供代租、代管、代售的全方位服務。</small></h4>
+                      <p>業務拓展橫跨整個台灣、中國大陸以及全球海外包含馬來西亞、英國、日本、印尼、西班牙、澳洲、新西蘭、泰國、柬埔寨等多個國家均有辦事處和團隊共創多贏的未來。</p>
+                      <p>MyGo提供公平、公開、透明且安全可靠的交易平台與場所，讓買賣雙方能完整瞭解建案投資的優缺點，同時也方便有能力的不動產業者透過此平台達到快速成交的目的。</p>
+                      <p>MyGo提供三方法律、財會、稅務等專業諮詢，針對每一件交易案件進行安全監控，並將交易記錄封存，提供交易三方最安全的交易過程。杜絕坊間其他房地產交易可能產生的弊端。</p>
+                      <p>MyGo提供新創公司共榮共享空間，也提供新創公司及伙伴互相媒合、成為多角共同成長的平台空間的機會。</p>
+                      <p>MyGo以新創產業為服務平台，包含AI人工智能、區塊鏈、虛擬貨幣交易所等等...培養新一代企業接班人、讓新創產業得以在豐富可靠的資源下成長茁壯，並加速新創公司在市場的相互作用，迫使初創企業在有限時間內迅速適應學習，完成企業區塊鏈化的升級轉型。</p>
+                  </div>
+              </div>
+            </section>
+            <section class="row" id="founder">
+              <div class="col-xs-12">
+                <h4 class="headWith" itemprop="alternateName"><span>創辦人</span><small>Founder</small></h4>
+              </div>
+              <div class="">
+                  <div class="col-xs-12 col-md-3 image view view-first">
+                        <a title="創辦人林楠桂執行長">
+                        <div class="gallery-content">
+                            <img src="images/boss_001.jpg" style="width:100%; display: block;" itemprop="image">
+                        </div>
+                    </a>
+                  </div>
+                  <div class="col-xs-12 col-sm-9" itemprop="description">
+                      <p>出自文化之都英國倫敦AA建築，商業模式的特斯拉，改變傳統產業，改變世界的瘋狂實踐家。具備宏觀的國際視野與溫暖的社會情懷，集建築、財經、金融、科技專業於一身。</p>
+                      <div class="clearfix" style="height: 1px;"></div>
+                      <h4>經歷【英國2001~2008】</h4>
+                      <p>倫敦AA建築聯盟 Architectural Association Dip<br/>倫敦 Foreign Office Architects  Designer  ( 2005~2008</p>
+                      <div class="clearfix" style="height: 1px;"></div>
+                      <h4>MyGo 事業體【2008~至今】 </h4>
+                      <ol class="disc">
+                        <li>MyGo.com買購房地產網路</li>
+                        <li>MyGoNews.com買購房地產新聞執行長</li>
+                        <li>九天開發股份有限公司董事 </li>
+                        <li>九天資產管理股份有限公司CEO</li>
+                        <li>福州買購軟體科技有限公司執行長</li>
+                      </ol>
+                  </div>
+              </div>
+                <div class="">
+                  <div class="col-xs-12 col-sm-9" itemprop="description">
+                      <h4 itemprop="founder">創辦人的話/ 林楠桂執行長
+                      <small class="marginTop10" style="display: block;">對於工作的熱忱 一如他最愛的可樂一般愛不釋手。-</small></h4>
+                      <hr style="    margin: 20px 0 10px 0;">
+                      <p>Architectural Association Dip<br/>倫敦 Foreign Office Architects  Designer</p>
+                      <hr style="    margin:10px 0">
+                      <p>MYGO買購國際地產是一家房地產商業模式的創新工廠，也是智能空間的魔術師，旨在將創新融於商業服務中，立足台灣、放眼世界。</p>
+                      <p>MYGO團隊是全台最有生命力的房地產創意人團隊，充滿活力、創意無限、秉持高度熱情與專業，我們精益求精、不斷延伸拓展企業觸角，從台灣、新加坡、馬來西亞新山、中國重慶、泰國曼谷、日本東京甚至到美國紐約，未來事業版圖將推及紐西蘭、澳洲與英國。</p>
+                      <p>『顛覆想像、顛覆世界』，MYGO完美融合最尖端的『科技智能技術』、擁有最酷的『文創招商行銷策略』、提供最流行的『建築時尚設計』，作為台灣『房地產證券化』的領航者，MYGO從未停下追求卓越的腳步，我們繞著全世界做生意，用專業顛覆您的想像，不僅要帶著您、帶著台灣穩紮穩打的實幹精神與創新智慧的軟實力去世界探險、給您耳目一新的一站式全球置產新體驗，還要築夢踏實地完成房地產證券化的企業願景，讓世界看到華人堅強的經濟力、旺盛的生命力與不容小覷的爆發力，讓台灣的創新實力在世界各個角落開花結果。</p>
+                      <p class="pull-right">LIN NAN KIEI</p>
+                  </div>
+                    <div class="col-xs-12 col-sm-3 image">
+                        <div class="gallery-content">
+                            <img src="images/boss.png" style="width:100%; display: block;" itemprop="founder">
+                        </div>
+                  </div>
+              </div>    
+            </section>
+            <section class="row" id="awards" itemprop="description">
+                <div class="col-xs-12">
+                    <h4 class="headWith" itemprop="award"><span>集團獲獎代表作</span><small>Awards</small></h4>
+                </div>
+                <div class="col-xs-12">
+                      <p><strong>臺灣藝術大學圖書館</strong></p>
+                      <p>1979年獲得國家圖書館的競圖第一名起，至今獲獎數十次，作品跨中、港、台三地豪宅、商辦、圖書館、大型商場、台中月眉「馬拉灣」、花蓮「海洋世界」、臺北「青山鎮」等各類設計案,是全國唯一一間事務所，獲獎囊括全國性的都市設計、建築設計、室內設計三項獎殊榮。</p>
+                </div>
+            </section>
             <div class="clearfix"></div>
+        </div>
       </div>
     </div>
-    <div class="clearfix"></div>
+    <div class="row gallery">
+            <div class="col-sm-4 p-0 image view view-first postEDM">
+                <a href="images/awards_001.jpg" class="fancybox" rel="group" title="臺灣藝術大學圖書館">
+                    <div class="gallery-content">
+                        <img src="images/awards_001.jpg">
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 p-0 image view view-first postEDM">
+                <a href="images/awards_002.jpg" class="fancybox" rel="group" title="臺灣藝術大學圖書館">
+                    <div class="gallery-content">
+                        <img src="images/awards_002.jpg">
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 p-0 image view view-first postEDM">
+                <a href="images/awards_003.jpg" class="fancybox" rel="group" title="臺灣藝術大學圖書館">
+                    <div class="gallery-content">
+                        <img src="images/awards_003.jpg">
+                    </div>
+                </a>
+            </div>					
+    </div>
     <!-- /page content -->
     <!--Footer-->
     <footer id="footer" class="footer">
@@ -481,11 +475,9 @@
 <!-- iCheck -->
 <script src="js/iCheck/icheck.min.js"></script>
 <script src="js/backtotop/back-to-top.js"></script>
-<!-- grid -->
-<script type="text/javascript" src="js/grid/js/jquery.prettyPhoto.js"></script>
-<script type="text/javascript" src="js/grid/js/theme-scripts-min.js"></script>
+<script src="js/fixtotop/fix-to-top.js"></script>
 <!-- Custom Theme Scripts -->
-<script type="text/javascript" src="js/jquery.placeholder.js"></script><script src="build/js/custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script><script src="../build/js/custom.min.js"></script>
     
 
 </body>
